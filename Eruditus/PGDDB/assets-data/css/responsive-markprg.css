@@ -1,0 +1,1114 @@
+#pardot-form{
+	margin-top:10px;
+	font-size: 28px;
+    font-family: 'Crimson Text';
+    font-weight: bold;
+	text-align: center;
+}
+.click-download{
+
+		font-size: 12px;
+    font-family: 'san serif';
+    font-weight: normal;
+	text-align: center;
+	 font-style: italic;
+}
+.phone span.small {
+		font-size: 15px;
+		vertical-align: top;
+		float: left;
+		}
+
+		
+
+.no-padd{
+	padding:0px;
+}
+
+.banner-form.thankyoucontainer {
+    color: #fff;
+    height: 420px;
+    padding: 0px 20px;
+    text-align: center;
+}
+.thankyou{
+	font-weight:bold; 
+	font-size:35px;
+	line-height:25px; 
+	text-transform:uppercase;
+	margin-top:-10px;
+	
+}
+.thankyousub{
+	font-size:25px; 
+	text-transform:uppercase;
+}
+
+.form.thnkyou {
+    top: 0;
+}
+
+.form {
+		padding:0px;
+		top: -9%;
+	}
+	
+.innerone {
+    clear: none;
+}	
+
+
+@media only screen and (min-width:1900px){
+.form {
+    position: absolute;
+    right: 15%;
+    top: 0%;
+}
+}
+
+@media only screen and (min-width:1600px) and (max-width:1890px) {
+.form {
+    position: absolute;
+    right: 10%;
+    top: 0%;
+}
+}
+
+
+@media only screen and (min-width:1020px) and (max-width:1030px){
+.form {
+    padding: 0px;
+    top: -3%;
+}
+.mobile-res{
+	height:500px;
+}
+.innerone {
+    clear: none;
+}
+}
+	
+
+
+	
+	
+@media only screen and (min-width:375px) {
+	.banner-bgg .schoolcontainer{
+    color: #333;
+    height: 40px;
+    padding:0px;
+    text-align:left;
+	font-size:10px;
+	padding-top:15px;  
+}
+	
+	.banner-bgg .schoollogocontainer{
+	 padding:0px;
+    text-align:left;
+	margin-top:-15px;
+	
+	}
+	
+.bifurcatortop{
+	border-left: 1px solid #c8c8c8;
+	 position: absolute;
+	 top: 8px;
+	 bottom:5px;
+	 left:-10px;
+}
+
+	.form {
+		padding:0px;
+		top: -8%;
+	}
+	.school-logo {
+		height: 80px;
+		display: table;
+	}	
+	#collogo {
+    margin-left: 0px;
+    margin-top: 16px;
+    padding-right: 0;
+}	
+}
+
+
+
+@media only screen and (max-width: 736px) {
+	.banner-bgg .schoolcontainer{
+    color: #333;
+    height: 70px;
+    padding:0px;
+    text-align:center;
+	font-size:14px;
+	padding-top:20px;  
+}
+	
+	.banner-bgg .schoollogocontainer{
+	 padding:0px;
+	 text-align:center;
+	 margin-top:-15px;  	
+		
+}
+.bifurcatortop {
+    border-left: 1px solid #c8c8c8;
+    position: absolute;
+    top: 10px;
+    bottom: 5px;
+    left: 6px;
+}
+
+.thankyou{
+	font-weight:bold; 
+	font-size:35px;
+	line-height:25px; 
+	text-transform:uppercase;
+	margin-top: 0px; 
+}
+.thankyousub{
+	font-size:25px; 
+	text-transform:uppercase;
+}
+
+#collogo {
+    margin-left: 0px;
+    margin-top: 1px;
+    padding-right: 0px;
+}
+
+
+.thankyou{
+	font-weight:bold; 
+	font-size:35px;
+	line-height:25px; 
+	text-transform:uppercase;
+	margin-top: 0px; 
+}
+.thankyousub{
+	font-size:25px; 
+	text-transform:uppercase;
+}
+
+.bifurcator {
+    border-left: 1px solid #c8c8c8;
+    position: absolute;
+    top: 7px;
+    bottom: -6px;
+    left: -19px;
+}
+
+.bifurcator {
+    border-left: 1px solid #c8c8c8;
+    position: absolute;
+    top: 7px;
+    bottom: -6px;
+    left: -19px;
+}
+	
+	.banner-form.thankyoucontainer {
+    color: #fff;
+    height:581px;
+    padding: 0px 20px;
+    text-align: center;
+}
+.banner-form.thankyoucontent {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+	/* min-height:300px; */
+    transform: translateY(-50%);
+}
+.banner-bg {
+     background: none repeat scroll 0px 0px #fb5151;
+	
+}
+	
+	.banner .container {
+		padding:0px;
+	}
+	
+	.phone span.small {
+		font-size: 15px;
+		vertical-align: top;
+		float: left;
+	}
+		
+	#pardot-form h2,#pardot-form h1{
+		font-size: 28px;
+		font-family: 'Crimson Text';
+		font-weight: bold;
+		margin-top: 50px;
+		text-align: center;
+		  line-height: 30px;
+		padding: 0px;
+	}
+	
+	.panel-body{
+		font-size: 17px;
+		color: #6d6e70;
+	}
+	
+	.panel-body ol{
+		font-size: 17px;
+		color: #6d6e70;
+	}
+	
+	.mobile-hide {
+		display: none;
+	}
+	
+	.desktop-hide {
+		display: block;
+	}
+	.number {
+    color: #105d39;
+	font-size: 28px;
+    font-family: 'Roboto', Arial;
+    font-weight: bold;
+	}
+	
+	.alpha{
+	font-size: 17px;
+    font-family: 'Roboto', Arial;
+    font-weight:lighter;	
+	text-align:center;
+	line-height: 12px;
+	color:#414141;	
+	}
+	
+	.form {
+    padding:0px;
+    top: 38px;
+	margin: 0;
+	background: #b50f3e;
+	}
+	
+	.form #pardot-form{
+		width:73%;
+		margin-bottom: 20px;
+	}
+	.school-logo {
+		height:64px;
+		display: table;
+		margin-top: 15px !important;
+	}
+	
+	
+	.school-logo span, .school-logo img{
+		vertical-align:middle;
+		display: table-cell;
+	    font-size: 12px;
+		font-family: 'Roboto', Arial;
+		color: #919191;
+	}
+	
+	
+	.mobile .col-xs-6{
+	/* margin-bottom:20px;	  for faculty between div */
+	} 
+	
+	.mobile-nopadd{
+		padding: 0px;
+		 /* added today  for course bot padd*/
+	}
+	
+	.textt{
+		text-align:justify;
+		font-size: 17px;
+		font-family: 'Roboto', Arial;
+		color:#6d6e70	
+	}
+	.texttt{
+		
+		text-align:justify;
+		font-size: 17px;
+		font-family: 'Roboto', Arial;
+		color:#6d6e70;
+		line-height: 21px;
+		
+	}
+	
+	.mobile .heading{
+		background-color: #105d39;
+		color: #FFF;
+		text-align:center;
+		border-bottom: none;
+		padding-top: 15px;
+		font-size:24px;
+		font-weight:bold;
+		
+	}
+	
+	.mobile .list-inline li.pd{
+		padding:0px;
+		text-align:center;
+	}
+	
+	.mobile .list-inline li{
+		width: 100%;
+		text-align: center;
+	}
+	
+	.mobile .lasthighlight{
+		clear:both;
+		text-align:center;
+		width:100%
+	}
+	
+	.mobile ul.benefits-list {
+		list-style-image:none;
+		list-style: none;
+		
+	}
+	
+	.mobile ul.circlelist{
+	    list-style-type:disc;
+		padding:0 0 0 20px;
+		padding-bottom: 15px; /*  this was for bot padding */
+		font-size:17px;
+		padding-top:8px;
+		color:#6d6e70;
+	}
+	
+	.mobile ul.circlelist1{
+	    list-style-type:disc;
+		padding:0 35px 0 35px;
+		padding-bottom: 15px; /*  this was for bot padding */
+		font-size:17px;
+		padding-top:8px;
+		text-align: justify;
+		color:#6d6e70;
+	}
+	
+	.panel-heading{
+		padding: 10px 0;
+		background-color:none;
+	}
+	
+	.panel-default > .panel-heading{
+		background-color:#fff;
+	}
+
+	.mobile ul.benefits-list.circlelist li::before {
+	  /*content: "• ";
+	  color: #ababab; /* or whatever color you prefer */
+	}
+	
+	.mobile .faculty-image {
+		width: 95%;
+	}
+	
+	.mobile ul.noliststyle{
+		list-style-image:none;
+		list-style: none;
+		list-style-type:none;
+		padding:0 0 0 20px;
+		line-height: 25px;
+		font-size: 17px;
+		color:#6d6e70;
+	}
+	
+	.mobile ul.noliststyle li::after {
+		margin:2px;
+	}
+	
+	.mobile ul.mailicon li a{
+		color:#105d39;
+		word-wrap:break-word;
+	}
+	
+	.mobile ul.mailicon{
+		list-style-image:url('http://emeritus.org/mailer/designthinking_2017/mailicon.png');
+		font-size: 16px;
+		padding: 0 0 0 45px;
+		line-height: 20px;
+	}
+	
+	.mobile .noliststyle li img{
+		float: left;
+	    margin-right: 10px;
+		margin-top: 3px;
+
+	}
+	.mobile .mob-pd15{
+		padding: 0 15px;
+	}
+	
+	.mobile iframe.mob-pd15{
+		height: 200px;
+	}
+	.gotop{
+		position:fixed;
+		bottom:0px;
+		background-color:#b30839;
+		width:100%;
+		line-height:50px;
+		text-align:center;
+		border-top:2px solid;
+		border-bottom:2px solid;
+		font-family:Crimson Text;
+		font-size:22px;
+		font-weight:600;
+	}
+	
+	.panel-heading a span {
+    color:#b50f3e;
+	font-size:23px;
+	font-family:Crimson Text;
+	font-weight:600;
+	}
+	.panel-heading a span.sucatt {
+    color: #0f5d39;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: none;
+	font-weight:600;
+	}
+	.mobile ul.listsize{
+		font-size: 16px;
+		padding: 0 0 0 10px;
+	}
+	.form-horizontal {
+		background:#b50f3e;
+		font-family: ''Roboto', Arial', sans-serif;
+		padding: 0;
+		color: #fff;
+		margin-bottom: 0;
+		padding-bottom: 10px;
+	}
+	.form-horizontal p {
+		text-align:center;
+	}
+	.faculty-image{
+		margin: 0px 15px 10px 6px;
+	}
+	.benefits-head {
+    font-family: ''Roboto', Arial', sans-serif;
+    font-size: 18px;
+    color: #007056;
+    font-weight: bold;
+	margin-bottom:3px;
+	}
+	
+	.pro-text {
+    background-color: #fff;
+    padding: 15px
+	}
+	
+	
+	.btn-pink {
+    background-color: #b30839;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+	}
+	.pro-container {
+    width: 82%;
+    margin: 0 auto;
+    border-bottom: 10px #0f5d39;
+	}
+	.prog-name {
+    color: #0f5d39;
+    font-family: "Crimson Text";
+    font-size: 1.33em;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 300px;
+    min-height: 41px;
+	}
+	.prog-start-date {
+    color: #b30839;
+    font-family: 'Roboto', Arial;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+	}
+	.imgbox{
+		padding: 15px;
+		box-shadow:4px 1px 18px 11px #d0d0d0;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.pro-container {
+    max-width: 370px;
+    margin: 0 auto;
+	border-bottom: 10px solid #0f5d39;
+	margin-bottom: 20px;
+	}
+	
+	.bg-mob-bottom{
+		background-color: #e6e6e6;
+	}
+	
+	 .bg-mob-bottom .heading{
+		color: #105d39;
+		text-align:center;
+		border-bottom: none;
+		font-size:30px;
+		font-family:Crimson Text;
+		font-weight:bold;
+	}
+	
+	.mobile-gray-bg{
+		margin-top:4px;
+	}
+	.upcome .head{
+		
+	}
+	.new{
+		color:#0f5d39;
+		font-size:14 px;
+		font-weight:bold;
+		font-family:'Roboto', Arial;
+		
+	}
+	.panel-default > .panel-heading {
+    background-color: #fff;
+	
+	}
+
+	
+	.benefitshead{
+    color: #6d6e70;
+	line-height: 19px;
+	font-size:14px;
+	font-family:'Roboto',Arial;
+    font-weight: regular;
+	}
+
+
+	#col2{
+		xmargin-left:25px;
+	}
+	#footer .outer-content {
+    min-height: 1px;
+    margin-bottom: 20px;
+	}
+	.seperater{
+		
+		border-bottom:1px solid #b2b2b2;
+		margin-bottom:20px;
+		}
+		.innerone{
+			clear:both;
+		}
+	.form-horizontal p.error, .form-horizontal span.error {
+    color: #ff8484;
+    padding: 0px;
+    font-size: 12px;
+    margin: 0px;
+    text-align: left;
+	clear:both;
+}
+		
+}
+
+
+
+
+@media only screen and (min-width:550px) and (max-width:568px){
+	.bifurcator {
+    border-left: 1px solid #c8c8c8;
+    position: absolute;
+    top: 7px;
+    bottom: -6px;
+    left: -2px;
+}
+.banner-bgg .schoollogocontainer {
+    padding: 0px;
+    text-align: center;
+    margin-top: -21px;
+}
+.banner-bgg .schoolcontainer {
+    color: #333;
+    height: 70px;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 25px;
+}
+.bifurcatortop{
+	top: 3px;
+    bottom: -5px;
+    left: 6px;
+}
+	 #collogo {
+    margin-left: 0px;
+    margin-top: 1px;
+    padding-right: 0;
+}
+}
+	
+
+@media only screen and (min-width:401px) and (max-width:415px) {
+
+	.banner-bgg .schoolcontainer{
+    color: #333;
+    height:70px;
+    padding:0px;
+    text-align:left;
+	font-size:14px;
+	top:20px;  
+}
+	
+	.banner-bgg .schoollogocontainer{
+	 padding:0px;
+    text-align:left;
+	margin-top:-25px; 
+	padding-right:7px;
+		
+}
+.bifurcatortop{
+	border-left: 1px solid #c8c8c8;
+	 position: absolute;
+	 top: 8px;
+	 bottom:0px;
+	 left:-10px;
+}
+.bifurcator {
+    border-left: 1px solid #c8c8c8;
+    position: absolute;
+    top: 7px;
+    bottom: 5px;
+    left: 6px;
+}
+}
+
+
+
+@media only screen and (min-width:750px) and (max-width: 768px) {
+.mobile-hide {
+    display: none;
+}
+.desktop-hide {
+    display: block;
+}
+
+.form {
+    position: relative;
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+    top: 0;
+    margin-left: 2%;
+}
+.form-horizontal h1 {
+    font-family: 'Crimson Text', serif;
+    color: #fff;
+    margin-top: 9px;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 13px 15px 0 15px;
+}
+.pro-text {
+    background-color: #e6e6e6;
+    padding: 15px;
+    min-height: 300px;
+}
+.bifurcatortop{
+	border-left: 1px solid #c8c8c8;
+	 position: absolute;
+	 top: 4px;
+	 bottom:0px;
+	 left:15px;
+}
+.pro-text {
+    background-color: #e6e6e6;
+    padding: 15px;
+   
+}
+
+.list-inline>li {
+    display: block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.banner-bgg .schoolcontainer{
+    color: #333;
+    height: 50px;
+    padding:0px;
+	font-size:18px;
+    text-align: center;
+}
+.banner-bgg .schoollogocontainer{
+    padding:0px;
+    text-align: center;
+}
+.banner-bgg {
+    background: none;
+    margin-top: 5%;
+}
+.form-horizontal {
+    background: none repeat scroll 0px 0px #b50f3e;
+}
+.form-horizontal p.error, .form-horizontal span.error {
+    color: #ff8484;
+    padding: 0px;
+    font-size: 12px;
+    margin: 0px;
+    text-align: left;
+	clear:both;
+}
+.gotop {
+    position: fixed;
+    bottom: 0px;
+    background-color: #b30839;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    font-family: Crimson Text;
+    font-size: 22px;
+    font-weight: 600;
+}
+}
+
+@media only screen and (max-width: 375px){
+		.banner-bgg .schoolcontainer{
+    color: #333;
+    height: 60px;
+    padding:0px;
+    text-align:left;
+	font-size:12px;
+	padding-top:20px;  
+}
+	
+	.banner-bgg .schoollogocontainer{
+	 padding:0px;
+    text-align:center;
+	margin-top:-20px; 
+	padding-right: 7px;
+		
+}
+.bifurcatortop{
+	border-left: 1px solid #c8c8c8;
+	 position: absolute;
+	 top: 8px;
+	 bottom:5px;
+	 left:-10px;
+}
+	
+	.school-logo {
+    height: 45px;
+    display: table;
+    margin-top:10px !important;
+	}
+	.school-logo span{
+		font-size:14px;
+	}
+	
+	.form {
+	padding: 0px;
+	top: 16px;
+	margin: 0;
+	}
+	.form #pardot-form{
+		width: 85%;
+		margin-bottom: 0px;
+	}
+.bifurcator{
+	border-left: 1px solid #c8c8c8;
+	 position: absolute;
+	 top: 12px;
+	 bottom: 11px;
+	 left:6px;
+}	.form #pardot-form {
+    width: 95%;
+    margin-bottom: 0px;
+}
+#collogo {
+    margin-left: 0px;
+    margin-top: 17px;
+    padding-right: 0px;
+}
+}
+
+@media only screen and (min-width:310px) and (max-width: 320px) {
+#collogo {
+    margin-left: 0px;
+    margin-top: 24px;
+    padding-right: 0px;
+}
+}
+@media only screen and (min-width:416px) and (max-width:524px){
+
+.bifurcator {
+    border-left: 1px solid #c8c8c8;
+    position: absolute;
+    top: 7px;
+    bottom: 5px;
+    left: 4px;
+}
+}
+@media only screen and (min-width:525px) and (max-width:549px){
+
+	
+	.bifurcator {
+    border-left: 1px solid #c8c8c8;
+    position: absolute;
+    top: 7px;
+bottom: 4px;
+    left: 4px;
+}
+
+@media only screen and (min-width:569px) and (max-width:617px){
+.bifurcator {
+    border-left: 1px solid #c8c8c8;
+    position: absolute;
+    top: 7px;
+    bottom: 0px;
+    left: -3px;
+}
+}
+
+
+@media only screen and (min-width:401px) and (max-width:415px) {
+	
+#collogo {
+    margin-left: 0px;
+    margin-top: 11px;
+    padding-right: 0;
+}	
+.bifurcator {
+    border-left: 1px solid #c8c8c8;
+    position: absolute;
+    top: 7px;
+    bottom: 7px;
+    left: 6px;
+}
+	.form #pardot-form {
+    width: 97%;
+    margin-bottom: 20px;
+}
+.banner-bgg .schoolcontainer {
+    color: #333;
+    height: 70px;
+    padding: 0px;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 7px;
+    top: 25px;
+}
+
+}
+
+
+@media only screen and (min-width: 600px) and (max-width:667px){
+	
+	.form {
+    padding: 0px;
+    top: 35px;
+    margin: 0;
+    background: #b50f3e;
+}
+h1 {
+    font-size: 28px;
+    font-family: 'Crimson Text';
+    font-weight: bold;
+    margin-top: 39px;
+    text-align: center;
+    line-height: 30px;
+    padding: 0px;
+}
+.banner-bgg .schoolcontainer{
+    color: #333;
+    height: 60px;
+    padding:0px;
+    text-align:center;
+	font-size:14px;
+	padding-top:20px;  
+}
+	
+	.banner-bgg .schoollogocontainer{
+	 padding:0px;
+    text-align:center;
+	margin-top:-20px;  	
+		
+}
+#collogo {
+    margin-left: 0px;
+     margin-top:0px;
+    padding-right: 0;
+}
+.bifurcatortop{
+	border-left: 1px solid #c8c8c8;
+	 position: absolute;
+	 top: 4px;
+	 bottom:0px;
+	 left:18px;
+}
+	.bifurcator {
+    border-left: 1px solid #c8c8c8;
+    position: absolute;
+    top: 3px;
+    bottom: 1px;
+    left: -13px;
+}
+}
+
+@media only screen and (max-width: 360px) {
+	.mobile .heading ,  .bg-mob-bottom .heading{
+		font-size: 20px;
+	}
+	
+	.form #pardot-form {
+		width: 85%;
+		margin-bottom: 0px;
+	}
+	.bifurcator{
+	border-left: 1px solid #c8c8c8;
+	 position: absolute;
+	 top: 12px;
+	 bottom: 11px;
+	 left:6px;
+}
+	
+}
+
+
+@media only screen and (min-width: 376px) and (max-width: 400px){
+.banner-bgg .schoolcontainer {
+    color: #333;
+    height: 70px;
+    padding: 0px;
+    text-align: left;
+    font-size: 13px;
+    padding-top: 20px;
+    top: 12px;
+}
+	
+.banner-bgg .schoollogocontainer{
+	 padding:0px;
+    text-align:left;
+	margin-top:-20px;
+	padding-right:7px;
+		
+}
+#mitlogo {
+    margin-left: 0px;
+    margin-top: 18px;
+    padding-right: 0;
+}
+
+.bifurcatortop{
+	border-left: 1px solid #c8c8c8;
+	 position: absolute;
+	 top: 8px;
+	 bottom:0px;
+	 left:-8px;
+}
+	
+	.school-logo span, .school-logo img {
+    vertical-align: middle;
+    display: table-cell;	
+	font-size: 14px;
+	}
+	
+	.school-logo {
+    height: 70px;
+    display: table;
+	}
+	
+	.form #pardot-form {
+		width: 85%;
+		margin-bottom: 20px;
+	}
+	#collogo {
+    margin-left: 0px;
+    margin-top: 16px;
+    padding-right: 0;
+}
+	.form #pardot-form {
+    width: 94%;
+    margin-bottom: 20px;
+}
+.bifurcator {
+    border-left: 1px solid #c8c8c8;
+    position: absolute;
+    top: 8px;
+    bottom: 10px;
+    left: 5px;
+}
+}	
+
+@media only screen and (max-width:350px) {
+	.banner-bgg .schoolcontainer{
+    color: #333;
+    height: 50px;
+    padding:0px;
+    text-align:left;
+	font-size:10px;
+	padding-top:20px;
+}
+	
+	.banner-bgg .schoollogocontainer{
+	padding:0px;
+    text-align:left;
+	margin-top:-20px;
+	padding-right: 7px;
+	
+	}
+	
+.bifurcatortop{
+	border-left: 1px solid #c8c8c8;
+	 position: absolute;
+	 top: 4px;
+	 bottom:0px;
+	 left:-10px;
+}
+
+	#mitlogo{
+		max-width:100%
+		
+	}
+	.form {
+    padding: 0px;
+    top: 28px;
+    margin: 0;
+}
+	
+	.form #pardot-form {
+		width: 98%;
+		margin-bottom: 0px;
+	}
+	.school-logo span {
+    font-size: 12px;
+}
+	#pardot-form h2, #pardot-form h1 {
+    font-size: 28px;
+    font-family: 'Crimson Text';
+    font-weight: bold;
+    margin-top: 33px;
+    text-align: center;
+    line-height: 30px;
+    padding: 0px;
+}	
+.bifurcator {
+    border-left: 1px solid #c8c8c8;
+    position: absolute;
+    top: 10px;
+    bottom: 13px;
+    left: 6px;
+}
+.benefitshead {
+    color: #6d6e70;
+    line-height: 19px;
+    font-size: 13px;
+    font-family: 'Roboto',Arial;
+    font-weight: regular;
+}
+.small, small {
+    font-size: 84%;
+}
+#collogo {
+    margin-left: 0px;
+    margin-top: 16px;
+    padding-right: 0px;
+}
+}

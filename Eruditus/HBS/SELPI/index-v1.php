@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>SELPI Harvard Business School</title>
+<!-- Tracking Code start-->
+<!-- Google start-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-60731492-1', 'auto');
+  ga('send', 'pageview');
+ 
+</script>
+<!--Google end-->
+<!--fb remarketing start-->
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '1576886305931743']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript>
+<img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1576886305931743&amp;ev=PixelInitialized" />
+</noscript>
+<!--fb remarketing end-->
+<!-- Tracking Code end-->
+<script src="js/countries.js"></script>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<!--  <link href="css/bootstrap.css" rel="stylesheet">  -->
+<link href="css/style-v1.css?v=1.0.5" type="text/css" rel="stylesheet"/>
+<link href="css/font-awesome.min.css" rel="stylesheet"/>
+<script>
+ function IsNumeric(sText)
+            {
+                var ValidChars = "0123456789.#@*_-\/|$%:,;<>";
+                var IsNumber=true;
+                var Char;
+                for (i = 0; i < sText.length && IsNumber == true; i++) 
+                  { 
+                      Char = sText.charAt(i); 
+                      if (ValidChars.indexOf(Char) != -1) 
+                        {
+                            IsNumber = "false";
+                            alert ("Please enter characters only.");                        
+                        }
+                  }
+               return IsNumber;   
+            }//character validation
+
+            function IsDrop(sText)
+            {
+                var ValidChars = "0123456789#@*_-\/|$%:;<>";
+                var IsNumber=true;
+                var Char;
+                    
+                for (i = 0; i < sText.length && IsNumber == true; i++) 
+                  { 
+                      Char = sText.charAt(i); 
+                      if (ValidChars.indexOf(Char) != -1) 
+                        {
+                            IsNumber = "false";
+                        }
+                  }
+               return IsNumber;   
+            }//drop down validation
+        
+        /*  function IsDrop1(sText)
+            {
+                var ValidChars = "0123456789#@*_\|%:;<>.";
+                var IsNumber=true;
+                var Char;
+                    
+                for (i = 0; i < sText.length && IsNumber == true; i++) 
+                  { 
+                      Char = sText.charAt(i); 
+                      if (ValidChars.indexOf(Char) != -1) 
+                        {
+                            IsNumber = "false";
+                            alert ("Please selct the Country of Residence");
+                        }
+                  }
+               return IsNumber;   
+            } //residenceCountry drop down validation
+            
+            
+            function IsDrop2(sText)
+            {
+                var ValidChars = "0123456789#@*_\|%:;<>.";
+                var IsNumber=true;
+                var Char;
+                    
+                for (i = 0; i < sText.length && IsNumber == true; i++) 
+                  { 
+                      Char = sText.charAt(i); 
+                      if (ValidChars.indexOf(Char) != -1) 
+                        {
+                            IsNumber = "false";
+                            alert ("Please selct the preferred Time for the Session");
+                        }
+                  }
+               return IsNumber;   
+            }// sessionTime drop down validation  */
+            
+        
+            function IsChar(sText)
+            {
+                var ValidChars = "0123456789+ ";
+                var IsNumber=true;
+                var Char;
+                
+                for (i = 0; i < sText.length && IsNumber == true; i++) 
+                  { 
+                      Char = sText.charAt(i); 
+                      if (ValidChars.indexOf(Char) == -1) 
+                         {
+                            IsNumber = "false";
+                            alert ("Please enter numeric only.");                       
+                         }
+                  }
+               return IsNumber;   
+            }//number validation
+             function IsCharCode(sText)
+            {
+                var ValidChars = "0123456789+";
+                var IsNumber=true;
+                var Char;
+                
+                for (i = 0; i < sText.length && IsNumber == true; i++) 
+                  { 
+                      Char = sText.charAt(i); 
+                      if (ValidChars.indexOf(Char) == -1) 
+                         {
+                            IsNumber = "false";
+                            alert ("Please enter numeric only.");                       
+                         }
+                  }
+               return IsNumber;   
+            }//number validation
+			function IsCharMobile(sText)
+            {
+                var ValidChars = "0123456789";
+                var IsNumber=true;
+                var Char;
+                
+                for (i = 0; i < sText.length && IsNumber == true; i++) 
+                  { 
+                      Char = sText.charAt(i); 
+                      if (ValidChars.indexOf(Char) == -1) 
+                         {
+                            IsNumber = "false";
+                            alert ("Please enter numeric only.");                       
+                         }
+                  }
+               return IsNumber;   
+            }//number validation
+            function IsChar1(sText)
+            {
+                var ValidChars = ".#@*_-\/|$%+-=:;<>";
+                var IsNumber=true;
+                var Char;
+                
+                for (i = 0; i < sText.length && IsNumber == true; i++) 
+                  { 
+                      Char = sText.charAt(i); 
+                      if (ValidChars.indexOf(Char) == -1) 
+                         {
+                            IsNumber = "false";
+                            alert ("Please enter in the given format only.");                       
+                         }
+                  }
+               return IsNumber;   
+            }//phone number validation
+        //dont change the above code
+                
+        function validate()
+        {
+                  //title validation
+          /*  if(document.frm.title.value=="blank")
+            {
+                alert("Please select the Title");
+                return false;
+                document.frm.title.focus();
+            }//first name
+            else (document.frm.title.value!="")
+            {
+                var mytext=document.frm.title.value;
+                var number=IsDrop(mytext);
+                if (number=="false")
+                {
+                    document.frm.title.value="";
+                    document.frm.title.focus();
+                    return false;
+                }
+            }//titlevalidation
+            */
+            
+            if(document.frm.salutation.value=="")
+            {
+                alert("Please Select Salutation");
+                return false;
+                document.frm.salutation.focus();
+            }//last name
+            //first name validation
+            if(myTrim(document.frm.first_name.value)=="")
+            {
+                alert("Please enter the First Name");
+                return false;
+                document.frm.first_name.focus();
+            }//first name
+            else (document.frm.first_name.value!="")
+            {
+                var mytext=document.frm.first_name.value;
+                var number=IsNumeric(mytext);
+                if (number=="false")
+                {
+                    document.frm.first_name.value="";
+                    document.frm.first_name.focus();
+                    return false;
+                }
+            }//first name validation
+            
+               //last name validation
+            if(myTrim(document.frm.last_name.value)=="")
+            {
+                alert("Please enter the Last Name");
+                return false;
+                document.frm.last_name.focus();
+            }//last name
+            else (document.frm.last_name.value!="")
+            {
+                var mytext=document.frm.last_name.value;
+                var number=IsNumeric(mytext);
+                if (number=="false")
+                {
+                    document.frm.last_name.value="";
+                    document.frm.last_name.focus();
+                    return false;
+                }
+            }//last name validation
+            
+        if(myTrim(document.frm.company.value)=="")
+            {
+                alert("Please enter your Company name");
+                return false;
+                document.frm.company.focus();
+            }//company
+            else (document.frm.company.value!="")
+            {
+                var mytext=document.frm.company.value;
+                var number=IsNumeric(mytext);
+                if (number=="false")
+                {
+                    document.frm.company.value="";
+                    document.frm.company.focus();
+                    return false;
+                }
+            }//company validation
+            
+            
+            if(myTrim(document.frm.title.value)=="")
+            {
+                alert("Please enter your Designation");
+                return false;
+                document.frm.title.focus();
+            }//company
+            else (document.frm.title.value!="")
+            {
+                var mytext=document.frm.title.value;
+                var number=IsNumeric(mytext);
+                if (number=="false")
+                {
+                    document.frm.title.value="";
+                    document.frm.title.focus();
+                    return false;
+                }
+            }//designation validation
+        
+
+               //city validation
+            if(myTrim(document.frm.city.value)=="")
+            {
+                alert("Please enter your City");
+                return false;
+                document.frm.city.focus();
+            }//city
+            else (document.frm.city.value!="")
+            {
+                var mytext=document.frm.city.value;
+                var number=IsNumeric(mytext);
+                if (number=="false")
+                {
+                    document.frm.city.value="";
+                    document.frm.city.focus();
+                    return false;
+                }
+            }//city validation
+        
+         if(document.frm.country.value==-1 || document.frm.country.value=="")
+            {
+                alert("Please enter your Country");
+                return false;
+                document.frm.country.focus();
+            }//last name
+            else (document.frm.country.value!="")
+            {
+                var mytext=document.frm.country.value;
+                var number=IsNumeric(mytext);
+                if (number=="false")
+                {
+                    document.frm.country.value="";
+                    document.frm.country.focus();
+                    return false;
+                }
+            }//country validation
+        
+            if(document.frm.workexp.value=="")
+            {
+                alert("Please Select your Work Experience");
+                return false;
+                document.frm.workexp.focus();
+            }//last name
+            /*
+			if(document.frm.attenddate.value=="")
+            {
+                alert("Please Select When are you planning to attend program?");
+                return false;
+                document.frm.attenddate.focus();
+            }//last name
+            if(document.frm.finance.value=="")
+            {
+                alert("Please Select How will you be financing your program");
+                return false;
+                document.frm.finance.focus();
+            }*/
+            
+            //email    
+            if(document.frm.email.value=="")
+            {
+                alert("Please specify your Email address.")
+                document.frm.email.focus()
+                ok=false
+                return ok
+            }
+            else//email
+            {
+                var str =/[-a-zA-Z0-9_\.]+@[-a-zA-Z0-9]+\.[-a-zA-Z0-9\.]+/;
+                var eflag = document.frm.email.value.match(str);
+                if(eflag!=document.frm.email.value)
+                {
+                    alert("Please enter a valid Email Address.")
+                    document.frm.email.focus();
+                    document.frm.email.select();
+                    return false;
+                }
+            }  //email validation
+           
+            //code validation
+        
+			if(document.frm.code.value=="")
+            {
+                alert("Please enter the country code");
+                document.frm.code.focus();
+                return false;
+            }//phone
+            else if(document.frm.code.value!="")
+            {
+                var mytext=document.frm.code.value;
+                var number=IsCharCode(mytext);
+                if (number=="false")
+                {
+                    document.frm.code.value="";
+                    document.frm.code.select();
+                   
+                    return false;
+                }
+            }
+			else (document.frm.code.value!="")
+            {
+				var mytext=document.frm.code.value;
+				 var len=mytext.length;
+				 if(len>4)
+				 {
+                alert("Country code Should be of only 3 Digits");
+                document.frm.code.focus();
+				 return false;
+				 }
+            }
+            //code validation
+            //phone validation
+        if(document.frm.mobile.value=="")
+            {
+                alert("Please enter the Phone Number");
+                document.frm.mobile.focus();
+                return false;
+            }//phone
+            else (document.frm.mobile.value!="")
+            {
+                var mytext=document.frm.mobile.value;
+                var number=IsCharMobile(mytext);
+                if (number=="false")
+                {
+                    document.frm.mobile.value="";
+                    document.frm.mobile.select();
+                   
+                    return false;
+                }
+            }//phone validation
+        
+        
+            trackEvent('click','SELPI LP','FormSubmit','Form_Submit');
+		   
+            document.frm.action="submit.php";
+            document.frm.submit();
+        }//validate
+        function myTrim(x) {
+            return x.replace(/^\s+|\s+$/gm,'');
+        }
+    function alt_null()
+{
+document.getElementById("frm").reset();
+}   
+function trackEvent(event, category, action, label) {
+		//ga('send', 'event', category, action, label);
+		console.log('GA==' + event + '==' + category + '==' + action + '==' + label);
+	} 
+</script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head><body>
+<header>
+  <div class="container header-border">
+    <div class="row pt">
+      <div class="col-md-6 col-sm-6 col-xs-12" style=" z-index: 100 !important; "> <img src="images/logo.png" class="img-responsive logo"> </div>
+    </div>
+  </div>
+</header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="banner"> <img src="images/banner2.jpg" class="mobile-res"/>
+      <!-- <div class="row "> -->
+        <div class="col-lg-5 col-md-6 col-sm-7 col-xs-12 dates">
+          <div class="inner-box">
+            <h3>Senior Executive Leadership Program—India</h3>
+            <p class="banner-head-sm">AUG 2018 – JUN 2019 SESSION | <i class="fa fa-inr"></i> 38,00,000 plus GST</p>
+            <p style=" font-size:16px; margin-bottom:0px;">Modules</p>
+             <p class="module-text"> <i>26–31 AUG 2018 </i> — Module 1 (HBS Campus, Boston, U.S.)<br>
+              <i>03–14 DEC 2018 </i> — Module 2 (TajLands End, Mumbai, India)<br>
+              <i>03–15 FEB 2019 </i> — Module 3 (TajLands End, Mumbai, India)<br>
+              <i>27 MAY–07 JUN 2019 </i> — Module 4 (HBS Campus, Boston, U.S.)</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-5 form"> <a id="regis-form"></a>
+          <form class="form-horizontal" role="form" id="frm" name="frm" method="POST">
+            <h1>Register to Download Application Form</h1>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <div class="col-sm-2">
+                  <select id="salutation" name="salutation" style="border-radius:0px;" class="form-control">
+                    <option value="Mr.">Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Prof.">Prof.</option>
+                  </select>
+                </div>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name">
+                </div>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="company" placeholder="Company Name" name="company">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="title" placeholder="Designation" name="title">
+                </div>
+              </div>
+            </div>
+            <div id="fields">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="city" placeholder="City" name="city">
+                  </div>
+                  <div class="col-sm-6">
+                    <select id="country" name="country" class="form-control">
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group"> </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <select  id="workexp" name="workexp" style="border-radius:0px;" title="Work Experience" class="form-control">
+                    <option value="">Work Experience</option>
+                    <option value="&lt; 10 Years">&lt; 10 Years</option>
+                    <option value="10-15 Years">10-15 Years</option>
+                    <option value="15-20 Years">15-20 Years</option>
+                    <option value="&gt; 20 Years">&gt; 20 Years</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="email" class="form-control" id="email" placeholder="Email Id" name="email">
+                </div>
+              </div>
+              <div class="form-group"> 
+                <!--<div class="col-sm-4">
+      	  <input type="text" class="form-control" id="code" placeholder="Code" name="code">
+           
+            </div>-->
+                
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" id="code" placeholder="Code" name="code" style="margin-bottom:0;">
+                  <p class="bt-text">(e.g +91)</p>
+                </div>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="mobile" placeholder="Phone" name="mobile" style="margin-bottom:0;">
+                  <p class="bt-text">(e.g. 9861623112)</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-group buttonsa">
+              <div class="col-sm-12 text-center">
+                <button type="button" class="btn btn-default btn_blue" onclick="return validate()">Download Application Form</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+</div>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="left-container">
+          <p class="text"><strong style="color:#a41034;">The Senior Executive Leadership Program-India offered by Harvard
+            Business School (HBS) Executive Education</strong> accelerates the transformation of experienced senior executives into leaders well suited to drive the region's high-growth businesses. Taught in a series of modules offered in Boston and Mumbai, this program is designed to take your leadership skills, your career, and your contribution to the next level. You will become a stronger leader who is able to design competitive strategies that deliver real value in a global context, promote continuous innovation, and build accountable, high-performance organizations.</p>
+          <div class="border-p"></div>
+          <h3 class="head">WHAT YOU CAN EXPECT</h3>
+          <p class="text">You will be immersed in an intensive leadership development experience that will improve your ability to help your organization sustain success in a complex global economy. Structured to maximize learning and minimize time away from work, the program's format enables rapidly growing organizations to prepare leaders for the challenges ahead while maintaining business momentum.</p>
+          <!--<p class="more"><i class="fa fa-long-arrow-right"></i> <a href="#">read more</a></p>-->
+          <div class="border-p"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="head">Curriculum</h3>
+        <p class="big-text"><strong>Module 1 -</strong> <span style="color:#a41034;">26–31 AUG 2018</span></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 div-center">
+        <div class="col-sm-7 head2">
+          <p class="">Imperatives for Today's Organizations and Leaders</p>
+        </div>
+        <div class="col-sm-5 head2">
+          <p class="text-right">LOCATION: HBS CAMPUS, BOSTON</p>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <ul class="program-list" style="font-weight:bold;">
+          <li>Strategy</li>
+          <li>Leadership</li>
+          <li>Innovation</li>
+          <li>Globalization</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-p"></div>
+    <div class="row">
+      <div class="col-sm-12">
+        <p class="big-text mt2"><strong>Module 2</strong> - <span style="color:#a41034;">03–14 DEC 2018</span></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 div-center">
+        <div class="col-sm-7 head2">
+          <p class="">Creating and capturing value in a global context</p>
+        </div>
+        <div class="col-sm-5 head2">
+          <p class="text-right">LOCATION: TAJ LANDS END, MUMBAI</p>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <ul class="program-list" style="font-weight:bold;">
+          <li>Competing and growing in today's global economy</li>
+          <li>Creating and delivering customer value</li>
+          <li>Achieving breakthrough service</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-p"></div>
+    <div class="row">
+      <div class="col-sm-12">
+        <p class="big-text mt2"><strong>Module 3</strong> - <span style="color:#a41034;">03–15 FEB 2019</span></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 div-center">
+        <div class="col-sm-7 head2">
+          <p class="">Driving performance at every level</p>
+        </div>
+        <div class="col-sm-5 head2">
+          <p class="text-right">LOCATION: TAJ LANDS END, MUMBAI</p>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <ul class="program-list" style="font-weight:bold;">
+          <li>Organizational performance: Achieving goals</li>
+          <li>Personal Performance: Leading effectively</li>
+          <li>Personal Performance: Negotiating strategically</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-p"></div>
+    <div class="row">
+      <div class="col-sm-12">
+        <p class="big-text mt2"><strong>Module 4</strong> - <span style="color:#a41034;">27 MAY–07 JUN 2019</span></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 div-center">
+        <div class="col-sm-7 head2">
+          <p class="">Creating an Innovative, Agile, And Accountable Organization</p>
+        </div>
+        <div class="col-sm-5 head2">
+          <p class="text-right">LOCATION: HBS CAMPUS, BOSTON</p>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <ul class="program-list" style="font-weight:bold;">
+          <li>Driving innovation and change</li>
+          <li>Leading responsibly</li>
+          <li>Continuing the leadership journey</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 text-center pt-5"> 
+        <a href="#frm">
+          <button class="btn btn-default btn-lg" onclick="trackEvent('click','SELPI LP','ScrollUp','Download_Curriculum')">DOWNLOAD CURRICULUM</button>
+        </a>
+      </div>
+    </div>
+    <div class="border-p"></div>
+    <h3 class="head">WHO IS RIGHT FOR THE PROGRAM</h3>
+    <p>This program is designed for experienced senior executives from any function, industry, or country. Although two of the program's modules take place in India, the program content is global in nature, making it suitable for participants from any part of the world.</p>
+    <p class="mt">Participants typically will have at least 15 to 20 years of work experience and represent diverse growth-focused organizations, including large, established companies; new ventures; family businesses; or growing arms of multinational firms. Appropriate for both general managers and functional leaders, the program is ideal for executives who want to improve their leadership skills and take advantage of new growth opportunities.</p>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 text-center pt-15"> 
+        <a href="#frm">
+          <button class="btn btn-default btn-lg"  onclick="trackEvent('click','SELPI LP','ScrollUp','PROGRAM-DB')">DOWNLOAD BROCHURE</button>
+        </a>
+      </div>
+    </div>
+    <div class="border-p"></div>
+    <h3 class="head">ALUMNI STATUS</h3>
+    <p><span style="color:#a41034;"><strong>Join a Global Community of Successful Executives</strong></span><br>
+      Your HBS experience continues to deliver benefits long after the program ends. Graduates of the Senior Executive Leadership Program—India become alumni of Harvard Business School, joining a network of highly accomplished executives at all stages of their careers.</p>
+    <p>As a lifetime member of the HBS alumni community, you will have access to a range of educational resources and opportunities, including:</p>
+    <ul class="program-list">
+      <li>The HBS Alumni Network – Tap into a global resource of more than 78,000 MBA and Executive Education alumni in 167 countries</li>
+      <li>HBS Alumni Clubs and Associations – Connect with members of 85 Alumni Clubs and Associations worldwide at business, learning, social, and community service events</li>
+      <li>Baker Library/Bloomberg Center Services – Access our vast database of management content and thought leadership assets online </li>
+      <li>Receive a 20-percent discount on regularly priced items, including HBS Press books, Harvard Business Review article reprints, and case studies </li>
+      <li>Enjoy a 30-percent discount on our open-enrollment offerings</li>
+      <li>A lifelong HBS email forwarding address </li>
+      <li>The HBS Job Board for HBS Alumni – Access our exclusive job listings to support your career transitions</li>
+      <li>Alumni-only coaching and career development opportunities, including tools for polishing your résumé and networking</li>
+    </ul>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 text-center pt-5"> 
+        <a href="#frm">
+          <button class="btn btn-default btn-lg" onclick="trackEvent('click','SELPI LP','ScrollUp','Alumni_Status-DB')">DOWNLOAD BROCHURE</button>
+        </a>
+      </div>
+    </div>
+    <div class="border-p"></div>
+    <h3 class="head">PROGRAM DATES & FEE</h3>
+    <div class="row">
+      <div class="col-sm-12">
+        <table class="dates-table table-bordered">
+          <tbody>
+            <tr>
+              <th>DATE:</th>
+              <td>AUG 2018 – JUN 2019 SESSION</td>
+            </tr>
+            <tr>
+              <th>FEES:</th>
+              <td>INR 38,00,000 plus GST</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:15px;">Programs, dates, fees, and faculty are subject to change.</p>
+        <p style="font-size:15px;"><em>In accordance with Harvard University policy, Harvard Business School does not discriminate against any person on the basis of race, color, sex or sexual orientation, gender identity, religion, age, national or ethnic origin, political beliefs, veteran status, or disability in admission to, access to, treatment in, or employment in its programs and activities.</em></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 text-center pt-15"> 
+        <a href="#frm">
+          <button class="btn btn-default btn-lg" onclick="trackEvent('click','SELPI LP','ScrollUp','Program_Date-DB')">DOWNLOAD BROCHURE</button>
+        </a>
+      </div>
+    </div>
+    <div class="border-p"></div>
+    <h3 class="head">ADMISSIONS</h3>
+    <div class="row">
+      <div class="col-sm-12">
+        <p>Because a diverse participant mix is an important part of every HBS Executive Education program, we look for candidates who reflect a broad range of industries, functions, countries, and backgrounds to enrich the learning experience.</p>
+        <!-- <p><strong>Admissions Deadlines</strong></p>
+        <table class="dates-table table-bordered">
+          <tbody>
+            <tr>
+              <th>Round 1 Review:</th>
+              <td>28 DEC 2015 </td>
+            </tr>
+            <tr>
+              <th>Round 2 Review:</th>
+              <td>15 FEB 2016</td>
+            </tr>
+            <tr>
+              <th>Round 3 Review:</th>
+              <td>9 APR 2016</td>
+            </tr>
+          </tbody>
+        </table> -->
+        <p><strong>Fees, Payment, and Cancellations</strong></p>
+        <p>The 38,00,000 plus GST program fee covers tuition, books, case materials, accommodations, and most meals. There is no application fee.</p>
+        <p>No payment is necessary until you have been accepted into an HBS Executive Education program. After admission notification, we will send you an invoice via email.</p>
+        <ul class="program-list">
+          <li>Payment of 10% of the invoice amount is due within 10 days of the invoice date.</li>
+          <li>The balance is due within 30 days of the invoice date.</li>
+          <li>If admission is within 30 days prior to the start of the program, payment is due upon receipt of the invoice.</li>
+          <li>Payment is required prior to the program start date. </li>
+          <li>We accept payment by company check or bank wire transfer. We do not accept payment by credit card. Details are included on the program invoice.</li>
+        </ul>
+        <p>If you need to cancel or defer participation, you must submit your request in writing more than 30 days before the start of the program to receive a full refund. Due to program demand and the volume of preprogram preparation, cancellations or deferrals received 14 to 30 days prior to the start of the program are subject to a fee of one-half of the program fee. Requests received within 14 days are subject to full payment.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 text-center pt-10"> 
+        <a href="#frm">
+          <button class="btn btn-default btn-lg" onclick="trackEvent('click','SELPI LP','ScrollUp','Admissions-DB')">DOWNLOAD BROCHURE</button>
+        </a>
+      </div>
+    </div>
+    <div class="border-p"></div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="footer-box">
+          <p><strong>Connect with a program advisor for a 1-1 session</strong></p>
+          <p>Email: <a href="mailto:hbs_selpi@eruditus.com">hbs_selpi@eruditus.com</a><br>
+            Phone: +91 90290 07437 (India)<br>
+            Phone : +971.4.4302011 (Dubai)</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12"> <a href="http://www.eruditus.com/" target="_blank" onclick="trackEvent('click','SELPI LP','Redirect','ERU Logo')"><img src="images/foot-logo.jpg" class="img-responsive pull-right"></a> </div>
+    </div>
+  </div>
+</section>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- Tracking Code Start--> 
+<script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0071/5326.js" async="async"></script>
+<!-- Google Code for Remarketing Tag --> 
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+---------------------------------------------------> 
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 991259245;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script> 
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;"> <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/991259245/?value=0&amp;guid=ON&amp;script=0"/> </div>
+</noscript>
+<script type="text/javascript">
+
+  _bizo_data_partner_id = "7688";
+
+</script> 
+<script type="text/javascript">
+
+(function() {
+
+  var s = document.getElementsByTagName("script")[0];
+
+  var b = document.createElement("script");
+
+  b.type = "text/javascript";
+
+  b.async = true;
+
+  b.src = (window.location.protocol === "https:" ? "https://sjs" : "http://js") + ".bizographics.com/insight.min.js";
+
+  s.parentNode.insertBefore(b, s);
+
+})();
+
+</script>
+<noscript>
+<img height="1" width="1" alt="" style="display:none;" src="//www.bizographics.com/collect/?pid=7688&fmt=gif" />
+</noscript>
+
+<!-- Google Code for Remarketing Tag end--> 
+<!-- Linkedin insight tag start--> 
+<script type="text/javascript">
+
+  _bizo_data_partner_id = "7688";
+
+</script> 
+<script type="text/javascript">
+
+(function() {
+
+  var s = document.getElementsByTagName("script")[0];
+
+  var b = document.createElement("script");
+
+  b.type = "text/javascript";
+
+  b.async = true;
+
+  b.src = (window.location.protocol === "https:" ? "https://sjs" : "http://js") + ".bizographics.com/insight.min.js";
+
+  s.parentNode.insertBefore(b, s);
+
+})();
+
+</script>
+<noscript>
+<img height="1" width="1" alt="" style="display:none;" src="//www.bizographics.com/collect/?pid=7688&fmt=gif" />
+</noscript>
+<!-- Linkedin insight tag start--> 
+<!--Twitter Tracking Code start-->
+<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">twttr.conversion.trackPid('nu4qu', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nu4qu&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nu4qu&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+</noscript>
+<!--Twitter Tracking Code end-->
+<!-- Tracking Code end-->
+</body>
+<script>
+
+            //populateCountries("country", "state");
+            populateCountries("country");
+        </script>
+<script>
+
+$('#top').click(function(){
+    $('html,body').animate({
+        scrollTop: 0
+    }, 1000);
+});
+</script>
+<!-- begin Pardot Website Tracking code -->
+
+<script type="text/javascript">
+piAId = '64132';
+piCId = '2042';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+<script>$('a[href*="#"]')
+
+  // Remove links that don't actually link to anything
+
+  .not('[href="#"]')
+
+  .not('[href="#0"]')
+
+  .click(function(event) {
+
+    // On-page links
+
+    if (
+
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+
+      &&
+
+      location.hostname == this.hostname
+
+    ) {
+
+      // Figure out element to scroll to
+
+      var target = $(this.hash);
+
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+      // Does a scroll target exist?
+
+      if (target.length) {
+
+        // Only prevent default if animation is actually gonna happen
+
+        event.preventDefault();
+
+        $('html, body').animate({
+
+          scrollTop: target.offset().top
+
+        }, 1000, function() {
+
+          // Callback after animation
+
+          // Must change focus!
+
+          var $target = $(target);
+
+          $target.focus();
+
+          if ($target.is(":focus")) { // Checking if the target was focused
+
+            return false;
+
+          } else {
+
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+
+            $target.focus(); // Set focus again
+
+          };
+
+        });
+
+      }
+
+    }
+
+  });
+
+ </script> 
+
+<!-- end Pardot Website Tracking code -->
+</html>

@@ -1,0 +1,434 @@
+/*Responsive Styles Below*/
+@media all {
+	/**:not(#deals-slide li){transition: opacity 1s ease;}
+	
+	*{
+		-webkit-transition: width 1s ease-in-out;
+		-moz-transition: width 1s ease-in-out;
+		-o-transition: width 1s ease-in-out;
+		transition: width 1s ease-in-out;
+	}*/
+}
+@media screen and (min-width: 1600px) {
+	select, input[type="text"], input[role="textbox"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{padding:10px 0 5px;}
+	#content,#header,#footer{ width: 1600px;}
+	/* Header */
+	#headerArea{min-height:62px;}
+	#logo{top:15px;}
+	#logo img{width:228px; }
+	.header-links li{height:62px}
+}
+@media screen and (min-width: 1401px) and (max-width: 1600px) {
+	#content,#header,#footer{ width: 1400px;}
+
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+}
+/* 1024 screen */
+@media screen and (min-width: 961px) and (max-width: 1200px) {
+	
+}
+@media screen and (min-width: 859px) and (max-width: 960px) {
+	
+}
+@media screen and (min-width: 772px) and (max-width: 860px) {
+	.responsive-img{ width:100%; max-width:100%; height:auto;}
+	#headerArea {
+    background: none repeat scroll 0 0 #F0F0F0;
+    float: left;
+    height: 100px;
+    top: 10px;
+    transition: top 0.2s ease-in-out 0s;
+    width: 100%;
+    z-index: 10;
+}
+#logo_dubai {
+    padding: 0 22px 0 0;
+}
+#logo {
+    margin: 10px 0 0 23px;
+    width: 175px;
+}
+.responsive-img{ max-width:100%; height:auto; width:100%;}
+.banner-resp{ width:100%;max-width:100%; height:auto;}
+}
+/*for ipad*/
+@media screen and (min-width: 641px) and (max-width: 771px) {	
+.responsive-img{ max-width:100%; height:auto;}
+#headerArea {
+    background: none repeat scroll 0 0 #F0F0F0;
+    float: left;
+    height: 100px;
+    top: 10px;
+    transition: top 0.2s ease-in-out 0s;
+    width: 100%;
+    z-index: 10;
+}
+.banner-resp{ width:100%;max-width:100%; height:auto;}
+#logo {
+    margin: 10px 0 0 23px;
+    width: 175px;
+}
+#logo_dubai {
+    padding: 0 22px 0 0;
+}
+}
+@media screen and (min-width: 421px) and (max-width: 640px) {
+	
+}
+@media screen and (min-width: 0px) and (max-width: 420px) {
+	
+}
+@media screen and (max-width: 1024px){
+
+	}
+
+/* 1366 Resolution */
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+	
+
+	}
+
+
+
+@media screen and (min-width: 961px) and (max-width: 1200px) {
+	#container{width:960px}
+
+}
+
+@media screen and (min-width: 859px) and (max-width: 960px) {
+	#container{width:830px}
+
+    /* Responsive Navigation */
+    .subMenu{ width: 830px;}
+    .nav-collapse .homeIcon{cursor: pointer; padding-right:10px}
+    .nav-collapse ul {opacity:0; visibility: hidden; float: left;}
+    .nav-collapse ul.show {opacity:1; visibility: visible;}
+    .nav-collapse li a{padding: 10px 0;}.form-horizontal{ width:87%;}
+}
+
+
+@media screen and (min-width: 772px) and (max-width: 860px) {
+	#container{width:740px}
+	.form-horizontal{ width:87%;}
+    /* Responsive Navigation */
+    .subMenu{ width: 740px;}
+    .nav-collapse .homeIcon{cursor: pointer; padding-right:10px}
+    .nav-collapse ul {opacity:0; visibility: hidden; float: left;}
+    .nav-collapse ul.show {opacity:1; visibility: visible;}
+    .nav-collapse li a{padding: 10px 0;}
+}
+
+
+@media screen and (min-width: 621px) and (max-width: 771px) {
+	#container{width:600px}
+.form-horizontal{ width:100%; top:49px; margin-left:0;}
+    /* Responsive Navigation */
+    .subMenu{ width: 600px;}
+    .nav-collapse .homeIcon{cursor: pointer; padding-right:10px}
+    .nav-collapse ul {opacity:0; visibility: hidden; float: left;}
+    .nav-collapse ul.show {opacity:1; visibility: visible;}
+    .nav-collapse li a{padding: 10px 0;}
+.overview_details.FR > p{padding:0;}
+.facultyone > p{width:100%;}
+.left{ float:none;}
+.section0 {
+    position: relative;
+    top: 71px;
+}
+
+}
+@media screen and (min-width: 481px) and (max-width: 620px) {
+	#container{width:480px}
+    .responsive-img{ width:100%; max-width:100%; height:auto;}
+	#logo { margin: 10px 0 0 23px; width: 150px;}
+    #logo_dubai{ width:150px;}
+    #logo_dubai { width: 190px; }
+    #logo_dubai { padding: 0 51px 0 0;}
+    #logo_purple { padding: 0 20px 0 0; width: 38px;}
+    .day_one{ float:none; width:100%;}
+    .day_two{ float:none; width:100%;}
+
+        /* Responsive Navigation */
+    .subMenu{ width: 480px;}
+    .nav-collapse .homeIcon{cursor: pointer; padding-right:10px}
+    .nav-collapse ul {opacity:0; visibility: hidden; float: left;}
+    .nav-collapse ul.show {opacity:1; visibility: visible;}
+    .nav-collapse li a{padding: 10px 0;}
+}
+
+/* Mobile Landscape & Portrait */
+@media screen and (min-width: 0px) and (max-width: 480px) {
+	#container{width:90%; float: none; margin:0 auto}
+	#banner{ display:none;}
+	.responsive-img{ max-width:100%; height:auto;}
+	#headerArea {
+    float: left;
+    height: auto;
+    top: 26px;
+    transition: top 0.2s ease-in-out 0s;
+    width: 100%;
+    z-index: 10;
+}	.form-horizontal{ width:95%;}		.form-horizontal .control-label{ text-align:left; margin-bottom:10px;}.form-horizontal {
+    height: 699px;
+    margin: 0;
+    width: 95%;
+}
+.form-horizontal {
+    top: 70px;
+}
+.imgposition {
+    position: relative;
+    top: 17px;
+}
+.form a{ font-weight:bold;}
+.overview_details{ margin:0 0 10px 0;}
+    #logo {
+        margin: 0 auto;
+        width: 146px;
+    }
+    #logo.FL {
+        float: none;
+    }
+    #logo_dubai {
+        margin: 0 auto;
+        padding: 0;
+        width: 152px;
+    }
+    
+    .day_one .time ul {
+        color: #666666;
+        padding: 0 0 0 57px;
+    }
+    .day_two .time ul {
+        color: #666666;
+        padding: 0 0 0 57px;
+    }
+    .day_one{ float:none; width:100%;}
+    .day_two{ float:none; width:100%;}
+   .venue_image {
+    display: block;
+    float: none;
+    margin: 20px 0 0 26px;
+    width: 100%;
+}
+    .venue_image{ float:none; width:100%;}
+    .overview_details{ float:left; width:60%;}
+    .overview_details{ float:none; width:100%;}
+    .overview_details.FR{ float:none;}
+    .overview_image{ float:none;}
+    .overview_image.FL{ float:none;}
+    .overview_details p {
+        color: #666666;
+        float: left;
+        font-family: Verdana,Geneva,sans-serif;
+        font-size: 13px;
+        padding: 0 0 10px;
+        width: 100%;
+    }
+    #benefits ul li{ list-style-image:url(../images/bgnav.png); color:#666666; padding:0 0 0 5px; margin:0 0 0 15px; font-size:13px;}
+    #audience p{ color:#666; font-size:13px;}
+    .facultyone p {
+        color: #666666;
+        float: left;
+        font-family: verdana;
+        font-size: 14px;
+        padding: 0 6px 0 0;
+        width: 100%;
+    }
+    .facultytwo p {
+        color: #666666;
+        float: left;
+        font-family: verdana;
+        font-size: 14px;
+        padding: 0 6px 0 0;
+        width: 100%;
+    }
+   
+    
+    /* Responsive Navigation */
+    .subMenu{ width: 90%;}
+    .nav-collapse .homeIcon{cursor: pointer; padding-right:10px}
+    .nav-collapse ul {opacity:0; visibility: hidden; float: left;}
+    .nav-collapse ul.show {opacity:1; visibility: visible;}
+    .nav-collapse li a{padding: 10px 0;}
+  #faculty .row .col-sm-6.col-md-4 {
+    padding: 0 0 20px;
+}
+#benefits {
+    padding-bottom: 20px;
+    top: 83px;
+}
+.section0 {
+    position: relative;
+    top: 83px;
+}
+#curriculum h2 {
+    border-bottom: 1px solid #cccccc;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    height: 56px;
+    padding: 9px 0 12px 20px;
+}
+.venue_details{ width:100%; margin-bottom:20px;}
+.venue_image{ width:80%;}
+.section.section2 {
+    position: relative;
+    top: 96px;
+}
+.section.section3{
+    
+    top: 108px;
+}
+.facultyone img {
+    float: none;
+    margin: 39px 0 0 25px;
+    padding: 10px 0;
+    width: 80%;
+}
+#connect{ display:none;}
+.section6{ display:none;}
+.posimage{ top:-18px;}
+
+
+.facultytwo {
+    margin: 0;
+    position: relative;
+    top: 12px;
+}
+.facultytwo img {
+    float: none;
+    margin: 20px auto 0 30px;
+    padding: 10px 0;
+    width: 80%;
+}
+.section.section4 {
+    margin: 29px 0 0!important;
+}
+.facultytwo {
+    border-bottom: 1px solid #a4a4a4;
+    padding-bottom: 22px !important;
+}
+p{font-size:13px!important;}
+.contactbox{ display:none;}
+.mobile{ display:block;}
+.form-horizontal .form-group{ padding:0 0 0 20px;}
+#connect{ display:none;}
+}
+	
+/* Mobile Landscape */
+@media screen and (min-width: 321px) and (max-width: 480px){
+.col-sm-offset-2.col-sm-10{margin:0 0 0 15px;width:100%;}
+.col-sm-10{width:100%;}
+.buttona{width:100%;}	
+label{width:100%!important;}
+button{margin-top:8px;}
+nav{display:none;}	 
+.mobile{ display:block;}
+#mob3 {
+    position: relative;
+    top: 127px;
+}
+.banner-resp{ max-width:100%; width:100%; height:auto;}
+.form-horizontal .form-group{ padding:0 0 0 20px;}
+.submit {
+    background: url("../images/submit.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    border: 0 none;
+    border-radius: 0;
+    float: left;
+    height: 35px;
+    margin: 8px 10px 0 0;
+    padding: 0 !important;
+    width: 110px;
+}
+.form-horizontal {
+    height: 624px;
+    margin: 0;
+    width: 95%;
+}
+.section0 {
+    position: relative;
+    top: 110px;
+}
+
+
+.section.section2 {
+    position: relative;
+    top: 133px;
+}
+#benefits {
+    padding-bottom: 20px;
+    top: 122px;
+}
+#faculty {
+    border-bottom: 1px solid #9a0000;
+    top: 140px;
+}
+.section.section4 {
+    margin: 79px 0 0 !important;
+}
+.left {
+    float: left;
+    position: relative;
+    top: 29px;
+}
+}
+
+/* Smartphones Portrait */
+@media only screen and (max-width : 320px) {
+.col-sm-offset-2.col-sm-10{margin:0px;width:100%;}
+.col-sm-10{width:100%;}
+.buttona{width:100%;}	
+label{width:100%!important;}
+button{margin-top:8px;}
+nav{display:none;}
+.banner-resp{ width:100%;max-width:100%; height:auto;}
+.form-horizontal .form-group{ margin-left:0;}
+.submit{ margin-top:8px;}
+.erulogo {
+    padding: 5px 0;
+}
+#red {
+    border-bottom: 1px solid #ad002e;
+    padding: 56px 0 9px;
+}
+.mobile {
+    display: block;
+}
+#connect{ display:none;}
+#mob3 {
+    position: relative;
+    top: 126px;
+}
+.form-horizontal {
+    height: 637px;
+    margin: 0;
+    width: 95%;
+}
+#curriculum h2{ padding-top:20px;}
+#faculty {
+    border-bottom: 1px solid #9a0000;
+    top: 103px;
+}
+#faculty .row{ margin:0; padding:0;}
+#faculty img{ width:96%; padding-bottom:15px;}
+#participants img{ max-width:90%;}
+.form-horizontal {
+    top: 89px;
+}
+.left{ width:280px;}
+#connect{ display:none;}
+.section6{ display:none;}
+#mob3{ display:block;}
+.form-horizontal .form-group{ padding:0 0 0 20px;}
+#faculty .row .col-sm-6.col-md-4 {
+    padding: 0 0 20px;
+}
+.left {
+    float: left;
+    position: relative;
+    top: 29px;
+}
+}
+

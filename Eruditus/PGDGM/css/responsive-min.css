@@ -1,0 +1,682 @@
+@media (min-width:1200px){
+    .banner{
+        padding-top:90px
+    }
+    footer{
+        margin:0 auto
+    }
+    .about .description,.certified .description{
+        max-width:900px;
+        margin:0 auto
+    }
+}
+@media only screen and (max-width:1350px) and (min-width:1200px){
+    .section-container{
+        padding-left:30px;
+        padding-right:30px
+    }
+    .menu .navbar-nav>li>a{
+        font-size:16px;
+        color:#131313
+    }
+    .menu .btn-1{
+        white-space:normal
+    }
+    .nav-right-logo .btn{
+        margin-top:5px
+    }
+    .banner-content{
+        padding-right:0
+    }
+    .program-details{
+        padding:20px 10px
+    }
+}
+@media only screen and (max-width:1199px) and (min-width:1135px){
+    .section-container{
+        padding-left:30px;
+        padding-right:30px
+    }
+    .menu .navbar-nav{
+        padding-top:3px
+    }
+    .menu .navbar-nav>li>a{
+        color:#131313;
+        padding-top:12px
+    }
+    .menu .nav-left-logo object{
+        height:45px
+    }
+    .menu .nav-left-logo,.menu .nav-right-logo{
+        padding-top:4px
+    }
+    .menu .nav-right-logo img{
+        height:auto
+    }
+    .menu .nav-right-logo object{
+        height:45px
+    }
+    .menu .btn-1{
+        padding:8px 5px;
+        white-space:normal;
+        font-size:11px
+    }
+    .nav-right-logo .btn{
+        width:100%
+    }
+    .banner{
+        padding-top:70px
+    }
+    .banner-content{
+        padding-right:0
+    }
+    .program-details{
+        padding:20px 10px
+    }
+}
+@media only screen and (max-width:1134px) and (min-width:992px){
+    .section-container{
+        padding-left:30px;
+        padding-right:30px
+    }
+    .menu .navbar-nav{
+        padding-top:0
+    }
+    .menu .navbar-nav>li>a{
+        font-size:15px;
+        color:#131313;
+        padding-top:10px
+    }
+    .menu .nav-left-logo object{
+        height:45px
+    }
+    .menu .nav-right-logo,.menu .nav-right-logo{
+        padding-top:0
+    }
+    .menu .nav-right-logo img{
+        height:auto
+    }
+    .menu .nav-right-logo object{
+        height:45px
+    }
+    .menu .btn-1{
+        padding:8px 5px;
+        white-space:normal;
+        font-size:11px;
+        margin-top:0
+    }
+    .nav-right-logo .btn{
+        width:100%
+    }
+    .banner{
+        padding-top:66px
+    }
+    .banner-content{
+        padding-right:0
+    }
+    .program-details{
+        padding:20px 10px
+    }
+    .form-section .header h4{
+        font-size:16px
+    }
+}
+@media only screen and (max-width:1060px) and (min-width:992px){
+    .banner{
+        padding-top:62px
+    }
+}
+@media only screen and (max-width:991px) and (min-width:768px){
+    .rm-mb-mob{
+        margin-bottom:0px!important
+    }
+    .section-container{
+        padding-right:30px;
+        padding-left:30px
+    }
+	#client-slider.owl-carousel .owl-item img {
+		opacity: 0.5;
+		filter: grayscale(100%);
+	}
+	div#accordion1 ul.list-inline {
+		padding-left: 0px;
+		text-align: center;
+	}
+    .section .box,.section-3 .box{
+        padding:30px 0
+    }
+    .section-2 .box{
+        padding:35px 0 40px 0
+    }
+    .section .header,.section-3 .header{
+        padding-bottom:20px;
+        text-align:center
+    }
+    .section .text-right,.section-2 .text-right,.section-3 .text-right{
+        text-align:center
+    }
+    .section-2{
+        text-align:center
+    }
+    .section.Watch-Video .box{
+        padding-bottom:0
+    }
+    footer{
+        max-width:670px;
+        margin:0 auto
+    }
+    .about .description{
+        margin:0 auto
+    }
+    .y-video{
+        padding:0;
+        margin:0 auto
+    }
+    .menu .navbar-nav>li>a{
+        font-size:15px;
+        color:#131313;
+        padding:1px 10px
+    }
+    .menu .btn-1{
+        padding:8px 20px;
+        font-size:18px;
+        white-space:normal
+    }
+    .menu .nav-right-logo img{
+        margin:0 0 0 auto
+    }
+    .banner{
+        padding-top:90px
+    }
+    .banner-bg{
+        background:url(../images/banner-tab.jpg) no-repeat;
+        padding-top:140px;
+        padding-bottom:0;
+        background-size:100% 47%
+    }
+    .div-center{
+        display:block;
+        align-items:normal
+    }
+    .banner-content{
+        text-align:center;
+        padding:0;
+        margin:0
+    }
+    .banner-content h1{
+        font-size:28px;
+        line-height:38px
+    }
+    .form-section{
+        position:relative;
+        margin-top:40px;
+        margin-left:-30px;
+        margin-right:-30px;
+        background-color:#f3f3f3;
+        padding:35px 15px 15px 30px
+    }
+    .form-section .header h4{
+        margin-top:8px
+    }
+    .form-section .btn-submit .btn{
+        width:auto
+    }
+    .program-details{
+        padding:20px 0
+    }
+    .program-details .title{
+        font-size:15px
+    }
+    .program-details .title{
+        font-size:18px
+    }
+    .program-details .program-content{
+        padding-bottom:0
+    }
+    .y-video .embed-responsive,.program-details{
+        min-height:auto
+    }
+    .owl-theme .owl-nav.disabled + .owl-dots{
+        margin-top:30px
+    }
+    .owl-carousel.owl-loaded{
+        padding-top:10px
+    }
+    .owl-carousel .owl-item .caption{
+        line-height:28px;
+        padding-top:16px
+    }
+    .course ul li{
+        float:left;
+        padding-bottom:20px
+    }
+    .syllabus{
+        padding-top:25px
+    }
+    .syllabus ul li:last-child{
+        margin-bottom:28px;
+        padding-bottom:0
+    }
+    .syllabus div:nth-child(2) ul li:last-child{
+        padding-bottom:3px
+    }
+    .certified .description{
+        padding-bottom:22px;
+        text-align:center
+    }
+    .certified-img{
+        padding:0
+    }
+    .certified-img img{
+        margin:0 auto
+    }
+    .apply-section .title{
+        padding:0
+    }
+    .apply-section .description{
+        padding-bottom:30px
+    }
+    .apply-section .btn{
+        margin-top:32px
+    }
+    .footer-logo img{
+        padding-top:10px
+    }
+    footer .footer-note{
+        padding-top:27px
+    }
+}
+@media only screen and (max-width:777px) and (min-width:767px){
+    .banner-bg{
+        padding-top:125px
+    }
+}
+@media only screen and (max-width:767px) and (min-width:677px){
+    .program-details .program-content .col-xs-2{
+        width:12%
+    }
+}
+@media only screen and (max-width:676px) and (min-width:576px){
+    .program-details .program-content .col-xs-2{
+        width:14%
+    }
+}
+@media only screen and (max-width:490px) and (min-width:400px){
+    .program-details .program-content .col-xs-2{
+        width:20%
+    }
+}
+@media only screen and (max-width:399px) and (min-width:200px){
+    .program-details .program-content .col-xs-2{
+        width:25%
+    }
+    .program-details .program-content .rm-padd{
+        padding-right:15px
+    }
+}
+@media only screen and (max-width:767px){
+    .rm-padd-mob{
+        padding:0
+    }
+	.menu .navbar-collapse{
+		padding-bottom:8px;
+	}
+    .rm-mb-mob{
+        margin-bottom:0px!important
+    }
+    div#fields .col-sm-6.col,.col{
+        padding-right:0
+    }
+    .registerform .col-sm-6.col{
+        padding-bottom:11px
+    }
+    .form-group .col-sm-12{
+        padding-right:15px
+    }
+    .loader{
+        left:60%
+    }
+    .menu .navbar-nav{
+        margin:0;
+        padding:0
+    }
+    .menu.navbar-fixed.navbar-hide{
+        top:-150px
+    }
+    .menu .navbar-header{
+        padding-bottom:10px
+    }
+    .menu .section-container{
+        padding:0
+    }
+    .menu .nav-left-logo{
+        padding:0
+    }
+    .menu .nav-right-logo{
+        padding:0
+    }
+    .menu .nav-left-logo img{
+        margin:0;
+        padding-right:10px;
+        padding-left:5px;
+        height:70px
+    }
+    .menu .nav-left-logo object{
+        padding-right:10px;
+        padding-left:5px
+    }
+    .menu .nav-right-logo img{
+        padding-top:5px;
+        padding-right:10px
+    }
+    .menu .nav-right-logo object{
+        padding-top:5px;
+        padding-right:10px;
+        height:70px
+    }
+    .menu .nav-right-logo .btn-1{
+        float:none;
+        width:70%;
+        margin:0 auto;
+        font-size:15px;
+        margin-top:20px
+    }
+    .menu .nav-right-logo .download_icon{
+        float:right;
+        margin-top:5px;
+        margin-right:5px;
+        padding:8px 0;
+        text-transform:uppercase;
+        text-align:center;
+        color:#0080C8
+    }
+    .menu .nav-right-logo .download_icon:hover,.menu .nav-right-logo .download_icon:focus,.menu .nav-right-logo .download_icon:active{
+        text-decoration:none;
+        color:#0080C8
+    }
+    .menu .nav-right-logo .download_icon ul{
+        margin:0;
+        color:#0080C8
+    }
+    .menu .nav-right-logo .download_icon ul li{
+        vertical-align:middle
+    }
+    .menu .nav-right-logo .download_icon .fa{
+        color:#0080C8;
+        font-size:24px;
+        line-height:34px
+    }
+    .menu .nav-right-logo .download_icon .fa:hover{
+        color:#0080C8
+    }
+    .download_icon img.icon{
+        padding-top:0
+    }
+    #mob_download_icon{
+        display:none
+    }
+    .mob_download_icon{
+        padding:5px 10px 0 10px
+    }
+    .mob_download_icon .btn-1{
+        font-size:15px
+    }
+    .section .box,.section-3 .box{
+        padding:30px 0
+    }
+    .section .header,.section-3 .header{
+        padding-bottom:10px;
+        text-align:center
+    }
+    .section.Watch-Video .box{
+        padding-bottom:0
+    }
+    .section-2 .box{
+        padding:35px 0 40px 0
+    }
+    .section .text-right,.section-2 .text-right,.section-3 .text-right{
+        text-align:center
+    }
+    .section-2{
+        text-align:center
+    }
+    .section-container{
+        padding-left:15px;
+        padding-right:15px
+    }
+    .banner{
+        padding-top:96px
+    }
+    .banner-bg{
+        background:none;
+        padding:0
+    }
+    .div-center{
+        display:block;
+        align-items:normal
+    }
+    .banner-bg-content{
+        background-color:#0080c8
+    }
+    .banner-content{
+        padding:0;
+        margin:0;
+        text-align:center
+    }
+    .banner-content h2,.mob-banner-content h2{
+        margin-top:35px;
+        line-height:35px;
+        padding:0 15px;
+        font-size:25px
+    }
+    .mob-banner-content h2{
+        margin-bottom:32px
+    }
+    .banner-content .description{
+        padding-top:33px
+    }
+    .mob-banner-content{
+        background-color:#0080c8;
+        color:#fff
+    }
+    .mob-banner-content .description{
+        font-size:18px;
+        font-weight:300;
+        line-height:28px;
+        padding-top:10px;
+        padding-bottom:32px
+    }
+    .mob-banner-content .mob-banner-img{
+        width:100%
+    }
+    .form-section{
+        position:relative;
+        background-color:#f3f3f3;
+        padding:36px 15px 15px 15px
+    }
+    .form-section .header h4{
+        font-size:17px
+    }
+    .form-section .btn-submit{
+        padding-top:15px
+    }
+    .registerform p:first-child{
+        padding-bottom:0
+    }
+    .program-details{
+        padding:0;
+        padding-top:40px;
+        padding-bottom:40px;
+        margin-top:36px;
+        border-top:2px solid #fff;
+        background-color:transparent
+    }
+    .program-details .program-content{
+        padding-left:0;
+        padding-right:0
+    }
+    .y-video{
+        padding-top:10px
+    }
+    .y-video .embed-responsive,.program-details{
+        min-height:auto
+    }
+    .owl-carousel .owl-item .caption{
+        padding-top:16px
+    }
+    .owl-carousel.owl-loaded{
+        padding-top:20px
+    }
+    .owl-carousel .owl-stage{
+        padding-left:0px!important
+    }
+    .owl-theme .owl-nav.disabled + .owl-dots{
+        margin-top:28px
+    }
+    .carousel{
+        padding-top:5px
+    }
+    .course ul li{
+        float:left;
+        padding-bottom:20px
+    }
+    .course ul li:nth-child(odd){
+        clear:both
+    }
+    .syllabus{
+        padding-top:25px
+    }
+    .syllabus ul li:last-child{
+        margin-bottom:20px;
+        padding-bottom:0
+    }
+    .syllabus div:nth-child(2) ul li:last-child{
+        padding-bottom:3px
+    }
+    .item .testimonial{
+        text-align:center
+    }
+    .testimonial img{
+        margin:0 auto
+    }
+    .testimonial .left-quote{
+        padding-top:0;
+        padding-bottom:16px
+    }
+    .testimonial .right-quote{
+        padding-bottom:0
+    }
+    .testimonial .test-img-1{
+        padding-top:30px
+    }
+    .testimonial .test-img-2{
+        padding-bottom:30px
+    }
+    .testimonial-details ul{
+        text-align:center
+    }
+    .certified .description{
+        padding-bottom:25px;
+        text-align:center
+    }
+    .certified-img{
+        padding:0
+    }
+    .certified-img img{
+        margin:0 auto
+    }
+    .apply-section .title{
+        padding:0
+    }
+    .apply-section .description{
+        padding-bottom:21px
+    }
+    .apply-section .btn{
+        margin-top:32px
+    }
+    .footer-logo img{
+        padding-top:10px
+    }
+    footer .footer-note{
+        padding-top:20px
+    }
+}
+@media only screen and (max-width:591px){
+    .nav-right-logo .btn-1{
+        width:95%;
+        margin-top:10px;
+        font-size:14px
+    }
+}
+@media only screen and (max-width:576px){
+    .banner{
+        padding-top:88px
+    }
+    .menu .nav-left-logo object{
+        height:70px
+    }
+    .menu .nav-right-logo object{
+        height:60px
+    }
+}
+@media only screen and (max-width:480px){
+    .nav-right-logo .btn-1{
+        width:80%;
+        padding:8px;
+        margin-top:15px;
+        font-size:12px;
+        float:right
+    }
+    .menu .nav-left-logo object{
+        height:60px
+    }
+    .menu .nav-right-logo object{
+        height:50px
+    }
+    .banner{
+        padding-top:76px
+    }
+}
+@media only screen and (max-width:420px){
+    .menu .nav-left-logo img,.menu .nav-right-logo img,.menu .nav-right-logo object{
+        height:auto
+    }
+    .banner{
+        padding-top:70px
+    }
+}
+@media only screen and (max-width:400px){
+    .nav-right-logo .btn-1{
+        width:85%;
+        margin-top:12px
+    }
+    .menu .nav-right-logo .download_icon ul li{
+        padding:0;
+        line-height:1.2;
+        font-size:12px
+    }
+    .banner{
+        padding-top:70px
+    }
+    .menu .nav-left-logo object{
+        height:50px
+    }
+    .menu .nav-right-logo object{
+        height:40px
+    }
+}
+@media only screen and (max-width:350px){
+    .menu .nav-right-logo .download_icon{
+        padding-top:0
+    }
+}
+@media only screen and (max-device-width:767px) and (orientation:landscape){
+    .menu .nav-right-logo img{
+        height:60px
+    }
+}
+@media only screen and (max-device-width:420px) and (orientation:landscape){
+    .menu .nav-right-logo img{
+        height:auto
+    }
+}

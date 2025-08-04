@@ -1,0 +1,103 @@
+body
+{
+	text-shadow: none;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	color: #353535;
+}
+header
+{
+	padding: 20px 0px;
+	/*background-color: #105d39;*/
+	border-bottom: 1px solid #dddddd;
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+}
+header img
+{
+	margin: 0 auto;
+}
+.header .title
+{
+	font-size: 36px;
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+section
+{
+	padding: 60px 0px;
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+}
+.form-update
+{
+	padding: 40px 0px;
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+}
+.form-update input[type=checkbox]
+{
+	width: 18px;
+	height: 18px;
+	margin-top: 2px;
+}
+.form-update .checkbox .description
+{
+    padding-left: 20px;	
+    transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+}
+.form-update .description
+{
+	position: relative;
+	padding-bottom: 30px;
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+}
+.form-update .description .title
+{
+	font-weight: bold;
+	padding-bottom: 10px;
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+}
+.form-update .description .title-2
+{
+	color: #39a38f;
+	font-weight: bold;
+	padding-bottom: 10px;
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+}
+.form-update .description .checkbox-inline
+{
+	padding-left: 30px;
+}
+.form-update .description .checkbox-inline input[type=checkbox]
+{
+	margin-left: -30px;
+}
+.btn-update .btn
+{
+	padding: 10px 30px;
+	background-color: #c16725;
+	color: #ffffff;
+}
+@media only screen and (min-width: 1200px)
+{
+	.container { max-width: 800px; }
+}

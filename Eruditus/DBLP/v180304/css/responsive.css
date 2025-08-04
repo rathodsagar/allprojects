@@ -1,0 +1,387 @@
+@media (min-width: 1200px){
+.container {
+    width: 1200px;
+}
+/* .header .col-md-3                { width: 30%; } */
+
+}
+
+@media (max-width: 1200px) {
+	
+	.navbar-default .navbar-nav > li { padding-left: 10px;padding-right: 10px;}
+	.requestForm   { margin-left: 0px;height: auto;width: auto;}
+}
+@media (max-width: 1024px) {
+	.info p:nth-child(3){padding-left: 0px;}
+	.requestForm   { margin-left: -10px;height: auto;width: auto;}
+	.navbar-default .navbar-nav > li   {  padding-left: 31px;padding-right: 25px;}
+	.navbar-default .navbar-nav > li a { padding:14px 0 14px;font-size: 14px; }
+	.requestForm.visible-xs   { box-shadow: 1px 2px 5px #565656;padding-bottom: 30px; }
+
+	.info { display: none; }
+	.header .col-md-3 { margin: 0 auto;float: none; }
+	.first_name input { margin-top: 0 }
+	.requestForm .form-control  { box-shadow: none; }
+
+	.feeSection .buttonSection .btnDownload { /*margin-top: 185px;*/position: absolute;bottom: 0 }
+	.feeSection .buttonSection { height: 250px;position: relative; }
+	.partnerLogo p  { width: 55%; }
+
+}
+@media (max-width: 990PX) {
+.feeSection .disable{
+	margin-bottom:0px;
+}
+.feeSection .round p{
+	padding:0px;
+}
+.banner { height: 450px; }
+.buttonSection .btnDownload { width: 35%;float: right;}
+.paraGraph ul li            { margin: 0 }
+.paraGraph ul.nav li a      { padding: 10px 25px;font-size: 17px; }
+.feeSection .buttonSection .btnDownload { width: 100%;float: right;margin-top: 20px;transition: 0.5s all;}
+.requestForm .countryCode { width: 100%;font-size: 12px;border: 1px solid #ccc;}
+.moreControls.phoneNumPopup input.phone {  width: 100%;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    margin-left: 0px;
+}
+/*select box*/
+.moreControls span   { border: 0 }
+.requestForm form    { width: 100%;}
+.moreControls select { border: 1px solid #ccc;width: 24%;padding: 0px 0 0 3px;font-size: 12px !important;color: #989494;float: left;}
+.first_name input    { width: 76.1%;border: 1px solid #ccc;margin-left: -5px;margin-top: 0px;}
+.phoneNumPopup              { position: relative; }
+/* .moreControls.phoneNumPopup label[for="code"]  { position: absolute;bottom: -15px;width: 25%;font-size: 12px;left: 0}
+.requestForm .phone_number label[for="mobile"] { left: 140px;width: auto; position: absolute; bottom: -15px;} */
+.requestForm .btnOrange { height: 45px; width: 100%;}
+.requestForm label::after {  border-color: transparent !important;}
+
+.requestForm  { margin-left: 0;box-shadow: none;padding: 0 0 25px; }
+.requestForm h3    {  font-size: 20px;margin-left: 0px; }
+.requestForm .row .col-md-6, .requestForm .row .col-md-12 {
+    padding-right:unset;
+}
+
+}
+@media (max-width: 800px) {
+	
+	.paraGraph table tr td      { width: 100%;display: block;}
+	.paraGraph table tr td:first-child { text-align: center;font-family: 'arial_geobold';background: #e6e6e6;
+    color: #333333;text-align: center; padding: 12px 0px;font-size: 15px; }
+    .paraGraph table tr td.date:before { content: 'Date';margin-right: 10px; font-family: 'arial_geobold'; }
+    .paraGraph table tr td.location:before { content: 'Location';margin-right: 10px; font-family: 'arial_geobold'; }
+	.table-striped > tbody > tr:nth-of-type(even) { background-color: transparent; }
+	.table-striped > tbody > tr  { border: 1px solid #ccc;margin-bottom: 20px;display: block; }
+	#no-more-tables table,
+	#no-more-tables thead, 
+	#no-more-tables tbody, 
+	#no-more-tables td, 
+	#no-more-tables tr {
+    display: block;
+    }
+	.paraGraph table tr td      { padding: 15px 15px 15px 15px;}
+	.paraGraph table tr.heading { display: none!important}
+	.table-responsive           { border: 0}	
+
+	.requestForm  { margin-left: 0;box-shadow: none;padding: 0 0 10px; }
+	.requestForm h3    {  font-size: 20px;margin-left: -14px; }
+	/*.requestForm .row .col-md-6, .requestForm .row .col-md-12 { padding-right:0px;}*/
+	.feeSection .buttonSection .btnDownload { /*margin-top: 185px;*/position: absolute;bottom: 0 }
+	.feeSection .buttonSection { height: 270px;position: relative; }
+	
+	.buttonSection      { text-align: center;width: 100%;display: block;} 
+	.buttonSection span {  padding-bottom: 15px;float: none;display: block;}
+	.buttonSection .btnDownload { width: 50%; float: none;display: block; margin-top: 40px;margin: 0 auto; }
+
+	.moreControls              { border: 0; box-shadow: none;}
+	.first_name input          { margin-left: -7px }
+	.requestForm .form-control { color: #8e8e8e; box-shadow: none;}
+	.paraGraph ul.chartList,.paraGraph ul.chartList2,.paraGraph ul.chartList3    { position: unset; }
+
+}
+@media (max-width: 768px) {	
+	/* .requestForm form .col-md-6, .requestForm form .col-md-12{padding-left: 0;padding-right: 0;} */
+	.requestForm form                  { width: 100%;}
+	.requestForm.visible-xs            { padding: 30px 5px 0px;margin-bottom: 10px;}
+	.navbar-default .navbar-nav > li   { padding-left: 8px; padding-right: 8px;}
+	.navbar-default .navbar-nav > li a { padding: 14px 8px 13px;font-size: 13px; }
+	.header .col-sm-5    {  margin: 0 auto;float: none;}
+	.boxShadow           { margin-bottom: 30px; }
+	.moreControls        { border: 0; box-shadow: none;}
+	.moreControls select { border: 1px solid #ccc;width: 20%;margin-right: -1px }
+	.moreControls input  { border: 1px solid #ccc;width: 79%;margin-left: 6px;/* border-left: 0; */margin-top: 0;}
+	.moreControls span   { border-left: 0px solid #ccc;}	
+	.info,.header .col-sm-1,.header .col-sm-6                { margin-top: 0;display: none  }	
+	.requestForm label::after   { border-color: transparent !important; }	
+	.phoneNumPopup              { position: relative;height: auto; }
+	.phoneNumPopup label.error  { position: absolute;bottom: -13px;left: 0; }
+	.phoneNumPopup input#mobile { width:97%;margin-top: -4px;position: relative;border-left: 1px solid #ccc }
+	/*.buttonSection.p-t-10,.buttonSection span { padding-top: 0 }*/
+	.buttonSection      { text-align: center;width: 100%;display: block;} 
+	.buttonSection span {  padding-bottom: 15px;float: none;display: block;}
+	.buttonSection .btnDownload { width: 50%; float: none;display: block; margin-top: 40px;margin: 0 auto; }
+
+	label[for="mobile"]          { position: absolute;left: 130px !important;width: auto;}
+	.requestForm .countryCode    { border: 1px solid #ccc;width: 100%;margin-left: 0; }
+	.requestForm .row .col-md-12,.requestForm .row .col-md-6,.requestForm .row .col-sm-12 { padding-right: unset; padding-left: unset; }
+	.requestForm .form-control   { box-shadow: none; }
+	.paraGraph ul.chartList,.paraGraph ul.chartList2,.paraGraph ul.chartList3      { position: unset; }
+	.about-section p,
+	.paraGraph ul li,
+	.paraGraph p                      { font-size: 15px;line-height: 25px; }
+	.paraGraph ul.nav li a            { font-size: 16px; }
+	.boxShadow h4 span                { font-size: 17px; }
+	.banner  { height: 460px; }
+	
+	.requestForm.visible-xs.boxShadow       { box-shadow:none;padding: 0px;margin-bottom: 20px;background: #fff;}
+	.moreControls.phoneNumPopup label       { width: auto; }
+	.feeSection .round p   { padding: 0 }
+	.feeSection .buttonSection .btnDownload { /*margin-top: 185px;*/position: absolute;bottom: 0 }
+	.feeSection .buttonSection { height: 270px;position: relative; }
+
+	.content .panel            { box-shadow: none;margin-bottom: 0 }
+	.contact-section           { padding-top: 30px }
+	.buttonSection.p-t-b-20    { padding-bottom: 0; }
+	.boxShadow ul.chartList2 a { float: right;margin-top: -15px;position: relative;z-index: 99;}
+	 .requestForm .company_name label, 
+    .requestForm .industry_list label,
+    .requestForm .first_name label, 
+    .requestForm .last_name label,
+    .requestForm .work_exp label,
+    .requestForm .select_country label, 
+    .requestForm .city label,
+    .requestForm .email_id label, 
+    .requestForm .phone_number label ,
+    .requestForm .designation label{ visibility: visible;opacity: 1;position: unset;color: red;
+	    width: 100%;background: transparent;text-align: left;margin-left: 0; }
+	.moreControls input.countryCode {  width: 100%;margin-left: 0;display: inline-block;padding-left: 10px;}
+    .codePrefix               { display: inline-block;width: 25%;float: left;}
+    .mobileNumber             { display: inline-block;width: 75%;}
+	.requestForm .form-control  { box-shadow: none }
+	
+	.phoneNumPopup input#mobile  {     border: 1px solid #ccc;
+    width: 99%;
+    margin-left: 5px;
+    border-left: -2px;
+    margin-top: 0px;
+    display: inline-block;}
+}
+
+
+@media (max-width: 767px){
+	.paraGraph ul li:before{top: 16px;}
+	.main-logo  { width: 270px;height: 64px;margin: 0 auto;}
+	.feeSection .buttonSection .btnDownload { width: 35%;margin-top: -50px;position: unset;}
+	.info       { margin-top: 20px;}
+	.bgColor, #faculty { background-color: #fbfbfb;}
+	.moreControls { border: 0;box-shadow: none;}
+	.moreControls input { margin-left: -5px }
+	.requestForm .form-control  { box-shadow: none }
+	.banner  { height: 460px; }
+	.content{padding:30px;}
+	.services-section { padding:30px 0 0;}
+	#chartdivMobile .amcharts-chart-div a { display: none !important; }
+	.calenderModule    { border: 1px solid #ccc;border-radius: 1px;margin-bottom: 8px; }
+	.calenderModule h4 { background-color: #ddd;text-align: center;font-size: 15px;
+                         line-height: 24px;padding: 8px 0; font-weight: 600; }
+    .calenderModule .contentArea          { padding:4px 0; }  
+    .calenderModule .contentArea p        { padding: 0 0 3px;line-height: 25px; } 
+    .calenderModule .contentArea p strong { font-weight: 600 }   
+    .calenderModule .contentArea li       { list-style-type: none;padding: 5px 10px; }  
+    .calenderModule .contentArea li:first-child { border-bottom: 1px solid #e8e8e8 }
+    .calenderModule .contentArea li:before { content: none; }        
+
+    .boxShadow         { box-shadow: 1px 1px 10px rgba(226, 226, 226, 0.74);padding: 25px;margin-bottom: 20px; background: #fff;}
+    .content .panel    { background-color: transparent; }   
+    .content .panel h3 { font-family: 'arial_geobold';font-weight: 700;color: #1a8ac3;
+                          line-height: 30px;padding-bottom: 20px;margin-bottom: 0;
+                          font-size: 22px;text-transform: capitalize;}  
+    #pillers,#work { padding-top: 0;padding-bottom: 10px}                          
+    .boxShadow ul.chartList2 a   { float: right; margin-top: 10px; position: relative; z-index: 99;}
+    .requestForm form .col-md-6,
+    .requestForm .row .col-md-12  { padding-left: 0;padding-right: 0;}
+    .requestForm .company_name label, 
+    .requestForm .industry_list label,
+    .requestForm .first_name label, 
+    .requestForm .last_name label,
+    .requestForm .work_exp label,
+    .requestForm .select_country label, 
+    .requestForm .city label,
+    .requestForm .email_id label, 
+    .requestForm .phone_number label,
+    .requestForm .designation label  {   
+	    visibility: visible;
+	    opacity: 1;
+	    position: unset;
+	    color: red;
+	    width: 100%;
+	    background: transparent;
+	    text-align: left;
+	    margin-left: 0;
+   }
+   .moreControls input.countryCode {  width: 100%;margin-left: 0;display: inline-block;padding-left: 10px;}
+    .codePrefix               { display: inline-block;width: 25%;float: left;}
+    .mobileNumber             { display: inline-block;width: 75%;}
+	.requestForm .form-control  { box-shadow: none }
+	
+	.phoneNumPopup input#mobile  {     border: 1px solid #ccc;
+    width: 99%;
+    margin-left: 5px;
+    border-left: -2px;
+    margin-top: 0px;
+    display: inline-block;}
+	/* .moreControls.phoneNumPopup label[for="code"] {
+	    position: absolute;
+	    left: 0;
+	    bottom: -10px;
+	    height: 20px;
+	    width: auto;
+	}
+	.requestForm .phone_number label[for="mobile"] {
+	    left: 140px;
+	    width: auto;
+	    position: absolute;
+	    bottom: -15px;
+	} */
+	.info  { display: none; }
+	.paraGraph ul.chartList,.paraGraph ul.chartList2,.paraGraph ul.chartList3 { position: unset; }
+	.m-t-50minus { margin-top: 0;}
+}
+
+@media (max-width: 480px) {	
+	.banner  { height: 460px; }
+	.feeSection .buttonSection { height: auto }
+	.content          { padding: 30px 0 }
+	.contact-section { padding-top: 30px;}
+	.navbar           { width: 100% }
+	.bannerHeading    { width: 100%;padding: 15px; }
+	.bannerHeading h3 { font-size: 18px;line-height: 24px; }
+	.banner .container .col-md-7 { padding-left: 15px }
+
+	.info    { margin-top: 20px;text-align: center;display: none; }
+	.info p  { font-size: 12px }
+	.info p:nth-child(3) { padding-left: 0 }
+
+	.requestForm form .col-md-6,.requestForm .row .col-md-12    { padding-left: 0;padding-right: 0;}
+	.moreControls select  { margin-right: 0 }
+	.moreControls { box-shadow: none }
+	
+	.paraGraph h5                 { font-size: 18px; }		
+	.owl-carousel .item .col-xs-7 { padding-top: 0;}
+	.owl-carousel .item p br      { display: none }
+
+	.feeSection h2 { font-size: 21px;line-height: 30px;padding-bottom: 10px; }
+	.feeSection h3 { font-size: 18px; }
+	.feeSection .disable,.feeSection .row .col-md-6 span,.feeSection .round p  { font-size: 12px;}
+	.breakLine p br { display: none } 
+	/*.feeSection .col-md-6 { font-size: 13px;padding-bottom: 10px }*/
+
+	.feeSection .buttonSection .btnDownload { width: 100%;margin-top: 20px; }
+	.footerSection .col-md-3.text-right { text-align: center;padding-top: 15px; }
+
+	.requestForm h3                {  font-size: 20px;margin-left: -14px; }
+	.about-section p,
+	.paraGraph ul li,
+	.paraGraph p,
+	.feeSection p,
+	.footerSection p            { font-size: 14px;line-height: 24px; }
+	.content .panel             { box-shadow: none;background-color: transparent;}
+
+	.moreControls select { border: 1px solid #ccc; width: 23%; }
+	.moreControls input  { border: 1px solid #ccc;
+    width: 74%;
+    margin-left: 5px;
+    /* border-left: 0; */
+    margin-top: 0;}
+	.moreControls span   { border-left: 0px solid #ccc;}
+	
+	.requestForm .phone_number label[for="first_name"] {left: 80%;width: 120px  }
+
+	.moreControls input.countryCode {  width: 100%;margin-left: 0;display: inline-block;padding-left: 10px;}
+    .codePrefix               { display: inline-block;width: 25%;float: left;}
+    .mobileNumber             { display: inline-block;width: 75%;}
+	.requestForm .form-control  { box-shadow: none }
+	
+	.phoneNumPopup input#mobile  {     border: 1px solid #ccc;
+    width: 97%;
+    margin-left: 5px;
+    border-left: -2px;
+    margin-top: 0px;
+    display: inline-block;}
+	.moreControls.phoneNumPopup { position: relative;height: auto; }
+	/* .moreControls.phoneNumPopup label[for="code"]{ position: absolute;left: 0;bottom: -10px;height: 20px; width: auto;} */
+	.requestForm label::after { border-color: transparent !important; }
+	/* label[for="mobile"] { position: absolute;left: 100px !important;width: auto;} */
+
+	.boxShadow         { box-shadow: 1px 1px 10px rgba(226, 226, 226, 0.74);padding: 25px;margin-bottom: 20px; background: #fff;}
+	.content .panel h3 { font-family: 'arial_geobold';font-weight: 700;color: #1a8ac3;
+                          line-height: 30px;padding-bottom: 20px;margin-bottom: 0;font-size: 22px;text-transform: capitalize;}
+    .boxShadow ul.chartList2 a { float: right;margin-top: 0px;position: relative;z-index: 99;right: 0}
+    .bgColor,#faculty           { background-color: #fbfbfb;}
+    .services-section  { padding: 40px 0 0; }
+    /*.services-section .content { padding-bottom: 0}*/
+
+    .owl-dots      { margin-top: 0 }
+    .paraGraph ul  { margin: 0 }
+    .partnerLogo p { margin-top: 8px;position: relative;top: -16px;display: block;text-align: center;width: 100%;}
+    .partnerLogo img    { position: unset; }
+	.footerSection   	{ text-align: center; }
+	.feeSection h2 span { font-size: 18px;top: 2px}
+	#pillers,#work     { padding-top: 0;padding-bottom: 10px }
+	.m-t-50minus {  margin-top: 0;}
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.paraGraph table tr td, 
+.paraGraph table tr th { padding: 18px 0 15px 32px;}
+.partnerLogo p{width: 60% !important;}
+
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+	
+	.info p{text-align: center;}
+	.bannerHeading{width: 100%;}
+	.partnerLogo p{width: 80%;}
+	.partnerLogo{margin-left: -15px;}
+	
+}
+
+
+@media (max-width: 380px) {
+.paraGraph table tr td {
+    padding: 15px 10px 15px 10px;font-size: 12.5px;
+}
+#chartdivMobile {
+    width: 100%;
+    height: 250px;
+    font-size: 11px;
+}
+#chartdivMobile2 {
+    width: 100%;
+    height: 280px;
+    font-size: 11px;
+}
+#chartdivMobile3 {
+    width: 100%;
+    height: 250px;
+    font-size: 11px;
+}
+	
+}
+
+@media (min-width: 481px) and (max-width: 640px){
+	.partnerLogo p {width: 70% !important;}
+}
+ 
+@media (max-width: 639px){
+	.paraGraph ul.chartList2 li { display: inline-block;width: 48%; }
+	.buttonSection .btnDownload { width: 100% }
+	.buttonSection span         { padding-bottom: 35px;padding-top: 0;text-align: left;font-size: 13px;}
+	/*#pillers .last-box{margin-bottom: 0;}*/
+	.tab-content.m-tb           { margin-top: 10px;}
+	#visits .boxShadow          { margin-bottom: 10px; }
+	.feeSection .buttonSection .btnDownload { width: 100%;}
+}

@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kellogg's Senior Management Program</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/base.css?v=1.0.12" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f2014177-a012-4cb5-9444-44a12158f8f8" type="text/javascript" async></script>
+	<!-- Start Visual Website Optimizer Asynchronous Code -->
+	<script type='text/javascript'>
+	var _vwo_code=(function(){
+	var account_id=360602,
+	settings_tolerance=2000,
+	library_tolerance=2500,
+	use_existing_jquery=false,
+	/* DO NOT EDIT BELOW THIS LINE */
+	f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+	</script>
+	<!-- End Visual Website Optimizer Asynchronous Code -->
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-T55HN2');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-60731492-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+	<!-- END Google Analytics -->
+
+	<!-- START Facebook Pixel Code -->
+	<script>(function() {
+	var _fbq = window._fbq || (window._fbq = []);
+	if (!_fbq.loaded) {
+	var fbds = document.createElement('script');
+	fbds.async = true;
+	fbds.src = '//connect.facebook.net/en_US/fbds.js';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(fbds, s);
+	_fbq.loaded = true;
+	}
+	_fbq.push(['addPixelId', '1576886305931743']);
+	})();
+	window._fbq = window._fbq || [];
+	window._fbq.push(['track', 'PixelInitialized', {}]);
+	</script>
+	<noscript>
+	<img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1576886305931743&amp;ev=PixelInitialized" />
+	</noscript>
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '437739710062365');
+	fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=437739710062365&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+	<script>
+	  function trackEvent(event, category, action, label) 
+	  {
+	    ga('send', 'event', category, action, label);
+	    console.log('GA==' + event + '==' + category + '==' + action + '==' + label );
+	  }
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-8">
+					<div class="logo">
+						<img src="images/logo.jpg" alt="Northwestern Kellogg School of Management" title=" Northwestern Kellogg School of Management">
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="top-contact">
+						<div class="email">
+							<p class="black-text">Email:</p>
+							<a href="mailto:Kellogg_smp@eruditus.com"><span>Kellogg_smp@eruditus.com</span></a>
+						</div>
+						<div class="phone">
+							<p class="black-text">Phone:</p>
+							<span>+91 22 61623112 (India) / +971 44302011 (Dubai) /<br/>
+							+65 6871 4030 (Singapore)</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="excutive">
+		<div class="container">
+			
+			<div class="video-detail">
+				<div class="row">
+					<div class="col-sm-8 col-md-8">
+						<h2 class="title purpule-text">Kellogg&rsquo;s Senior Management Program</h2>
+						<p><b><em>Kellogg&rsquo;s Senior Management Program</em></b> will help you re-examine and refine your thinking about what it means to be a growth-minded leader. You will ask yourself powerful questions and gain an expanded perspective essential for success at the top. You will leave equipped to thrive in today&rsquo;s fast-paced, interconnected economy with the tools, insights and frameworks you need to ignite growth and propel your organization forward.</p>
+						<div class="video-wrapper youtubevideo">
+							<img src="images/banner.jpg" alt="Kellogg's Senior Management Program" title="Kellogg's Senior Management Program" class="img-responsive">
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-4">
+						<div class="form-info" id="download-form">
+			              	<h3 class="title3 purpule-text text-uppercase">Register to Download Brochure</h3>
+							<form class="registerform form clearfix" role="form" id="frm" name="frm" method="POST" action="submit_sloan.php">
+				            <fieldset>
+				              <div class="form-container"> 
+				                <!--ROW FORM-->
+				                <div class='row'>
+				                  <div class='col-sm-2 col-xs-2 salutation pb-8'>
+				                    <div class='form-group'>
+				                      <select id="salutation" name="salutation" class="form-control mrs selectPlaceholder">
+				                        <option value="Mr.">Mr.</option>
+				                        <option value="Ms.">Ms.</option>
+				                        <option value="Mrs.">Mrs.</option>
+				                        <option value="Dr.">Dr.</option>
+				                        <option value="Prof.">Prof.</option>
+				                      </select>
+				                      <span id="salutation" class="text-danger"></span>
+				                    </div>
+				                  </div>
+				                  <div class='col-sm-5 col-xs-5 first_name pb-8'>
+				                    <div class='form-group'>
+				                      <input type="text" class="ml7 form-control" id="first_name" placeholder="First Name" name="first_name" autocomplete="nope">                      
+				                    </div>
+				                    <span class="error-text"></span>
+				                  </div>
+				                  <div class='col-sm-5 col-xs-5 last_name pb-8'>
+				                    <div class='form-group'>
+				                      <input type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name" autocomplete="nope">                     
+				                    </div>
+				                    <span class="error-text"></span>
+				                  </div>
+				                </div>
+				                <!--ROW FORM-->
+				                <div class='row'>
+			                    <div class='col-sm-12 col-xs-12 mobile_num pb-8'>
+		                        <div class='form-group'>
+		                          <input type="text" class="form-control" id="city" placeholder="City" name="city" autocomplete="nope">            
+		                        </div>
+			                      <span class="error-text"></span>
+			                    </div>
+				                </div>
+				                <!--ROW FORM-->
+				                <div class='row'>
+			                    <div class='col-sm-12 col-xs-12 email pb-8'>
+			                    	<div class="form-group">
+		                       		<input type="text"  id="country" placeholder="Country" class="form-control" name="country" autocomplete="nope">
+		                      	</div>
+		                        <span class="error-text"></span>
+			                    </div>
+			                  </div>
+				                <!--ROW FORM-->
+				                <div class='row'>
+			                    <div class='col-sm-12 col-xs-12 mobile_num pb-8'>
+			                    	<div class="input-group form-group">
+			                        <input type="tel" class="form-control bfh-phone" id="mobile" name="mobile" country"  placeholder="Mobile" autocomplete="nope">
+			                    	</div>
+			                      <span class="error-text"></span>
+			                    </div>
+				                </div>
+				                <!--ROW FORM-->
+				                <div class='row'>
+				                  <div class='col-sm-12 col-xs-12 email pb-8'>
+				                    <div class="input-group form-group">
+				                      <input type="email" class="form-control" id="email" placeholder="Email Id" name="email" autocomplete="nope">
+				                    </div>
+				                     <span class="error-text"></span>
+				                  </div>
+				                </div>
+				                <!--ROW FORM-->
+				                <div class='row'>
+				                  <div class="col-sm-12 col-xs-12 mobile_num pb-8">
+				                    <div class='form-group'>
+				                      <input type="text" class="form-control" id="company" placeholder="Company Name" name="company" autocomplete="nope">
+				                    </div>
+				                    <span class="error-text"></span>
+				                  </div>
+				                </div>
+				                <!--ROW FORM-->
+				                <div class="row">
+				                  <div class='col-sm-12 col-xs-12 pb-8'>
+				                		<div class='form-group'>
+				                      <input type="text" class="form-control" id="title" placeholder="Designation" name="title" autocomplete="nope">
+				                      <span class="error-text"></span>
+				                    </div>
+				                  </div>
+				                </div>
+				                <!--ROW FORM-->
+				                <div class='row'>
+				                  <div class='col-sm-12 col-xs-12 pb-8'>
+				                    <div class='form-group'>
+				                        <select  id="workexp" name="workexp"title="Work Experience" class="workplace form-control">
+				                          <option value="">Work Experience</option>
+				                          <option value="&lt; 10 Years">&lt; 10 Years</option>
+				                          <option value="10-15 Years">10-15 Years</option>
+				                          <option value="15-20 Years">15-20 Years</option>
+				                          <option value="&gt; 20 Years">&gt; 20 Years</option>
+				                        </select>
+				                    </div>
+				                     <span class="error-text"></span>
+				                  </div>
+				                </div>
+				                <!--ROW FORM-->
+				                <div class="row" id="gdpr-consent" style="display:none;">                   
+				                  <div class="col-sm-12">
+				                    <label class="checkbox-inline">
+				                      <input type="checkbox" value="true" name="agree" id="agree">
+				                      <p class="term-text">I would like to receive email & other communications from Eruditus & its university partners about this course and other relevant courses.</p>
+				                    </label>
+				                  </div>
+				                </div>
+				                <div class="row">
+				                  <div class="form-group buttonsa">
+				                    <div class="col-sm-12 text-center">
+				                      <button type="submit">DOWNLOAD BROCHURE</button>
+				                    </div>                    
+				                    <div class="clearfix"></div>
+				                  </div>
+				                </div>
+				                <div class="row">
+				                  <div class="col-sm-12">
+				                     <a href="https://www.eruditus.com/privacy-policy" target="_blank" class="privacy"><b>Privacy Policy</b></a>
+				                    
+				                  </div>
+				                </div>
+				              </div>
+				            </fieldset>
+				          </form>   
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="why-should">
+		<div class="container">
+			<h3 class="title4 purpule-text">Why you should consider the program</h3>
+			<ul>
+				<li>Develop skills to transition to a business leadership role and lead transformation in your organization</li>
+				<li>Deepen your understanding of customer and market insights to lead your organization to growth</li>
+				<li>Enhance skills to innovate new business models and implement change in your organization</li>
+				<li>Immerse yourself with sessions in Evanston and Miami</li>
+				<li>Apply your learning at your workplace through project work, guided by expert Kellogg Faculty</li>
+				<li>Learn from world-class Kellogg Faculty who are thought leaders in their fields</li>
+				<li>Become eligible for Kellogg School of Management Executive Education alumni benefits and membership in the global Kellogg alumni network</li>
+			</ul>
+		</div>
+	</section>
+	<section class="program paddb50">
+		<div class="container">
+			<h3 class="purpule-text title4">Cutting-edge Curriculum</h3>
+			<div class="row">
+				<div class="col-sm-4 col-md-4 heading1">
+					<h2>Strategy <p></p></h2>
+					<div class="box item-box">
+						<ul>
+							<li>Competitive Strategy</li>
+							<li>Enterprise Strategy Formulation and Execution</li>
+							<li>Mega Trends in the World Economy</li>
+							<li>Organizing for Growth</li>
+							<li>Focused Growth &ndash; Fewer, Bigger, Bolder</li>
+							<li>Strategic Alliances</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 heading1">
+					<h2>Innovation <p></p></h2>
+					<div class="box item-box">
+						<ul>
+							<li>Innovation Strategy</li>
+							<li>Design Thinking</li>
+							<li>Innovating Across Business</li>
+							<li>Creative Conspiracy</li>
+							<li>Perspectives on Business Innovation</li>
+							<li>Overcoming Orthodoxies</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 heading1">
+					<h2>Leadership </span><p></p></h2>
+					<div class="box item-box">
+						<ul>
+							<li>Managing Trust in Organizations and in The Marketplace</li>
+							<li>Leading Contagious Change</li>
+							<li>Engaged: The Art and Science of Sustaining Motivation</li>
+							<li>Values Based Leadership</li>
+							<li>Leading in Complex Environments</li>
+							<li>Transformational Leadership, How Managers become Leaders</li>
+							<li>The Authentic Leader</li>
+							<li>Negotiation Skills</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-md-4 heading1">
+					<h2>Customer Insights <p></p></h2>
+					<div class="box item-box-2">
+						<ul>
+							<li>The Customer Focused Enterprise</li>
+							<li>Finding Growth through Customers and Market Insights</li>
+							<li>Client Insights and Analysis</li>
+							<li>Creating Remarkable Customer Experiences</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 heading1">
+					<h2>Data And Digital <p></p></h2>
+					<div class="box item-box-2">
+						<ul>
+							<li>Why Analytics is a Leadership Problem</li>
+							<li>Differentiating Good Analytics from Bad Analytics</li>
+							<li>Leading with Big Data and Analytics</li>
+							<li>Digital Marketing</li>
+							<li>Digital Disruption and Digital Business Design for Growth</li>
+							<li>Story Telling with Data Visualization</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 heading1">
+					<h2>Finance <p></p></h2>
+					<div class="box item-box-2">
+						<ul>
+							<li>Value Creation and Value Metrics</li>
+							<li>Working Capital Management</li>
+							<li>Logic of Finance and Project Analysis</li>
+							<li>Strategic Cost Management</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-12 text-center">
+					<div class="download-btn red-btn">
+						<a href="#download-form" onclick="trackEvent('click','Kellogg SMP LP','ScrollUp','Curriculum-DB')">DOWNLOAD curriculum</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="participant-profile">
+		<div class="container">
+			<h3 class="title4 purpule-text">Participant Profile</h3>
+			<p class="paddb20">
+				Participants might come from large or medium sized firms who are focused on transformation and corporate innovation within existing industries.<br/><br/>
+				The Senior Management Program will help talented leaders prepare to take on larger marketing transformation roles. All the key elements of the experience&ndash;the faculty, the content, peer interactions and application exercises etc. are designed specifically for participants with:
+			</p>
+			<ul>
+				<li>A minimum of 10+ years of work experience</li>
+				<li>International exposure is preferred</li>
+				<li>Confident fluency in written and spoken English</li>
+			</ul>
+		</div>
+	</section>
+	<section class="past-participant padd50">
+		<div class="container">
+			<h3 class="title4 purpule-text">Past Participant Profiles</h3>
+			<div class="participant-job">
+				<h4 class="title5">Participant Job Titles</h4>
+				<div class="row">
+					<div class="col-sm-4 col-md-4">
+						<ul>
+							<li>Associate Director - Marketing</li>
+							<li>Associate Marketing Manager</li>
+							<li>CEO</li>
+							<li>Channel Sales Leader - Asia</li>
+							<li>Chief Financial Officer - Gerente Financiero, Administrativo y Riesgo</li>
+							<li>CIO Americas - IT Director Americas</li>
+						</ul>
+					</div>
+					<div class="loadMore text-center" id="loadMore-companies">
+						<a href="javascript:void(0)" onclick="trackEvent('click','Kellogg SMP LP','Read More','View all job titles')">View all job titles</a>
+					</div>
+					<div class="hide-modules" id="hide-companies">
+						<div class="col-sm-4 col-md-4">
+							<ul>
+								<li>CTIO</li>
+								<li>Director - Marketing</li>
+								<li>Director International Strategy and Innovation</li>
+								<li>Director Sales Support</li>
+								<li>General Manager</li>
+								<li>Head - Marketing Services</li>
+								<li>Managing Director for Corporate Finance Administration</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 col-md-4">
+							<ul>
+								<li>Manager of International Trade</li>
+								<li>President Director</li>
+								<li>Senior Manager - Marketing</li>
+								<li>Senior UK Relationship Services Specialist</li>
+								<li>Shopper Insights Manager MEU ( Europe) Meals division</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="participant-industrial bg-grey padd50">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-6">
+					<div class="experience-info">
+						<h4 class="title5">Participant Industries</h4>					
+						<img src="images/industries.png?v=1.0.6" alt="Participant Industries" title="Participant Industries" class="img-responsive">
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6">
+					<div class="experience-info">
+						<h4 class="title5">Participant Work Experience</h4>
+						<img src="images/experience.png?v=1.0.6" alt="Participant Work Experience" title="Participant Work Experience" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="experience-info padd50">
+		<div class="container">
+			<h4 class="title5">Geography</h4>
+			<img src="images/map.png" alt="Geography" title="Geography" class="img-responsive">
+			<p class="note">*Past participants have come from the marked geographies</p>
+		</div>
+	</section>
+	<section class="participant-organizations paddb50">
+		<div class="container">
+			<h4 class="title5">Participant Organizations</h4>
+			<div class="row">
+				<div class="col-sm-4 col-md-4">
+					<ul>
+						<li>Abbott Healthcare</li>
+						<li>Abbott Healthcare Pvt. Ltd.</li>
+						<li>Amara Raja Group</li>
+						<li>Aspect</li>
+						<li>Blue Aqua International</li>
+						<li>Dell International Services India Pvt Ltd</li>
+					</ul>
+				</div>
+				<div class="loadMore text-center" id="loadMore-companies">
+					<a href="javascript:void(0)" onclick="trackEvent('click','Kellogg SMP LP','Read More','View all organizations')">View all organizations</a>
+				</div>
+				<div class="hide-modules" id="hide-companies">
+					<div class="col-sm-4 col-md-4">
+						<ul>
+							<li>Erulearning Solutions Private Limited</li>
+							<li>Fiduciaria Corficolombiana S.A.</li>
+							<li>Huawei</li>
+							<li>ICAPP AMERICANA</li>
+							<li>Intuit Singapore Pte. Ltd.</li>
+							<li>Jubilant Agri & Consumer Products</li>
+						</ul>
+					</div>
+					<div class="col-sm-4 col-md-4">
+						<ul>
+							<li>Mondelez International</li>
+							<li>Paranapanema</li>
+							<li>Pt. Stars International</li>
+							<li>Rex Group of Companies</li>
+							<li>Sabre Hospitality Solutions</li>
+							<li>Yara International ASA</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="download-btn red-btn text-center">
+				<a href="#download-form" onclick="trackEvent('click','Kellogg SMP LP','ScrollUp','PastParticipantProfiles-DB')">DOWNLOAD BROCHURE</a>
+			</div>
+		</div>
+	</section>
+	<section class="date-fee padd50">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-6">
+					<div class="date-left">
+						<h3 class="title4 purpule-text">Date & Fees</h3>
+						<table border="1" cellpadding="0" cellspacing="0" class="table">
+							<tr>
+								<th>Date</th>
+								<th>Location</th>
+								<th>Tuition Fees</th>
+							</tr>
+							<tr>
+								<td>April 7 - 12, 2019</td>
+								<td>Evanston</td>
+								<td>$26,000</td>
+							</tr>
+							<tr>
+								<td>April - June 2019</td>
+								<td>Virtual Sessions</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>June 17 - 22, 2019</td>
+								<td>Miami</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>June - September 2019</td>
+								<td>Virtual Sessions</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>September 08 - 13, 2019</td>
+								<td>Evanston</td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6">
+					<div class="date-right">
+						<h3 class="title4 purpule-text">Application Deadlines</h3>
+						<table border="1" cellpadding="0" cellspacing="0" class="table">
+							<tr>
+								<th>Round</th>
+								<th>Date</th>
+								<th>Tuition Fees</th>
+							</tr>
+							<tr>
+								<td>Round 1</td>
+								<td>10th Dec 2018</td>
+								<td>USD $200</td>
+							</tr>
+							<tr>
+								<td>Round 2</td>
+								<td>14th Jan 2019</td>
+								<td>USD $300</td>
+							</tr>
+							<tr>
+								<td>Round 3</td>
+								<td>11th Feb 2019</td>
+								<td>USD $400</td>
+							</tr>
+							<tr>
+								<td>Last Round</td>
+								<td>4th Mar 2019</td>
+								<td>USD $500</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="download-btn red-btn text-center">
+				<a href="#download-form" onclick="trackEvent('click','Kellogg SMP LP','ScrollUp','Date-DB')">DOWNLOAD BROCHURE</a>			
+			</div>
+		</div>
+	</section>
+	<section class="mit-sloan padd50">
+		<div class="container">
+			<h3 class="title4 purpule-text">faculty</h3>
+			<div class="faculty-slider">
+				<div class="faculty-info">
+					<img src="images/gregory_arpenter.jpg" alt="Gregory Carpenter" title="Gregory Carpenter">
+					<h4 class="purpule-text">Gregory Carpenter</h4>
+					<p>James Farley/Booz Allen Hamilton Professor of Marketing Strategy; Faculty Director, Kellogg Markets and Customers Initiative (KMCI)</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/steven_franconeri.jpg" alt="Steven L. Franconeri" title="Steven L. Franconeri">
+					<h4 class="purpule-text">Steven L. Franconeri</h4>
+					<p>Professor of Psychology, Weinberg College of Arts & Sciences; Professor of Management & Organizations</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/kent_grayson.jpg" alt="Kent Grayson" title="Kent Grayson">
+					<h4 class="purpule-text">Kent Grayson</h4>
+					<p>Associate Professor of Marketing; Bernice and Leonard Lavin Professorship</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/sanjay_khosla.jpg" alt="Sanjay Khosla" title="Sanjay Khosla">
+					<h4 class="purpule-text">Sanjay Khosla</h4>
+					<p>Adjunct Professor of Executive Education</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/harry_kraemer.jpg" alt="Harry M. Kraemer" title="Harry M. Kraemer">
+					<h4 class="purpule-text">Harry M. Kraemer</h4>
+					<p>Clinical Professor of Strategy</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/loran_nordgren.jpg" alt="Loran Nordgren" title="Loran Nordgren">
+					<h4 class="purpule-text">Loran Nordgren</h4>
+					<p>Associate Professor of Management & Organizations</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/thomas.jpg" alt="Thomas F. O'Toole" title="Thomas F. O'Toole">
+					<h4 class="purpule-text">Thomas F. O&rsquo;Toole</h4>
+					<p>Clinical Professor of Marketing; Senior Fellow</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/mohan_sawhney.jpg" alt="Mohan Sawhney" title="Mohan Sawhney">
+					<h4 class="purpule-text">Mohan Sawhney</h4>
+					<p>McCormick Foundation Chair of Technology; Clinical Professor of Marketing; Director of the Center for Research in Technology & Innovation</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/david_schonthal.jpg" alt="David Schonthal" title="David Schonthal">
+					<h4 class="purpule-text">David Schonthal</h4>
+					<p>Clinical Associate Professor of Innovation & Entrepreneurship</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/leigh_thompson.jpg" alt="Leigh Thompson" title="Leigh Thompson">
+					<h4 class="purpule-text">Leigh Thompson</h4>
+					<p>J. Jay Gerber Professor of Dispute Resolution & Organizations; Professor of Management & Organizations; Director of Kellogg Team and Group Research Center</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/robert_wolcott.jpg" alt="Robert Wolcott" title="Robert Wolcott">
+					<h4 class="purpule-text">Robert Wolcott</h4>
+					<p>Clinical Professor of Innovation & Entrepreneurship; Co-Founder and Executive Director, Kellogg Innovation Network</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/edward_zajac.jpg" alt="Edward Zajac" title="Edward Zajac">
+					<h4 class="purpule-text">Edward Zajac</h4>
+					<p>James F. Bere Professor of Management & Organizations</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/joel_shapiro.jpg" alt="Joel Shapiro" title="Joel Shapiro">
+					<h4 class="purpule-text">Joel Shapiro</h4>
+					<p>Clinical Associate Professor and Executive Director for the Program</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/nicholas_pearce.png" alt="Nicholas A. Pearce" title="Nicholas A. Pearce">
+					<h4 class="purpule-text">Nicholas A. Pearce</h4>
+					<p>Clinical Associate Professor of Management & Organizations</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/craig_garthwaite.jpg" alt="Craig Garthwaite" title="Craig Garthwaite">
+					<h4 class="purpule-text">Craig Garthwaite</h4>
+					<p>Associate Professor of Strategy</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/ned_smith.jpg" alt="Ned Smith" title="Ned Smith">
+					<h4 class="purpule-text">Ned Smith</h4>
+					<p>Associate Professor of Strategy</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/robert_schieffer.jpg" alt="Robert Schieffer" title="Robert Schieffer">
+					<h4 class="purpule-text">Robert Schieffer</h4>
+					<p>Adjunct Professor of Executive Education</p>
+				</div>
+				<div class="faculty-info">
+					<img src="images/sergio_rebelo.jpg" alt="Sergio Rebelo" title="Sergio Rebelo">
+					<h4 class="purpule-text">Sergio Rebelo</h4>
+					<p>Tokai Bank Chair in International Finance</p>
+				</div>
+			</div>
+		</div>
+	</section>	
+	<section class="alumni-benefits padd50">
+		<div class="container">
+			<h3 class="title4 purpule-text">Alumni Benefits</h3>
+			<p class="paddb20">
+				Upon completion of the Senior Management Program you will be awarded a certificate of completion from the Kellogg School of Management. More than symbolic, it&rsquo;s the gateway to a myriad of Executive Education alumni benefits including:
+			</p>
+			<ul>
+				<li>Membership in the global Kellogg alumni network</li>
+				<li>Access to the online alumni network, including a network directory, discussion groups and other tools</li>
+				<li>Kellogg email forwarding for life</li>
+				<li>30 percent discount on two- to five-day Executive Education programs</li>
+				<li>Opportunities to participate in alumni clubs</li>
+				<li>Invitations to attend Kellogg-sponsored conferences on relevant issues in management</li>
+			</ul>
+		</div>
+	</section>
+	<footer class="padd50">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-md-9">
+					<div class="footer-info">
+						<h4 class="text-uppercase">Connect with a program advisor for a 1-1 session</h4>
+						<div class="top-contact">
+							<div class="email">
+								<p class="black-text">Email:</p>
+								<a href="mailto:Kellogg_smp@eruditus.com"><span>Kellogg_smp@eruditus.com</span></a>
+							</div>
+							<div class="phone">
+								<p class="black-text">Phone:</p>
+								<span>+91 22 61623112 (India) / +971 44302011 (Dubai) / +65 6871 4030 (Singapore)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3 partner-info">
+					<p>Program Partner</p>
+					<img src="images/footer-logo.png" alt="Eruditus Executive Education" title="Eruditus Executive Education" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</footer>
+	<a href="#" id="back-to-top" title="Back to top" class="show" onclick="trackEvent('click','Kellogg SMP LP','ScrollUp','Back to top')"><img src="images/back-to-top.png" alt="Back to top" title="Back to top"></i></a>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/custom.js?v=1.0.01"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/search-country.js"></script>
+	<script type="text/javascript" src="js/bootstrap3-typeahead.min.js"></script>
+	<script>
+	$(document).ready(function (){
+	  var submitted = false;
+	  $("#frm").validate({ 
+	    rules: 
+	    {
+	      salutation: {
+	        required: true,
+	      },
+	      first_name: {
+	        required: true,
+	        specialChar:true
+	      },
+	      last_name: {
+	        required: true,
+	        specialChar:true
+	      },
+	      email:{
+	        required: true,
+	        email:true,
+	        customemail:true
+	      },
+	      code: {
+	        required: true,
+	        digits: true,
+	        rangelength: [2, 8],      
+	      },
+	      mobile: {
+	        required: true,
+	        mobile_validation: true,
+	        mobile_format:true  
+	      },
+	      company: {
+	        required: true,
+	        specialChar:true
+	      },
+	      title: {
+	        required: true,
+	        specialChar:true
+	      },
+	      city: {
+	        required: true,
+	        specialChar:true
+	      },
+	      country:{
+	        required: true,
+	        notEqual: "-1"
+	      },
+	      industry:{
+	        required: true,
+	      },
+	      workexp: {
+	        required: true,
+	      },
+	    }, 
+	    messages: 
+	    {
+	      salutation: {
+	        required: "Please provide salutation"
+	      },
+	      first_name: {
+	        required: "Please provide first name",
+	        specialChar:"Please provide only alphanumeric values",
+	      },
+	      last_name: {
+	        required: "Please provide last name",
+	        specialChar:"Please provide only alphanumeric values",
+	      },
+	      city:{
+	        required: "Please provide city name",
+	        specialChar:"Please provide only alphanumeric values",
+	      },
+	      country:{
+	        required: "Please provide country name",
+	        notEqual: "Please provide country name",
+	      },
+	      email:{
+	        required: "Please provide email",
+	        email: "Please provide valid email",
+	        customemail: "Please provide valid email",
+	      },
+	      code: {
+	        required: "Please provide country code",
+	        digits: "Please provide only digits (0 - 9) in country code",
+	        rangelength: "Please provide valid country code",     
+	      },
+	      mobile: {
+	        required: "Please provide your phone no",
+	        mobile_format: "Please provide valid phone no",
+	        mobile_validation: "Please provide valid phone no",   
+	      },
+	      company:{
+	        required: "Please provide company name",
+	        specialChar:"Please provide only alphanumeric values",
+	      },
+	      industry:{
+	        required: "Please select industry",
+	        specialChar:"Please provide only alphanumeric values",
+	      },
+	      title:{
+	        required: 'Please provide designation',
+	      },
+	      workexp: {
+	        required: "Please provide work experience",
+	      }       
+	    },
+	    submitHandler: function(form)
+	    {
+	      //$('#frm')[0].submit(); // 
+	      trackEvent('click','Kellogg SMP LP','FormSubmit','Form_Submit')
+	      form.action ='submit.php';
+	      var btn = $('button[type="submit"]');
+	      btn.val("Processing...");
+	      btn.attr("disabled",true);
+	      form.submit();      
+	    }
+	  });
+	  
+	  jQuery.validator.addMethod("mobile_validation", function(value, element) 
+	  {
+	    var mob_no_val = $("#mobile").val();
+	    mob_no = mob_no_val.split(" ");
+	    
+	    var country = $("#country").val().trim();
+	    if(typeof mob_no[1] !== 'undefined')
+	    {
+	      if(country=="India" && mob_no[1].length=="10")
+	      {
+	        return true;
+	      }
+	      else if(country !="India" && mob_no[1].length>="5" &&  mob_no[1].length<="25")
+	      {
+	        return true;
+	      }
+	      else{
+	        return false;
+	      }
+	    }
+	    else
+	    {
+	      if(country=="India" && mob_no_val.length >="10" && mob_no_val.length<="13")
+	      {
+	        return true;
+	      }
+	      else if(country !="India" && mob_no_val.length>="5" && mob_no_val.length<="25")
+	      {
+	        return true;
+	      }
+	      else{
+	        return false;
+	      }
+	    }
+	    
+	  }, "please enter valid number");
+	  
+	  jQuery.validator.addMethod("mobile_format", function(value, element) 
+	  {
+	     return this.optional(element) || /([0-9\+\s])$/.test(value);
+	  }, "Please provide valid format.");
+
+	                  
+	  //custom validation rule
+	  $.validator.addMethod("customemail", 
+	    function(value, element) 
+	    {
+	      if ($.trim(value) != ""){
+	        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+	      return pattern.test(value);
+	      }     
+	      else
+	      {
+	        return true;
+	      }
+	    }, 
+	    "Please provide valid email format"
+	  );
+	  
+	  jQuery.validator.addMethod("specialChar", function(value, element) 
+	  {
+	    return this.optional(element) || /([0-9a-zA-Z\s])$/.test(value);
+	  }, "Please Fill Correct Value in Field.");
+
+	  jQuery.validator.addMethod("notEqual", function(value, element, param) 
+	  {
+	    return this.optional(element) || value != param;
+	  },"Please select valid country");
+
+	  	var qField = $('#country');
+		var qFieldTypeBox = qField.typeahead({
+			source: country_arr,
+			showHintOnFocus:true,
+			autoSelect:true,
+			minLength: 1,
+			matcher: function (item) {
+	          if (item.toLowerCase().indexOf(this.query.toLowerCase()) == 0) {
+	            return ~item.toLowerCase().indexOf(this.query.toLowerCase());
+	          } 
+	        },
+			afterSelect:function (e) {
+				//Populate Code
+				var selectedCountryIndex = country_arr.indexOf(e); // 1
+				phonecode = s_a[selectedCountryIndex];
+				if($("#mobile").val() == '' || $("#mobile").val().length <6)
+				{
+					 $("#mobile").val(phonecode);
+				}
+			  	//Populate GDPR
+			  	var checkFlg = excludeCountry.indexOf(e);
+				$('#agree').prop('checked', false); 
+				if(checkFlg != -1)
+				{
+					$('#gdpr-consent').show();
+				}
+				else{
+					$('#gdpr-consent').hide();
+				}
+			}
+		});
+
+	});
+	</script>
+	<script src="//www.eruditus.com/programmes/common/js/gdpr.js" ></script>
+	<script>
+	$(document).ready(function(){
+		$('.slick-dots li').click(function(event) {
+		   trackEvent('click','Kellogg SMP LP','Slide','Faculty-Bullet');
+		 //  console.log('i: ' + $(this).index() );
+		});
+		$('.faculty-slider button').click(function(event) {
+		   trackEvent('click','Kellogg SMP LP','Slide','Faculty-Slide');
+		  // console.log('i: ' + $(this).index() );
+		});
+	});
+
+	</script>
+	<script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0071/5326.js" async="async"></script>
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T55HN2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- END Google Tag Manager -->
+	<img height='1' width='1' border='0' style="display: none;" src='https://newsletter.monsterindia.com/track/track.html?cid=12629'/>
+
+
+	<!-- Google Code for Remarketing Tag --> 
+	<!--------------------------------------------------
+	Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+	---------------------------------------------------> 
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	var google_conversion_id = 991259245;
+	var google_custom_params = window.google_tag_params;
+	var google_remarketing_only = true;
+	/* ]]> */
+	</script> 
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+	</script>
+	<noscript>
+	<div style="display:inline;"> <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/991259245/?value=0&amp;guid=ON&amp;script=0"/> </div>
+	</noscript>
+	<!-- END Google Code for Remarketing Tag --> 
+
+	<script type="text/javascript">
+	  _bizo_data_partner_id = "7688";
+	</script> 
+	<script type="text/javascript">
+	(function() {
+	  var s = document.getElementsByTagName("script")[0];
+	  var b = document.createElement("script");
+	  b.type = "text/javascript";
+	  b.async = true;
+	  b.src = (window.location.protocol === "https:" ? "https://sjs" : "http://js") + ".bizographics.com/insight.min.js";
+	  s.parentNode.insertBefore(b, s);
+	})();
+
+	</script>
+	<noscript>
+	<img height="1" width="1" alt="" style="display:none;" src="//www.bizographics.com/collect/?pid=7688&fmt=gif" />
+	</noscript>
+
+	<!-- begin Pardot Website Tracking code -->
+	<script type="text/javascript">
+	piAId = '64132';
+	piCId = '2042';
+	(function() {
+		function async_load(){
+			var s = document.createElement('script'); s.type = 'text/javascript';
+			s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+			var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+		}
+		if(window.attachEvent) { window.attachEvent('onload', async_load); }
+		else { window.addEventListener('load', async_load, false); }
+	})();
+	</script>
+
+	<!-- Conversion Pixel - Eruditus_Visitor_EPGM_9941919 - DO NOT MODIFY -->
+	<script src="https://secure.adnxs.com/px?id=890864&seg=9941919&t=1" type="text/javascript"></script>
+	<!-- End of Conversion Pixel -->
+
+	<!-- Conversion Pixel - Eruditus_Lead_EPGM_9941920 - DO NOT MODIFY -->
+	<script src="https://secure.adnxs.com/px?id=890865&seg=9941920&t=1" type="text/javascript"></script>
+	<!-- End of Conversion Pixel -->
+
+</body>
+</html>
