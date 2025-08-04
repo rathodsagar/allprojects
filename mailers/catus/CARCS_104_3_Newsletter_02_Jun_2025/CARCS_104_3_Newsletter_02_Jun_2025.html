@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Newsletter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style type="text/css">
+      /* CLIENT-SPECIFIC STYLES */
+
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+      table th {
+        border-bottom: 2px solid #80a7bb;
+      }
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        /*table-layout: fixed !important;*/
+        margin: 0 auto !important;
+      }
+      table table table {
+        table-layout: auto;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+        text-decoration: none;
+      }
+
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      *[x-apple-data-detectors],  /* iOS */
+      .unstyle-auto-detected-links *,
+      .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img + div {
+        display: none !important;
+      }
+      .ExternalClass,
+      .ExternalClass a,
+      .ExternalClass span,
+      .ExternalClass b,
+      .ExternalClass br,
+      .ExternalClass p,
+      .ExternalClass div {
+        line-height: inherit;
+      }
+      /* iOS BLUE LINKS */
+
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+      .msonopad {
+        padding: 0 4px;
+        /*  padding: 0 5px 0px 15px;*/
+      }
+      .sign a {
+        color: #363636;
+      }
+      .sign a,
+      *[class="sign-padd"] {
+        color: #363636;
+      }
+      .shadow {
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+      }
+      p {
+        margin: 20px 0 !important;
+      }
+      .applyclick a:active,
+      .applyclick a:focus {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .contact-btn {
+        margin-left: 0 !important;
+      }
+      .contact-btn-2 {
+        margin: 0 auto !important;
+      }
+      /* MOBILE STYLES */
+      @media screen and (max-width: 640px) {
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        .logo img {
+          margin: 0 auto !important;
+        }
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        /*ALLOWS FOR FULL-WIDTH TABLES */
+        .responsive-table {
+          width: 100% !important;
+        }
+
+        /* ALLOWS FOR FULL TD */
+        .flex,
+        *[class="flex"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: left !important;
+        }
+        .flex2,
+        *[class="flex2"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: center !important;
+        }
+        .flex3,
+        *[class="flex3"] {
+          display: none !important;
+        }
+        .flex4,
+        *[class="flex4"] {
+          width: 80% !important;
+          display: block !important;
+          text-align: center !important;
+          border-bottom: 1px dashed #a9a7a7;
+          padding-bottom: 20px !important;
+          margin: 20px auto !important;
+        }
+        .flex5,
+        *[class="flex5"] {
+          width: 50% !important;
+          display: inline-grid !important;
+          display: -webkit-inline-grid !important;
+          display: -moz-inline-grid !important;
+          display: -o-inline-grid !important;
+          display: -ms-inline-grid !important;
+        }
+        /* ADJUSTS LAYOUT OF FONT SIZE */
+        .mobile-main-head,
+        *[class="mobile-main-head"] {
+          font-size: 70px !important;
+          line-height: 60px !important;
+        }
+        .mobile-font,
+        *[class="mobile-font"] {
+          font-size: 17px !important;
+          line-height: 27px !important;
+        }
+        .mobile-font2,
+        *[class="mobile-font2"] {
+          font-size: 14px !important;
+          line-height: 24px !important;
+        }
+        .mobile-font-head,
+        *[class="mobile-font-head"] {
+          font-size: 26px !important;
+          line-height: 32px !important;
+        }
+        .mobile-font-head2,
+        *[class="mobile-font-head2"] {
+          font-size: 18px !important;
+          line-height: 26px !important;
+        }
+        .mobile-font-subhead,
+        *[class="mobile-font-subhead"] {
+          font-size: 21px !important;
+          line-height: 28px !important;
+        }
+        .mobile-font-subtitle,
+        *[class="mobile-font-subtitle"] {
+          font-size: 19px !important;
+          line-height: 29px !important;
+        }
+        .mobile-content,
+        *[class="mobile-content"] {
+          font-size: 17px !important;
+          line-height: 22px !important;
+        }
+        .mobile-font-signature,
+        *[class="mobile-font-signature"] {
+          font-size: 17px !important;
+          line-height: 17px !important;
+        }
+
+        /* ALLOWS FOR BORDER */
+        .bdr-top-grey {
+          border-top: 1px solid #cccccc !important;
+        }
+        .no-border {
+          border: none !important;
+        }
+        .no-t-brd {
+          border-top: none !important;
+        }
+        .no-b-brd {
+          border-bottom: none !important;
+        }
+        .no-r-brd {
+          border-right: none !important;
+        }
+        .no-l-brd {
+          border-left: none !important;
+        }
+
+        .brd-t {
+          border-top: 1px solid #9fa1a4 !important;
+        }
+        .brd-b {
+          border-bottom: 1px solid #004483 !important;
+        }
+        .brd-r {
+          border-right: 1px solid #9fa1a4 !important;
+        }
+        .brd-l {
+          border-left: 1px solid #004483 !important;
+        }
+
+        .border {
+          border-left: none !important;
+          border-right: none !important;
+          border-bottom: 1px solid #dddcd9;
+          border-top: 1px solid #dddcd9;
+        }
+        .brdtopbottom,
+        *[class="brdtopbottom"] {
+          border-left: 0px !important;
+          border-right: 0px !important;
+          border-bottom: 1px solid #dedede;
+          border-top: 1px solid #dedede;
+          padding-top: 20px !important;
+          padding-bottom: 20px !important;
+        }
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .text-start {
+          text-align: left !important;
+        }
+        .text-center {
+          text-align: center !important;
+        }
+        .text-end {
+          text-align: right !important;
+        }
+        .no-padd {
+          padding: 0px !important;
+        }
+        .no-pl {
+          padding-left: 0px !important;
+        }
+        .no-pr {
+          padding-right: 0px !important;
+        }
+        .no-plr {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        .pt-10 {
+          padding-top: 10px !important;
+        }
+        .pb-10 {
+          padding-bottom: 10px !important;
+        }
+        .pl-10 {
+          padding-left: 10px !important;
+        }
+        .pr-10 {
+          padding-right: 10px !important;
+        }
+        .pt-15 {
+          padding-top: 15px !important;
+        }
+        .pt-20 {
+          padding-top: 20px !important;
+        }
+        .pb-20 {
+          padding-bottom: 20px !important;
+        }
+        .pb-25 {
+          padding-bottom: 25px !important;
+        }
+        .pr-25 {
+          padding-right: 25px !important;
+        }
+        .plr-25 {
+          padding-left: 25px !important;
+          padding-right: 25px !important;
+        }
+        .mob-hide {
+          display: none !important;
+        }
+        .w-35 {
+          width: 35% !important;
+        }
+        .w-100 {
+          width: 100% !important;
+        }
+        /*.padd-lr-20
+        {
+          padding-right: 20px !important;
+          padding-left: 20px !important;
+        }*/
+
+        /* UTILITY CLASSES FOR ADJUSTING MARGIN ON MOBILE */
+        .h-auto {
+          height: auto !important;
+        }
+        .no-mb {
+          margin-bottom: 0px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING Vertical ALign  */
+        .mob-valign-top {
+          vertical-align: top !important;
+        }
+
+        /* ADJUSTS FOR IMAGE CENTER */
+        .img-center {
+          margin: 0 auto !important;
+        }
+
+        /* ADJUSTS FOR TEXT CENTER */
+        .text-center {
+          text-align: center !important;
+        }
+        .contact-btn {
+          margin: 0 auto !important;
+        }
+
+        /* ADJUSTS FOR TEXT CENTER */
+        .f-none {
+          float: none;
+        }
+      }
+      div[style*="margin: 16px 0;"] {
+        margin: 0 !important;
+      }
+    </style>
+    <!--[if gte mso 9]>
+      <style type="text/css" media="all">
+        .msonopad {
+          padding-right: 10px;
+          text-align: center;
+          width: 40px;
+        }
+        img.mso-img {
+          padding-top: 10px;
+          line-height: 24px;
+        }
+        tr.space-mso {
+          font-size: 0;
+          mso-line-height-alt: 0;
+          mso-margin-top-alt: 1px;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0 !important; padding: 0 !important; background: #ffffff"
+  >
+    <!--[if (gte mso 9)|(ie)]>
+    <center>
+      <table align="center" border="0" cellspacing="0" cellpadding="0"  width="800">
+        <tr>
+          <td align="center" valign="top" width="800">
+            <!
+    [endif]--><!-- HIDDEN PREHEADER TEXT -->
+    <div
+      style="
+        mso-hide: all;
+        display: none;
+        font-size: 1px;
+        color: #333333;
+        line-height: 0;
+        font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+      "
+    >
+      Newsletter
+    </div>
+    <table align="center">
+      <tbody>
+        <tr>
+          <td
+            align="center"
+            class="container"
+            style="background: #ffffff; border: 1px solid #dddddd"
+            width="800"
+          >
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="responsive-table"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td bgcolor="#2155A4" align="left" style="padding: 20px 25px;border-bottom: 5px solid #E50019;" class="pad-lr">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="top" align="top" width="50%" class="flex pb-10">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="top" style="padding-bottom: 10px;">
+                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/b3deedad-c902-d46c-cb00-a4faa13ff58b.png" alt="CHUNG-ANG UNIVERSITY" title="CHUNG-ANG UNIVERSITY" width="336" class="img-center" style="max-width: 336px; width:100%; display: block;" />
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" class="mobile-font no-padd text-center" style="
+                                              font-size: 18px;
+                                              font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+                                              color: #ffffff;
+                                              line-height: 24px;
+                                            ">CAU Supports Institutes Driving Excellence in Research and Innovation</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td valign="top" align="top" width="50%" class="flex no-padd" style="padding-top: 20px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="right" class="mobile-font no-padd text-center" style="
+                                              font-size: 18px;
+                                              font-family: 'Noto Sans', Arial,
+                                                Helvetica, sans-serif;
+                                              color: #ffffff;
+                                              line-height: 28px;
+                                              padding-left: 40px;
+                                            ">The Official CAU Research<br />Update Newsletter </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="right" class="no-padd" style="padding: 0px 0px 20px">
+                                            <table align="right" border="0" cellpadding="0" cellspacing="0" width="42%" class="f-none" style="border-bottom: 2px solid #E50019">
+                                              <tbody>
+                                                <tr>
+                                                  <td>&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" bgcolor="#ffffff">
+                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/febbc00d-15da-c92f-3b38-61016d3121f6.png" alt="BeCaP" title="BeCaP" width="800" style="display: block;max-width: 800px;width: 100%;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#10305E">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/518fff0e-7f20-f007-32ec-780098c36b9c.png" alt="Professor Maeng-Je SEONG" title="Professor Maeng-Je SEONG" width="308" style="max-width: 308px;display: block;width: 100%;">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td align="left" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="top">
+                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/148dc300-62ca-0c9a-1795-7293fa215b61.png" alt="Professor Maeng-Je SEONG" title="Professor Maeng-Je SEONG" width="412" style="max-width: 412px;display: block;width: 100%">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="top">
+                                                    <a href="mailto:mseong@cau.ac.kr" target="_blank">
+                                                      <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/a6c4fed6-2c5d-8ec8-f6a8-29bd0b4ad844.png" alt="Professor Maeng-Je SEONG" title="Professor Maeng-Je SEONG" width="191" style="max-width: 191px;display: block;width: 100%">
+                                                    </a>
+                                                  </td>
+                                                  <td align="left" valign="top">
+                                                    <a href="https://becap-src.cau.ac.kr/" target="_blank">
+                                                      <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/31a849b3-80ec-d1e7-6700-72fba444ccf0.png" alt="Professor Maeng-Je SEONG" title="Professor Maeng-Je SEONG" width="221" style="max-width: 221px;display: block;width: 100%">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" valign="top">
+                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/009e24c2-9364-2f8c-9143-8042ef4bd796.png" alt="Professor Maeng-Je SEONG" title="Professor Maeng-Je SEONG" width="412" style="max-width: 412px;display: block;width: 100%">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td align="left" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/0f837b45-6ba4-0fd7-f606-40fb8aa7dd5b.png" alt="Professor Maeng-Je SEONG" title="Professor Maeng-Je SEONG" width="80" style="max-width: 80px;display: block;width: 100%">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" bgcolor="#ffffff">
+                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/f341dba3-fd98-a80e-1b60-d866e80d4c7e.png" alt="RESEARCH AREA" title="RESEARCH AREA" width="800" style="display: block;max-width: 800px;width: 100%;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" bgcolor="#ffffff">
+                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/d0bc9915-d8c4-185c-6e7e-0faa6465469f.png" alt="FUTURE PLANS" title="FUTURE PLANS" width="800" style="display: block;max-width: 800px;width: 100%;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#EDEDED" style="padding: 20px 0px;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="middle" width="24%">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="center">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-bottom: 2px solid #231F20">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td align="center" valign="middle" width="52%">
+                                            <table border="0" cellpadding="0" cellspacing="0" >
+                                              <tbody>
+                                                <tr>
+                                                  <td align="center" class="mobile-font-head2" style="font-size: 28px; font-family: 'Noto Sans', Arial, Helvetica, sans-serif; color: #231F20; line-height: 32px; text-transform: uppercase; font-weight: bold; padding: 0px 15px;">Research Achievements</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td align="left" valign="middle" width="24%">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="center" >
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-bottom: 2px solid #231F20">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding: 15px 20px 0px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" >
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-top: 5px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/ed49522d-326f-9ab8-1870-40c13905399a.png" alt="Bullet Icon" title="Bullet Icon" width="17" style="max-width: 17px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="top" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: #231F20;">Spontaneous Broken-Symmetry Insulator and Metals in Tetralayer Rhombohedral Graphene. <a href="https://doi.org/10.1038/s41565-023-01558-1" target="_blank" style="color: #2155A4;font-weight: 600;"><span style="font-style: italic;">Nat. Nanotechnol</span>. 19, 188–195 (2024).</a></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="padding-top: 10px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-top: 5px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/ed49522d-326f-9ab8-1870-40c13905399a.png" alt="Bullet Icon" title="Bullet Icon" width="17" style="max-width: 17px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="top" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: #231F20;">Chiral Antiferromagnetic Josephson Junctions as Spin-Triplet Supercurrent Spin Valves and D.C. SQUIDs. <a href="https://doi.org/10.1038/s41565-023-01336-z" target="_blank" style="color: #2155A4;font-weight: 600;"><span style="font-style: italic;">Nat. Nanotechnol</span>. 18, 747–753 (2023).</a></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="padding-top: 10px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-top: 5px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/ed49522d-326f-9ab8-1870-40c13905399a.png" alt="Bullet Icon" title="Bullet Icon" width="17" style="max-width: 17px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="top" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: #231F20;">Nanoscale Antiferromagnetic Domain Imaging using Full-Field Resonant X-ray Magnetic Diffraction Microscopy. <a href="https://doi.org/10.1002/adma.202200639" target="_blank" style="color: #2155A4;font-weight: 600;"><span style="font-style: italic;">Adv. Mater</span>. 34, 2200639 (2022).</a></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="padding-top: 10px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-top: 5px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/ed49522d-326f-9ab8-1870-40c13905399a.png" alt="Bullet Icon" title="Bullet Icon" width="17" style="max-width: 17px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="top" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: #231F20;">Optical Probe of Magnetic Ordering Structure and Spin-Entangled Excitons in Mn-Substituted NiPS<sub>3</sub>. <a href="https://doi.org/10.1002/adfm.202405153" target="_blank" style="color: #2155A4;font-weight: 600;"><span style="font-style: italic;">Adv. Funct. Mater</span>. 34, 2405153 (2024).</a></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="padding-top: 10px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-top: 5px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/ed49522d-326f-9ab8-1870-40c13905399a.png" alt="Bullet Icon" title="Bullet Icon" width="17" style="max-width: 17px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="top" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: #231F20;">One-Ninth Magnetization Plateau Stabilized by Spin Entanglement in a Kagome Antiferromagnet. <a href="https://doi.org/10.1038/s41567-023-02318-7" target="_blank" style="color: #2155A4;font-weight: 600;"><span style="font-style: italic;">Nat. Phys</span>. 20, 435–441 (2024).</a></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#386FBB" style="padding: 20px;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="middle" class="pr-10" style="border-right: 1px solid #ffffff;padding-right: 20px;">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="middle">
+                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="left">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/4cec2143-7d01-38c6-22bb-f67935ad4f0e.png" alt="CAU PR video" title="CAU PR video" width="52" style="max-width: 52px; display: block; width:100%;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="middle" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="left">
+                                                            <a href="https://photo.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=40&CONTENTS_NO=&SITE_NO=6&BOARD_SEQ=4&BBS_SEQ=86" target="_blank" class="mobile-font2" style="font-size: 20px; font-family: 'Noto Sans', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 28px;">CAU PR video</a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td align="center" valign="middle" class="pl-10" style="padding-left: 20px;">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="middle">
+                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="left">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/20c398ae-30e6-1d90-a0d0-5e87e114e935.png" alt="CAU website" title="CAU website" width="47" style="max-width: 47px; display: block; width:100%;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="middle" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="left">
+                                                            <a href="https://neweng.cau.ac.kr/index.do" target="_blank" class="mobile-font2" style="font-size: 20px; font-family: 'Noto Sans', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 28px;">CAU website</a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#ffffff" style="padding: 20px;border-top: 4px solid #2155A4;border-bottom: 4px solid #2155A4;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="90%">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="middle" class="flex no-pr pb-20" style="padding-right: 20px;">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td>
+                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/d234ab70-cc33-53d0-dfa6-5fa0cedae669.png" alt="CHUNG-ANG UNIVERSITY" title="CHUNG-ANG UNIVERSITY" width="222" style="max-width: 222px;display: block;width: 100%;">
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td align="left" valign="middle" class="flex text-center">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 24px; color: #666666;">Chung-Ang University, 84 Heukseok-ro, Dongjak-gu, Seoul, Korea<br/>International office: Tel: <a href="tel:+82-2-820-6575" target="_blank" style="color: #666666;">+82-2-820-6575</a> Fax: <a href="fax:+82-2-813-8069" target="_blank" style="color: #666666;">+82-2-813-8069</a><br/>Copyright 2025. CHUNG-ANG UNIVERSITY. All Rights Reserved.</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#ffffff" style="padding: 10px 20px;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 11px; line-height: 21px; color: #666666;">If you no longer wish to receive emails from CAU, please send an email to <a href="mailto:rsch@cau.ac.kr" target="_blank" style="color: #2155A4;">rsch@cau.ac.kr</a> with the word “Unsubscribe” in the subject line</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <![endif]-->
+  </body>
+</html>

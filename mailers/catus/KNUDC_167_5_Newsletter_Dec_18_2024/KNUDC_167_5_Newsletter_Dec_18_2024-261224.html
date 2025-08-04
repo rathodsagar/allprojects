@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>News Letter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    html,
+    body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    /* What it does: Stops email clients resizing small text. */
+    * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    /* What it does: Centers email on Android 4.4 */
+    div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+    }
+
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+    table,
+    td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+    }
+
+    /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+    table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        /*table-layout: fixed !important;*/
+        margin: 0 auto !important;
+    }
+
+    table table table {
+        table-layout: auto;
+    }
+
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+    img {
+        -ms-interpolation-mode: bicubic;
+    }
+
+    /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+    a {
+        text-decoration: none !important;
+    }
+
+    /* What it does: A work-around for email clients meddling in triggered links. */
+    *[x-apple-data-detectors],
+    /* iOS */
+    .unstyle-auto-detected-links *,
+    .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+    .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+    }
+
+    /* If the above doesn't work, add a .g-img class to any image in question. */
+    img.g-img+div {
+        display: none !important;
+    }
+
+    .ExternalClass,
+    .ExternalClass a,
+    .ExternalClass span,
+    .ExternalClass b,
+    .ExternalClass br,
+    .ExternalClass p,
+    .ExternalClass div {
+        line-height: inherit;
+    }
+
+    /* iOS BLUE LINKS */
+
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+
+    .msonopad {
+        padding: 0 4px;
+        /*  padding: 0 5px 0px 15px;*/
+    }
+
+    .sign a {
+        color: #363636;
+    }
+
+    .sign a,
+    *[class=sign-padd] {
+        color: #363636;
+    }
+
+    .shadow {
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+    }
+
+    .applyclick a:active,
+    .applyclick a:focus {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /* MOBILE STYLES */
+    @media screen and (max-width: 599px) {
+      .mob-padd{
+        padding: 20px 20px!important;
+      }
+
+        .pr-2 {
+            padding-right: 3px;
+        }
+
+
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        .logo img {
+            margin: 0 auto !important;
+        }
+
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        /*ALLOWS FOR FULL-WIDTH TABLES */
+        .responsive-table {
+            width: 100% !important;
+        }
+
+        /* ALLOWS FOR FULL TD */
+        .flex,
+        *[class=flex] {
+            width: 100% !important;
+            display: block !important;
+            text-align: center !important;
+        }
+
+        .flex2,
+        *[class=flex2] {
+            width: 100% !important;
+            display: block !important;
+            text-align: center !important;
+        }
+
+        .flex3,
+        *[class=flex3] {
+            display: none !important;
+        }
+
+        .flex4,
+        *[class=flex4] {
+            width: 80% !important;
+            display: block !important;
+            text-align: center !important;
+            border-bottom: 1px dashed #a9a7a7;
+            padding-bottom: 20px !important;
+            margin: 20px auto !important;
+        }
+
+        .flex5,
+        *[class=flex5] {
+            width: 50% !important;
+            display: inline-grid !important;
+            display: -webkit-inline-grid !important;
+            display: -moz-inline-grid !important;
+            display: -o-inline-grid !important;
+            display: -ms-inline-grid !important;
+        }
+
+        .text-center-mob{
+            text-align: center!important;
+            padding-top: 20px!important;
+        }
+        /* ADJUSTS LAYOUT OF FONT SIZE */
+        .mobile-main-head,
+        *[class=mobile-main-head] {
+            font-size: 70px !important;
+            line-height: 60px !important;
+        }
+
+        .mobile-font,
+        *[class=mobile-font] {
+            font-size: 17px !important;
+            line-height: 27px !important;
+        }
+
+        .mobile-font-head,
+        *[class=mobile-font-head] {
+            font-size: 26px !important;
+            line-height: 32px !important;
+        }
+
+        .mobile-font-head2,
+        *[class=mobile-font-head2] {
+            font-size: 40px !important;
+            line-height: 42px !important;
+        }
+
+        .mobile-font-subhead,
+        *[class=mobile-font-subhead] {
+            font-size: 21px !important;
+            line-height: 31px !important;
+        }
+
+        .mobile-font-subtitle,
+        *[class=mobile-font-subtitle] {
+            font-size: 19px !important;
+            line-height: 29px !important;
+        }
+
+        .mobile-font-signature,
+        *[class=mobile-font-signature] {
+            font-size: 17px !important;
+            line-height: 17px !important;
+        }
+
+        .mobile-font-button,
+        *[class=mobile-font-button] {
+            font-size: 14px !important;
+            line-height: 14px !important;
+        }
+
+        /* ALLOWS FOR BORDER */
+        .no-border {
+            border: none !important;
+        }
+
+        .no-t-brd {
+            border-top: none !important;
+        }
+
+        .no-b-brd {
+            border-bottom: none !important;
+        }
+
+        .no-r-brd {
+            border-right: none !important;
+        }
+
+        .no-l-brd {
+            border-left: none !important;
+        }
+
+        .black-t-brd {
+            border-top: 1px dashed #363636 !important;
+        }
+
+        .black-b-brd {
+            border-bottom: 1px dashed #363636 !important;
+        }
+
+        .black-r-brd {
+            border-right: 1px dashed #363636 !important;
+        }
+
+        .black-l-brd {
+            border-left: 1px dashed #363636 !important;
+        }
+
+        .border {
+            border-left: none !important;
+            border-right: none !important;
+            border-bottom: 1px solid #dddcd9;
+            border-top: 1px solid #dddcd9;
+        }
+
+        .brdtopbottom,
+        *[class=brdtopbottom] {
+            border-left: 0px !important;
+            border-right: 0px !important;
+            border-bottom: 1px solid #dedede;
+            border-top: 1px solid #dedede;
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .mleft {
+            text-align: left !important;
+        }
+
+        .mcenter {
+            text-align: center !important;
+        }
+
+        .no-padd {
+            padding: 0px !important;
+        }
+
+        .no-pl {
+            padding-left: 0px !important;
+        }
+
+        .no-pr {
+            padding-right: 0px !important;
+        }
+
+        .nopadd-lr {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .pt-10 {
+            padding-top: 10px !important;
+        }
+
+        .pb-10 {
+            padding-bottom: 10px !important;
+        }
+
+        .pt-15 {
+            padding-top: 15px !important;
+        }
+
+        .pt-20 {
+            padding-top: 20px !important;
+        }
+
+        .pb-20 {
+            padding-bottom: 20px !important;
+        }
+
+        .pb-25 {
+            padding-bottom: 25px !important;
+        }
+
+        .pr-10 {
+            padding-right: 10px !important;
+        }
+
+        .padd-top-8 {
+            padding-top: 8px !important;
+        }
+
+        .padr25 {
+            padding-right: 25px !important;
+        }
+
+        .pad-lr {
+            padding-left: 60px !important;
+            padding-right: 60px !important;
+        }
+
+        .sho_mob {
+            display: none !important;
+        }
+
+        .w-35 {
+            width: 35% !important;
+        }
+
+        .w-100 {
+            width: 100% !important;
+        }
+
+        /*.padd-lr-20
+        {
+          padding-right: 20px !important;
+          padding-left: 20px !important;
+        }*/
+
+        /* UTILITY CLASSES FOR ADJUSTING MARGIN ON MOBILE */
+        .h-auto {
+            height: auto !important;
+        }
+
+        .no-mb {
+            margin-bottom: 0px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING Vertical ALign  */
+        .mob-valign-top {
+            vertical-align: top !important;
+        }
+
+        /* ADJUSTS FOR IMAGE CENTER */
+        .img-center {
+            margin: 0 auto !important;
+        }
+
+        /* ADJUSTS FOR TEXT CENTER */
+        .text-center {
+            text-align: center !important;
+        }
+    }
+
+    div[style*="margin: 16px 0;"] {
+        margin: 0 !important;
+    }
+    </style>
+    <!--[if gte mso 9]>
+    <style type="text/css" media="all">
+      .msonopad {
+      padding-right: 10px;
+      text-align:center;
+      width:40px;
+      }
+      img.mso-img {
+      padding-top: 10px;
+      line-height:24px;
+      }
+      tr.space-mso{
+      font-size:0;
+      mso-line-height-alt:0;
+      mso-margin-top-alt:1px;
+      }
+    </style>
+    <![endif]-->
+</head>
+
+<body style="margin: 0 !important; padding: 0 !important;background:#ffffff;">
+    <!--[if (gte mso 9)|(ie)]>
+    <center>
+      <table align="center" border="0" cellspacing="0" cellpadding="0"  width="800">
+        <tr>
+          <td align="center" valign="top" width="800">
+            <![endif]-->
+    <!-- HIDDEN PREHEADER TEXT -->
+    <div style="mso-hide:all; display:none; font-size:1px; color:#333333; line-height:0;font-family: Arial, Helvetica, sans-serif; max-height:0; max-width:0; opacity:0; overflow:hidden;"></div>
+    <table align="center" bgcolor="#FFFFF0">
+        <tbody>
+            <tr>
+                <td align="center" class="container" width="800" style="border:1px solid #dddddd;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td bgcolor="#ffffff" align="left" style="padding:10px 25px 25px;">
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                     <tbody>
+                                        <tr>
+                                          <td valign="middle" align="center" width="45%" class="mb-20 flex">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                  <tr>
+                                                    <td align="center" valign="top">
+                                                        <a href="https://research.knu.ac.kr/en/" target="_blank">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/9458e6a1-a6c2-f12d-8c70-7cd6a1c04520.png" alt="Logo" width="392" style="max-width:392px;width: 100%; display:block;"> 
+                                                        </a>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                          </td>
+                                          <td valign="middle" class="flex" align="top" width="55%">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                  <tr>
+                                                    <td align="right" class="mobile-font text-center-mob" style="font-size:12px; font-family:'Montserrat', Arial, Helvetica, sans-serif; color: #535353;line-height: 20px;font-weight: normal; text-align: right;font-weight: 500;">THE OFFICIAL KNU RESEARCH UPDATE NEWSLETTER<br>
+                                                        <span style="font-weight: 600;">December 2024, ISSUE 9</span>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="right" class="text-center-mob" style="padding: 0px 0px 10px;text-align: right;">
+                                                      <table align="right" class="flex" border="0" cellpadding="0" cellspacing="0" width="80%" style="border-bottom: 2px solid #da2127;text-align:right;">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td>&nbsp;</td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>    
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                        <td align="right" >
+                                                            <a href="https://research.knu.ac.kr/en/" target="_blank">
+                                                                <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/17fac669-382b-fec5-c7bf-8cbb60ad5e14.png" alt="KNU" width="194" style="max-width:194px;width: 100%; display:block;">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                              </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                  </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#6f0510" align="left" style="border-top: 6px solid #da2127;">
+                                  <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="left" valign="top">
+                                                          <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/41979785-744a-8a11-56fb-e353b911fd1a.png" alt="banner" width="505" style="max-width: 505px;display:block;width: 100%;">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left" valign="top">
+                                                            <a href="https://research.knu.ac.kr/en/persons/chang-min-park" target="_blank">
+                                                                <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/03820e42-62ba-9b42-529b-655b8f9fec74.png" alt="banner" width="505" style="max-width: 505px;display:block;width: 100%;">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left" valign="top">
+                                                          <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/ad91ffb7-010e-455c-433f-f3a6069ae732.png" alt="banner" width="505" style="max-width: 505px;display:block;width: 100%;">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td bgcolor="#6f0510" align="left">
+                                                          <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                            <tbody>
+                                                              <tr>
+                                                                <td align="left" valign="top">
+                                                                  <a href="https://research.knu.ac.kr/en/persons/chang-min-park" target="_blank">
+                                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/2783e2e3-7302-89e3-a546-b01f2b04fd30.png" alt="banner" width="279" style="max-width: 279px;display:block;width: 100%;"> 
+                                                                  </a>
+                                                                </td>
+                                                                <td align="left" valign="top">
+                                                                  <a href="https://www.scopus.com/authid/detail.uri?authorId=57209588953" target="_blank">
+                                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/518fa423-97ba-9678-62a4-3e414945ff44.png" alt="banner" width="226" style="max-width: 226px;display:block;width: 100%;"> 
+                                                                  </a>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td align="left" valign="top">
+                                            <a href="https://research.knu.ac.kr/en/persons/chang-min-park" target="_blank">
+                                                <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/1f899d72-9431-8516-4c8b-b2cd23cbb6ed.png" alt="banner" width="295" style="max-width: 295px;display:block;width: 100%;">
+                                            </a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#ffffff" align="center" style="padding: 30px 30px; " class="mob-padd">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" style="font-family:'Montserrat',Arial,Helvetica, sans-serif; color: #DA2127;font-size: 28px; font-style: normal; font-weight: 700; line-height: 32px; text-align: center;padding-bottom: 20px;">Wastewater purification using heterojunction <br class="sho_mob">photocatalyst</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding-bottom: 20px;">
+                                                    <a href="https://home.knu.ac.kr/HOME/sdgs/sub.htm?mode=view&mv_data=aWR4PTI5NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTAmdGFibGU9ZXhfYmJzX2RhdGFfc2RncyZzaXRlX2NvZGU9c2RncyZuYXZfY29kZT1zZGcxNjc4NjgxMTA4JmNvZGU9UlNBOTNkTktXODBDJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=" target="_blank">
+                                                        <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/8ddba490-542b-4f67-cf9e-600b36a8fe32.png" alt="" width="534" style="max-width:534px;display:block;width: 100%;border: 2px solid #DA2429;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr> 
+                                                <td align="left" style="font-family:'Montserrat',Arial,Helvetica, sans-serif; color: #000000;font-size: 18px; font-style: normal; font-weight: 500; line-height: 24px; text-align: center;padding-bottom: 20px;">Tetracycline, an antimicrobial agent, is widely used in the fields of animal husbandry and aquaculture. However, this compound is environmentally hazardous. Scientists attempted to degrade tetracycline using a novel heterojunction photocatalyst called nitrogen-rich graphitic carbon nitride.​</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://home.knu.ac.kr/HOME/sdgs/sub.htm?mode=view&mv_data=aWR4PTI5NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTAmdGFibGU9ZXhfYmJzX2RhdGFfc2RncyZzaXRlX2NvZGU9c2RncyZuYXZfY29kZT1zZGcxNjc4NjgxMTA4JmNvZGU9UlNBOTNkTktXODBDJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=" target="_blank">
+                                                        <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/06224aef-0e9f-02a5-34fb-20539de7f071.png" alt="" width="185" style="max-width:185px;width: 100%; display:block;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" bgcolor="#ffffff" >
+                                  <table border="0" cellpadding="0" cellspacing="0" style="border-top: 3px solid #da2127;margin: 0!important;" width="85%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" style="line-height: 10px;">&nbsp;</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 30px; " class="mob-padd">
+                                  <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" style="font-family:'Montserrat',Arial,Helvetica, sans-serif; color: #DA2127;font-size: 28px; font-style: normal; font-weight: 700; line-height: 32px; text-align: center;padding-bottom: 20px;">Removal of nonsteroidal<br class="sho_mob"> anti-inflammatory drugs from water bodies</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="padding-bottom: 20px;">
+                                                <a href="https://home.knu.ac.kr/HOME/sdgs/sub.htm?mode=view&mv_data=aWR4PTI5NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTAmdGFibGU9ZXhfYmJzX2RhdGFfc2RncyZzaXRlX2NvZGU9c2RncyZuYXZfY29kZT1zZGcxNjc4NjgxMTA4JmNvZGU9UlNBOTNkTktXODBDJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=" target="_blank">
+                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/64b3f39a-dde1-0538-777b-f4526ccbe6f2.png" alt="" width="534" style="max-width:534px;display:block;width: 100%;border: 2px solid #DA2429;">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td align="left" style="font-family:'Montserrat',Arial,Helvetica, sans-serif; color: #000000;font-size: 18px; font-style: normal; font-weight: 500; line-height: 24px; text-align: center;padding-bottom: 20px;">Nonsteroidal anti-inflammatory drugs cause water pollution, affecting the diverse aquatic ecosystems. Researchers developed a novel biopolymer-metal organic framework aerogel adsorbent to achieve environmental remediation.​</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center">
+                                                <a href="https://home.knu.ac.kr/HOME/sdgs/sub.htm?mode=view&mv_data=aWR4PTI5NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTAmdGFibGU9ZXhfYmJzX2RhdGFfc2RncyZzaXRlX2NvZGU9c2RncyZuYXZfY29kZT1zZGcxNjc4NjgxMTA4JmNvZGU9UlNBOTNkTktXODBDJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=" target="_blank">
+                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/06224aef-0e9f-02a5-34fb-20539de7f071.png" alt="" width="185" style="max-width:185px;width: 100%; display:block;">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://home.knu.ac.kr/HOME/sdgs/sub.htm?nav_code=sdg1689831330" target="_blank">
+                                                        <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/d04da553-fbf9-c6e8-d396-78361ca82f90.png" alt="" width="800" style="max-width:800px;width: 100%; display:block;">
+                                                    </a>  
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#ffffff" align="center" style="padding: 15px 30px 15px; " class="mob-padd">
+                                  <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                    <tbody>
+                                      <tr> 
+                                        <td align="left" style="font-size: 12px; font-family:'Inter',Arial,Helvetica, sans-serif; color: #000000;line-height: 16px;text-align: center;">Kyungpook National University, 80 Daehak-ro, Buk-gu, Daegu, South Korea </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d5171a" align="center" style="padding: 10px 30px; " class="mob-padd">
+                                  <table border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" valign="middle">
+                                          <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                            <tbody>
+                                              <tr> 
+                                                <td align="left" style="font-size: 16px; font-family:'Open Sans',Arial,Helvetica, sans-serif; color: #ffffff;line-height: 20px;text-align: center;font-weight: 700;">Visit us on:</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                        <td align="left" valign="middle">
+                                          <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td align="left" valign="middle" style="padding-left: 10px;padding-right: 10px;">
+                                                  <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td align="left" valign="middle">
+                                                          <a href="https://www.youtube.com/playlist?list=PLiXYi24z8biLR_sL1QXg5DHccukgq85Ze" target="_blank" style="text-decoration: none !important;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/59762b53-c27c-e69f-e7f8-6cf91124e4de.png" alt="Youtube" title="Youtube" width="89" style="max-width:89px;width: 100%; display:block;">
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                                <td align="left" valign="middle" style="padding-left: 10px;border-left: 2px solid #ffffff;">
+                                                  <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td align="left" valign="middle">
+                                                          <a href="https://www.linkedin.com/in/kyungpooknationaluniversity/" target="_blank" style="text-decoration: none !important;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/36f0bbd8-b0c7-bd87-0640-84dd3a38b61a.png" alt="LinkedIn" title="LinkedIn" width="84" style="max-width:84px;width: 100%; display:block;">
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#ffffff" align="center" style="padding: 10px 30px; " class="mob-padd">
+                                  <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                    <tbody>
+                                      <tr> 
+                                        <td align="left" style="font-size: 12px; font-family:'Open Sans',Arial,Helvetica, sans-serif; color: #000000;line-height: 16px; padding-left: 15px;text-align: center;border-bottom: 2px solid #000000;padding-bottom: 10px;">*This email has been sent to members who have requested to join the mailing list.<br class="flex3"> If you want to unsubscribe from this newsletter, please contact us at <a href="mailto:knurankings@knu.ac.kr" target="_blank" style="font-size: 12px; font-family:'Open Sans',Arial,Helvetica, sans-serif; color: #19A9DF;line-height: 16px;text-decoration: none;">knurankings@knu.ac.kr</a></td>
+                                      </tr>
+                                      <tr> 
+                                        <td align="left" style="font-size: 11px; font-family:'Inter',Arial,Helvetica, sans-serif; color: #000000;line-height: 16px; padding-left: 15px;text-align: center;padding-top: 10px;">© Copyright 2024 Kyungpook National University | All rights reserved | Do not reply. This email address is for outgoing emails only.</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+</body>
+
+</html>

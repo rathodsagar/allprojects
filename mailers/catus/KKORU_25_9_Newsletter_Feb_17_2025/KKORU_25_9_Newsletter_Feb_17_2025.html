@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>News Letter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+    
+    html,
+    body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    /* What it does: Stops email clients resizing small text. */
+    * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    /* What it does: Centers email on Android 4.4 */
+    div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+    }
+
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+    table,
+    td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+    }
+
+    /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+    table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        /*table-layout: fixed !important;*/
+        margin: 0 auto !important;
+    }
+
+    table table table {
+        table-layout: auto;
+    }
+
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+    img {
+        -ms-interpolation-mode: bicubic;
+    }
+
+    /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+    a {
+        text-decoration: none !important;
+    }
+
+    /* What it does: A work-around for email clients meddling in triggered links. */
+    *[x-apple-data-detectors],
+    /* iOS */
+    .unstyle-auto-detected-links *,
+    .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+    .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+    }
+
+    /* If the above doesn't work, add a .g-img class to any image in question. */
+    img.g-img+div {
+        display: none !important;
+    }
+
+    .ExternalClass,
+    .ExternalClass a,
+    .ExternalClass span,
+    .ExternalClass b,
+    .ExternalClass br,
+    .ExternalClass p,
+    .ExternalClass div {
+        line-height: inherit;
+    }
+
+    /* iOS BLUE LINKS */
+
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+
+    .msonopad {
+        padding: 0 4px;
+        /*  padding: 0 5px 0px 15px;*/
+    }
+
+    .sign a {
+        color: #363636;
+    }
+
+    .sign a,
+    *[class=sign-padd] {
+        color: #363636;
+    }
+
+    .shadow {
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+    }
+
+    .applyclick a:active,
+    .applyclick a:focus {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /* MOBILE STYLES */
+    @media screen and (max-width: 599px) {
+
+        .pr-2 {
+            padding-right: 3px;
+        }
+
+
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        .logo img {
+            margin: 0 auto !important;
+        }
+
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        /*ALLOWS FOR FULL-WIDTH TABLES */
+        .responsive-table {
+            width: 100% !important;
+        }
+
+        /* ALLOWS FOR FULL TD */
+        .flex,
+        *[class=flex] {
+            width: 100% !important;
+            display: block !important;
+            text-align: left !important;
+        }
+
+        .flex2,
+        *[class=flex2] {
+            width: 100% !important;
+            display: block !important;
+            text-align: center !important;
+        }
+
+        .flex3,
+        *[class=flex3] {
+            display: none !important;
+        }
+
+        .flex4,
+        *[class=flex4] {
+            width: 80% !important;
+            display: block !important;
+            text-align: center !important;
+            border-bottom: 1px dashed #a9a7a7;
+            padding-bottom: 20px !important;
+            margin: 20px auto !important;
+        }
+
+        .flex5,
+        *[class=flex5] {
+            width: 50% !important;
+            display: inline-grid !important;
+            display: -webkit-inline-grid !important;
+            display: -moz-inline-grid !important;
+            display: -o-inline-grid !important;
+            display: -ms-inline-grid !important;
+        }
+
+        /* ADJUSTS LAYOUT OF FONT SIZE */
+        .mobile-main-head,
+        *[class=mobile-main-head] {
+            font-size: 70px !important;
+            line-height: 60px !important;
+        }
+
+        .mobile-font,
+        *[class=mobile-font] {
+            font-size: 17px !important;
+            line-height: 27px !important;
+        }
+
+        .mobile-font-head,
+        *[class=mobile-font-head] {
+            font-size: 26px !important;
+            line-height: 32px !important;
+        }
+
+        .mobile-font-head2,
+        *[class=mobile-font-head2] {
+            font-size: 22px !important;
+            line-height: 28px !important;
+        }
+
+        .mobile-font-subhead,
+        *[class=mobile-font-subhead] {
+            font-size: 21px !important;
+            line-height: 31px !important;
+        }
+
+        .mobile-font-subtitle,
+        *[class=mobile-font-subtitle] {
+            font-size: 19px !important;
+            line-height: 29px !important;
+        }
+
+        .mobile-font-signature,
+        *[class=mobile-font-signature] {
+            font-size: 17px !important;
+            line-height: 17px !important;
+        }
+
+        .mobile-font-button,
+        *[class=mobile-font-button] {
+            font-size: 14px !important;
+            line-height: 14px !important;
+        }
+
+        /* ALLOWS FOR BORDER */
+        .no-border {
+            border: none !important;
+        }
+
+        .no-t-brd {
+            border-top: none !important;
+        }
+
+        .no-b-brd {
+            border-bottom: none !important;
+        }
+
+        .no-r-brd {
+            border-right: none !important;
+        }
+
+        .no-l-brd {
+            border-left: none !important;
+        }
+
+        .black-t-brd {
+            border-top: 1px dashed #363636 !important;
+        }
+
+        .black-b-brd {
+            border-bottom: 1px dashed #363636 !important;
+        }
+
+        .black-r-brd {
+            border-right: 1px dashed #363636 !important;
+        }
+
+        .black-l-brd {
+            border-left: 1px dashed #363636 !important;
+        }
+
+        .border {
+            border-left: none !important;
+            border-right: none !important;
+            border-bottom: 1px solid #dddcd9;
+            border-top: 1px solid #dddcd9;
+        }
+
+        .brdtopbottom,
+        *[class=brdtopbottom] {
+            border-left: 0px !important;
+            border-right: 0px !important;
+            border-bottom: 1px solid #dedede;
+            border-top: 1px solid #dedede;
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .mleft {
+            text-align: left !important;
+        }
+
+        .mcenter {
+            text-align: center !important;
+        }
+
+        .no-padd {
+            padding: 0px !important;
+        }
+
+        .no-pl {
+            padding-left: 0px !important;
+        }
+
+        .no-pr {
+            padding-right: 0px !important;
+        }
+
+        .nopadd-lr {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+        .mob-padding{
+            padding-left: 5px!important;
+            padding-right: 5px!important;
+        }
+        .pt-10 {
+            padding-top: 10px !important;
+        }
+
+        .pb-10 {
+            padding-bottom: 10px !important;
+        }
+
+        .pt-15 {
+            padding-top: 15px !important;
+        }
+
+        .pt-20 {
+            padding-top: 20px !important;
+        }
+
+        .pb-20 {
+            padding-bottom: 20px !important;
+        }
+
+        .pb-25 {
+            padding-bottom: 25px !important;
+        }
+
+        .pr-10 {
+            padding-right: 10px !important;
+        }
+
+        .padd-top-8 {
+            padding-top: 8px !important;
+        }
+
+        .padr25 {
+            padding-right: 25px !important;
+        }
+
+        .pad-lr {
+            padding-left: 35px !important;
+            padding-right: 35px !important;
+        }
+
+        .sho_mob {
+            display: none !important;
+        }
+
+        .w-35 {
+            width: 35% !important;
+        }
+
+        .w-100 {
+            width: 100% !important;
+        }
+        .mob-img{
+            width: 20px!important;
+        }
+        /*.padd-lr-20
+        {
+          padding-right: 20px !important;
+          padding-left: 20px !important;
+        }*/
+
+        /* UTILITY CLASSES FOR ADJUSTING MARGIN ON MOBILE */
+        .h-auto {
+            height: auto !important;
+        }
+
+        .no-mb {
+            margin-bottom: 0px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING Vertical ALign  */
+        .mob-valign-top {
+            vertical-align: top !important;
+        }
+
+        /* ADJUSTS FOR IMAGE CENTER */
+        .img-center {
+            margin: 0 auto !important;
+        }
+
+        /* ADJUSTS FOR TEXT CENTER */
+        .text-center {
+            text-align: center !important;
+        }
+    }
+
+    div[style*="margin: 16px 0;"] {
+        margin: 0 !important;
+    }
+    </style>
+    <!--[if gte mso 9]>
+    <style type="text/css" media="all">
+      .msonopad {
+      padding-right: 10px;
+      text-align:center;
+      width:40px;
+      }
+      img.mso-img {
+      padding-top: 10px;
+      line-height:24px;
+      }
+      tr.space-mso{
+      font-size:0;
+      mso-line-height-alt:0;
+      mso-margin-top-alt:1px;
+      }
+    </style>
+    <![endif]-->
+</head>
+
+<body style="margin: 0 !important; padding: 0 !important;background:#ffffff;">
+    <!--[if (gte mso 9)|(ie)]>
+    <center>
+      <table align="center" border="0" cellspacing="0" cellpadding="0"  width="800">
+        <tr>
+          <td align="center" valign="top" width="850">
+            <![endif]-->
+    <!-- HIDDEN PREHEADER TEXT -->
+    <div style="mso-hide:all; display:none; font-size:1px; color:#333333; line-height:0;font-family: Arial, Helvetica, sans-serif; max-height:0; max-width:0; opacity:0; overflow:hidden;"></div>
+    <table align="center">
+        <tbody>
+            <tr>
+                <td align="center" class="container" width="850" style="border:1px solid #dddddd;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td align="center">
+                                  <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/0c8175be-53b0-9be8-e7ef-161837268f65.png" alt="header" width="850" style="max-width:850px; width: 100%; display:block;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#000000">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td valign="top" align="center">
+                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/ea1df89c-49e4-de64-f890-dff836fadf86.png" alt="" width="850" style="max-width:850px; width: 100%; display:block;"/>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td valign="top" align="center">
+                                                    <a href="https://www.korea.edu/en/1127/subview.do?enc=Zm5jdDF8QEB8JTJGa3VzdG9yeSUyRmVuJTJGYXJ0Y2xWaWV3LmRvJTNGYXJ0Y2xTZXElM0QyNzYyNyUyNnNpdGVJZCUzRGVuJTI2cGFnZSUzRDElMjZmaW5kVHlwZSUzRCUyNmZpbmRXb3JkJTNEJTI2ZmluZENsU2VxJTNEJTI2cmdzQmduZGVTdHIlM0QlMjZyZ3NFbmRkZVN0ciUzRCUyNg%3D%3D" target="_blank"><img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/77b911fc-e57b-d83e-f572-6e631bec73a8.png" alt="" width="850" style="max-width:850px; width: 100%; display:block;"/></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td align="left" >
+                                <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/712eadfe-4615-cb66-f908-968e3b28d2b3.png" alt="line" width="850" style="max-width:850px; width: 100%; display:block;"/>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left">
+                                <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left" valign="top">
+                                        <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td align="left" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td align="left" valign="top">
+                                                        <a href="https://pure.korea.ac.kr/en/persons/jong-seung-kim" target="_blank" rel="noopener noreferrer"> 
+                                                          <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/be192e35-3f49-1385-74d9-9e03a3b30223.png" alt="" width="298" style="max-width: 298px;display:block;width: 100%;">
+                                                        </a>
+                                                      </td>
+                                                      <td align="left" valign="top">
+                                                        <a href="http://orgchem.korea.ac.kr/" target="_blank" rel="noopener noreferrer"> 
+                                                          <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/89c16996-6113-54f3-883b-146754ee66fe.png" alt="" width="129" style="max-width: 129px;display:block;width: 100%;">
+                                                        </a>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" valign="top">
+                                                <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/99ee9985-2e20-9d54-74a2-516ae8f8ce5d.png" alt="" width="427" style="max-width: 427px;display:block;width: 100%;">
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" valign="top">
+                                                <a href="https://www.nature.com/articles/s41467-024-44818-x" target="_blank" rel="noopener noreferrer"> 
+                                                  <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/fe4df145-b55a-9daa-2cb9-79e2865201a7.png" alt="" width="427" style="max-width: 427px;display:block;width: 100%;">
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td> 
+                                      <td align="left" valign="top">
+                                        <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td align="left" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td align="left" valign="top">
+                                                        <a href="https://pure.korea.ac.kr/en/persons/choon-ki-ahn" target="_blank" rel="noopener noreferrer"> 
+                                                          <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/6fa7ee27-4a5f-fb77-827f-811015d82081.png" alt="" width="253" style="max-width: 253px;display:block;width: 100%;">
+                                                        </a>
+                                                      </td>
+                                                      <td align="left" valign="top">
+                                                        <a href="https://control.korea.ac.kr/" target="_blank" rel="noopener noreferrer"> 
+                                                          <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/b4c1f16e-c71a-b4c2-e4a4-c032caea635e.png" alt="" width="170" style="max-width: 170px;display:block;width: 100%;">
+                                                        </a>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" valign="top">
+                                                <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/e0c158f6-80cc-d99e-8eff-46c4d0dcad4a.png" alt="" width="423" style="max-width: 423px;display:block;width: 100%;">
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" valign="top">
+                                                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0005109823006623?via%3Dihub" target="_blank" rel="noopener noreferrer"> 
+                                                  <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/d327f992-84f8-e458-1842-4ab326408931.png" alt="" width="423" style="max-width: 423px;display:block;width: 100%;">
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td> 
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/9d77fd80-a979-ec3f-0189-8f76fa87d418.png" alt="line" width="850" style="max-width:850px; width: 100%; display:block;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                  <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" valign="top">
+                                          <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td align="left" valign="top">
+                                                  <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td align="left" valign="top">
+                                                          <a href="https://pure.korea.ac.kr/en/persons/jun-hong-noh" target="_blank" rel="noopener noreferrer"> 
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/c7e50526-bb3d-2823-89c3-c4192934d678.png" alt="" width="285" style="max-width: 285px;display:block;width: 100%;">
+                                                          </a>
+                                                        </td>
+                                                        <td align="left" valign="top">
+                                                          <a href="http://advenergy.korea.ac.kr/" target="_blank" rel="noopener noreferrer"> 
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/673c9ea2-0bdc-c5c2-7345-de290c9de312.png" alt="" width="142" style="max-width: 142px;display:block;width: 100%;">
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left" valign="top">
+                                                  <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/b13045f7-1d61-76f1-e346-a6199151304d.png" alt="" width="427" style="max-width: 427px;display:block;width: 100%;">
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left" valign="top">
+                                                  <a href="https://pubs.rsc.org/en/content/articlelanding/2024/ee/d3ee04520j" target="_blank" rel="noopener noreferrer"> 
+                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/27183f63-9526-4dab-47c4-0f49fc5dd3af.png" alt="" width="427" style="max-width: 427px;display:block;width: 100%;">
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td> 
+                                        <td align="left" valign="top">
+                                          <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td align="left" valign="top">
+                                                  <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td align="left" valign="top">
+                                                          <a href="https://pure.korea.ac.kr/en/persons/han-young-woo" target="_blank" rel="noopener noreferrer"> 
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/2567942a-67af-b1b2-621d-8fc5424674dd.png" alt="" width="275" style="max-width: 275px;display:block;width: 100%;">
+                                                          </a>
+                                                        </td>
+                                                        <td align="left" valign="top">
+                                                          <a href="https://ooml.korea.ac.kr/" target="_blank" rel="noopener noreferrer"> 
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/a0dd5da7-137c-7ffe-5473-d66dd1dd8a29.png" alt="" width="148" style="max-width: 148px;display:block;width: 100%;">
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left" valign="top">
+                                                  <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/404ab5f4-c954-bd9c-c115-8c1634a175f7.png" alt="" width="423" style="max-width: 423px;display:block;width: 100%;">
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left" valign="top">
+                                                  <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202404597" target="_blank" rel="noopener noreferrer"> 
+                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/527f47d0-bc46-dd84-4672-c175968416fc.png" alt="" width="423" style="max-width: 423px;display:block;width: 100%;">
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td> 
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#ffffff" valign="top" >
+                                    <a href="https://buly.kr/7bFjNms" target="_blank">
+                                      <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/d4d7c296-60dd-ca2f-d79a-3b40cdb5e468.png" alt="" width="850" style="max-width:850px; width: 100%; display:block;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#7c0019" valign="top">
+                                    <a href="mailto:kuresearch@korea.ac.kr" target="_blank"><img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/571e8a0a-900f-ec0e-7130-f268c57c7a02.png" alt="" style="max-width:100%; display:block;"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#1a1818" style="padding-top:0px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr> 
+                                            <td width="60%" align="right" valign="top">
+                                                <a href="https://www.facebook.com/ku1905" target="_blank"><img alt="" border="0" src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/94a8b0bc-7481-5c55-607c-1faa972051d6.png" style="max-width:100%;" class="mob-img"></a>
+
+                                                <a href="https://www.youtube.com/@koreauniv/about" target="_blank" style="padding-left: 25px; padding-right: 25px;" class="mob-padding"><img alt="" border="0" src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/fb4533e2-699b-13f4-4610-270748f9cd80.png"style="max-width:100%;"class="mob-img"></a>
+
+                                                <a href="https://www.instagram.com/koreauniv.official/" target="_blank"><img alt="" border="0" src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/a295e8ee-8065-4779-fc5b-c8e0fb0b3bd4.png"style="max-width:100%;"class="mob-img"></a>
+                                            </td>
+                                          <td width="40%" align="center" valign="top">
+                                             <img alt="" border="0" src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/df307985-71fa-da6a-e5bf-e4d5169914e5.png" style="display: block;max-width: 100%;">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#1a1818">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr> 
+                                          <td width="58%" align="right" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                             <tbody>
+                                            <tr> 
+                                                <td width="70%" align="right" valign="top">
+                                                 <a href="https://www.korea.edu/sites/en/index.do" target="_blank"><img alt="" border="0" src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/72bb179d-6e4c-7f2b-0a97-55480f253f84.png" style="max-width: 100%;display:inline-block;"></a>
+      
+                                                </td>
+                                                <td width="30%" align="right" valign="top">
+                                                    <a href="https://pure.korea.ac.kr/" target="_blank"><img alt="" border="0" src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/1a0acd18-91f5-bc76-c12a-ef3937d6738b.png"style="max-width: 100%;display:inline-block;"></a>
+                                                </td>
+                                              </tr>
+                                           </tbody>
+                                           </table>
+                                          </td>
+                                          <td width="42%" align="center" valign="top">
+                                             <a href="https://graduate2.korea.ac.kr/main/main.html" target="_blank"><img alt="" border="0" src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/60747a88-2d1b-cdea-d72f-7d06a91ddce0.png" style="max-width: 100%;display:inline-block;"></a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+</body>
+
+</html>

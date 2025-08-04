@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Newsletter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      /* CLIENT-SPECIFIC STYLES */
+
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        font-family: "PT Sans", sans-serif;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+      table th {
+        border-bottom: 2px solid #80a7bb;
+      }
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        /*table-layout: fixed !important;*/
+        margin: 0 auto !important;
+      }
+      table table table {
+        table-layout: auto;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+        text-decoration: none;
+      }
+
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      *[x-apple-data-detectors],  /* iOS */
+      .unstyle-auto-detected-links *,
+      .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img + div {
+        display: none !important;
+      }
+      .ExternalClass,
+      .ExternalClass a,
+      .ExternalClass span,
+      .ExternalClass b,
+      .ExternalClass br,
+      .ExternalClass p,
+      .ExternalClass div {
+        line-height: inherit;
+      }
+      /* iOS BLUE LINKS */
+
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+      .msonopad {
+        padding: 0 4px;
+        /*  padding: 0 5px 0px 15px;*/
+      }
+      .sign a {
+        color: #363636;
+      }
+      .sign a,
+      *[class="sign-padd"] {
+        color: #363636;
+      }
+      .shadow {
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+      }
+      p {
+        margin: 20px 0 !important;
+      }
+
+      .padd-mob {
+        padding: 20px !important;
+      }
+      .applyclick a:active,
+      .applyclick a:focus {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      /* MOBILE STYLES */
+      @media screen and (max-width: 599px) {
+        .pl {
+          padding-left: 0 !important;
+        }
+        .mob-right {
+          text-align: right !important;
+        }
+        .pr-2 {
+          padding-right: 3px;
+        }
+
+        .d-block {
+          display: block !important;
+        }
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        .logo img {
+          margin: 0 auto !important;
+        }
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        /*ALLOWS FOR FULL-WIDTH TABLES */
+        .responsive-table {
+          width: 100% !important;
+        }
+        /* ALLOWS FOR FULL TD */
+        .flex,
+        *[class="flex"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: left !important;
+        }
+        .flex2,
+        *[class="flex2"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: center !important;
+        }
+        .flex3,
+        *[class="flex3"] {
+          display: none !important;
+        }
+        .flex4,
+        *[class="flex4"] {
+          width: 80% !important;
+          display: block !important;
+          text-align: center !important;
+          border-bottom: 1px dashed #a9a7a7;
+          padding-bottom: 20px !important;
+          margin: 20px auto !important;
+        }
+        .flex5,
+        *[class="flex5"] {
+          width: 50% !important;
+          display: inline-grid !important;
+          display: -webkit-inline-grid !important;
+          display: -moz-inline-grid !important;
+          display: -o-inline-grid !important;
+          display: -ms-inline-grid !important;
+        }
+        /* ADJUSTS LAYOUT OF FONT SIZE */
+        .mobile-main-head,
+        *[class="mobile-main-head"] {
+          font-size: 70px !important;
+          line-height: 60px !important;
+        }
+        .mobile-font,
+        *[class="mobile-font"] {
+          font-size: 17px !important;
+          line-height: 27px !important;
+        }
+        .mobile-font-head,
+        *[class="mobile-font-head"] {
+          font-size: 26px !important;
+          line-height: 32px !important;
+        }
+        .mobile-font-head2,
+        *[class="mobile-font-head2"] {
+          font-size: 22px !important;
+          line-height: 28px !important;
+        }
+        .mobile-font-subhead,
+        *[class="mobile-font-subhead"] {
+          font-size: 21px !important;
+          line-height: 31px !important;
+        }
+        .mobile-font-subtitle,
+        *[class="mobile-font-subtitle"] {
+          font-size: 19px !important;
+          line-height: 29px !important;
+        }
+        .mobile-font-signature,
+        *[class="mobile-font-signature"] {
+          font-size: 17px !important;
+          line-height: 17px !important;
+        }
+
+        /* ALLOWS FOR BORDER */
+        .bdr-top-grey {
+          border-top: 1px solid #cccccc !important;
+        }
+        .no-border {
+          border: none !important;
+        }
+        .no-t-brd {
+          border-top: none !important;
+        }
+        .no-b-brd {
+          border-bottom: none !important;
+        }
+        .no-r-brd {
+          border-right: none !important;
+        }
+        .no-l-brd {
+          border-left: none !important;
+        }
+
+        .black-t-brd {
+          border-top: 1px dashed #363636 !important;
+        }
+        .black-b-brd {
+          border-bottom: 1px dashed #363636 !important;
+        }
+        .black-r-brd {
+          border-right: 1px dashed #363636 !important;
+        }
+        .black-l-brd {
+          border-left: 1px dashed #363636 !important;
+        }
+
+        .border {
+          border-left: none !important;
+          border-right: none !important;
+          border-bottom: 1px solid #dddcd9;
+          border-top: 1px solid #dddcd9;
+        }
+        .brdtopbottom,
+        *[class="brdtopbottom"] {
+          border-left: 0px !important;
+          border-right: 0px !important;
+          border-bottom: 1px solid #dedede;
+          border-top: 1px solid #dedede;
+          padding-top: 20px !important;
+          padding-bottom: 20px !important;
+        }
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .mleft {
+          text-align: left !important;
+        }
+        .mcenter {
+          text-align: center !important;
+        }
+        .no-padd {
+          padding: 0px !important;
+        }
+        .no-pl {
+          padding-left: 0px !important;
+        }
+        .no-pr {
+          padding-right: 0px !important;
+        }
+        .nopadd-lr {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        .pt-10 {
+          padding-top: 10px !important;
+        }
+        .pb-10 {
+          padding-bottom: 10px !important;
+        }
+        .pt-15 {
+          padding-top: 15px !important;
+        }
+        .pt-20 {
+          padding-top: 20px !important;
+        }
+        .pb-20 {
+          padding-bottom: 20px !important;
+        }
+        .pb-25 {
+          padding-bottom: 25px !important;
+        }
+        .padd-top-8 {
+          padding-top: 8px !important;
+        }
+        .padr25 {
+          padding-right: 25px !important;
+        }
+        .pad-lr {
+          padding-left: 60px !important;
+          padding-right: 60px !important;
+        }
+        .sho_mob {
+          display: none !important;
+        }
+        .w-35 {
+          width: 35% !important;
+        }
+        .w-100 {
+          width: 100% !important;
+        }
+        /*.padd-lr-20
+        {
+          padding-right: 20px !important;
+          padding-left: 20px !important;
+        }*/
+
+        /* UTILITY CLASSES FOR ADJUSTING MARGIN ON MOBILE */
+        .h-auto {
+          height: auto !important;
+        }
+        .no-mb {
+          margin-bottom: 0px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING Vertical ALign  */
+        .mob-valign-top {
+          vertical-align: top !important;
+        }
+
+        /* ADJUSTS FOR IMAGE CENTER */
+        .img-center {
+          margin: 0 auto !important;
+        }
+
+        /* ADJUSTS FOR TEXT CENTER */
+        .text-center {
+          text-align: center !important;
+        }
+
+        .img-100 {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+        .m-d-none {
+          display: none;
+        }
+      }
+      div[style*="margin: 16px 0;"] {
+        margin: 0 !important;
+      }
+    </style>
+    <!--[if gte mso 9]>
+      <style type="text/css" media="all">
+        .msonopad {
+          padding-right: 10px;
+          text-align: center;
+          width: 40px;
+        }
+        img.mso-img {
+          padding-top: 10px;
+          line-height: 24px;
+        }
+        tr.space-mso {
+          font-size: 0;
+          mso-line-height-alt: 0;
+          mso-margin-top-alt: 1px;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0 !important; padding: 0 !important; background: #ffffff"
+  >
+    <!--[if (gte mso 9)|(ie)]>
+    <center>
+      <table align="center" border="0" cellspacing="0" cellpadding="0"  width="850">
+        <tr>
+          <td align="center" valign="top" width="850">
+            <!
+    [endif]--><!-- HIDDEN PREHEADER TEXT -->
+    <div
+      style="
+        mso-hide: all;
+        display: none;
+        font-size: 1px;
+        color: #333333;
+        line-height: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+      "
+    >
+      Newsletter
+    </div>
+
+    <table align="center">
+      <tbody>
+        <tr>
+          <td
+            align="center"
+            class="container"
+            style="background: #ffffff; border: 1px solid #dddddd"
+            width="850"
+          >
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="responsive-table"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="left">
+                            <img
+                              src="https://uat.crayoninfotech.com/cactus/PNUEV_39_4_Newsletter_June_25_2024/images/logo.jpg"
+                              alt="logo"
+                              title="logo"
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: 850px;
+                              "
+                              class="img-100"
+                              width="850"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            <a
+                              href="https://www.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN270&&mode=view&board_seq=1496280&"
+                              target="_blank"
+                            >
+                              <img
+                                src="https://uat.crayoninfotech.com/cactus/PNUEV_39_4_Newsletter_June_25_2024/images/banner-1.jpg"
+                                alt=""
+                                title=""
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: 850px;
+                                "
+                                width="850"
+                                class="img-100"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" style="padding-bottom: 15px">
+                            <a
+                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1495642&"
+                              target="_blank"
+                            >
+                              <img
+                                src="https://uat.crayoninfotech.com/cactus/PNUEV_39_4_Newsletter_June_25_2024/images/banner-2.jpg"
+                                alt=""
+                                title=""
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: 850px;
+                                "
+                                width="850"
+                                class="img-100"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            <img
+                              src="https://uat.crayoninfotech.com/cactus/PNUEV_39_4_Newsletter_June_25_2024/images/explore-banner.jpg"
+                              alt="banner 2"
+                              title="banner 2"
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: 850px;
+                              "
+                              width="850"
+                              class="img-100"
+                            />
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td
+                            bgcolor="#f0f0f0"
+                            align="center"
+                            valign="top"
+                            style="padding: 30px"
+                          >
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              class="responsive-table"
+                              width="100%"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    align="center"
+                                    style="
+                                      padding-bottom: 30px;
+                                      border-bottom: 1px solid #adadad;
+                                    "
+                                  >
+                                    <table
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      class="responsive-table"
+                                      width="100%"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            align="left"
+                                            valign="middle"
+                                            width="35%"
+                                            class="flex pb-20"
+                                          >
+                                            <a
+                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1494487&"
+                                              target="_blank"
+                                            >
+                                              <img
+                                                src="https://uat.crayoninfotech.com/cactus/PNUEV_39_4_Newsletter_June_25_2024/images/image-1.jpg"
+                                                style="
+                                                  max-width: 100%;
+                                                  display: block;
+                                                  width: 100%;
+                                                  width: 289px;
+                                                "
+                                                alt=""
+                                                title=""
+                                                width="289"
+                                                class="img-100"
+                                              />
+                                            </a>
+                                          </td>
+                                          <td
+                                            align="left"
+                                            width="65%"
+                                            valign="middle"
+                                            class="flex no-pl"
+                                            style="padding-left: 25px"
+                                          >
+                                            <table
+                                              border="0"
+                                              cellpadding="0"
+                                              cellspacing="0"
+                                              class="responsive-table"
+                                              width="100%"
+                                            >
+                                              <tbody>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="
+                                                      font-size: 18px;
+                                                      font-family: 'Open Sans',
+                                                        Arial, Helvetica,
+                                                        sans-serif;
+                                                      color: #000000;
+                                                      font-weight: bold;
+                                                      line-height: 24px;
+                                                    "
+                                                  >
+                                                    <a
+                                                      href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1494487&"
+                                                      target="_blank"
+                                                      style="
+                                                        font-size: 18px;
+                                                        font-weight: bold;
+                                                        font-family: 'Open Sans',
+                                                          Arial, Helvetica,
+                                                          sans-serif;
+                                                        color: #004a9c;
+                                                        line-height: 24px;
+                                                        text-decoration: none;
+                                                      "
+                                                      >Unlocking the Secrets of
+                                                      Magnesium Alloy Anisotropy
+                                                      Using Artificial
+                                                      Intelligence</a
+                                                    >
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="
+                                                      font-size: 14px;
+                                                      font-family: 'Open Sans',
+                                                        Arial, Helvetica,
+                                                        sans-serif;
+                                                      color: #070707;
+                                                      line-height: 18px;
+                                                      padding-top: 10px;
+                                                    "
+                                                  >
+                                                    <a
+                                                      href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1494487&"
+                                                      target="_blank"
+                                                      style="
+                                                        font-size: 14px;
+                                                        font-family: 'Open Sans',
+                                                          Arial, Helvetica,
+                                                          sans-serif;
+                                                        color: #070707;
+                                                        line-height: 18px;
+                                                        text-decoration: none;
+                                                      "
+                                                      >Magnesium alloys have a
+                                                      wide range of applications
+                                                      owing to their great
+                                                      properties, but often
+                                                      exhibit anisotropic
+                                                      deformation behavior,
+                                                      reducing durability.
+                                                      Associate Professor
+                                                      Taekyung Lee from the
+                                                      School of Mechanical
+                                                      Engineering, along with
+                                                      his team has developed a
+                                                      machine learning-based
+                                                      model for accurately
+                                                      predicting such
+                                                      deformation with excellent
+                                                      reliability. This study
+                                                      can assist in the
+                                                      designing of magnesium
+                                                      alloy products with
+                                                      complex plastic
+                                                      anisotropy. 
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="padding-top: 10px"
+                                                  >
+                                                    <table
+                                                      align="left"
+                                                      border="0"
+                                                      cellpadding="0"
+                                                      cellspacing="0"
+                                                      style="border-radius: 5px"
+                                                    >
+                                                      <tbody>
+                                                        <tr>
+                                                          <td
+                                                            align="left"
+                                                            style="
+                                                              border-radius: 5px;
+                                                              background: #005baa;
+                                                              text-align: center;
+                                                            "
+                                                            class=""
+                                                          >
+                                                            <a
+                                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1494487&"
+                                                              target="_blank"
+                                                              style="
+                                                                background: #005baa;
+                                                                border: 1px
+                                                                  solid #005baa;
+                                                                font-family: 'Open Sans',
+                                                                  Arial,
+                                                                  Helvetica,
+                                                                  sans-serif;
+                                                                font-size: 13px;
+                                                                line-height: 15px;
+                                                                text-decoration: none;
+                                                                padding: 5px 7px;
+                                                                color: #ffffff;
+                                                                display: block;
+                                                                border-radius: 5px;
+                                                                box-shadow: 0px
+                                                                  4px 4px 0px
+                                                                  #00000029;
+                                                              "
+                                                              >Read More</a
+                                                            >
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    align="center"
+                                    style="
+                                      padding-top: 30px;
+                                      padding-bottom: 30px;
+                                      border-bottom: 1px solid #adadad;
+                                    "
+                                    dir="rtl"
+                                  >
+                                    <table
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      class="responsive-table"
+                                      width="100%"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            align="left"
+                                            valign="middle"
+                                            width="35%"
+                                            class="flex pb-20"
+                                            dir="ltr"
+                                          >
+                                            <a
+                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1495910"
+                                              target="_blank"
+                                            >
+                                              <img
+                                                src="https://uat.crayoninfotech.com/cactus/PNUEV_39_4_Newsletter_June_25_2024/images/image-2.jpg"
+                                                style="
+                                                  max-width: 100%;
+                                                  display: block;
+                                                  width: 100%;
+                                                  width: 289px;
+                                                "
+                                                width="289"
+                                                alt=""
+                                                title=""
+                                                class="img-100"
+                                              />
+                                            </a>
+                                          </td>
+                                          <td
+                                            align="left"
+                                            width="65%"
+                                            valign="middle"
+                                            class="flex no-pr"
+                                            dir="ltr"
+                                            style="padding-right: 25px"
+                                          >
+                                            <table
+                                              border="0"
+                                              cellpadding="0"
+                                              cellspacing="0"
+                                              class="responsive-table"
+                                              width="100%"
+                                            >
+                                              <tbody>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="
+                                                      font-size: 18px;
+                                                      font-family: 'Open Sans',
+                                                        Arial, Helvetica,
+                                                        sans-serif;
+                                                      color: #00973d;
+                                                      font-weight: bold;
+                                                      line-height: 24px;
+                                                    "
+                                                  >
+                                                    <a
+                                                      href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1495910"
+                                                      target="_blank"
+                                                      style="
+                                                        font-size: 18px;
+                                                        font-weight: bold;
+                                                        font-family: 'Open Sans',
+                                                          Arial, Helvetica,
+                                                          sans-serif;
+                                                        color: #00973d;
+                                                        line-height: 24px;
+                                                        text-decoration: none;
+                                                      "
+                                                      >Novel Additives for
+                                                      Enhancing Perovskite Solar
+                                                      Cells
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="
+                                                      font-size: 14px;
+                                                      font-family: 'Open Sans',
+                                                        Arial, Helvetica,
+                                                        sans-serif;
+                                                      color: #070707;
+                                                      line-height: 18px;
+                                                      padding-top: 10px;
+                                                    "
+                                                  >
+                                                    <a
+                                                      href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1495910"
+                                                      target="_blank"
+                                                      style="
+                                                        font-size: 14px;
+                                                        font-family: 'Open Sans',
+                                                          Arial, Helvetica,
+                                                          sans-serif;
+                                                        color: #070707;
+                                                        line-height: 18px;
+                                                        text-decoration: none;
+                                                      "
+                                                      >Lead halide perovskites
+                                                      have emerged as promising
+                                                      materials for
+                                                      next-generation
+                                                      high-performance solar
+                                                      cells. A team of
+                                                      researchers led by Prof.
+                                                      Hyo Jung Kim from the
+                                                      School of Chemical
+                                                      Engineering and Prof. Ji
+                                                      Youn Seo from the
+                                                      Department of Nano Fusion
+                                                      Technology developed a new
+                                                      approach, using additives,
+                                                      to improve the stability
+                                                      and power conversion
+                                                      efficiency of lead halide
+                                                      perovskites. The study
+                                                      provides an in-depth
+                                                      understanding of designing
+                                                      and selecting additives
+                                                      for increased efficiency
+                                                      and stability of
+                                                      perovskite solar
+                                                      cells. </a
+                                                    >
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="padding-top: 10px"
+                                                  >
+                                                    <table
+                                                      align="left"
+                                                      border="0"
+                                                      cellpadding="0"
+                                                      cellspacing="0"
+                                                      style="border-radius: 5px"
+                                                    >
+                                                      <tbody>
+                                                        <tr>
+                                                          <td
+                                                            align="left"
+                                                            style="
+                                                              border-radius: 5px;
+                                                              background: #00973d;
+                                                              text-align: center;
+                                                            "
+                                                            class=""
+                                                          >
+                                                            <a
+                                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1495910"
+                                                              target="_blank"
+                                                              style="
+                                                                background: #00973d;
+                                                                border: 1px
+                                                                  solid #00973d;
+                                                                font-family: 'Open Sans',
+                                                                  Arial,
+                                                                  Helvetica,
+                                                                  sans-serif;
+                                                                font-size: 13px;
+                                                                line-height: 15px;
+                                                                text-decoration: none;
+                                                                padding: 5px 7px;
+                                                                color: #ffffff;
+                                                                display: block;
+                                                                border-radius: 5px;
+                                                                box-shadow: 0px
+                                                                  4px 4px 0px
+                                                                  #00000029;
+                                                              "
+                                                              >Read More</a
+                                                            >
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    align="center"
+                                    style="
+                                      padding-top: 30px;
+                                      padding-bottom: 30px;
+                                      border-bottom: 1px solid #adadad;
+                                    "
+                                  >
+                                    <table
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      class="responsive-table"
+                                      width="100%"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            align="left"
+                                            valign="middle"
+                                            width="35%"
+                                            class="flex pb-20"
+                                          >
+                                            <a
+                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1495023&"
+                                              target="_blank"
+                                            >
+                                              <img
+                                                src="https://uat.crayoninfotech.com/cactus/PNUEV_39_4_Newsletter_June_25_2024/images/image-3.png"
+                                                style="
+                                                  max-width: 100%;
+                                                  display: block;
+                                                  width: 100%;
+                                                  width: 289px;
+                                                "
+                                                alt=""
+                                                title=""
+                                                width="289"
+                                                class="img-100"
+                                              />
+                                            </a>
+                                          </td>
+                                          <td
+                                            align="left"
+                                            width="65%"
+                                            valign="middle"
+                                            class="flex no-pl"
+                                            style="padding-left: 25px"
+                                          >
+                                            <table
+                                              border="0"
+                                              cellpadding="0"
+                                              cellspacing="0"
+                                              class="responsive-table"
+                                              width="100%"
+                                            >
+                                              <tbody>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="
+                                                      font-size: 18px;
+                                                      font-family: 'Open Sans',
+                                                        Arial, Helvetica,
+                                                        sans-serif;
+                                                      color: #000000;
+                                                      font-weight: bold;
+                                                      line-height: 24px;
+                                                    "
+                                                  >
+                                                    <a
+                                                      href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1495023&"
+                                                      target="_blank"
+                                                      style="
+                                                        font-size: 18px;
+                                                        font-weight: bold;
+                                                        font-family: 'Open Sans',
+                                                          Arial, Helvetica,
+                                                          sans-serif;
+                                                        color: #004a9c;
+                                                        line-height: 24px;
+                                                        text-decoration: none;
+                                                      "
+                                                      >Improving the Stability
+                                                      of Perovskite Solar Cells
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="
+                                                      font-size: 14px;
+                                                      font-family: 'Open Sans',
+                                                        Arial, Helvetica,
+                                                        sans-serif;
+                                                      color: #070707;
+                                                      line-height: 18px;
+                                                      padding-top: 10px;
+                                                    "
+                                                  >
+                                                    <a
+                                                      href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1495023&"
+                                                      target="_blank"
+                                                      style="
+                                                        font-size: 14px;
+                                                        font-family: 'Open Sans',
+                                                          Arial, Helvetica,
+                                                          sans-serif;
+                                                        color: #070707;
+                                                        line-height: 18px;
+                                                        text-decoration: none;
+                                                      "
+                                                      >Perovskite solar cells,
+                                                      with high power conversion
+                                                      energy, have the potential
+                                                      to replace traditional
+                                                      silicon solar cells but
+                                                      suffer from degradation
+                                                      due to moisture. A team of
+                                                      researchers led by
+                                                      Professor of Nanoenergy
+                                                      Engineering, Ji-Youn Seo
+                                                      utilized crown ethers for
+                                                      interfacial passivation,
+                                                      resulting in improved
+                                                      stability while
+                                                      maintaining power
+                                                      conversion efficiency.  
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="padding-top: 10px"
+                                                  >
+                                                    <table
+                                                      align="left"
+                                                      border="0"
+                                                      cellpadding="0"
+                                                      cellspacing="0"
+                                                      style="border-radius: 5px"
+                                                    >
+                                                      <tbody>
+                                                        <tr>
+                                                          <td
+                                                            align="left"
+                                                            style="
+                                                              border-radius: 5px;
+                                                              background: #005baa;
+                                                              text-align: center;
+                                                            "
+                                                            class=""
+                                                          >
+                                                            <a
+                                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1495023&"
+                                                              target="_blank"
+                                                              style="
+                                                                background: #005baa;
+                                                                border: 1px
+                                                                  solid #005baa;
+                                                                font-family: 'Open Sans',
+                                                                  Arial,
+                                                                  Helvetica,
+                                                                  sans-serif;
+                                                                font-size: 13px;
+                                                                line-height: 15px;
+                                                                text-decoration: none;
+                                                                padding: 5px 7px;
+                                                                color: #ffffff;
+                                                                display: block;
+                                                                border-radius: 5px;
+                                                                box-shadow: 0px
+                                                                  4px 4px 0px
+                                                                  #00000029;
+                                                              "
+                                                              >Read More</a
+                                                            >
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    align="center"
+                                    style="
+                                      padding-top: 30px;
+                                      padding-bottom: 30px;
+                                      border-bottom: 1px solid #adadad;
+                                    "
+                                    dir="rtl"
+                                  >
+                                    <table
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      class="responsive-table"
+                                      width="100%"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            align="left"
+                                            valign="middle"
+                                            width="35%"
+                                            class="flex pb-20"
+                                            dir="ltr"
+                                          >
+                                            <a
+                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1496431"
+                                              target="_blank"
+                                            >
+                                              <img
+                                                src="https://uat.crayoninfotech.com/cactus/PNUEV_39_4_Newsletter_June_25_2024/images/image-4.jpg"
+                                                style="
+                                                  max-width: 100%;
+                                                  display: block;
+                                                  width: 100%;
+                                                  width: 289px;
+                                                "
+                                                width="289"
+                                                alt=""
+                                                title=""
+                                                class="img-100"
+                                              />
+                                            </a>
+                                          </td>
+                                          <td
+                                            align="left"
+                                            width="65%"
+                                            valign="middle"
+                                            class="flex no-pr"
+                                            dir="ltr"
+                                            style="padding-right: 25px"
+                                          >
+                                            <table
+                                              border="0"
+                                              cellpadding="0"
+                                              cellspacing="0"
+                                              class="responsive-table"
+                                              width="100%"
+                                            >
+                                              <tbody>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="
+                                                      font-size: 18px;
+                                                      font-family: 'Open Sans',
+                                                        Arial, Helvetica,
+                                                        sans-serif;
+                                                      color: #00973d;
+                                                      font-weight: bold;
+                                                      line-height: 24px;
+                                                    "
+                                                  >
+                                                    <a
+                                                      href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1496431"
+                                                      target="_blank"
+                                                      style="
+                                                        font-size: 18px;
+                                                        font-weight: bold;
+                                                        font-family: 'Open Sans',
+                                                          Arial, Helvetica,
+                                                          sans-serif;
+                                                        color: #00973d;
+                                                        line-height: 24px;
+                                                        text-decoration: none;
+                                                      "
+                                                      >Study Reveals a Brand New
+                                                      Hall Effect
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="
+                                                      font-size: 14px;
+                                                      font-family: 'Open Sans',
+                                                        Arial, Helvetica,
+                                                        sans-serif;
+                                                      color: #070707;
+                                                      line-height: 18px;
+                                                      padding-top: 10px;
+                                                    "
+                                                  >
+                                                    <a
+                                                      href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1496431"
+                                                      target="_blank"
+                                                      style="
+                                                        font-size: 14px;
+                                                        font-family: 'Open Sans',
+                                                          Arial, Helvetica,
+                                                          sans-serif;
+                                                        color: #070707;
+                                                        line-height: 18px;
+                                                        text-decoration: none;
+                                                      "
+                                                      >The Hall effect is an
+                                                      important phenomenon, in
+                                                      which a voltage is
+                                                      generated when both
+                                                      electric and magnetic
+                                                      fields are applied to
+                                                      materials. It is used for
+                                                      sensing applications in
+                                                      many industries. Prof.
+                                                      Choongyu Hwang from the
+                                                      Department of Physics, and
+                                                      his team explored a new
+                                                      type of Hall effect,
+                                                      called the non-linear Hall
+                                                      effect. This study
+                                                      provides insights into
+                                                      room temperature
+                                                      non-linear Hall effect
+                                                      materials, paving the way
+                                                      towards innovative quantum
+                                                      devices. 
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="padding-top: 10px"
+                                                  >
+                                                    <table
+                                                      align="left"
+                                                      border="0"
+                                                      cellpadding="0"
+                                                      cellspacing="0"
+                                                      style="border-radius: 5px"
+                                                    >
+                                                      <tbody>
+                                                        <tr>
+                                                          <td
+                                                            align="left"
+                                                            style="
+                                                              border-radius: 5px;
+                                                              background: #00973d;
+                                                              text-align: center;
+                                                            "
+                                                            class=""
+                                                          >
+                                                            <a
+                                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1496431"
+                                                              target="_blank"
+                                                              style="
+                                                                background: #00973d;
+                                                                border: 1px
+                                                                  solid #00973d;
+                                                                font-family: 'Open Sans',
+                                                                  Arial,
+                                                                  Helvetica,
+                                                                  sans-serif;
+                                                                font-size: 13px;
+                                                                line-height: 15px;
+                                                                text-decoration: none;
+                                                                padding: 5px 7px;
+                                                                color: #ffffff;
+                                                                display: block;
+                                                                border-radius: 5px;
+                                                                box-shadow: 0px
+                                                                  4px 4px 0px
+                                                                  #00000029;
+                                                              "
+                                                              >Read More</a
+                                                            >
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td align="center" style="padding-top: 30px">
+                                    <table
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      class="responsive-table"
+                                      width="100%"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            align="left"
+                                            valign="middle"
+                                            width="35%"
+                                            class="flex pb-20"
+                                          >
+                                            <a
+                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1495089"
+                                              target="_blank"
+                                            >
+                                              <img
+                                                src="https://uat.crayoninfotech.com/cactus/PNUEV_39_4_Newsletter_June_25_2024/images/image-5.jpg"
+                                                style="
+                                                  max-width: 100%;
+                                                  display: block;
+                                                  width: 100%;
+                                                  width: 289px;
+                                                "
+                                                alt=""
+                                                title=""
+                                                width="289"
+                                                class="img-100"
+                                              />
+                                            </a>
+                                          </td>
+                                          <td
+                                            align="left"
+                                            width="65%"
+                                            valign="middle"
+                                            class="flex no-pl"
+                                            style="padding-left: 25px"
+                                          >
+                                            <table
+                                              border="0"
+                                              cellpadding="0"
+                                              cellspacing="0"
+                                              class="responsive-table"
+                                              width="100%"
+                                            >
+                                              <tbody>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="
+                                                      font-size: 18px;
+                                                      font-family: 'Open Sans',
+                                                        Arial, Helvetica,
+                                                        sans-serif;
+                                                      color: #000000;
+                                                      font-weight: bold;
+                                                      line-height: 24px;
+                                                    "
+                                                  >
+                                                    <a
+                                                      href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1495089"
+                                                      target="_blank"
+                                                      style="
+                                                        font-size: 18px;
+                                                        font-weight: bold;
+                                                        font-family: 'Open Sans',
+                                                          Arial, Helvetica,
+                                                          sans-serif;
+                                                        color: #004a9c;
+                                                        line-height: 24px;
+                                                        text-decoration: none;
+                                                      "
+                                                      >Novel 4D LIDAR Sensor
+                                                      Technology</a
+                                                    >
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="
+                                                      font-size: 14px;
+                                                      font-family: 'Open Sans',
+                                                        Arial, Helvetica,
+                                                        sans-serif;
+                                                      color: #070707;
+                                                      line-height: 18px;
+                                                      padding-top: 10px;
+                                                    "
+                                                  >
+                                                    <a
+                                                      href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1495089"
+                                                      target="_blank"
+                                                      style="
+                                                        font-size: 14px;
+                                                        font-family: 'Open Sans',
+                                                          Arial, Helvetica,
+                                                          sans-serif;
+                                                        color: #070707;
+                                                        line-height: 18px;
+                                                        text-decoration: none;
+                                                      "
+                                                      >Professor Chang-Seok
+                                                      Kim’s research team at the
+                                                      Department of Optics and
+                                                      Mechatronics Engineering
+                                                      and electromagnetic energy
+                                                      materials research team at
+                                                      Hyundai Motor Company’s
+                                                      Basic Materials Research
+                                                      Center developed a novel
+                                                      LIDAR sensor technology
+                                                      that enables autonomous
+                                                      vehicles to see even in
+                                                      bad weather. The novel
+                                                      technology reduces
+                                                      environmental interference
+                                                      and inter-vehicle
+                                                      interference. 
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    style="padding-top: 10px"
+                                                  >
+                                                    <table
+                                                      align="left"
+                                                      border="0"
+                                                      cellpadding="0"
+                                                      cellspacing="0"
+                                                      style="border-radius: 5px"
+                                                    >
+                                                      <tbody>
+                                                        <tr>
+                                                          <td
+                                                            align="left"
+                                                            style="
+                                                              border-radius: 5px;
+                                                              background: #005baa;
+                                                              text-align: center;
+                                                            "
+                                                            class=""
+                                                          >
+                                                            <a
+                                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1495089"
+                                                              target="_blank"
+                                                              style="
+                                                                background: #005baa;
+                                                                border: 1px
+                                                                  solid #005baa;
+                                                                font-family: 'Open Sans',
+                                                                  Arial,
+                                                                  Helvetica,
+                                                                  sans-serif;
+                                                                font-size: 13px;
+                                                                line-height: 15px;
+                                                                text-decoration: none;
+                                                                padding: 5px 7px;
+                                                                color: #ffffff;
+                                                                display: block;
+                                                                border-radius: 5px;
+                                                                box-shadow: 0px
+                                                                  4px 4px 0px
+                                                                  #00000029;
+                                                              "
+                                                              >Read More</a
+                                                            >
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              class="responsive-table"
+                              width="100%"
+                            >
+                              <tr>
+                                <td
+                                  align="left"
+                                  style="
+                                    border-top: 10px solid #005baa;
+                                    border-bottom: 15px solid #00973d;
+                                  "
+                                >
+                                  <img
+                                    src="https://uat.crayoninfotech.com/cactus/PNUEV_39_4_Newsletter_June_25_2024/images/banner-3.jpg"
+                                    alt=""
+                                    title=""
+                                    style="
+                                      display: block;
+                                      max-width: 100%;
+                                      width: 850px;
+                                    "
+                                    width="850"
+                                    class="img-100"
+                                  />
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            align="left"
+                            bgcolor="#005baa"
+                            style="padding: 20px 30px"
+                          >
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              class="responsive-table"
+                              width="100%"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    align="center"
+                                    width="48%"
+                                    class="flex2 pb-20"
+                                  >
+                                    <table
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      class="responsive-table"
+                                      width="100%"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td align="center">
+                                            <a
+                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do?mCode=MN104"
+                                              target="_blank"
+                                            >
+                                              <img
+                                                src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/f71a4872-1c50-8ad3-a2cd-63771f1366c9.png"
+                                                alt=""
+                                                title=""
+                                                style="
+                                                  display: block;
+                                                  max-width: 100%;
+                                                "
+                                              />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td align="center" width="4%" class="flex3">
+                                    &nbsp;
+                                  </td>
+                                  <td align="center" width="48%" class="flex2">
+                                    <table
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      class="responsive-table"
+                                      width="100%"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td align="center">
+                                            <a
+                                              href="https://www.pusan.ac.kr/eng/CMS/Contents/Contents.do?mCode=MN072"
+                                              target="_blank"
+                                            >
+                                              <img
+                                                src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/515a21cb-c462-1871-9864-f483917278f8.png"
+                                                alt=""
+                                                title=""
+                                                style="
+                                                  display: block;
+                                                  max-width: 100%;
+                                                "
+                                              />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            align="center"
+                            bgcolor="#232425"
+                            style="padding: 20px"
+                          >
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              class="responsive-table"
+                              width="100%"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    align="center"
+                                    style="padding-bottom: 15px"
+                                  >
+                                    <table
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td align="center">
+                                            <a
+                                              href="https://www.pusan.ac.kr/eng/Main.do"
+                                              target="_blank"
+                                            >
+                                              <img
+                                                src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/1f6f390e-eb55-26dd-075e-25b56689177e.png"
+                                                alt="Pusan National University"
+                                                title="Pusan National University"
+                                              />
+                                            </a>
+                                          </td>
+                                          <td
+                                            align="center"
+                                            style="padding-left: 10px"
+                                          >
+                                            <a
+                                              href="https://www.youtube.com/channel/UC2C8QLSMp3QMFS96xQc7WRA"
+                                              target="_blank"
+                                            >
+                                              <img
+                                                src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/2ecdb69e-7659-21ad-99ae-a23099940c09.png"
+                                                alt="Youtube"
+                                                title="Youtube"
+                                              />
+                                            </a>
+                                          </td>
+                                          <td
+                                            align="center"
+                                            style="padding-left: 10px"
+                                          >
+                                            <a
+                                              href="https://www.instagram.com/pusan.ac.kr/"
+                                              target="_blank"
+                                            >
+                                              <img
+                                                src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/c2b4f090-645b-13b9-2dde-9e0285d97e37.png"
+                                                alt="instagram"
+                                                title=""
+                                              />
+                                            </a>
+                                          </td>
+                                          <td
+                                            align="center"
+                                            style="padding-left: 10px"
+                                          >
+                                            <a
+                                              href="https://www.facebook.com/PusanNationalUniv/"
+                                              target="_blank"
+                                            >
+                                              <img
+                                                src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/566b6eb5-d4b9-ba7c-de67-eb062bde330a.png"
+                                                alt="Facebook"
+                                                title="Facebook"
+                                              />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    align="center"
+                                    style="
+                                      padding-bottom: 15px;
+                                      color: #ffffff;
+                                      font-size: 14px;
+                                      line-height: 22px;
+                                    "
+                                  >
+                                    If you no longer wish to receive emails from
+                                    Pusan National University, please send an
+                                    email to
+                                    <a
+                                      href="mailto:globalpnu@pusan.ac.kr"
+                                      style="
+                                        color: #ffffff;
+                                        text-decoration: underline;
+                                      "
+                                      >globalpnu@pusan.ac.kr</a
+                                    >
+                                    <br class="m-d-none" />
+                                    with the word
+                                    <a
+                                      href=""
+                                      style="color: #ffffff; font-weight: bold"
+                                      >Unsubscribe</a
+                                    >
+                                    in the subject line.
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <![endif]-->
+  </body>
+</html>

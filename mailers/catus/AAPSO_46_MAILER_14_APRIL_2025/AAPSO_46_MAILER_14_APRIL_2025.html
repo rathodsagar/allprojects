@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AAPSO Newsletter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+      /* CLIENT-SPECIFIC STYLES */
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        /*table-layout: fixed !important;*/
+        margin: 0 auto !important;
+      }
+
+      table table table {
+        table-layout: auto;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+        text-decoration: none !important;
+      }
+
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      *[x-apple-data-detectors],
+      /* iOS */
+      .unstyle-auto-detected-links *,
+      .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img+div {
+        display: none !important;
+      }
+
+      .ExternalClass,
+      .ExternalClass a,
+      .ExternalClass span,
+      .ExternalClass b,
+      .ExternalClass br,
+      .ExternalClass p,
+      .ExternalClass div {
+        line-height: inherit;
+      }
+
+      /* iOS BLUE LINKS */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      .msonopad {
+        padding: 0 4px;
+        /*  padding: 0 5px 0px 15px;*/
+      }
+
+      .sign a {
+        color: #363636;
+      }
+
+      .sign a,
+      *[class="sign-padd"] {
+        color: #363636;
+      }
+
+      .shadow {
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+      }
+
+      .applyclick a:active,
+      .applyclick a:focus {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      div[style*="margin: 16px 0;"] {
+        margin: 0 !important;
+      }
+
+      /* MOBILE STYLES */
+      @media screen and (max-width: 599px) {
+        .partner-logo {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .pr-2 {
+          padding-right: 10px !important;
+        }
+
+        .pr-10 {
+          padding-right: 10px !important;
+        }
+        .pr-20 {
+          padding-right: 20px !important;
+        }
+
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        .logo img {
+          margin: 0 auto !important;
+        }
+
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        /*ALLOWS FOR FULL-WIDTH TABLES */
+        .responsive-table {
+          width: 100% !important;
+        }
+
+        /* ALLOWS FOR FULL TD */
+        .flex,
+        *[class="flex"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: left !important;
+        }
+
+        .flex2,
+        *[class="flex2"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: center !important;
+        }
+
+        /* ADJUSTS LAYOUT OF FONT SIZE */
+        .mobile-font,
+        *[class="mobile-font"] {
+          font-size: 16px !important;
+          line-height: 20px !important;
+        }
+
+        .mobile-font-head,
+        *[class="mobile-font-head"] {
+          font-size: 18px !important;
+          line-height: 22px !important;
+        }
+
+        .mobile-font-head2 {
+          font-size: 20px !important;
+          line-height: 24px !important;
+        }
+
+        /* ALLOWS FOR BORDER */
+        .no-border {
+          border: none !important;
+        }
+
+        .border {
+          border-left: none !important;
+          border-right: none !important;
+          border-bottom: 1px solid #dddcd9;
+          border-top: 1px solid #dddcd9;
+        }
+
+        .brdtopbottom,
+        *[class="brdtopbottom"] {
+          border-left: 0px !important;
+          border-right: 0px !important;
+          border-bottom: 1px solid #dedede;
+          border-top: 1px solid #dedede;
+          padding-top: 20px !important;
+          padding-bottom: 20px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .mleft {
+          text-align: left !important;
+        }
+
+        .mcenter {
+          text-align: center !important;
+        }
+
+        .no-padd {
+          padding: 0px !important;
+        }
+        .padd-mob {
+          padding: 20px 10px !important;
+        }
+
+        .no-pl {
+          padding-left: 0px !important;
+        }
+
+        .no-pr {
+          padding-right: 0px !important;
+        }
+
+        .nopadd-lr {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+
+        .py-20 {
+          padding-top: 20px !important;
+          padding-bottom: 20px !important;
+        }
+
+        .pt-0 {
+          padding-top: 0px !important;
+        }
+
+        .pt-10 {
+          padding-top: 10px !important;
+        }
+
+        .pl-10 {
+          padding-left: 20px !important;
+        }
+
+        .pt-15 {
+          padding-top: 15px !important;
+        }
+
+        .pt-20 {
+          padding-top: 20px !important;
+        }
+        .pb-0{
+          padding-bottom: 0px !important;
+        }
+
+        .pb-10 {
+          padding-bottom: 10px !important;
+        }
+
+        .pb-20 {
+          padding-bottom: 20px !important;
+        }
+
+        .pb-30 {
+          padding-bottom: 30px !important;
+        }
+
+        .padd-top-8 {
+          padding-top: 8px !important;
+        }
+
+        .pl-30 {
+          padding-left: 30px !important;
+        }
+
+        .padr25 {
+          padding-right: 25px !important;
+        }
+
+        .pad-lr {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+
+        .sho_mob {
+          display: none !important;
+        }
+
+        .w-35 {
+          width: 35% !important;
+        }
+
+        .w-100 {
+          width: 100% !important;
+        }
+
+        /*.padd-lr-20
+          {
+            padding-right: 20px !important;
+            padding-left: 20px !important;
+          }*/
+        /* UTILITY CLASSES FOR ADJUSTING MARGIN ON MOBILE */
+        .h-auto {
+          height: auto !important;
+        }
+
+        .no-mb {
+          margin-bottom: 0px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING Vertical ALign  */
+        .mob-valign-top {
+          vertical-align: top !important;
+        }
+
+        /* ADJUSTS FOR IMAGE CENTER */
+        .img-center {
+          margin: 0 auto !important;
+        }
+
+        /* ADJUSTS FOR TEXT CENTER */
+        .text-center {
+          text-align: center !important;
+        }
+
+        .body-text {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+        .pad-mob{
+          padding-left: 10px!important;
+        }
+
+        .mob-d-none {
+            display: none !important;
+        }
+      }
+
+      @media screen and (max-width: 370px) {
+
+        .mobile-font,
+        *[class="mobile-font"] {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+
+        .mobile-font-head3 {
+          font-size: 30px !important;
+          line-height: 40px !important;
+        }
+
+        .pl-10 {
+          padding-left: 10px !important;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .darkmode {
+          background: #000000 !important;
+        }
+      }
+    </style>
+    <!--[if gte mso 9]>
+		<style type="text/css" media="all">
+        .msonopad {
+          padding-right: 10px;
+          text-align: center;
+          width: 40px;
+        }
+        img.mso-img {
+          padding-top: 10px;
+          line-height: 24px;
+        }
+        tr.space-mso {
+          font-size: 0;
+          mso-line-height-alt: 0;
+          mso-margin-top-alt: 1px;
+        }
+      </style>
+		<![endif]-->
+  </head>
+  <body style="margin: 0 !important; padding: 0 !important; background: #ffffff">
+    <!--[if (gte mso 9)|(ie)]>
+		<center>
+			<table align="center" border="0" cellspacing="0" cellpadding="0"  width="800">
+				<tr>
+					<td align="center" valign="top" width="800">
+						<!
+    [endif]-->
+    <!-- HIDDEN PREHEADER TEXT -->
+    <div style="
+        mso-hide: all;
+        display: none;
+        font-size: 1px;
+        color: #333333;
+        line-height: 0;
+        font-family: 'Arial', Helvetica, sans-serif;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+      "></div>
+    <table align="center">
+      <tbody>
+        <tr>
+          <td align="center" class="container" style="background: #ffffff; border: 1px solid #dddddd" width="800">
+             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+              <tbody>
+                <tr>
+                  <td bgcolor="#ffffff" align="left" style="padding: 30px 25px" class="padd-mob">
+                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+                      <tbody>
+                        <tr>
+                          <td valign="top" align="top" width="50%" class="mb-20">
+                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+                              <tbody>
+                                <tr>
+                                  <td align="left" valign="top">
+                                    <img src="https://maassets.higherlogic.com/image/AAP_MASTER/logo1_3057291.png" alt="Logo" width="246" style="max-width: 246px; width:100%; display: block" />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td valign="top" align="top" width="50%" class="mb-20 pl-10">
+                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+                              <tbody>
+                                <tr>
+                                  <td align="right" valign="top">
+                                    <img src="https://maassets.higherlogic.com/image/AAP_MASTER/logo2_3057293.png" alt="Logo" width="182" style="max-width: 182px; width:100%; display: block" />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#ffffff" align="left">
+                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+                      <tbody>
+                        <tr>
+                          <td align="left" valign="top">
+                             <a href="https://publications.aap.org/pediatricsopenscience" target="_blank">
+                              <img src="https://uat.crayoninfotech.com/cactus/AAPSO_46_MAILER_14_APRIL_2025/images/banner.png" alt="banner" width="800" style="max-width: 800px; width: 100%; display: block" />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#C8342C" align="left" style="padding: 20px 20px;">
+                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+                      <tbody>
+                        <tr>
+                          <td align="center" class="mobile-font-head pb-0" style="padding-bottom:0px; font-size:28px; font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 34px; font-weight: 400;">All article publishing charges (APCs) will be waived for articles
+                            submitted by <strong>June 30, 2025</strong></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#ffffff" align="center" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" class="mobile-font-head2 padd-mob" style="font-size: 32px; font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif; color: #5E0F11; line-height: 38px; font-weight: 700; padding: 20px;">Research Focus Areas</td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#ffffff">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0"class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left" valign="top">
+                                    <img src="https://uat.crayoninfotech.com/cactus/AAPSO_46_MAILER_14_APRIL_2025/images/research-focus-area.png" alt="banner" width="800" style="max-width: 800px; width: 100%; display: block" />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#ffffff" align="center" valign="top" style="padding: 20px;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" class="mobile-font-head2" style="font-size: 32px; font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif; color: #5E0F11; line-height: 38px; font-weight: 700; padding-bottom: 20px;">Submission Types</td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#ffffff">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td bgcolor="#ffffff" align="center" valign="top" class="flex" width="32%">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFEBEA" style="border-radius: 8px;">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="center" valign="top" style="padding: 15px 10px 0px;">
+                                                      <img src="https://uat.crayoninfotech.com/cactus/AAPSO_46_MAILER_14_APRIL_2025/images/submission-types-icon-1.png" alt="box1" width="48" style="max-width:48px; width: 100%; display: block">
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <td align="center" class="mobile-font-head" style="
+                                                    font-size: 20px;
+                                                    font-family: 'Alegreya Sans', Arial, Helvetica,
+                                                      sans-serif;
+                                                    color: #231F20;
+                                                    line-height: 22px;
+                                                    font-weight: normal;
+                                                    padding:20px 20px;
+                                                  ">Original research
+                                                </td>
+                                              </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td class="sho_mob" width="2%">&nbsp;</td>
+                                  <td bgcolor="#ffffff" align="center" valign="top" class="flex py-20" width="32%">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFEBEA" style="border-radius: 8px;">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="center" valign="top" style="padding: 15px 10px 0px;">
+                                                      <img src="https://uat.crayoninfotech.com/cactus/AAPSO_46_MAILER_14_APRIL_2025/images/submission-types-icon-2.png" alt="box1" width="48" style="max-width:48px; width: 100%; display: block">
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <td align="center" class="mobile-font-head" style="
+                                                    font-size: 20px;
+                                                    font-family: 'Alegreya Sans', Arial, Helvetica,
+                                                      sans-serif;
+                                                    color: #231F20;
+                                                    line-height: 22px;
+                                                    font-weight: normal;
+                                                    padding:20px 20px;
+                                                  ">Research briefs
+                                                </td>
+                                              </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td class="sho_mob" width="2%">&nbsp;</td>
+                                  <td bgcolor="#ffffff" align="center" valign="top" class="flex" width="32%">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFEBEA" style="border-radius: 8px;">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="center" valign="top" style="padding: 15px 10px 0px;">
+                                                      <img src="https://uat.crayoninfotech.com/cactus/AAPSO_46_MAILER_14_APRIL_2025/images/submission-types-icon-3.png" alt="box1" width="48" style="max-width:48px; width: 100%; display: block">
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <td align="center" class="mobile-font-head" style="
+                                                    font-size: 20px;
+                                                    font-family: 'Alegreya Sans', Arial, Helvetica,
+                                                      sans-serif;
+                                                    color: #231F20;
+                                                    line-height: 22px;
+                                                    font-weight: normal;
+                                                    padding:20px 20px;
+                                                  ">Perspectives opinions
+                                                </td>
+                                              </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding-top: 25px;">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td align="left" style="border-radius: 6px; background: #C8342C; text-align: center;" class="">
+                                    <a href="https://submit-pedsos.aappublications.org/" target="_blank" style="background: #C8342C; border: 1px solid #C8342C; font-family: 'Alegreya Sans',Arial,Helvetica, sans-serif; font-size: 20px; line-height: 22px; font-weight:700; text-decoration: none; padding: 10px 25px; color: #ffffff; display: block; border-radius: 6px; text-transform: capitalize;">Submit your manuscript</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+					</td>
+				</tr>
+			</table>
+		</center>
+		<![endif]-->
+  </body>
+</html>

@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>%%subject%%</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+      }
+      table table table {
+        table-layout: auto;
+      }
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+        text-decoration: none;
+      }
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      *[x-apple-data-detectors],
+      /* iOS */
+      .unstyle-auto-detected-links *,
+      .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+      .sign a {
+        color: #272525;
+      }
+      .sign a *[class="sign-padd"] {
+        color: #272525;
+      }
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img + div {
+        display: none !important;
+      }
+      td.content-selection.mobile-font,
+      [owa] .content-selection {
+        padding-bottom: 20px !important;
+      }
+      /* MOBILE STYLES */
+      @media screen and (max-width: 525px) {
+        .flex-nopd,
+        *[class="flex-nopd"] {
+          text-align: center !important;
+          margin-bottom: 0px !important;
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+          padding-top: 5px !important;
+          padding-bottom: 0px !important;
+          display: block !important;
+          width: 100% !important;
+        }
+        .mbtext,
+        *[class="mbtext"] {
+          font-size: 16px !important;
+        }
+        .emailer_logo img,
+        *[class="emailer_logo img"] {
+          padding: 0px 5px !important;
+        }
+        .mbpt {
+          padding-top: 0px !important;
+        }
+        .mbpb {
+          padding-bottom: 0px !important;
+        }
+        .mobile-font,
+        *[class="mobile-font"] {
+          font-size: 18px !important;
+          line-height: 28px !important;
+        }
+        .mobile-font-subtitle {
+          font-size: 24px !important;
+          line-height: 34px !important;
+        }
+        .mobile-font-subtitle-font {
+          font-size: 17px !important;
+          line-height: 27px !important;
+        }
+        .spacing {
+          padding: 5px 0 8px 15px !important;
+        }
+        .border {
+          border-left: 0px solid #ffffff;
+          border-right: 0px solid #ffffff;
+        }
+        .text-center {
+          text-align: center;
+        }
+        .padding-top {
+          padding-top: 20px !important;
+        }
+        .text-left {
+          text-align: left !important;
+        }
+        .no-padd {
+          padding: 0 !important;
+        }
+        .msonopad {
+          padding: 0 4px !important;
+        }
+        .flex,
+        *[class="flex"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: center !important;
+          margin-bottom: 20px !important;
+        }
+        .flex2,
+        *[class="flex2"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: center !important;
+          margin-bottom: 2px !important;
+        }
+        td.flex.brdtopbottom.padd-bottom {
+          border: 1px solid #dedede;
+          padding: 20px 0;
+          border-left: none !important;
+          border-right: none !important;
+        }
+        .flex3,
+        *[class="flex3"] {
+          width: 100% !important;
+          display: none !important;
+        }
+        .txt-cent {
+          text-align: center !important;
+          padding: 10px 0px !important;
+        }
+        .icon-width,
+        *[class="icon-width"] {
+          width: 20% !important;
+        }
+        .bottom-border {
+          border-bottom: 0px solid !important;
+        }
+        .btn-padd-bottm {
+          padding-top: 0px !important;
+        }
+        .mobile-font-head,
+        *[class="mobile-font-head"] {
+          font-size: 27px !important;
+          line-height: 37px !important;
+        }
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        .logo img {
+          margin: 0 auto !important;
+        }
+        /* FULL-WIDTH TABLES */
+        .responsive-table {
+          width: 100% !important;
+        }
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .padding {
+          padding: 10px 15px 10px 15px !important;
+        }
+        .no-padding {
+          padding: 0 !important;
+        }
+        .section-notop-padding {
+          padding: 0px 15px 30px 15px !important;
+        }
+        .section-padding {
+          padding: 35px 15px 20px 15px !important;
+        }
+        .section-padding-note {
+          padding: 20px 30px 20px 30px !important;
+        }
+        .padd {
+          padding: 0px 15px 10px 15px !important;
+        }
+        .section-padding-main {
+          padding: 30px 15px 30px 15px !important;
+        }
+        .main-section-no-padd {
+          padding: 0px 15px 30px 15px !important;
+        }
+        .footer-title {
+          padding-bottom: 10px !important;
+        }
+        .section-padding-two {
+          padding: 0px 15px !important;
+        }
+        .mobile-padd {
+          padding-top: 18px !important;
+        }
+        .faculty-padding {
+          padding: 0px 15px 10px 15px !important;
+        }
+        /* ADJUST BUTTONS ON MOBILE */
+        .mobile-button-container {
+          margin: 0 auto;
+          width: 100% !important;
+        }
+        td.top_pd {
+          padding-top: 30px !important;
+        }
+        .mobile-button {
+          padding: 15px !important;
+          border: 0 !important;
+          font-size: 18px !important;
+          display: block !important;
+        }
+        .mob-btn-padd-top-10 {
+          padding-top: 10px !important;
+        }
+        .padd-top_0 {
+          padding: 0 0 25px 0 !important;
+          text-align: center;
+        }
+        .border_none {
+          border: 0 !important;
+        }
+        /* td.mobile-font {
+          padding: 0 15px !important;
+        } */
+        td.mobile-font.no-leftpadd {
+          text-align: center !important;
+          padding: 0px !important;
+        }
+        td.logo_center {
+          float: none !important;
+          text-align: center;
+          margin: 0 auto;
+          padding: 10px 0 !important;
+        }
+        td.logo_center img {
+          display: inline-block;
+          margin: 0 auto;
+        }
+        .sign-padd,
+        *[class="sign-padd"] {
+          padding: 0 15px 15px 15px !important;
+        }
+        td.flex.border-top {
+          border-top: 1px solid #d2d2d2;
+          padding-top: 30px !important;
+        }
+        .border-topp {
+          border-top: 1px solid #d2d2d2 !important;
+          padding-top: 20px !important;
+          margin-top: 10px !important;
+        }
+        td.flex2.no-padding.border-topp.padd-botm {
+          padding-bottom: 20px !important;
+        }
+        .box-main-content {
+          height: auto !important;
+        }
+        .img-100 {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+        .no-pl {
+          padding-left: 0px !important;
+        }
+        .pb-20 {
+          padding-bottom: 20px;
+        }
+      }
+      /* ANDROID CENTER FIX */
+      div[style*="margin: 16px 0;"] {
+        margin: 0 !important;
+      }
+    </style>
+    <!--[if gte mso 9]>
+      <style type="text/css" media="all">
+        .msonopad {
+          padding-right: 10px;
+          text-align: center;
+          width: 40px;
+        }
+        img.mso-img {
+          padding-top: 10px;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body style="margin: 0 !important; padding: 0 !important">
+    <!--[if (gte mso 9)|(ie)]>
+    <center>
+    <table align="center" border="0" cellspacing="0" cellpadding="0"  width="600">
+      <tr>
+        <td align="center" valign="top" width="600">
+          <![endif]-->
+    <!-- HIDDEN PREHEADER TEXT -->
+    <div
+      style="
+        mso-hide: all;
+        display: none;
+        font-size: 1px;
+        color: #333333;
+        line-height: 0;
+        font-family: 'NexusSansPro-regular', Arial, Helvetica, sans-serif;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+      "
+    ></div>
+    <table align="center">
+      <tbody>
+        <tr>
+          <td
+            align="center"
+            class="container"
+            style="border: 1px solid #dddddd"
+            width="600"
+          >
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody>
+                <tr>
+                  <td align="center" bgcolor="#ffffff" style="">
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="wrapper"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center" class="">
+                            <img
+                              src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/f1dff18c-554f-abb6-1455-3ed3eded20e4.jpg"
+                              width="600"
+                              style="
+                                width: 600px;
+                                width: 100%;
+                                display: block;
+                                border: 0;
+                              "
+                              title="Logo"
+                              class="img-100"
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" bgcolor="#ffffff" style="">
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="wrapper"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center" class="">
+                            <img
+                              src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/1351d3c6-7abf-7390-860e-6e74e6e73d97.jpg"
+                              width="600"
+                              style="
+                                width: 600px;
+                                width: 100%;
+                                display: block;
+                                border: 0;
+                              "
+                              alt="Newsletter Banner image"
+                              class="img-100"
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" bgcolor="#ffffff" style="">
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="wrapper"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center" class="">
+                            <img
+                              src="images/image-chn-1.jpg"
+                              width="600"
+                              style="
+                                width: 600px;
+                                width: 100%;
+                                display: block;
+                                border: 0;
+                              "
+                              alt="Newsletter content image"
+                              class="img-100"
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="left">
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="left">
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    align="left"
+                                    valign="middle"
+                                    width="48%"
+                                    class=""
+                                  >
+                                    <table
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" class="">
+                                            <a
+                                              href="https://authorservices.elsevier.com/languageediting/document/9a1c9d86-2bef-4ddc-b8f3-3122c6a67c5a/upload?_gl=1*shqj1d*_ga*NDYyMDY3NjMwLjE3MTU2Nzg0MjA.*_ga_7D01QC2BMF*MTcxNjM2NTQxNi4xMi4xLjE3MTYzNjU0MTkuMC4wLjA.&hash=c2e7302a230d002163b9138d8ab33940e3d40ea68a164bfadf91b3bd323e141a&productType=STANDARD&utm_campaign=STMJ_1716366250_PMES_IM&utm_medium=email&utm_source=Other&dgcid=STMJ_1716366250_PMES_IM"
+                                              target="_blank"
+                                              style="text-decoration: none"
+                                            >
+                                              <img
+                                                src="images/image-chn-2.jpg"
+                                                width="300"
+                                                style="
+                                                  width: 300px;
+                                                  width: 100%;
+                                                  display: block;
+                                                  border: 0;
+                                                "
+                                                alt="Standard Service"
+                                                class="img-100"
+                                              />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+
+                                  <td
+                                    align="left"
+                                    valign="middle"
+                                    width="48%"
+                                    class=""
+                                  >
+                                    <table
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" class="">
+                                            <a
+                                              href="https://authorservices.elsevier.com/languageediting/document/df07376f-79cc-476e-92fc-5eb6f3aedd19/upload?hash=355d7ab8ad112e5780c1337c25160d7e36a2b87b77fb71fef24404b97e2f8784&productType=PLUS&utm_campaign=STMJ_1715679252_PMES_IM&utm_medium=email&utm_source=Other&dgcid=STMJ_1715679252_PMES_IM"
+                                              target="_blank"
+                                              style="text-decoration: none"
+                                            >
+                                              <img
+                                                src="images/image-chn-3.jpg"
+                                                width="300"
+                                                style="
+                                                  width: 300px;
+                                                  width: 100%;
+                                                  display: block;
+                                                  border: 0;
+                                                "
+                                                alt="Plus Service"
+                                                class="img-100"
+                                              />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" bgcolor="#ffffff" style="">
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="wrapper"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center" class="">
+                            <img
+                              src="images/image-chn-4.jpg"
+                              width="600"
+                              style="
+                                width: 600px;
+                                width: 100%;
+                                display: block;
+                                border: 0;
+                              "
+                              alt="Newsletter content image"
+                              class="img-100"
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" bgcolor="#ffffff" style="">
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="wrapper"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center" class="">
+                           <img
+                              src="images/image-chn-5.jpg"
+                              width="600"
+                              style="
+                                width: 600px;
+                                width: 100%;
+                                display: block;
+                                border: 0;
+                              "
+                              alt="Newsletter content image"
+                              class="img-100"
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" bgcolor="#ffffff" style="">
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="wrapper"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center" class="">
+                            <a href="https://cn.scientific-publishing.webshop.elsevier.com/manuscript-preparation-cn/how-to-ensure-inclusivity-scientific-writing/https://cn.scientific-publishing.webshop.elsevier.com/manuscript-preparation-cn/how-to-ensure-inclusivity-scientific-writing/" target="_blank" rel="noopener noreferrer">  <img
+                              src="images/image-chn-6.jpg"
+                              width="600"
+                              style="
+                                width: 600px;
+                                width: 100%;
+                                display: block;
+                                border: 0;
+                              "
+                              alt="Newsletter content image"
+                              class="img-100"
+                            /></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" bgcolor="#ffffff" style="">
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="wrapper"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center" class="">
+                            <a href="https://cn.scientific-publishing.webshop.elsevier.com/manuscript-preparation-cn/being-mindful-of-tone-and-structure-in-artilces/" target="_blank" rel="noopener noreferrer"> <img
+                                src="images/image-chn-7.jpg"
+                                width="600"
+                                style="
+                                  width: 600px;
+                                  width: 100%;
+                                  display: block;
+                                  border: 0;
+                                "
+                                alt="Elsevier Journal Finder"
+                                class="img-100"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" bgcolor="#ffffff" style="">
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="wrapper"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center" class="">
+                            <a
+                              href="https://journalfinder.elsevier.com/"
+                              target="_blank"
+                              style="text-decoration: none"
+                            ><img
+                                src="images/image-chn-8.jpg"
+                                width="600"
+                                style="
+                                  width: 600px;
+                                  width: 100%;
+                                  display: block;
+                                  border: 0;
+                                "
+                                alt="Elsevier Journal Finder"
+                                class="img-100"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" bgcolor="#ffffff" style="">
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="wrapper"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center" class="">
+                            <a
+                              href="https://researcheracademy.elsevier.com/?utm_campaign=STMJ_1711445571_SC&utm_medium=email&utm_source=Other&dgcid=STMJ_1711445571_SC"
+                              target="_blank"
+                            >
+                              <img
+                                src="images/image-chn-9.jpg"
+                                width="600"
+                                style="
+                                  width: 600px;
+                                  width: 100%;
+                                  display: block;
+                                  border: 0;
+                                "
+                                alt="Elsevier Researcher Academy"
+                                class="img-100"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" bgcolor="#ffffff" style="">
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="wrapper"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center" class="">
+                            <a
+                              href="https://webshop.elsevier.com/zh/language-editing?utm_campaign=STMJ_1717666230_PMES_IM&utm_medium=email&utm_source=Other&dgcid=STMJ_1717666230_PMES_IM%EF%BC%89"
+                              target="_blank"
+                            >
+                              <img
+                                src="images/image-chn-10.jpg"
+                                width="600"
+                                style="
+                                  width: 600px;
+                                  width: 100%;
+                                  display: block;
+                                  border: 0;
+                                "
+                                class="img-100"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <img
+                      src="images/chn-footer.jpg"
+                      alt="footer image"
+                      title="footer image"
+                      style="display: block; max-width: 100%; width: 600px"
+                      class="img-100"
+                      width="600"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+    </table>
+    <![endif]-->
+  </body>
+</html>

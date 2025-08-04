@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Newsletter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style type="text/css">
+      /* CLIENT-SPECIFIC STYLES */
+
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+      table th {
+        border-bottom: 2px solid #80a7bb;
+      }
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        /*table-layout: fixed !important;*/
+        margin: 0 auto !important;
+      }
+      table table table {
+        table-layout: auto;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+        text-decoration: none;
+      }
+
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      *[x-apple-data-detectors],  /* iOS */
+      .unstyle-auto-detected-links *,
+      .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img + div {
+        display: none !important;
+      }
+      .ExternalClass,
+      .ExternalClass a,
+      .ExternalClass span,
+      .ExternalClass b,
+      .ExternalClass br,
+      .ExternalClass p,
+      .ExternalClass div {
+        line-height: inherit;
+      }
+      /* iOS BLUE LINKS */
+
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+      .msonopad {
+        padding: 0 4px;
+        /*  padding: 0 5px 0px 15px;*/
+      }
+      .sign a {
+        color: #363636;
+      }
+      .sign a,
+      *[class="sign-padd"] {
+        color: #363636;
+      }
+      .shadow {
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+      }
+      p {
+        margin: 20px 0 !important;
+      }
+      .applyclick a:active,
+      .applyclick a:focus {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .contact-btn {
+        margin-left: 0 !important;
+      }
+      .contact-btn-2 {
+        margin: 0 auto !important;
+      }
+      /* MOBILE STYLES */
+      @media screen and (max-width: 640px) {
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        .logo img {
+          margin: 0 auto !important;
+        }
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        /*ALLOWS FOR FULL-WIDTH TABLES */
+        .responsive-table {
+          width: 100% !important;
+        }
+
+        /* ALLOWS FOR FULL TD */
+        .flex,
+        *[class="flex"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: left !important;
+        }
+        .flex2,
+        *[class="flex2"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: center !important;
+        }
+        .flex3,
+        *[class="flex3"] {
+          display: none !important;
+        }
+        .flex4,
+        *[class="flex4"] {
+          width: 80% !important;
+          display: block !important;
+          text-align: center !important;
+          border-bottom: 1px dashed #a9a7a7;
+          padding-bottom: 20px !important;
+          margin: 20px auto !important;
+        }
+        .flex5,
+        *[class="flex5"] {
+          width: 50% !important;
+          display: inline-grid !important;
+          display: -webkit-inline-grid !important;
+          display: -moz-inline-grid !important;
+          display: -o-inline-grid !important;
+          display: -ms-inline-grid !important;
+        }
+        /* ADJUSTS LAYOUT OF FONT SIZE */
+        .mobile-main-head,
+        *[class="mobile-main-head"] {
+          font-size: 70px !important;
+          line-height: 60px !important;
+        }
+        .mobile-font,
+        *[class="mobile-font"] {
+          font-size: 17px !important;
+          line-height: 27px !important;
+        }
+        .mobile-font2,
+        *[class="mobile-font2"] {
+          font-size: 14px !important;
+          line-height: 24px !important;
+        }
+        .mobile-font-head,
+        *[class="mobile-font-head"] {
+          font-size: 26px !important;
+          line-height: 32px !important;
+        }
+        .mobile-font-head2,
+        *[class="mobile-font-head2"] {
+          font-size: 18px !important;
+          line-height: 26px !important;
+        }
+        .mobile-font-subhead,
+        *[class="mobile-font-subhead"] {
+          font-size: 21px !important;
+          line-height: 28px !important;
+        }
+        .mobile-font-subtitle,
+        *[class="mobile-font-subtitle"] {
+          font-size: 19px !important;
+          line-height: 29px !important;
+        }
+        .mobile-content,
+        *[class="mobile-content"] {
+          font-size: 17px !important;
+          line-height: 22px !important;
+        }
+        .mobile-font-signature,
+        *[class="mobile-font-signature"] {
+          font-size: 17px !important;
+          line-height: 17px !important;
+        }
+
+        /* ALLOWS FOR BORDER */
+        .bdr-top-grey {
+          border-top: 1px solid #cccccc !important;
+        }
+        .no-border {
+          border: none !important;
+        }
+        .no-t-brd {
+          border-top: none !important;
+        }
+        .no-b-brd {
+          border-bottom: none !important;
+        }
+        .no-r-brd {
+          border-right: none !important;
+        }
+        .no-l-brd {
+          border-left: none !important;
+        }
+
+        .brd-t {
+          border-top: 1px solid #9fa1a4 !important;
+        }
+        .brd-b {
+          border-bottom: 1px solid #004483 !important;
+        }
+        .brd-r {
+          border-right: 1px solid #9fa1a4 !important;
+        }
+        .brd-l {
+          border-left: 1px solid #004483 !important;
+        }
+
+        .border {
+          border-left: none !important;
+          border-right: none !important;
+          border-bottom: 1px solid #dddcd9;
+          border-top: 1px solid #dddcd9;
+        }
+        .brdtopbottom,
+        *[class="brdtopbottom"] {
+          border-left: 0px !important;
+          border-right: 0px !important;
+          border-bottom: 1px solid #dedede;
+          border-top: 1px solid #dedede;
+          padding-top: 20px !important;
+          padding-bottom: 20px !important;
+        }
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .text-start {
+          text-align: left !important;
+        }
+        .text-center {
+          text-align: center !important;
+        }
+        .text-end {
+          text-align: right !important;
+        }
+        .no-padd {
+          padding: 0px !important;
+        }
+        .no-pl {
+          padding-left: 0px !important;
+        }
+        .no-pr {
+          padding-right: 0px !important;
+        }
+        .no-plr {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        .pt-10 {
+          padding-top: 10px !important;
+        }
+        .pb-0 {
+          padding-bottom: 0px !important;
+        }
+        .pb-10 {
+          padding-bottom: 10px !important;
+        }
+        .pl-10 {
+          padding-left: 10px !important;
+        }
+        .pr-10 {
+          padding-right: 10px !important;
+        }
+        .pt-15 {
+          padding-top: 15px !important;
+        }
+        .pt-20 {
+          padding-top: 20px !important;
+        }
+        .pb-20 {
+          padding-bottom: 20px !important;
+        }
+        .pb-25 {
+          padding-bottom: 25px !important;
+        }
+        .pr-25 {
+          padding-right: 25px !important;
+        }
+        .plr-25 {
+          padding-left: 25px !important;
+          padding-right: 25px !important;
+        }
+        .mob-hide {
+          display: none !important;
+        }
+        .w-35 {
+          width: 35% !important;
+        }
+        .w-100 {
+          width: 100% !important;
+        }
+        /*.padd-lr-20
+        {
+          padding-right: 20px !important;
+          padding-left: 20px !important;
+        }*/
+
+        /* UTILITY CLASSES FOR ADJUSTING MARGIN ON MOBILE */
+        .h-auto {
+          height: auto !important;
+        }
+        .no-mb {
+          margin-bottom: 0px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING Vertical ALign  */
+        .mob-valign-top {
+          vertical-align: top !important;
+        }
+
+        /* ADJUSTS FOR IMAGE CENTER */
+        .img-center {
+          margin: 0 auto !important;
+        }
+
+        /* ADJUSTS FOR TEXT CENTER */
+        .text-center {
+          text-align: center !important;
+        }
+        .contact-btn {
+          margin: 0 auto !important;
+        }
+
+        /* ADJUSTS FOR TEXT CENTER */
+        .f-none {
+          float: none;
+        }
+      }
+      div[style*="margin: 16px 0;"] {
+        margin: 0 !important;
+      }
+    </style>
+    <!--[if gte mso 9]>
+      <style type="text/css" media="all">
+        .msonopad {
+          padding-right: 10px;
+          text-align: center;
+          width: 40px;
+        }
+        img.mso-img {
+          padding-top: 10px;
+          line-height: 24px;
+        }
+        tr.space-mso {
+          font-size: 0;
+          mso-line-height-alt: 0;
+          mso-margin-top-alt: 1px;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0 !important; padding: 0 !important; background: #ffffff"
+  >
+    <!--[if (gte mso 9)|(ie)]>
+    <center>
+      <table align="center" border="0" cellspacing="0" cellpadding="0"  width="800">
+        <tr>
+          <td align="center" valign="top" width="800">
+            <!
+    [endif]--><!-- HIDDEN PREHEADER TEXT -->
+    <div
+      style="
+        mso-hide: all;
+        display: none;
+        font-size: 1px;
+        color: #333333;
+        line-height: 0;
+        font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+      "
+    >
+      Newsletter
+    </div>
+    <table align="center">
+      <tbody>
+        <tr>
+          <td
+            align="center"
+            class="container"
+            style="background: #ffffff; border: 1px solid #dddddd"
+            width="800"
+          >
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="responsive-table"
+                      width="100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td bgcolor="#2155A4" align="left" style="padding: 20px 25px;border-bottom: 5px solid #E50019;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="top" align="top" width="50%" class="flex pb-10">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="top" style="padding-bottom: 10px;">
+                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/b3deedad-c902-d46c-cb00-a4faa13ff58b.png" alt="CHUNG-ANG UNIVERSITY" title="CHUNG-ANG UNIVERSITY" width="336" class="img-center" style="max-width: 336px; width:100%; display: block;" />
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" class="mobile-font no-padd text-center" style="
+                                              font-size: 18px;
+                                              font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+                                              color: #ffffff;
+                                              line-height: 24px;
+                                            ">CAU Supports Institutes Driving Excellence in Research and Innovation</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td valign="top" align="top" width="50%" class="flex no-padd" style="padding-top: 20px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="right" class="mobile-font no-padd text-center" style="
+                                              font-size: 18px;
+                                              font-family: 'Noto Sans', Arial,
+                                                Helvetica, sans-serif;
+                                              color: #ffffff;
+                                              line-height: 28px;
+                                              padding-left: 40px;
+                                            ">The Official CAU Research<br />Update Newsletter </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="right" class="no-padd" style="padding: 0px 0px 20px">
+                                            <table align="right" border="0" cellpadding="0" cellspacing="0" width="42%" class="f-none" style="border-bottom: 2px solid #E50019">
+                                              <tbody>
+                                                <tr>
+                                                  <td>&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" bgcolor="#ffffff">
+                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/a49350e0-9c56-3bad-4080-f29c2620b823.png" alt="CCNB" title="CCNB" width="800" style="display: block;max-width: 800px;width: 100%;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#10305E" style="border-top: 5px solid #E50019;border-bottom: 5px solid #E50019;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/2ac5cc9c-8128-77dc-f652-fbc6627137b2.png" alt="Professor Jin Woo Moon" title="Professor Jin Woo Moon" width="308" style="max-width: 308px;display: block;width: 100%;">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td align="left" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="top">
+                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/ce6bb17b-f6f3-1bde-ed20-734a9cc4522b.png" alt="Professor Jin Woo Moon" title="Professor Jin Woo Moon" width="372" style="max-width: 372px;display: block;width: 100%">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="top">
+                                                    <a href="mailto:ccnberc@gmail.com" target="_blank">
+                                                      <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/da69159b-439c-15f9-8a86-27377fa19ed2.png" alt="Professor Jin Woo Moon" title="Professor Jin Woo Moon" width="180" style="max-width: 180px;display: block;width: 100%">
+                                                    </a>
+                                                  </td>
+                                                  <td align="left" valign="top">
+                                                    <a href="http://ccnb.or.kr/ccnb_e" target="_blank">
+                                                      <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/e8eb3075-4b8b-5d44-2c07-b0cf4370b4db.png" alt="Professor Jin Woo Moon" title="Professor Jin Woo Moon" width="192" style="max-width: 192px;display: block;width: 100%">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" valign="top">
+                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/4e922c15-8f06-1f38-d5be-8b4deec75e54.png" alt="Professor Jin Woo Moon" title="Professor Jin Woo Moon" width="372" style="max-width: 372px;display: block;width: 100%">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td align="left" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/1dacdeca-cee0-c0f1-1a76-dff88d5280a7.png" alt="Professor Jin Woo Moon" title="Professor Jin Woo Moon" width="120" style="max-width: 120px;display: block;width: 100%">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" bgcolor="#ffffff">
+                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/9c087cd9-6ef5-98d6-63be-95b51231063b.png" alt="RESEARCH AREAS" title="RESEARCH AREAS" width="800" style="display: block;max-width: 800px;width: 100%;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#ffffff" class="plr-25" style="padding: 25px 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" class="mobile-font-head2" style="font-size: 28px; font-family: 'Noto Sans', Arial, Helvetica, sans-serif; color: #2155A4; line-height: 32px; text-transform: uppercase; font-weight: bold; padding: 0px 15px;">INTERNATIONAL COOPERATION</td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-top: 10px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="38px" class="f-none" style="border-bottom: 3px solid #E50019">
+                                      <tbody>
+                                        <tr>
+                                          <td></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding-top: 20px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="middle" class="flex pb-20" width="43%">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left">
+                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/2e228f62-fb87-e21f-a591-4bc228c1ae9e.png" alt="International Corporation" title="International Corporation" width="320" style="max-width: 320px;display: block;width: 100%;" class="img-center">
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td align="left" valign="middle" width="57%" class="flex no-pl" style="padding-left: 20px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" class="text-center" style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 12px; line-height: 18px; color: #000000;"><span style="color: #2155A4;font-weight: bold;font-size: 14px;line-height: 20px;">C-CNB/International Symposium and Workshop 2025</span> <br class="mob-hide">on Carbon-Neutral Technology in Architecture/2025 </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding-top: 20px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="top" width="25%" style="padding-left: 5px;padding-right: 5px;" class="flex no-plr pb-10">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="center" style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 10px; line-height: 16px; color: #2155A4;font-weight: bold;">Building Techonology<br class="mob-hide"> 
+                                                          and Urban Systems (BTUS) Division<br class="mob-hide">
+                                                          (Lawrence Berkeley National<br class="mob-hide"> Laboratory)</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td align="center" style="padding: 10px 0px;">
+                                                            <img src="https://uat.crayoninfotech.com/cactus/CARCS_101_7_Newsletter_02_Jun_2025/images/international-corporation-img1.png" alt="International Corporation" title="International Corporation" width="170" style="max-width: 170px;display: block;width: 100%;" class="img-center">
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td align="center" class="mobile-font2" style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 12px; line-height: 18px; color: #000000;">MOU signing <br class="mob-hide">2023</td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td align="left" valign="top" width="25%" style="padding-left: 5px;padding-right: 5px;" class="flex no-plr pb-10">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="center" class="pb-0" style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 10px; line-height: 16px; color: #2155A4;font-weight: bold; padding-bottom: 16px;">Behaviour and Building<br class="mob-hide"> Performance (BBP) Group<br class="mob-hide"> (University of Cambridge)</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td align="center" style="padding: 10px 0px;">
+                                                            <img src="https://uat.crayoninfotech.com/cactus/CARCS_101_7_Newsletter_02_Jun_2025/images/international-corporation-img2.png" alt="International Corporation" title="International Corporation" width="170" style="max-width: 170px;display: block;width: 100%;" class="img-center">
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td align="center" class="mobile-font2" style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 12px; line-height: 18px; color: #000000;">MOU signing <br class="mob-hide">2023</td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td align="left" valign="top" width="25%" style="padding-left: 5px;padding-right: 5px;" class="flex no-plr pb-10">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="center" class="pb-0" style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 10px; line-height: 16px; color: #2155A4;font-weight: bold; padding-bottom: 32px;">Construction Vision Lab<br class="mob-hide"> (University of Toronto)</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td align="center" style="padding: 10px 0px;">
+                                                            <img src="https://uat.crayoninfotech.com/cactus/CARCS_101_7_Newsletter_02_Jun_2025/images/international-corporation-img3.png" width="170" style="max-width: 170px;display: block;width: 100%;" class="img-center">
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td align="center" class="mobile-font2" style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 12px; line-height: 18px; color: #000000;">MOU signing <br class="mob-hide">2022</td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td align="left" valign="top" width="25%" style="padding-left: 5px;padding-right: 5px;" class="flex no-plr">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="center" class="pb-0" style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 10px; line-height: 16px; color: #2155A4;font-weight: bold; padding-bottom: 16px;">Center for Wellness in the <br class="mob-hide">Built Environment (CWBE) <br class="mob-hide">(University of Southern California)</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td align="center" style="padding: 10px 0px;">
+                                                            <img src="https://uat.crayoninfotech.com/cactus/CARCS_101_7_Newsletter_02_Jun_2025/images/international-corporation-img4.png" alt="International Corporation" title="International Corporation" width="170" style="max-width: 170px;display: block;width: 100%;" class="img-center">
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td align="center" class="mobile-font2" style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 12px; line-height: 18px; color: #000000;">MOU signing <br class="mob-hide">2022</td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" bgcolor="#ffffff">
+                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/73f1e503-3a7a-9c71-74a8-8217c1c797f8.png" alt="AWARDS" title="AWARDS" width="800" style="display: block;max-width: 800px;width: 100%;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#EDEDED" class="plr-25" style="padding: 25px 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" class="mobile-font-head2" style="font-size: 28px; font-family: 'Noto Sans', Arial, Helvetica, sans-serif; color: #2155A4; line-height: 32px; text-transform: uppercase; font-weight: bold; padding: 0px 15px;">Research Achievements</td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-top: 10px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="38px" class="f-none" style="border-bottom: 3px solid #E50019">
+                                      <tbody>
+                                        <tr>
+                                          <td></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding-top: 20px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" >
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="top" width="4%">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-top: 5px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/5bb5dc43-4848-ed44-8400-b2534396891e.png" alt="Bullet Icon" title="Bullet Icon" width="24" style="max-width: 24px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="top" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 17px; line-height: 23px; color: #000000;">Yun <span style="font-style: italic;">et al.</span>/Development and Performance Evaluation of an Indoor Thermal Environment Control Algorithm Incorporating MET Estimation Model with Object Detection/<a href="https://doi.org/10.1016/j.buildenv.2024.112217" target="_blank" style="color: #23A5DE;text-decoration: underline;"><span style="font-style: italic;">Building and Environment</span>/2025.</a></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="padding-top: 20px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="top" width="4%">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-top: 5px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/5bb5dc43-4848-ed44-8400-b2534396891e.png" alt="Bullet Icon" title="Bullet Icon" width="24" style="max-width: 24px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="top" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 17px; line-height: 23px; color: #000000;">Choi <span style="font-style: italic;">et al.</span>/CO<sub><small>2</small></sub>- and PM<sub><small>2.5</small></sub>-Focused Optimal Ventilation Strategy Based on Predictive Control/<a href="https://doi.org/10.1155/ina/6652442" target="_blank" style="color: #23A5DE;text-decoration: underline;"><span style="font-style: italic;">Indoor Air</span>/2025.</a></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="padding-top: 20px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="top" width="4%">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-top: 5px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/5bb5dc43-4848-ed44-8400-b2534396891e.png" alt="Bullet Icon" title="Bullet Icon" width="24" style="max-width: 24px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="top" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 17px; line-height: 23px; color: #000000;">Kim <span style="font-style: italic;">et al.</span>/Performance Analysis of Particulate Matter Priority Control Algorithm for Outdoor Air-Introduced Ventilation Cleaner Using Prediction Model/<a href="https://doi.org/10.1016/j.enbuild.2024.114885" target="_blank" style="color: #23A5DE;text-decoration: underline;"><span style="font-style: italic;">Energy and Buildings</span>/2024.</a></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="padding-top: 20px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="top" width="4%">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-top: 5px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/5bb5dc43-4848-ed44-8400-b2534396891e.png" alt="Bullet Icon" title="Bullet Icon" width="24" style="max-width: 24px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="top" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 17px; line-height: 23px; color: #000000;">Nyato <span style="font-style: italic;">et al.</span>/Blockchain-Integrated Zero-Knowledge Proof System for Privacy-Preserving Near-Miss Reporting in Construction Projects/<a href="https://doi.org/10.1016/j.autcon.2024.105825" target="_blank" style="color: #23A5DE;text-decoration: underline;"><span style="font-style: italic;">Automation in Construction</span>/2024.</a></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="padding-top: 20px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="top" width="4%">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-top: 5px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/5bb5dc43-4848-ed44-8400-b2534396891e.png" alt="Bullet Icon" title="Bullet Icon" width="24" style="max-width: 24px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="top" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 17px; line-height: 23px; color: #000000;">Khan <span style="font-style: italic;">et al.</span>/Tracking Multiple Construction Workers Using Pose Estimation and Feature-Assisted <span style="font-style: italic;">Re</span>-Identification Model/<a href="https://doi.org/10.1016/j.autcon.2024.105771" target="_blank" style="color: #23A5DE;text-decoration: underline;"><span style="font-style: italic;">Automation in Construction</span>/2024.</a></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" bgcolor="#ffffff">
+                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/e758a5cd-5b0b-dd57-087c-8ff1c8476afb.png" alt="RESEARCH PLANS" title="RESEARCH PLANS" width="800" style="display: block;max-width: 800px;width: 100%;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#386FBB" style="padding: 20px;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="middle" class="pr-10" style="border-right: 1px solid #ffffff;padding-right: 20px;">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="middle">
+                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="left">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/4cec2143-7d01-38c6-22bb-f67935ad4f0e.png" alt="CAU PR video" title="CAU PR video" width="52" style="max-width: 52px; display: block; width:100%;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="middle" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="left">
+                                                            <a href="https://photo.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=40&CONTENTS_NO=&SITE_NO=6&BOARD_SEQ=4&BBS_SEQ=86" target="_blank" class="mobile-font2" style="font-size: 20px; font-family: 'Noto Sans', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 28px;">CAU PR video</a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td align="center" valign="middle" class="pl-10" style="padding-left: 20px;">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" valign="middle">
+                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="left">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/20c398ae-30e6-1d90-a0d0-5e87e114e935.png" alt="CAU website" title="CAU website" width="47" style="max-width: 47px; display: block; width:100%;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="middle" style="padding-left: 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="left">
+                                                            <a href="https://neweng.cau.ac.kr/index.do" target="_blank" class="mobile-font2" style="font-size: 20px; font-family: 'Noto Sans', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 28px;">CAU website</a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#ffffff" style="padding: 20px;border-top: 4px solid #2155A4;border-bottom: 4px solid #2155A4;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="90%">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="middle" class="flex no-pr pb-20" style="padding-right: 20px;">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td>
+                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/d234ab70-cc33-53d0-dfa6-5fa0cedae669.png" alt="CHUNG-ANG UNIVERSITY" title="CHUNG-ANG UNIVERSITY" width="222" style="max-width: 222px;display: block;width: 100%;">
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td align="left" valign="middle" class="flex text-center">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 24px; color: #666666;">Chung-Ang University, 84 Heukseok-ro, Dongjak-gu, Seoul, Korea<br/>International office: Tel: <a href="tel:+82-2-820-6575" target="_blank" style="color: #666666;">+82-2-820-6575</a> Fax: <a href="fax:+82-2-813-8069" target="_blank" style="color: #666666;">+82-2-813-8069</a><br/>Copyright 2025. CHUNG-ANG UNIVERSITY. All Rights Reserved.</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#ffffff" style="padding: 10px 20px;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="font-family:'Noto Sans',Arial,Helvetica, sans-serif; font-size: 11px; line-height: 21px; color: #666666;">If you no longer wish to receive emails from CAU, please send an email to <a href="mailto:rsch@cau.ac.kr" target="_blank" style="color: #2155A4;">rsch@cau.ac.kr</a> with the word “Unsubscribe” in the subject line</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <![endif]-->
+  </body>
+</html>

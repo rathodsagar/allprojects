@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AJOUU Newsletter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+      /* CLIENT-SPECIFIC STYLES */
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        /*table-layout: fixed !important;*/
+        margin: 0 auto !important;
+      }
+
+      table table table {
+        table-layout: auto;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+        text-decoration: none !important;
+      }
+
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      *[x-apple-data-detectors],
+      /* iOS */
+      .unstyle-auto-detected-links *,
+      .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img+div {
+        display: none !important;
+      }
+
+      .ExternalClass,
+      .ExternalClass a,
+      .ExternalClass span,
+      .ExternalClass b,
+      .ExternalClass br,
+      .ExternalClass p,
+      .ExternalClass div {
+        line-height: inherit;
+      }
+
+      /* iOS BLUE LINKS */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      .msonopad {
+        padding: 0 4px;
+        /*  padding: 0 5px 0px 15px;*/
+      }
+
+      .sign a {
+        color: #363636;
+      }
+
+      .sign a,
+      *[class="sign-padd"] {
+        color: #363636;
+      }
+
+      .shadow {
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+      }
+
+      .applyclick a:active,
+      .applyclick a:focus {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      div[style*="margin: 16px 0;"] {
+        margin: 0 !important;
+      }
+
+      /* MOBILE STYLES */
+      @media screen and (max-width: 599px) {
+        .partner-logo {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .pr-2 {
+          padding-right: 10px !important;
+        }
+
+        .pr-10 {
+          padding-right: 10px !important;
+        }
+
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        .logo img {
+          margin: 0 auto !important;
+        }
+
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        /*ALLOWS FOR FULL-WIDTH TABLES */
+        .responsive-table {
+          width: 100% !important;
+        }
+
+        /* ALLOWS FOR FULL TD */
+        .flex,
+        *[class="flex"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: left !important;
+        }
+
+        .flex2,
+        *[class="flex2"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: center !important;
+        }
+
+        /* ADJUSTS LAYOUT OF FONT SIZE */
+        .mobile-font,
+        *[class="mobile-font"] {
+          font-size: 15px !important;
+          line-height: 20px !important;
+        }
+
+        .mobile-font-head,
+        *[class="mobile-font-head"] {
+          font-size: 18px !important;
+          line-height: 22px !important;
+        }
+
+        .mobile-font-head3 {
+          font-size: 30px !important;
+          line-height: 40px !important;
+        }
+
+        /* ALLOWS FOR BORDER */
+        .no-border {
+          border: none !important;
+        }
+
+        .border {
+          border-left: none !important;
+          border-right: none !important;
+          border-bottom: 1px solid #dddcd9;
+          border-top: 1px solid #dddcd9;
+        }
+
+        .brdtopbottom,
+        *[class="brdtopbottom"] {
+          border-left: 0px !important;
+          border-right: 0px !important;
+          border-bottom: 1px solid #dedede;
+          border-top: 1px solid #dedede;
+          padding-top: 20px !important;
+          padding-bottom: 20px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .mleft {
+          text-align: left !important;
+        }
+
+        .mcenter {
+          text-align: center !important;
+        }
+
+        .no-padd {
+          padding: 0px !important;
+        }
+        .padd-mob {
+          padding: 10px !important;
+        }
+
+        .no-pl {
+          padding-left: 0px !important;
+        }
+
+        .no-pr {
+          padding-right: 0px !important;
+        }
+
+        .nopadd-lr {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+
+        .pt-0 {
+          padding-top: 0px !important;
+        }
+
+        .pt-10 {
+          padding-top: 10px !important;
+        }
+
+        .pl-10 {
+          padding-left: 20px !important;
+        }
+
+        .pt-15 {
+          padding-top: 15px !important;
+        }
+
+        .pt-20 {
+          padding-top: 20px !important;
+        }
+
+        .pb-10 {
+          padding-bottom: 10px !important;
+        }
+
+        .pb-20 {
+          padding-bottom: 20px !important;
+        }
+
+        .pb-30 {
+          padding-bottom: 30px !important;
+        }
+
+        .padd-top-8 {
+          padding-top: 8px !important;
+        }
+
+        .pl-30 {
+          padding-left: 30px !important;
+        }
+
+        .padr25 {
+          padding-right: 25px !important;
+        }
+
+        .pad-lr {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+
+        .sho_mob {
+          display: none !important;
+        }
+
+        .w-35 {
+          width: 35% !important;
+        }
+
+        .w-100 {
+          width: 100% !important;
+        }
+
+        /*.padd-lr-20
+          {
+            padding-right: 20px !important;
+            padding-left: 20px !important;
+          }*/
+        /* UTILITY CLASSES FOR ADJUSTING MARGIN ON MOBILE */
+        .h-auto {
+          height: auto !important;
+        }
+
+        .no-mb {
+          margin-bottom: 0px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING Vertical ALign  */
+        .mob-valign-top {
+          vertical-align: top !important;
+        }
+
+        /* ADJUSTS FOR IMAGE CENTER */
+        .img-center {
+          margin: 0 auto !important;
+        }
+
+        /* ADJUSTS FOR TEXT CENTER */
+        .text-center {
+          text-align: center !important;
+        }
+
+        .body-text {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+        .pad-mob{
+          padding-left: 10px!important;
+        }
+      }
+
+      @media screen and (max-width: 370px) {
+
+        .mobile-font,
+        *[class="mobile-font"] {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+
+        .mobile-font-head3 {
+          font-size: 30px !important;
+          line-height: 40px !important;
+        }
+
+        .pl-10 {
+          padding-left: 10px !important;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .darkmode {
+          background: #000000 !important;
+        }
+      }
+    </style>
+    <!--[if gte mso 9]>
+		<style type="text/css" media="all">
+        .msonopad {
+          padding-right: 10px;
+          text-align: center;
+          width: 40px;
+        }
+        img.mso-img {
+          padding-top: 10px;
+          line-height: 24px;
+        }
+        tr.space-mso {
+          font-size: 0;
+          mso-line-height-alt: 0;
+          mso-margin-top-alt: 1px;
+        }
+      </style>
+		<![endif]-->
+  </head>
+  <body style="margin: 0 !important; padding: 0 !important; background: #ffffff">
+    <!--[if (gte mso 9)|(ie)]>
+		<center>
+			<table align="center" border="0" cellspacing="0" cellpadding="0"  width="800">
+				<tr>
+					<td align="center" valign="top" width="800">
+						<!
+    [endif]-->
+    <!-- HIDDEN PREHEADER TEXT -->
+    <div style="
+        mso-hide: all;
+        display: none;
+        font-size: 1px;
+        color: #333333;
+        line-height: 0;
+        font-family: 'Arial', Helvetica, sans-serif;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+      "></div>
+    <table align="center">
+      <tbody>
+        <tr>
+          <td align="center" class="container" style="background: #ffffff; border: 1px solid #dddddd" width="800">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody>
+                <tr>
+                  <td bgcolor="#ffffff" align="left" style="padding: 10px 25px" class="pad-lr">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td valign="top" align="top" width="50%" class="mb-20">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left" valign="top">
+                                    <img src="images/logo.png" alt="Logo" width="270" style="max-width: 270px; width:100%; display: block" />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td valign="middle" align="top" width="50%">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="right" class="mobile-font no-padd" style="
+                                      font-size: 18px;
+                                      font-family: 'Nanum Gothic', Arial,
+                                        Helvetica, sans-serif;
+                                      color: #000000;
+                                      line-height: 28px;
+                                      font-weight: 700;
+                                      padding-left: 40px;
+                                    "> Ajou University Newsletter <br /> Issue.10 </td>
+                                </tr>
+                                <tr>
+                                  <td align="right" class="pb-10" style="padding: 0px 0px 20px">
+                                    <table align="right" border="0" cellpadding="0" cellspacing="0" width="80%" style="border-bottom: 2px solid #ffa414">
+                                      <tbody>
+                                        <tr>
+                                          <td>&nbsp;</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="right" class="mobile-font-head no-padd" style="
+                                      font-size: 40px;
+                                      font-family: 'Nanum Gothic', Arial,
+                                        Helvetica, sans-serif;
+                                      color: #000000;
+                                      line-height: 45px;
+                                      font-weight: 800;
+                                      padding-left: 40px;
+                                    "> News </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#ffffff" align="left">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="left" valign="top">
+                              <img src="images/banner.png" alt="banner" width="800" style="max-width: 800px; width: 100%; display: block" />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td align="center" bgcolor="#ffffff">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td bgcolor="#ffffff" align="center" valign="top" style="padding: 10px 20px;" class="flex no-padd" width="50%">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="middle">
+                                    <a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339793&article.offset=0&articleLimit=8" target="_blank"><img src="images/img1.png" alt="img 1"  width="196" style="max-width: 196px; width: 100%; display: block" /></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td bgcolor="#B17500" align="center" valign="top" style="padding: 10px 20px;" class="flex no-padd" width="50%">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left" class="mobile-font-head padd-mob" style="padding-top: 15px; font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 800; "><a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339793&article.offset=0&articleLimit=8" target="_blank"style="text-transform:uppercase; font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 800;text-decoration:none;">Wearable fiber sensor system to assess health status using sweat</a></td>
+                                </tr>
+                                <tr>
+                                  <td align="left" colspan="2" style="padding: 0px 0px;line-height: 10px;" class="pad-mob">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="10%" style="border-bottom: 2px solid #ffffff; display: table-cell;">
+                                      <tbody>
+                                        <tr>
+                                          <td>&nbsp;</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" class="mobile-font padd-mob" style=" font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 400;padding-top: 10px; "><a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339793&article.offset=0&articleLimit=8" target="_blank"style=" font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 400;text-decoration:none; ">Innovative microfluidic sensor system to analyze and detect various substances in sweat using electrochemical and colorimetric methods.
+                                      </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding: 20px 0 15px;" class="padd-mob">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td bgcolor="#ffffff" style="
+                                              border-radius: 20px;
+                                              background: #ffffff;
+                                              padding: 6px 12px;
+                                            ">
+                                            <a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339793&article.offset=0&articleLimit=8" target="_blank" style="
+                                                text-decoration: none;
+                                                color: #B17500;
+                                                background: #ffffff;
+                                                border-radius: 20px;
+                                                font-size: 12px;
+                                                line-height: 15px;
+                                                font-weight:bold;
+                                                font-family: 'Nanum Gothic', Arial,
+                                                  Helvetica, sans-serif;
+                                              " class="mobile-font">Read More
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" bgcolor="#ffffff" dir="rtl">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td bgcolor="#ffffff" align="center" valign="middle" style="padding: 10px 20px;" class="flex no-padd" width="50%" dir="ltr">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="middle">
+                                    <a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339791&article.offset=0&articleLimit=8" target="_blank"><img src="images/img2.png" alt="img 1"  width="279" style="max-width: 279px; width: 100%; display: block" /></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td bgcolor="#00549D" align="center" valign="top" style="padding: 10px 20px;" class="flex no-padd" width="50%" dir="ltr">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left" class="mobile-font-head padd-mob" style="text-transform:uppercase; padding-top: 15px; font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 800; "><a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339791&article.offset=0&articleLimit=8" target="_blank"style=" font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 800;text-decoration:none;">Novel lithium recovery technology for waste batteries</a></td>
+                                </tr>
+                                <tr>
+                                  <td align="left" colspan="2" style="padding: 0px 0px;line-height: 10px;" class="pad-mob">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="10%" style="border-bottom: 2px solid #ffffff;display: table-cell;">
+                                      <tbody>
+                                        <tr>
+                                          <td>&nbsp;</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" class="mobile-font padd-mob" style=" font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 400;padding-top: 10px; "><a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339791&article.offset=0&articleLimit=8" target="_blank"style=" font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 400;text-decoration:none; ">High-performance lithium-ion exchange membrane enables selective recovery of precious metals from spent batteries, contributing to environmentally sustainable battery waste management and utilization.
+                                      </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding: 20px 0 15px;" class="padd-mob">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td bgcolor="#ffffff" style="
+                                              border-radius: 20px;
+                                              background: #ffffff;
+                                              padding: 6px 12px;
+                                            ">
+                                            <a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339791&article.offset=0&articleLimit=8" target="_blank" style="
+                                                text-decoration: none;
+                                                color: #00549D;
+                                                background: #ffffff;
+                                                border-radius: 20px;
+                                                font-size: 12px;
+                                                line-height: 15px;
+                                                font-weight:bold;
+                                                font-family: 'Nanum Gothic', Arial,
+                                                  Helvetica, sans-serif;
+                                              " class="mobile-font">Read More
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" bgcolor="#ffffff">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td bgcolor="#ffffff" align="center" valign="top" style="padding: 10px 20px;" class="flex no-padd" width="50%">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="middle">
+                                    <a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339794&article.offset=0&articleLimit=8" target="_blank"><img src="images/img3.png" alt="img 3"  width="232" style="max-width: 232px; width: 100%; display: block"></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td bgcolor="#B17500" align="center" valign="top" style="padding: 10px 20px;" class="flex no-padd" width="50%">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left" class="mobile-font-head padd-mob" style="padding-top: 15px; font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 800; "><a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339794&article.offset=0&articleLimit=8" target="_blank" style="text-transform:uppercase; font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 800;text-decoration:none;">Multifunctional semiconductor fiber sensors that detect pressure, light, smell, and taste</a></td>
+                                </tr>
+                                <tr>
+                                  <td align="left" colspan="2" style="padding: 0px 0px;line-height: 10px;" class="pad-mob">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="10%" style="border-bottom: 2px solid #ffffff; display: table-cell;">
+                                      <tbody>
+                                        <tr>
+                                          <td>&nbsp;</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" class="mobile-font padd-mob" style=" font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 400;padding-top: 10px; "><a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339794&article.offset=0&articleLimit=8" target="_blank" style=" font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 400;text-decoration:none; ">Designed to operate similarly to human senses, these devices could be applicable to wearable electronics and soft robots.
+                                      </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding: 20px 0 15px;" class="padd-mob">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td bgcolor="#ffffff" style="
+                                              border-radius: 20px;
+                                              background: #ffffff;
+                                              padding: 6px 12px;
+                                            ">
+                                            <a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339794&article.offset=0&articleLimit=8" target="_blank" style="
+                                                text-decoration: none;
+                                                color: #B17500;
+                                                background: #ffffff;
+                                                border-radius: 20px;
+                                                font-size: 12px;
+                                                line-height: 15px;
+                                                font-weight:bold;
+                                                font-family: 'Nanum Gothic', Arial,
+                                                  Helvetica, sans-serif;
+                                              " class="mobile-font">Read More
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" bgcolor="#ffffff" dir="rtl">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td bgcolor="#ffffff" align="center" valign="top" style="padding: 0px;" class="flex no-padd" width="50%" dir="ltr">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top">
+                                    <a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339792&article.offset=0&articleLimit=8" target="_blank"><img src="images/img4.png" alt="img 4"  width="400" style="max-width: 400px; width: 100%; display: block" /></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td bgcolor="#00549D" align="center" valign="top" style="padding: 10px 10px 10px 20px;" class="flex no-padd" width="50%" dir="ltr">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left" class="mobile-font-head padd-mob" style="text-transform:uppercase; padding-top: 5px; font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 800; "><a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339792&article.offset=0&articleLimit=8" target="_blank"style=" font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 800;text-decoration:none;">New precision measurement technology for graphite particles 
+                                    used in secondary battery materials</a></td>
+                                </tr>
+                                <tr>
+                                  <td align="left" colspan="2" style="padding: 0px 0px;line-height: 10px;" class="pad-mob">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="10%" style="border-bottom: 2px solid #ffffff;display: table-cell;">
+                                      <tbody>
+                                        <tr>
+                                          <td>&nbsp;</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" class="mobile-font padd-mob" style=" font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 400;padding-top: 10px; "><a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339792&article.offset=0&articleLimit=8" target="_blank"style=" font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 400;text-decoration:none;">This novel approach could help enhance battery performance and yield by controlling graphite particle shape, requiring no complex chemical treatments.
+                                      </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding: 10px 0 5px;" class="padd-mob">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td bgcolor="#ffffff" style="
+                                              border-radius: 20px;
+                                              background: #ffffff;
+                                              padding: 6px 12px;
+                                            ">
+                                            <a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339792&article.offset=0&articleLimit=8" target="_blank" style="
+                                                text-decoration: none;
+                                                color: #00549D;
+                                                background: #ffffff;
+                                                border-radius: 20px;
+                                                font-size: 12px;
+                                                line-height: 15px;
+                                                font-weight:bold;
+                                                font-family: 'Nanum Gothic', Arial,
+                                                  Helvetica, sans-serif;
+                                              " class="mobile-font">Read More
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" bgcolor="#ffffff">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td bgcolor="#ffffff" align="center" valign="top" style="padding: 0px;" class="flex no-padd" width="50%">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="middle">
+                                    <a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339795&article.offset=0&articleLimit=8" target="_blank"><img src="images/img5.png" alt="img 3"  width="400" style="max-width: 400px; width: 100%; display: block"></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td bgcolor="#B17500" align="center" valign="top" style="padding: 10px 20px;" class="flex no-padd" width="50%">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left" class="mobile-font-head padd-mob" style="padding-top: 5px; font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 800; "><a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339795&article.offset=0&articleLimit=8" target="_blank" style="text-transform:uppercase; font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 800;text-decoration:none;">Development of a metal that could surpass the technical limits of modern semiconductors</a></td>
+                                </tr>
+                                <tr>
+                                  <td align="left" colspan="2" style="padding: 0px 0px;line-height: 10px;" class="pad-mob">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="10%" style="border-bottom: 2px solid #ffffff; display: table-cell;">
+                                      <tbody>
+                                        <tr>
+                                          <td>&nbsp;</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" class="mobile-font padd-mob" style=" font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 400;padding-top: 10px; "><a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339795&article.offset=0&articleLimit=8" target="_blank" style=" font-size: 16px; font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; color: #ffffff; line-height: 18px; font-weight: 400;text-decoration:none; ">Non-crystalline semimetal nanofilm has properties opposite to those of metals and could serve as a fundamental technology 
+                                    for next-generation semiconductors.
+                                      </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding: 10px 0 10px;" class="padd-mob">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td bgcolor="#ffffff" style="
+                                              border-radius: 20px;
+                                              background: #ffffff;
+                                              padding: 6px 12px;
+                                            ">
+                                            <a href="https://www.ajou.ac.kr/en/research/newsletter.do?mode=view&articleNo=339795&article.offset=0&articleLimit=8" target="_blank" style="
+                                                text-decoration: none;
+                                                color: #B17500;
+                                                background: #ffffff;
+                                                border-radius: 20px;
+                                                font-size: 12px;
+                                                line-height: 15px;
+                                                font-weight:bold;
+                                                font-family: 'Nanum Gothic', Arial,
+                                                  Helvetica, sans-serif;
+                                              " class="mobile-font">Read More
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#00549D" align="center" valign="top" class="" style="padding:30px 20px">
+                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                      <tbody>
+                        
+                        <tr>
+                          <td align="center" class="mobile-font-head" style="
+                              font-size: 38px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #ffffff;
+                              line-height: 40px;
+                              font-weight: 800;
+                              text-transform:uppercase;
+                            ">Outstanding accomplishments
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top" style="padding: 20px 0 10px;">
+                           
+                              <img src="images/outstanding-accomplishment.png" alt="Outstanding accomplishments" width="741" style="max-width: 741px; width:100%; display: block" />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#ffffff" align="center" valign="top" style="padding: 30px 20px 20px" class="pad-lr">
+                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" class="mobile-font-head" style="
+                              font-size: 35px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #00549D;
+                              line-height: 38px;
+                              font-weight: 800;
+                              padding-bottom:20px;
+                            ">
+                            Ajou’s <br/>
+                            Introduction to G-LAMP 
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top">
+                            <img src="images/g-lamp.png" alt="color-conversion" width="634" style="max-width: 634px; width:100%; display: block">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="mobile-font" style="
+                              font-size: 20px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #000000;
+                              line-height: 24px;
+                              font-weight: 400;
+                              padding-top: 15px;
+                            ">
+                           G-LAMP, a pioneering initiative, supports early-career researchers through research programs and collaboration. Ajou University received 23.6 billion Won in funding for the project (December 2023&ndash;August 2028).
+                           <br/>
+                           <br/>
+ 
+                           At Ajou, the G-LAMP Research Center strengthens the university’s research ecosystem through funding, personnel, and infrastructure support.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding-top: 20px">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td bgcolor="#00549D" style="
+                                      border-radius: 20px;
+                                      background: #00549D;
+                                      padding: 8px 15px;
+                                    ">
+                                    <a href="https://glamp.ajou.ac.kr/" target="_blank" style="
+                                        text-decoration: none;
+                                        color: #ffffff;
+                                        background: #00549D;
+                                        border-radius: 20px;
+                                        font-size: 16px;
+                                        line-height: 15px;
+                                        font-family: 'Nanum Gothic', Arial,
+                                          Helvetica, sans-serif;
+                                      " class="mobile-font">Read More
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2" style="padding:10px 20px; line-height:0;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="90%" style="border-bottom: 1px solid #000000">
+                      <tbody>
+                        <tr>
+                          <td>&nbsp;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#ffffff" align="center" valign="top" style="padding: 30px 20px 20px" class="pad-lr">
+                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" class="mobile-font-head" style="
+                              font-size: 35px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #B17500;
+                              line-height: 38px;
+                              font-weight: 800;
+                              padding-bottom:20px;
+                            ">
+                            Ajou Energy Science <br/>
+                            Research Center (AESRC)
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top">
+                            <img src="images/r-center.png" alt="color-conversion" width="634" style="max-width: 634px; width:100%; display: block">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="mobile-font" style="
+                              font-size: 20px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #000000;
+                              line-height: 24px;
+                              font-weight: 400;
+                              padding-top: 15px;
+                            ">
+                           As a key G-LAMP institute, AESRC advances materials and energy research through convergent science, focusing on energy, quantum materials, bioenergy, and molecular activation to tackle global 
+                           energy challenges.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding-top: 20px">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td bgcolor="#B17500" style="
+                                      border-radius: 20px;
+                                      background: #B17500;
+                                      padding: 8px 15px;
+                                    ">
+                                    <a href="https://glamp.ajou.ac.kr/" target="_blank" style="
+                                        text-decoration: none;
+                                        color: #ffffff;
+                                        background: #B17500;
+                                        border-radius: 20px;
+                                        font-size: 16px;
+                                        line-height: 15px;
+                                        font-family: 'Nanum Gothic', Arial,
+                                          Helvetica, sans-serif;
+                                      " class="mobile-font">Read More
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2" style="padding:10px 20px 0; line-height:0;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="90%" style="border-bottom: 1px solid #000000">
+                      <tbody>
+                        <tr>
+                          <td>&nbsp;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#FFF6E3" align="center" valign="top" style="padding: 20px 20px;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" class="mobile-font-head" style="
+                              font-size: 35px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #00549D;
+                              line-height: 38px;
+                              font-weight: 800;
+                              padding-bottom:20px;
+                            ">Safe Data Utilization Convergence Project
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="mobile-font-head" style="
+                              font-size: 20px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #000000;
+                              line-height: 22px;
+                              font-weight: 400;
+                              padding-bottom:20px;
+                            ">This project aims to develop experts in the field of Safe Data Utilization Convergence through the sharing of courses, facilities, and educational content across universities, as part of the Ministry of Education’s “Convergence and Open Sharing System (COSS).”
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="mobile-font-head" style="
+                              font-size: 20px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #000000;
+                              line-height: 34px;
+                              font-weight: 600;
+                              padding-bottom:20px;
+                            ">March 1, 2024&ndash;February 29, 2028 <br/>
+                            
+                              Received 11.85 billion Won in government funding
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="mobile-font-head" style="
+                              font-size: 30px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #000000;
+                              line-height: 35px;
+                              font-weight: 800;
+                              text-transform:uppercase;
+                            ">Goals
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" colspan="2" style="padding:10px 20px 0; line-height:0;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="10%" style="border-bottom: 4px solid #00549D">
+                              <tbody>
+                                <tr>
+                                  <td>&nbsp;</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="top" align="top" width="32%" class="mb-20">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top">
+                                              <img src="images/ic1.png" alt="box1" width="162" style="max-width:162px; width: 100%; display: block">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" class="mobile-font-head" style="
+                                              font-size: 18px;
+                                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                                sans-serif;
+                                              color: #000000;
+                                              line-height: 22px;
+                                              font-weight: 400;
+                                              padding-bottom:20px;
+                                            ">Develop 100,000<br/> advanced talents
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td width="2%">&nbsp;</td>
+                                  <td valign="top" align="top" width="32%" class="mb-20">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top">
+                                            <img src="images/ic2.png" alt="box2" width="162" style="max-width:162px; width: 100%; display: block">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" class="mobile-font-head" style="
+                                              font-size: 18px;
+                                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                                sans-serif;
+                                              color: #000000;
+                                              line-height: 22px;
+                                              font-weight: 400;
+                                              padding-bottom:20px;
+                                            ">Develop<br/>
+                                              standardized curricula<br/>
+                                              for each level
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td width="2%">&nbsp;</td>
+                                  <td valign="top" align="top" width="32%" class="mb-20">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top">
+                                           <img src="images/ic3.png" alt="box3" width="162" style="max-width:162px; width: 100%; display: block">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" class="mobile-font-head" style="
+                                              font-size: 18px;
+                                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                                sans-serif;
+                                              color: #000000;
+                                              line-height: 22px;
+                                              font-weight: 400;
+                                              padding-bottom:20px;
+                                            ">Expand student choice<br/> to be open to anyone,<br/> regardless of department
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="mobile-font-head" style="
+                              font-size: 30px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #000000;
+                              line-height: 35px;
+                              font-weight: 800;
+                              text-transform:uppercase;
+                            ">Fields
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" colspan="2" style="padding:10px 20px 0; line-height:0;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="10%" style="border-bottom: 4px solid #00549D">
+                              <tbody>
+                                <tr>
+                                  <td>&nbsp;</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="top" align="top" width="32%" class="mb-20">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top">
+                                              <img src="images/ic4.png" alt="box1" width="162" style="max-width:162px; width: 100%; display: block">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" class="mobile-font-head" style="
+                                              font-size: 18px;
+                                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                                sans-serif;
+                                              color: #000000;
+                                              line-height: 22px;
+                                              font-weight: 400;
+                                              padding-bottom:20px;
+                                            ">Cybersecurity
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td width="2%">&nbsp;</td>
+                                  <td valign="top" align="top" width="32%" class="mb-20">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top">
+                                            <img src="images/ic5.png" alt="box2" width="162" style="max-width:162px; width: 100%; display: block">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" class="mobile-font-head" style="
+                                              font-size: 18px;
+                                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                                sans-serif;
+                                              color: #000000;
+                                              line-height: 22px;
+                                              font-weight: 400;
+                                              padding-bottom:20px;
+                                            ">Cloud computing
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td width="2%">&nbsp;</td>
+                                  <td valign="top" align="top" width="32%" class="mb-20">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top">
+                                           <img src="images/ic6.png" alt="box3" width="162" style="max-width:162px; width: 100%; display: block">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" class="mobile-font-head" style="
+                                              font-size: 18px;
+                                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                                sans-serif;
+                                              color: #000000;
+                                              line-height: 22px;
+                                              font-weight: 400;
+                                              padding-bottom:20px;
+                                            ">Blockchain
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="mobile-font-head" style="
+                              font-size: 35px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #00549D;
+                              line-height: 38px;
+                              font-weight: 800;
+                              padding-bottom:20px;
+                            ">Semiconductor Specialization Support Project
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="mobile-font-head" style="
+                              font-size: 20px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #000000;
+                              line-height: 22px;
+                              font-weight: 400;
+                              padding-bottom:20px;
+                            ">This project is aimed at establishing a national semiconductor cross-border education cluster and cultivating professionals for the sustainable growth of the Gyeonggi-Chungcheong K-semiconductor value chain. 
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="mobile-font-head" style="
+                              font-size: 30px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #000000;
+                              line-height: 35px;
+                              font-weight: 800;
+                              text-transform:uppercase;
+                            ">Implementation plan
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" colspan="2" style="padding:10px 20px 0; line-height:0;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="10%" style="border-bottom: 4px solid #F6AC0D">
+                              <tbody>
+                                <tr>
+                                  <td>&nbsp;</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="top" align="top" width="25%" class="mb-20">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top">
+                                              <img src="images/im1.png" alt="box1" width="162" style="max-width:162px; width: 100%; display: block">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" class="mobile-font-head" style="
+                                              font-size: 18px;
+                                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                                sans-serif;
+                                              color: #000000;
+                                              line-height: 22px;
+                                              font-weight: 400;
+                                              padding-bottom:20px;
+                                            ">Curriculum development, revision, and operation
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td valign="top" align="top" width="25%" class="mb-20">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top">
+                                            <img src="images/im2.png" alt="box2" width="162" style="max-width:162px; width: 100%; display: block">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" class="mobile-font-head" style="
+                                              font-size: 18px;
+                                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                                sans-serif;
+                                              color: #000000;
+                                              line-height: 22px;
+                                              font-weight: 400;
+                                              padding-bottom:20px;
+                                            ">Development and management of educational infrastructure
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td valign="top" align="top" width="25%" class="mb-20">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top">
+                                           <img src="images/im3.png" alt="box3" width="162" style="max-width:162px; width: 100%; display: block">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" class="mobile-font-head" style="
+                                              font-size: 18px;
+                                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                                sans-serif;
+                                              color: #000000;
+                                              line-height: 22px;
+                                              font-weight: 400;
+                                              padding-bottom:20px;
+                                            ">Institutional improvements within the university
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td valign="top" align="top" width="25%" class="mb-20">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top">
+                                           <img src="images/im4.png" alt="box3" width="162" style="max-width:162px; width: 100%; display: block">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" class="mobile-font-head" style="
+                                              font-size: 18px;
+                                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                                sans-serif;
+                                              color: #000000;
+                                              line-height: 22px;
+                                              font-weight: 400;
+                                              padding-bottom:20px;
+                                            ">Support for employment and further education
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#ffffff" align="center" valign="top" style="padding: 30px 20px 20px" class="pad-lr">
+                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" class="mobile-font-head" style="
+                              font-size: 35px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #B17500;
+                              line-height: 38px;
+                              font-weight: 800;
+                              padding-bottom:20px;
+                            ">
+                           Ajou International Summer School:<br/>
+                           Explore Korea and Earn Credits this Summer 
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top">
+                            <img src="images/summer-school.png" alt="color-conversion" width="634" style="max-width: 634px; width:100%; display: block">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="mobile-font" style="
+                              font-size: 20px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #000000;
+                              line-height: 24px;
+                              font-weight: 400;
+                              padding-top: 15px;
+                            ">
+                           Ajou University invites students from around the world to join the 2025 Ajou International Summer School (AISS), taking place from July 1 to July 19, 2025. Located just 34 minutes from Gangnam via the fully automated Seoul Metro, Ajou University offers a dynamic learning environment surrounded by a vibrant college neighborhood. The AISS program allows participants to earn up to six credits by selecting two courses from engaging tracks, such as Sustainability, Data Analytics and Business Decision-Making, Macroeconomic Development, and Korean Language.
+                           <br/>
+                           <br/>
+
+                           Beyond academics, students will immerse themselves in Korean culture through activities like traditional Korean food making, K-pop dance sessions at the renowned 1 Million Dance Studio, and cultural tours to sites like Hwaseong Fortress and Lotte World.  
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding-top: 20px">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td bgcolor="#B17500" style="
+                                      border-radius: 20px;
+                                      background: #B17500;
+                                      padding: 8px 15px;
+                                    ">
+                                    <a href="https://oia.ajou.ac.kr/oia/incoming/aiss-overview.do" target="_blank" style="
+                                        text-decoration: none;
+                                        color: #ffffff;
+                                        background: #B17500;
+                                        border-radius: 20px;
+                                        font-size: 16px;
+                                        line-height: 15px;
+                                        font-family: 'Nanum Gothic', Arial,
+                                          Helvetica, sans-serif;
+                                      " class="mobile-font">Read More
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#00549D" align="center" valign="top" class="" style="padding:30px 20px">
+                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                      <tbody>
+                        
+                        <tr>
+                          <td align="center" class="mobile-font-head" style="
+                              font-size: 38px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #ffffff;
+                              line-height: 40px;
+                              font-weight: 800;
+                              text-transform:uppercase;
+                            ">ABOUT AJOU UNIVERSITY
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top" style="padding: 20px 0 10px;">
+                             <img src="images/about-ajou.png" alt="Outstanding accomplishments" width="710" style="max-width: 710px; width:100%; display: block">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#ffffff" align="center" valign="top" style="padding: 0px 25px 10px" class="pad-lr">
+                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" valign="top" style="padding: 20px 0 10px;">
+                             <img src="images/ajou-logo.png" alt="Outstanding accomplishments" width="325" style="max-width: 325px; width:100%; display: block">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="mobile-font" style="
+                              font-size: 12px;
+                              font-family: 'Nanum Gothic', Arial, Helvetica,
+                                sans-serif;
+                              color: #000000;
+                              line-height: 20px;
+                              font-weight: 500;
+                              padding-top:10px;
+                            "> Ajou University, 206 Worldcup-ro, Yeongtonggu, Suwon 16499, Korea/Copyright © 2025 Ajou University, All Rights Reserved. <br/> <span style="font-size: 11px;">Please forward this email to your colleagues.<br/>
+                            To <span style="
+                            text-decoration: underline;
+                            color: #000000;
+                            font-weight: 600;
+                          ">unsubscribe</span> from this newsletter, please contact us at
+                            <a href="mailto:global_strategy@ajou.ac.kr" style="color: #043b82; text-decoration: underline">
+                              <u>global_strategy@ajou.ac.kr</u></span>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+					</td>
+				</tr>
+			</table>
+		</center>
+		<![endif]-->
+  </body>
+</html>

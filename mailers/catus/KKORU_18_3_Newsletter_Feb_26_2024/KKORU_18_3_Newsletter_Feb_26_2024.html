@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Letter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        /*table-layout: fixed !important;*/
+        margin: 0 auto !important;
+      }
+
+      table table table {
+        table-layout: auto;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+        text-decoration: none !important;
+      }
+
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      *[x-apple-data-detectors],
+      /* iOS */
+      .unstyle-auto-detected-links *,
+      .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img+div {
+        display: none !important;
+      }
+
+      .ExternalClass,
+      .ExternalClass a,
+      .ExternalClass span,
+      .ExternalClass b,
+      .ExternalClass br,
+      .ExternalClass p,
+      .ExternalClass div {
+        line-height: inherit;
+      }
+
+      /* iOS BLUE LINKS */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      .msonopad {
+        padding: 0 4px;
+        /*  padding: 0 5px 0px 15px;*/
+      }
+
+      .sign a {
+        color: #363636;
+      }
+
+      .sign a,
+      *[class=sign-padd] {
+        color: #363636;
+      }
+
+      .shadow {
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+      }
+
+      .applyclick a:active,
+      .applyclick a:focus {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      /* MOBILE STYLES */
+      @media screen and (max-width: 599px) {
+        .pr-2 {
+          padding-right: 3px;
+        }
+
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        .logo img {
+          margin: 0 auto !important;
+        }
+
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        /*ALLOWS FOR FULL-WIDTH TABLES */
+        .responsive-table {
+          width: 100% !important;
+        }
+
+        /* ALLOWS FOR FULL TD */
+        .flex,
+        *[class=flex] {
+          width: 100% !important;
+          display: block !important;
+          text-align: left !important;
+        }
+
+        .flex2,
+        *[class=flex2] {
+          width: 100% !important;
+          display: block !important;
+          text-align: center !important;
+        }
+
+        .flex3,
+        *[class=flex3] {
+          display: none !important;
+        }
+
+        .flex4,
+        *[class=flex4] {
+          width: 80% !important;
+          display: block !important;
+          text-align: center !important;
+          border-bottom: 1px dashed #a9a7a7;
+          padding-bottom: 20px !important;
+          margin: 20px auto !important;
+        }
+
+        .flex5,
+        *[class=flex5] {
+          width: 50% !important;
+          display: inline-grid !important;
+          display: -webkit-inline-grid !important;
+          display: -moz-inline-grid !important;
+          display: -o-inline-grid !important;
+          display: -ms-inline-grid !important;
+        }
+
+        /* ADJUSTS LAYOUT OF FONT SIZE */
+        .mobile-main-head,
+        *[class=mobile-main-head] {
+          font-size: 70px !important;
+          line-height: 60px !important;
+        }
+
+        .mobile-font,
+        *[class=mobile-font] {
+          font-size: 17px !important;
+          line-height: 27px !important;
+        }
+
+        .mobile-font-head,
+        *[class=mobile-font-head] {
+          font-size: 26px !important;
+          line-height: 32px !important;
+        }
+
+        .mobile-font-head2,
+        *[class=mobile-font-head2] {
+          font-size: 22px !important;
+          line-height: 28px !important;
+        }
+
+        .mobile-font-subhead,
+        *[class=mobile-font-subhead] {
+          font-size: 21px !important;
+          line-height: 31px !important;
+        }
+
+        .mobile-font-subtitle,
+        *[class=mobile-font-subtitle] {
+          font-size: 19px !important;
+          line-height: 29px !important;
+        }
+
+        .mobile-font-signature,
+        *[class=mobile-font-signature] {
+          font-size: 17px !important;
+          line-height: 17px !important;
+        }
+
+        .mobile-font-button,
+        *[class=mobile-font-button] {
+          font-size: 14px !important;
+          line-height: 14px !important;
+        }
+
+        /* ALLOWS FOR BORDER */
+        .no-border {
+          border: none !important;
+        }
+
+        .no-t-brd {
+          border-top: none !important;
+        }
+
+        .no-b-brd {
+          border-bottom: none !important;
+        }
+
+        .no-r-brd {
+          border-right: none !important;
+        }
+
+        .no-l-brd {
+          border-left: none !important;
+        }
+
+        .black-t-brd {
+          border-top: 1px dashed #363636 !important;
+        }
+
+        .black-b-brd {
+          border-bottom: 1px dashed #363636 !important;
+        }
+
+        .black-r-brd {
+          border-right: 1px dashed #363636 !important;
+        }
+
+        .black-l-brd {
+          border-left: 1px dashed #363636 !important;
+        }
+
+        .border {
+          border-left: none !important;
+          border-right: none !important;
+          border-bottom: 1px solid #dddcd9;
+          border-top: 1px solid #dddcd9;
+        }
+
+        .brdtopbottom,
+        *[class=brdtopbottom] {
+          border-left: 0px !important;
+          border-right: 0px !important;
+          border-bottom: 1px solid #dedede;
+          border-top: 1px solid #dedede;
+          padding-top: 20px !important;
+          padding-bottom: 20px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .mleft {
+          text-align: left !important;
+        }
+
+        .mcenter {
+          text-align: center !important;
+        }
+
+        .no-padd {
+          padding: 0px !important;
+        }
+
+        .no-pl {
+          padding-left: 0px !important;
+        }
+
+        .no-pr {
+          padding-right: 0px !important;
+        }
+
+        .nopadd-lr {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+
+        .pt-10 {
+          padding-top: 10px !important;
+        }
+
+        .pb-10 {
+          padding-bottom: 10px !important;
+        }
+
+        .pt-15 {
+          padding-top: 15px !important;
+        }
+
+        .pt-20 {
+          padding-top: 20px !important;
+        }
+
+        .pb-20 {
+          padding-bottom: 20px !important;
+        }
+
+        .pb-25 {
+          padding-bottom: 25px !important;
+        }
+
+        .pr-10 {
+          padding-right: 10px !important;
+        }
+
+        .padd-top-8 {
+          padding-top: 8px !important;
+        }
+
+        .padr25 {
+          padding-right: 25px !important;
+        }
+
+        .pad-lr {
+          padding-left: 60px !important;
+          padding-right: 60px !important;
+        }
+
+        .sho_mob {
+          display: none !important;
+        }
+
+        .w-35 {
+          width: 35% !important;
+        }
+
+        .w-100 {
+          width: 100% !important;
+        }
+
+        /*.padd-lr-20
+        {
+          padding-right: 20px !important;
+          padding-left: 20px !important;
+        }*/
+        /* UTILITY CLASSES FOR ADJUSTING MARGIN ON MOBILE */
+        .h-auto {
+          height: auto !important;
+        }
+
+        .no-mb {
+          margin-bottom: 0px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING Vertical ALign  */
+        .mob-valign-top {
+          vertical-align: top !important;
+        }
+
+        /* ADJUSTS FOR IMAGE CENTER */
+        .img-center {
+          margin: 0 auto !important;
+        }
+
+        /* ADJUSTS FOR TEXT CENTER */
+        .text-center {
+          text-align: center !important;
+        }
+      }
+
+      div[style*="margin: 16px 0;"] {
+        margin: 0 !important;
+      }
+    </style>
+    <!--[if gte mso 9]>
+				<style type="text/css" media="all">
+      .msonopad {
+      padding-right: 10px;
+      text-align:center;
+      width:40px;
+      }
+      img.mso-img {
+      padding-top: 10px;
+      line-height:24px;
+      }
+      tr.space-mso{
+      font-size:0;
+      mso-line-height-alt:0;
+      mso-margin-top-alt:1px;
+      }
+    </style>
+				<![endif]-->
+  </head>
+  <body style="margin: 0 !important; padding: 0 !important;background:#ffffff;">
+    <!--[if (gte mso 9)|(ie)]>
+				<center>
+					<table align="center" border="0" cellspacing="0" cellpadding="0"  width="800">
+						<tr>
+							<td align="center" valign="top" width="850">
+								<![endif]-->
+    <!-- HIDDEN PREHEADER TEXT -->
+    <div style="mso-hide:all; display:none; font-size:1px; color:#333333; line-height:0;font-family: Arial, Helvetica, sans-serif; max-height:0; max-width:0; opacity:0; overflow:hidden;"></div>
+    <table align="center">
+      <tbody>
+        <tr>
+          <td align="center" class="container" width="850" style="border:1px solid #dddddd;">
+            <table class="table-full" width="850" style="max-width: 850px;" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td bgcolor="#8B1D33" align="center" style="padding: 25px 20px 20px;">
+                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td style="padding-bottom: 0px;padding-top: 0px;">
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="middle" align="left" width="50%">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" class="pb-20">
+                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/cb66f4b9-cc17-eb4e-2830-92761930c580.png" alt="" title="logo" style="display: block;max-width: 100%;" class="img-center" width="177" height="76">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td valign="middle" align="left" width="50%" class="no-pl text-center" style="padding-left: 0px;">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td class="text-center" style="font-family: 'Noto Sans', sans-serif; font-size: 14px; line-height: 20px; color: #FFFFFF; font-weight: normal;text-align: right;"> 2024 | Volume 1 </td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-center" style="padding-bottom: 10px;font-family: 'Noto Sans', sans-serif; font-size: 14px; line-height: 20px; color: #FFFFFF; font-weight: normal;text-align: right;"> KU Research Newsletter </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" bgcolor="#10147e">
+                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center">
+                            <a href="https://quiz.sdgzone.com/" target="_blank" style="text-decoration: none;">
+                              <img alt="Partners logo" class="partner-logo img-100" border="0" src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/85859744-0baa-3f63-a333-e066fff3ce1b.jpg" width="850" style="width: 850px; display:block;">
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="middle" align="left" width="50%" height="5" class="" bgcolor="#00ADD8"></td>
+                                  <td valign="middle" align="left" width="50%" height="5" class="" bgcolor="#F36E24"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#FFFFFF" align="center">
+                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%" style="background: linear-gradient(360deg, rgba(0, 173, 216, 0.09) 28.75%, rgba(0, 173, 216, 0) 97.68%);">
+                      <tbody>
+                        <tr>
+                          <td align="center" bgcolor="" style="padding: 30px 40px 0px">
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left">
+                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/9bcf1439-f3da-aa3d-72bd-41721c2e08b8.jpg" alt="6 Clean Water and Sanitation" title="6 Clean Water and Sanitation" width="268" style="width: 268px; display:block;">
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 30px 40px 15px" dir="rtl">
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="top" align="left" width="40%" dir="ltr">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding-bottom: 15px;">
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td valign="middle" width="20%">
+                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-right: 8px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/ef124623-0a69-fdea-30fc-c5b78f0c9891.png" alt="Prof. Kyung Hwa Cho" title="Prof. Kyung Hwa Cho" width="58" style="width: 58px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td valign="middle" width="80%">
+                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>
+                                                            <a href="https://weilunist.creatorlink.net/" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #00ADD8; font-weight: bold;text-decoration: none !important;">Prof. Kyung Hwa Cho</a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="right" class="pb-20">
+                                            <a href="https://doi.org/10.1016/j.cej.2023.147628" target="_blank" style="text-decoration: none;">
+                                              <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/0620f9ff-5698-f3dd-0e02-a8714be44dd6.png" alt="" title="" width="302" style="width: 302px; display:block;" class="img-center img-100">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td valign="top" align="left" width="60%" class="no-pr" dir="ltr" style="padding-right: 10px;">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding-bottom: 8px; border-bottom: 1px solid #00ADD8;">
+                                            <a href="https://doi.org/10.1016/j.cej.2023.147628" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #00ADD8; font-weight: bold;text-decoration: none !important;">Improving the Efficiency of Redox Flow Desalination Batteries</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td style="padding-top: 20px; padding-bottom: 20px;">
+                                            <a href="https://doi.org/10.1016/j.cej.2023.147628" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 20px; color: #000000; text-decoration: none !important;">Redox flow desalination batteries (RFDBs) are an energy-efficient and sustainable solution to address the water-energy nexus challenges. However, the hurdles of low volumetric capacity and intermittent desalination limit its widespread application. Now, researchers have introduced a new configuration, wherein the liquid electrodes are replaced with sodium metal, to increase the energy density and interlaying alternate cation and anion exchange membrane to ensure continuous desalination.</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="padding: 5px 0px 10px;">
+                                            <table bgcolor="#00ADD8" border="0" cellpadding="0" cellspacing="0" class="contact-btn" align="left">
+                                              <tbody>
+                                                <tr>
+                                                  <td height="26" width="80" align="center" style="padding-left: 5px;padding-right: 5px;">
+                                                    <a label="button" href="https://doi.org/10.1016/j.cej.2023.147628" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif !important; font-size: 13px;color: #FFFFFF; font-weight: 500;">Read more</a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 15px 40px 15px">
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td style="padding-bottom: 0px;padding-top: 0px;">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td valign="top" align="left" width="40%">
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="padding-bottom: 15px;">
+                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td valign="middle" width="20%">
+                                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td style="padding-right: 8px;">
+                                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/ef124623-0a69-fdea-30fc-c5b78f0c9891.png" alt="Prof. Seunghak Lee" title="Prof. Seunghak Lee" width="58" style="width: 58px;display: block;">
+                                                                  </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                          <td valign="middle" width="80%">
+                                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td>
+                                                                    <a href="https://www.scopus.com/authid/detail.uri?authorId=57205232392" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #00ADD8; font-weight: bold;text-decoration: none !important;">Prof. Seunghak Lee</a>
+                                                                  </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" class="pb-20">
+                                                    <a href="https://doi.org/10.1016/j.watres.2023.120954" target="_blank" style="text-decoration: none;">
+                                                      <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/4196f18c-1219-80af-b9b0-b37d034ff635.png" alt="" title="" width="301" style="width: 301px; display:block;" class="img-center img-100">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td valign="top" align="left" width="60%" class="no-pl" style="padding-left: 10px;">
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="padding-bottom: 8px; border-bottom: 1px solid #00ADD8;">
+                                                    <a href="https://doi.org/10.1016/j.watres.2023.120954" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #00ADD8; font-weight: bold;text-decoration: none !important;">Reporting the Unexpected Role of Nitrate During Aquifer Storage and Recovery</a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="padding-top: 20px; padding-bottom: 20px;">
+                                                    <a href="https://doi.org/10.1016/j.watres.2023.120954" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 20px; color: #000000; text-decoration: none !important;">Aquifer storage and recovery (ASR) provides a promising solution for securing water for future use. During ASR, dissolved organic carbon (DOC) is known to be attenuated by dissimilatory iron reduction. However, the role of nitrate, a competing electron acceptor to iron, in this process remains unclear. The researchers have elucidated the relevant mechanism and investigated the potential role of nitrate on DOC attenuation during ASR, revealing its unexpected synergistic effect.</a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" style="padding: 5px 0px 10px;">
+                                                    <table bgcolor="#00ADD8" border="0" cellpadding="0" cellspacing="0" class="contact-btn" align="left">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td height="26" width="80" align="center" style="padding-left: 5px;padding-right: 5px;">
+                                                            <a label="button" href="https://doi.org/10.1016/j.watres.2023.120954" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif !important; font-size: 13px;color: #FFFFFF; font-weight: 500;">Read more</a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 15px 40px 15px" dir="rtl">
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="middle" align="left" width="40%" dir="ltr">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding-bottom: 15px;">
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td valign="middle" width="20%">
+                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-right: 8px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/ef124623-0a69-fdea-30fc-c5b78f0c9891.png" alt="Prof. Jung-Hyun Lee" title="Prof. Jung-Hyun Lee" width="58" style="width: 58px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td valign="middle" width="80%">
+                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>
+                                                            <a href="https://seml.korea.ac.kr/member/professor" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #00ADD8; font-weight: bold;text-decoration: none !important;">Prof. Jung-Hyun Lee</a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="right" class="pb-20">
+                                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0376738823004702" target="_blank" style="text-decoration: none;">
+                                              <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/205d5abb-a2aa-8bc3-ab14-945b8ab60ea5.png" alt="" title="" width="294" style="width: 294px; display:block;" class="img-center img-100">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td valign="middle" align="left" width="60%" class="no-pr" dir="ltr" style="padding-right: 10px;">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding-bottom: 8px; border-bottom: 1px solid #00ADD8;">
+                                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0376738823004702" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #00ADD8; font-weight: bold;text-decoration: none !important;">Investigating the Biofouling Mechanism of Sharkskin-Patterned Desalination Membranes</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td style="padding-top: 20px; padding-bottom: 20px;">
+                                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0376738823004702" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 20px; color: #000000; text-decoration: none !important;">Biofouling is a critical problem in membrane-based water treatment and desalination as it degrades membrane performance. Topological modification of the membrane via the Sharklet pattern has shown the ability to mitigate biofouling. However, details about the orientation-dependentant-biofouling effect and the underlying anisotropic antifouling mechanisms remain unknown. Now, researchers have examined the biofouling tendency of the Sharklet-patterned membrane by varying the angle between the pattern orientation and bulk flow to gain insights into this mechanism.</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="padding: 5px 0px 10px;">
+                                            <table bgcolor="#00ADD8" border="0" cellpadding="0" cellspacing="0" class="contact-btn" align="left">
+                                              <tbody>
+                                                <tr>
+                                                  <td height="26" width="80" align="center" style="padding-left: 5px;padding-right: 5px;">
+                                                    <a label="button" href="https://www.sciencedirect.com/science/article/abs/pii/S0376738823004702" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif !important; font-size: 13px;color: #FFFFFF; font-weight: 500;">Read more</a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 15px 40px 30px">
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td style="padding-bottom: 0px;padding-top: 0px;">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td valign="middle" align="left" width="40%">
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="padding-bottom: 15px;">
+                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td valign="middle" width="20%">
+                                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td style="padding-right: 8px;">
+                                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/ef124623-0a69-fdea-30fc-c5b78f0c9891.png" alt="Prof. Soonjae Lee" title="Prof. Soonjae Lee" width="58" style="width: 58px;display: block;">
+                                                                  </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                          <td valign="middle" width="80%">
+                                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td>
+                                                                    <a href="https://engeokuees.wordpress.com/" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #00ADD8; font-weight: bold;text-decoration: none !important;">Prof. Soonjae Lee</a>
+                                                                  </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" class="pb-20">
+                                                    <a href="https://doi.org/10.1016/j.envpol.2023.122136" target="_blank" style="text-decoration: none;">
+                                                      <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/3c26fe3a-b2d7-1cd4-d073-bc45a644f60d.png" alt="" title="" width="301" style="width: 301px; display:block;" class="img-center img-100">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td valign="middle" align="left" width="60%" class="no-pl" style="padding-left: 10px;">
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="padding-bottom: 8px; border-bottom: 1px solid #00ADD8;">
+                                                    <a href="https://doi.org/10.1016/j.envpol.2023.122136" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #00ADD8; font-weight: bold;text-decoration: none !important;">Applying Upscaling Methods to Predict Non-Pumping Reactive Wells Longevity</a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="padding-top: 20px; padding-bottom: 20px;">
+                                                    <a href="https://doi.org/10.1016/j.envpol.2023.122136" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 20px; color: #000000; text-decoration: none !important;">The presence of arsenic in groundwater is a serious public health concern, necessitating actions for groundwater treatment. Nonpumping reactive wells (NPRWs) offer a solution to this issue. However, recently, concerns regarding the longevity of NPRWs facilities have emerged. Now, researchers propose evaluating the longevity of NPRWs using upscaling methods and validating the prevention of contaminant spreading. This new method may simplify the calculation of NPRWs facilities longevity, particularly those with complex structures.</a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" style="padding: 5px 0px 10px;">
+                                                    <table bgcolor="#00ADD8" border="0" cellpadding="0" cellspacing="0" class="contact-btn" align="left">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td height="26" width="80" align="center" style="padding-left: 5px;padding-right: 5px;">
+                                                            <a label="button" href="https://doi.org/10.1016/j.envpol.2023.122136" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif !important; font-size: 13px;color: #FFFFFF; font-weight: 500;">Read more</a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="middle" align="left" width="50%" height="5" class="" bgcolor="#00ADD8"></td>
+                                  <td valign="middle" align="left" width="50%" height="5" class="" bgcolor="#F36E24"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#FFFFFF" align="center">
+                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%" style="background: linear-gradient(0deg, #FAEEE8 0%, rgba(251, 222, 207, 0) 85%);">
+                      <tbody>
+                        <tr>
+                          <td align="center" bgcolor="" style="padding: 30px 40px 0px">
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left">
+                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/050cf48d-fb97-d10a-47a8-23500beee298.png" alt="9 Industry Innovation and Infrastructure" title="" width="294" style="width: 294px; display:block;">
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 30px 40px 15px" dir="rtl">
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="top" align="left" width="40%" dir="ltr">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding-bottom: 15px;">
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td valign="middle" width="20%">
+                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-right: 8px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/c1d9700a-63d7-1b0e-5112-84e8ef70031b.png" alt="Prof. Jae Won Shim" title="Prof. Jae Won Shim" width="58" style="width: 58px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td valign="middle" width="80%">
+                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>
+                                                            <a href="https://shimgrp.korea.ac.kr/" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #F36E24; font-weight: bold;text-decoration: none !important;">Prof. Jae Won Shim</a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="right" class="pb-20">
+                                            <a href="https://doi.org/10.1002/adma.202307523" target="_blank" style="text-decoration: none;">
+                                              <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/cea7d41e-caa4-9065-9218-e4e61795bf21.png" alt="" title="" width="302" style="width: 302px; display:block;" class="img-center img-100">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td valign="top" align="left" width="60%" class="no-pr" dir="ltr" style="padding-right: 10px;">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding-bottom: 8px; border-bottom: 1px solid #F36E24;">
+                                            <a href="https://doi.org/10.1002/adma.202307523" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #F36E24; font-weight: bold;text-decoration: none !important;">An Innovative Self-Powering Sensory Device to Combat Indoor IoT Challenges</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td style="padding-top: 20px; padding-bottom: 20px;">
+                                            <a href="https://doi.org/10.1002/adma.202307523" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 20px; color: #000000; text-decoration: none !important;">The constant surge in demand for indoor Internet-of-Things (IoT) has driven the advancement of optoelectronic technologies owing to their sustainability and cost-effectiveness in addressing challenges posed by conventional power sources. However, the manufacture of standalone optoelectronic devices can be complex and expensive, limiting their scalability and widespread indoor application. Now researchers have developed a selfpowering dual-functional sensory device with optimal energy harvesting and sensing capabilities. This innovative device showcased both commercial feasibility and ambient stability when subjected to indoor lighting conditions, making it a promising solution for future indoor IoT devices.</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="padding: 5px 0px 10px;">
+                                            <table bgcolor="#F36E24" border="0" cellpadding="0" cellspacing="0" class="contact-btn" align="left">
+                                              <tbody>
+                                                <tr>
+                                                  <td height="26" width="80" align="center" style="padding-left: 5px;padding-right: 5px;">
+                                                    <a label="button" href="https://doi.org/10.1002/adma.202307523" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif !important; font-size: 13px;color: #FFFFFF; font-weight: 500;">Read more</a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 15px 40px 15px">
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td style="padding-bottom: 0px;padding-top: 0px;">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td valign="top" align="left" width="40%">
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="padding-bottom: 15px;">
+                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td valign="middle" width="20%">
+                                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td style="padding-right: 8px;">
+                                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/c1d9700a-63d7-1b0e-5112-84e8ef70031b.png" alt="Prof. Ung Lee" title="Prof. Ung Lee" width="58" style="width: 58px;display: block;">
+                                                                  </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                          <td valign="middle" width="80%">
+                                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td>
+                                                                    <a href="https://www.kist-cepl.com/" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #F36E24; font-weight: bold;text-decoration: none !important;">Prof. Ung Lee</a>
+                                                                  </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" class="pb-20">
+                                                    <a href="https://doi.org/10.1016/j.enconman.2023.117302" target="_blank" style="text-decoration: none;">
+                                                      <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/ccd1431e-f9d0-f90f-e440-37dfcf2873bc.png" alt="" title="" width="301" style="width: 301px; display:block;" class="img-center img-100">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td valign="top" align="left" width="60%" class="no-pl" style="padding-left: 10px;">
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="padding-bottom: 8px; border-bottom: 1px solid #F36E24;">
+                                                    <a href="https://doi.org/10.1016/j.enconman.2023.117302" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #F36E24; font-weight: bold;text-decoration: none !important;">Assessing the Economic Viability and Environmental Potential of Green Hydrogen Carriers</a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="padding-top: 20px; padding-bottom: 20px;">
+                                                    <a href="https://doi.org/10.1016/j.enconman.2023.117302" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 20px; color: #000000; text-decoration: none !important;">To mitigate the climate crisis caused by CO<sub>2</sub> emissions, hydrogen generated from renewable energy has emerged as a promising alternative for providing clean energy to both households and industries. Nonetheless, its practical deployment faces challenges associated with transportation and storage. In this context, methanol and formic acid, recognized as green hydrogen carriers produced from the utilization of carbon dioxide, present an economically and environmentally sustainable alternative. Through comprehensive techno-economic and life cycle assessment, researchers have found that methanol may serve as a short-term solution for hydrogen distribution, while electro chemical formic acid production shows potential for long-term options.</a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" style="padding: 5px 0px 10px;">
+                                                    <table bgcolor="#F36E24" border="0" cellpadding="0" cellspacing="0" class="contact-btn" align="left">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td height="26" width="80" align="center" style="padding-left: 5px;padding-right: 5px;">
+                                                            <a label="button" href="https://doi.org/10.1016/j.enconman.2023.117302" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif !important; font-size: 13px;color: #FFFFFF; font-weight: 500;">Read more</a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 15px 40px 15px" dir="rtl">
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="top" align="left" width="40%" dir="ltr">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding-bottom: 15px;">
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td valign="middle" width="20%">
+                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-right: 8px;">
+                                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/c1d9700a-63d7-1b0e-5112-84e8ef70031b.png" alt="Prof. Han-Jun Kim" title="Prof. Han-Jun Kim" width="58" style="width: 58px;display: block;">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td valign="middle" width="80%">
+                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>
+                                                            <a href="https://www.hanjunkim.co.kr/" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #F36E24; font-weight: bold;text-decoration: none !important;">Prof. Han-Jun Kim</a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="right" class="pb-20">
+                                            <a href="https://doi.org/10.1016/j.addr.2023.115142" target="_blank" style="text-decoration: none;">
+                                              <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/b7b5c646-3935-a10f-61de-2934758496b7.png" alt="" title="" width="302" style="width: 302px; display:block;" class="img-center img-100">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td valign="top" align="left" width="60%" class="no-pr" dir="ltr" style="padding-right: 10px;">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding-bottom: 8px; border-bottom: 1px solid #F36E24;">
+                                            <a href="https://doi.org/10.1016/j.addr.2023.115142" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #F36E24; font-weight: bold;text-decoration: none !important;">Unveiling Insights to Advance Organoids for Biomedical Applications</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td style="padding-top: 20px; padding-bottom: 20px;">
+                                            <a href="https://doi.org/10.1016/j.addr.2023.115142" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 20px; color: #000000; text-decoration: none !important;">Organoids are self-organized 3D tissue cultures that can replicate organ structure and function that are pivotal for developmental studies, drug testing, disease modelling, and regenerative medicine applications. However, optimizing techniques for culturing tissuespecific organoids is imperative to ensure their translational relevance and applicability. This review article aims to address this gap by uncovering materials engineering, biochemical modifications, and advanced manufacturing technologies to enhance organoid culture and precisely replicate vital anatomical structures and functions of human tissues. This work also highlights the latest clinical advancements in organoids that show promise for future clinical translation.</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="padding: 5px 0px 10px;">
+                                            <table bgcolor="#F36E24" border="0" cellpadding="0" cellspacing="0" class="contact-btn" align="left">
+                                              <tbody>
+                                                <tr>
+                                                  <td height="26" width="80" align="center" style="padding-left: 5px;padding-right: 5px;">
+                                                    <a label="button" href="https://doi.org/10.1016/j.addr.2023.115142" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif !important; font-size: 13px;color: #FFFFFF; font-weight: 500;">Read more</a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 15px 40px 30px">
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td style="padding-bottom: 0px;padding-top: 0px;">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td valign="top" align="left" width="40%">
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="padding-bottom: 15px;">
+                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td valign="middle" width="20%">
+                                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td style="padding-right: 8px;">
+                                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/c1d9700a-63d7-1b0e-5112-84e8ef70031b.png" alt="Prof. Soonjae Lee" title="Prof. Soonjae Lee" width="58" style="width: 58px;display: block;">
+                                                                  </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                          <td valign="middle" width="80%">
+                                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td>
+                                                                    <a href="https://sites.google.com/view/theryugroup/prof-ryu?authuser=0" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #F36E24; font-weight: bold;text-decoration: none !important;"><span style="padding-bottom: 10px;display: block;">Prof. Yong-Sang Ryu</span></a><a href="https://www.scopus.com/authid/detail.uri?authorId=25640297500" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #F36E24; font-weight: bold;text-decoration: none !important;"><span style="display: block;">Prof. Minah Seo</span></a>
+                                                                  </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" class="pb-20">
+                                                    <a href="https://doi.org/10.1002/adma.202308975" target="_blank" style="text-decoration: none;">
+                                                      <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/1a8bd7bb-c471-e7fb-6355-9f0875e22ac9.png" alt="" title="" width="301" style="width: 301px; display:block;" class="img-center img-100">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td valign="top" align="left" width="60%" class="no-pl" style="padding-left: 10px;">
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="padding-bottom: 8px; border-bottom: 1px solid #F36E24;">
+                                                    <a href="https://doi.org/10.1002/adma.202308975" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 19px; line-height: 24px; color: #F36E24; font-weight: bold;text-decoration: none !important;">Innovating Terahertz (THz) technology with slot antennas</a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="padding-top: 20px; padding-bottom: 20px;">
+                                                    <a href="https://doi.org/10.1002/adma.202308975" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 20px; color: #000000; text-decoration: none !important;">Gas-responsive metals are suitable candidates for Terahertz (THz) technology, allowing for monitoring gas-matter interactions and generating atomically small substances through catalytic reactions. However, using metals directly for THz techniques is challenging due to the lack of spectral characteristics in the THz band and its shallow penetration depth. Now researchers have introduced slot antennas, asymmetrically positioned hetero nano gap structures, to observe the states of metals in the THz spectrum, improving the effectiveness of THz technology in investigating metal transition dynamics with specific metamaterial structures.</a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" style="padding: 5px 0px 10px;">
+                                                    <table bgcolor="#F36E24" border="0" cellpadding="0" cellspacing="0" class="contact-btn" align="left">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td height="26" width="80" align="center" style="padding-left: 5px;padding-right: 5px;">
+                                                            <a label="button" href="https://doi.org/10.1002/adma.202308975" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif !important; font-size: 13px;color: #FFFFFF; font-weight: 500;">Read more</a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="" style="padding: 0px 100px 25px">
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left" bgcolor="#7C0019" style="text-align: center;padding: 20px 0px 20px">
+                                    <a href="https://www.korea.edu/user/boardList.do?boardId=477557&siteId=en&id=en_060106000000" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif !important; font-size: 25px;color: #FFFFFF; font-weight: 500; line-height: 26px;">Learn more about the latest research at KU</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="middle" align="left" width="50%" height="5" class="" bgcolor="#00ADD8"></td>
+                                  <td valign="middle" align="left" width="50%" height="5" class="" bgcolor="#F36E24"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" bgcolor="#1A1818" style="padding: 30px 40px 30px;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" valign="top" width="100%" style="padding-bottom: 0px!important;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding-bottom: 25px;padding-top: 0px;">
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td valign="middle" align="left" width="55%">
+                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="right" class="pb-20 text-center">
+                                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td valign="middle" align="left" width="20%">
+                                                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/bdf768ab-702d-c93f-a55b-6d0bf2fb4588.png" alt="" width="92.5" style="width: 92.5px;">
+                                                                  </td>
+                                                                  <td valign="middle" align="left" width="80%">
+                                                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                      <tbody>
+                                                                        <tr>
+                                                                          <td style="padding-bottom: 15px;font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 20px; line-height: 24px; color: #C7C9CB; font-weight: 400;text-align: left !important;padding-left: 20px;"> KU Research Newsletter </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                          <td style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 14px; line-height: 20px; color: #C7C9CB; font-weight: 400;text-align: left !important;padding-left: 20px;"> Please contact us at <a href="mailto:kuresearch@korea.ac.kr" style="text-decoration: none;color: #C7C9CB;">kuresearch@korea.ac.kr</a>
+                                                                            <br> Office of Research Management <br> 145 Anam-ro, Seongbuk-gu, Seoul, 02841, Korea
+                                                                          </td>
+                                                                        </tr>
+                                                                      </tbody>
+                                                                    </table>
+                                                                  </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td valign="middle" align="right" width="45%">
+                                                    <table bgcolor="#1A1818" border="0" cellpadding="0" cellspacing="0" style="border: 1px solid #C7C9CB;border-radius: 6px;" class="">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td height="45" width="260" style="border: 1px solid #C7C9CB;border-radius: 6px;" align="center" style="padding-left: 5px;padding-right: 5px;">
+                                                            <a label="button" href="mailto:kuresearch@korea.ac.kr" target="_blank" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif !important; font-size: 20px;color: #C7C9CB; font-weight: normal"> Unsubscribe from this list</a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align=" center" style="font-family: 'Open Sans',Arial,Helvetica, sans-serif; font-size: 18px; line-height: 20px; color: #C7C9CB;text-decoration: none !important;padding-bottom: 15px;font-weight: 600;"> Follow us on: </td>
+                                </tr>
+                                <tr>
+                                  <td style="padding-bottom: 20px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="text-left">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="middle" width="34" style="padding-right:30px;">
+                                            <a href="https://www.facebook.com/ku1905" target="_blank">
+                                              <img alt="Social Icon" width="34" height="34" border="0" src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/67fdc82b-737f-49da-e854-81c891ebec89.png" style="max-width:100%; border:0;" title="Social Icon">
+                                            </a>
+                                          </td>
+                                          <td align="center" valign="middle" width="36" style="padding-right:30px;">
+                                            <a href="https://www.youtube.com/@koreauniv/about" target="_blank">
+                                              <img alt="Social Icon" border="0" width="36" height="36.5" src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/a0d86097-ed06-5198-c4c5-fd173274914c.png" style="max-width:100%; border:0;" title="Social Icon">
+                                            </a>
+                                          </td>
+                                          <td align="center" valign="middle" width="36">
+                                            <a href="https://www.instagram.com/koreauniv.official/" target="_blank">
+                                              <img alt="Social Icon" border="0" width="36" height="36.5" src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/f0e67fcd-afc7-866b-6962-592f4c9c8358.png" style="max-width:100%; border:0;" title="Social Icon">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding: 10px 20px 0px;" class="no-pl no-pr">
+                                    <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <table class="table-full" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td valign="middle" align="right" width="33.33%">
+                                                    <a href="https://www.korea.edu/mbshome/mbs/en/index.do" target="_blank">
+                                                      <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/028ac239-66d4-dcc9-8bfd-521ec84fc06e.png" alt="btn" title="btn" width="157.5" style="width: 157.5px;display:block;" class="img-center">
+                                                    </a>
+                                                  </td>
+                                                  <td valign="middle" align="center" width="33.33%" class="">
+                                                    <a href="https://koreauniv.pure.elsevier.com/" target="_blank">
+                                                      <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/40d3dfef-e156-e4ab-a6ab-77aee4ab81e1.png" alt="btn" title="btn" width="85" style="width: 85px;display:block;padding-left: 10px;padding-right: 10px;" class="img-center">
+                                                    </a>
+                                                  </td>
+                                                  <td valign="middle" align="left" width="33.33%" class="">
+                                                    <a href="https://graduate2.korea.ac.kr/main/main.html" target="_blank">
+                                                      <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/23c2abaf-2117-9002-26f4-e2ca12873f68.png" alt="btn" title="btn" width="221.5" style="width: 221.5px;display:block;" class="img-center">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+																																				</td>
+																																			</tr>
+																																		</table>
+																																		<![endif]-->
+  </body>
+</html>

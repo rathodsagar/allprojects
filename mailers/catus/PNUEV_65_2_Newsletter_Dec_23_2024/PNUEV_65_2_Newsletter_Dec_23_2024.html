@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Newsletter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style type="text/css">
+      /* CLIENT-SPECIFIC STYLES */
+
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        font-family: "PT Sans", sans-serif;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+      table th {
+        border-bottom: 2px solid #80a7bb;
+      }
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        /*table-layout: fixed !important;*/
+        margin: 0 auto !important;
+      }
+      table table table {
+        table-layout: auto;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+        text-decoration: none;
+      }
+
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      *[x-apple-data-detectors],  /* iOS */
+      .unstyle-auto-detected-links *,
+      .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img + div {
+        display: none !important;
+      }
+      .ExternalClass,
+      .ExternalClass a,
+      .ExternalClass span,
+      .ExternalClass b,
+      .ExternalClass br,
+      .ExternalClass p,
+      .ExternalClass div {
+        line-height: inherit;
+      }
+      /* iOS BLUE LINKS */
+
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+      .msonopad {
+        padding: 0 4px;
+        /*  padding: 0 5px 0px 15px;*/
+      }
+      .sign a {
+        color: #363636;
+      }
+      .sign a,
+      *[class="sign-padd"] {
+        color: #363636;
+      }
+      .shadow {
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.03);
+      }
+      p {
+        margin: 20px 0 !important;
+      }
+
+      .padd-mob {
+        padding: 20px !important;
+      }
+      .applyclick a:active,
+      .applyclick a:focus {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .contact-btn {
+        margin-left: 0 !important;
+      }
+      .contact-btn-2 {
+        margin: 0 auto !important;
+      }
+      /* MOBILE STYLES */
+      @media screen and (max-width: 599px) {
+        .pl {
+          padding-left: 0 !important;
+        }
+        .mob-right {
+          text-align: right !important;
+        }
+        .pr-2 {
+          padding-right: 3px;
+        }
+        .plr-30 {
+          padding-left: 30px !important;
+          padding-right: 30px !important;
+        }
+        .d-block {
+          display: block !important;
+        }
+        .d-none {
+          display: none !important;
+        }
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        .logo img {
+          margin: 0 auto !important;
+        }
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        /*ALLOWS FOR FULL-WIDTH TABLES */
+        .responsive-table {
+          width: 100% !important;
+        }
+        /* ALLOWS FOR FULL TD */
+        .flex,
+        *[class="flex"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: left !important;
+        }
+        .flex2,
+        *[class="flex2"] {
+          width: 100% !important;
+          display: block !important;
+          text-align: center !important;
+        }
+        .flex3,
+        *[class="flex3"] {
+          display: none !important;
+        }
+        .flex4,
+        *[class="flex4"] {
+          width: 80% !important;
+          display: block !important;
+          text-align: center !important;
+          border-bottom: 1px dashed #a9a7a7;
+          padding-bottom: 20px !important;
+          margin: 20px auto !important;
+        }
+        .flex5,
+        *[class="flex5"] {
+          width: 50% !important;
+          display: inline-grid !important;
+          display: -webkit-inline-grid !important;
+          display: -moz-inline-grid !important;
+          display: -o-inline-grid !important;
+          display: -ms-inline-grid !important;
+        }
+        /* ADJUSTS LAYOUT OF FONT SIZE */
+        .mobile-main-head,
+        *[class="mobile-main-head"] {
+          font-size: 70px !important;
+          line-height: 60px !important;
+        }
+        .mobile-font,
+        *[class="mobile-font"] {
+          font-size: 17px !important;
+          line-height: 27px !important;
+        }
+        .mobile-font-head,
+        *[class="mobile-font-head"] {
+          font-size: 26px !important;
+          line-height: 32px !important;
+        }
+        .mobile-font-head2,
+        *[class="mobile-font-head2"] {
+          font-size: 18px !important;
+          line-height: 20px !important;
+        }
+        .mobile-font-subhead,
+        *[class="mobile-font-subhead"] {
+          font-size: 21px !important;
+          line-height: 31px !important;
+        }
+        .mobile-font-subtitle,
+        *[class="mobile-font-subtitle"] {
+          font-size: 19px !important;
+          line-height: 29px !important;
+        }
+        .mobile-font-signature,
+        *[class="mobile-font-signature"] {
+          font-size: 17px !important;
+          line-height: 17px !important;
+        }
+
+        /* ALLOWS FOR BORDER */
+        .bdr-top-grey {
+          border-top: 1px solid #cccccc !important;
+        }
+        .no-border {
+          border: none !important;
+        }
+        .no-t-brd {
+          border-top: none !important;
+        }
+        .no-b-brd {
+          border-bottom: none !important;
+        }
+        .no-r-brd {
+          border-right: none !important;
+        }
+        .no-l-brd {
+          border-left: none !important;
+        }
+
+        .black-t-brd {
+          border-top: 1px dashed #363636 !important;
+        }
+        .black-b-brd {
+          border-bottom: 1px dashed #363636 !important;
+        }
+        .black-r-brd {
+          border-right: 1px dashed #363636 !important;
+        }
+        .black-l-brd {
+          border-left: 1px dashed #363636 !important;
+        }
+
+        .border {
+          border-left: none !important;
+          border-right: none !important;
+          border-bottom: 1px solid #dddcd9;
+          border-top: 1px solid #dddcd9;
+        }
+        .brdtopbottom,
+        *[class="brdtopbottom"] {
+          border-left: 0px !important;
+          border-right: 0px !important;
+          border-bottom: 1px solid #dedede;
+          border-top: 1px solid #dedede;
+          padding-top: 20px !important;
+          padding-bottom: 20px !important;
+        }
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .mleft {
+          text-align: left !important;
+        }
+        .mcenter {
+          text-align: center !important;
+        }
+        .no-padd {
+          padding: 0px !important;
+        }
+        .no-pl {
+          padding-left: 0px !important;
+        }
+        .no-pr {
+          padding-right: 0px !important;
+        }
+        .nopadd-lr {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        .pt-10 {
+          padding-top: 10px !important;
+        }
+        .pb-10 {
+          padding-bottom: 10px !important;
+        }
+        .pt-15 {
+          padding-top: 15px !important;
+        }
+        .pt-20 {
+          padding-top: 20px !important;
+        }
+        .pb-20 {
+          padding-bottom: 20px !important;
+        }
+        .pb-25 {
+          padding-bottom: 25px !important;
+        }
+        .padd-top-8 {
+          padding-top: 8px !important;
+        }
+        .padr25 {
+          padding-right: 25px !important;
+        }
+        .pad-lr {
+          padding-left: 60px !important;
+          padding-right: 60px !important;
+        }
+        .sho_mob {
+          display: none !important;
+        }
+        .w-35 {
+          width: 35% !important;
+        }
+        .w-100 {
+          width: 100% !important;
+        }
+        /*.padd-lr-20
+        {
+          padding-right: 20px !important;
+          padding-left: 20px !important;
+        }*/
+
+        /* UTILITY CLASSES FOR ADJUSTING MARGIN ON MOBILE */
+        .h-auto {
+          height: auto !important;
+        }
+        .no-mb {
+          margin-bottom: 0px !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING Vertical ALign  */
+        .mob-valign-top {
+          vertical-align: top !important;
+        }
+
+        /* ADJUSTS FOR IMAGE CENTER */
+        .img-center {
+          margin: 0 auto !important;
+        }
+
+        /* ADJUSTS FOR TEXT CENTER */
+        .text-center {
+          text-align: center !important;
+        }
+        .contact-btn {
+          margin: 0 auto !important;
+        }
+      }
+      div[style*="margin: 16px 0;"] {
+        margin: 0 !important;
+      }
+    </style>
+    <!--[if gte mso 9]>
+      <style type="text/css" media="all">
+        .msonopad {
+          padding-right: 10px;
+          text-align: center;
+          width: 40px;
+        }
+        img.mso-img {
+          padding-top: 10px;
+          line-height: 24px;
+        }
+        tr.space-mso {
+          font-size: 0;
+          mso-line-height-alt: 0;
+          mso-margin-top-alt: 1px;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body style="margin: 0 !important; padding: 0 !important; background: #ffffff;">
+    <!--[if (gte mso 9)|(ie)]>
+    <center>
+      <table align="center" border="0" cellspacing="0" cellpadding="0"  width="850">
+        <tr>
+          <td align="center" valign="top" width="850">
+            <![endif]-->
+    <!-- HIDDEN PREHEADER TEXT -->
+    <div style="mso-hide: all; display: none; font-size: 1px; color: #333333; line-height: 0; font-family: Arial, Helvetica, sans-serif; max-height: 0; max-width: 0; opacity: 0; overflow: hidden;">
+      Newsletter
+    </div>
+
+    <table align="center">
+      <tbody>
+        <tr>
+          <td align="center" class="container" style="background: #ffffff; border: 1px solid #dddddd;" width="850">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="left">
+                            <img src="https://uat.crayoninfotech.com/cactus/PNUEV_65_2_Newsletter_Dec_23_2024/images/logo.png" alt="" title="" width="850" style="display: block; max-width: 850px; width: 100%;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" bgcolor="#0D336C">
+                            <a href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1499710&" target="_blank" style="text-decoration: none;">
+                              <img src="https://uat.crayoninfotech.com/cactus/PNUEV_65_2_Newsletter_Dec_23_2024/images/hero.png" alt="" title="" width="850" style="display: block; max-width: 850px; width: 100%;" />
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#F5F1F1" class="padd-mob">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" bgcolor="#00a651" class="padd-mob" style="border-radius: 5px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="right" valign="middle" width="30%">
+                                            <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/eed83def-7f91-173f-c57e-541f8bc66e5f.png" width="50" style="max-width: 50px; display: block; width: 100%;" alt="" title="" />
+                                          </td>
+                                          <td align="left" width="70%" valign="middle" style="padding-left: 12px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td
+                                                    align="left"
+                                                    class="mobile-font-head2"
+                                                    style="font-size: 24px; font-family: 'Open Sans', Arial, Helvetica, sans-serif; color: #ffffff; font-weight: bold; line-height: 28px; padding-bottom: 5px;"
+                                                  >
+                                                    Explore our cutting-edge research
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#F5F1F1" align="center" valign="top" style="padding: 10px 25px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="padding-bottom: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="middle" width="40%" class="flex pb-20">
+                                            <a href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1498802" target="_blank" style="text-decoration: none;">
+                                              <img
+                                                src="https://uat.crayoninfotech.com/cactus/PNUEV_65_2_Newsletter_Dec_23_2024/images/image-1.png"
+                                                width="350"
+                                                style="max-width: 350px; display: block; width: 100%;"
+                                                alt=""
+                                                title=""
+                                                class="img-center"
+                                              />
+                                            </a>
+                                          </td>
+                                          <td align="left" width="60%" valign="middle" class="flex no-pl" style="padding-left: 25px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" style="font-size: 18px; font-family: 'Roboto', Arial, Helvetica, sans-serif; color: #00a651; font-weight: bold; line-height: 21px; padding-bottom: 5px;" class="text-center">
+                                                    <a
+                                                      href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1498802"
+                                                      target="_blank"
+                                                      style="text-decoration: none; color: #00a651; font-weight: bold;"
+                                                    >
+                                                      Room-Temperature-Processed Perovskite Solar Cells Surpass 24% Efficiency
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" style="font-size: 14px; font-family: 'Open Sans', Arial, Helvetica, sans-serif; color: #000000; line-height: 19px;" class="text-center">
+                                                    Room-temperature perovskite solar cells (PSCs) offer a promising solution for improving solar power efficiency and scalability. A team led by Professor Hyo Jung Kim from the Department of
+                                                    Organic Material Science and Engineering developed a method to produce high-quality perovskite films at room temperature, achieving 24.4% efficiency. This breakthrough eliminates
+                                                    high-temperature processing, ensuring stable phase conversion and enhanced performance. The study also demonstrates the potential for using PSCs on unconventional substrates, opening up
+                                                    new opportunities for versatile, sustainable solar applications.
+                                                  </td>
+                                                </tr>
+
+                                                <tr>
+                                                  <td align="left" style="padding-top: 10px;">
+                                                    <table bgcolor="#00A651" border="0" cellpadding="0" cellspacing="0" class="contact-btn" style="border-radius: 6px;">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td
+                                                            align="center"
+                                                            class="fallback-font"
+                                                            data-bgcolor="Button"
+                                                            data-color="Button"
+                                                            data-size="Button"
+                                                            height="30"
+                                                            style="border-radius: 6px; padding-left: 15px; padding-right: 15px; padding-bottom: 2px; box-shadow: 0px 4px 4px 0px #00000029;"
+                                                          >
+                                                            <a
+                                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1498802"
+                                                              label="button"
+                                                              style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 13px; line-height: 15px; color: #ffffff; font-weight: 500; text-decoration: none !important;"
+                                                              target="_blank"
+                                                            >
+                                                              Read More
+                                                            </a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" valign="top" style="padding: 10px 0px 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="border-top: 1px solid #a7a7a7; margin: 0 !important;" width="100%" class="responsive-table">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" style="line-height: 10px;">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-bottom: 10px;" dir="rtl">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="middle" width="40%" class="flex pb-20" dir="ltr">
+                                            <a href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1498187&" target="_blank" style="text-decoration: none;">
+                                              <img
+                                                src="https://uat.crayoninfotech.com/cactus/PNUEV_65_2_Newsletter_Dec_23_2024/images/image-2.png"
+                                                width="350"
+                                                style="max-width: 350px; display: block; width: 100%;"
+                                                alt=""
+                                                title=""
+                                                class="img-center"
+                                              />
+                                            </a>
+                                          </td>
+
+                                          <td align="left" width="60%" valign="middle" class="flex no-pr" style="padding-right: 25px;" dir="ltr">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" style="font-size: 18px; font-family: 'Roboto', Arial, Helvetica, sans-serif; color: #005baa; font-weight: bold; line-height: 21px; padding-bottom: 5px;" class="text-center">
+                                                    <a href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1498187&" target="_blank" style="text-decoration: none; color: #005baa; font-weight: bold;">
+                                                      Novel Compact Meta-Silencer Design for Efficient and Low-Frequency Noise Reduction
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" style="font-size: 14px; font-family: 'Open Sans', Arial, Helvetica, sans-serif; color: #000000; line-height: 19px;" class="text-center">
+                                                    Traditional silencers are often used to reduce low-frequency noise, which may affect mental health, causing stress and anxiety. However, silencers require bulky designs for effective noise
+                                                    reduction. Now, a team of researchers led by Professor Kyungjun Song from the Department of Mechanical Engineering developed a compact meta-silencer that uses coiled multi-slits to
+                                                    efficiently attenuate broadband low-frequency noise. By leveraging acoustic black hole and rainbow trapping effects, this innovative design offers a more space-efficient solution for noise
+                                                    mitigation. This study provides new possibilities for noise control in applications like aviation and urban environments, improving quality of life.
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" style="padding-top: 10px;">
+                                                    <table bgcolor="#005BAA" border="0" cellpadding="0" cellspacing="0" class="contact-btn" style="border-radius: 6px;">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td
+                                                            align="center"
+                                                            class="fallback-font"
+                                                            data-bgcolor="Button"
+                                                            data-color="Button"
+                                                            data-size="Button"
+                                                            height="30"
+                                                            style="border-radius: 6px; padding-left: 15px; padding-right: 15px; padding-bottom: 2px; box-shadow: 0px 4px 4px 0px #00000029;"
+                                                          >
+                                                            <a
+                                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1498187&"
+                                                              label="button"
+                                                              style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 13px; line-height: 15px; color: #ffffff; font-weight: 500; text-decoration: none !important;"
+                                                              target="_blank"
+                                                            >
+                                                              Read More
+                                                            </a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" valign="top" style="padding: 10px 0px 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="border-top: 1px solid #a7a7a7; margin: 0 !important;" width="100%" class="responsive-table">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" style="line-height: 10px;">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-bottom: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="middle" width="40%" class="flex pb-20">
+                                            <a href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1499071&" target="_blank" style="text-decoration: none;">
+                                              <img
+                                                src="https://uat.crayoninfotech.com/cactus/PNUEV_65_2_Newsletter_Dec_23_2024/images/image-3.png"
+                                                width="350"
+                                                style="max-width: 350px; display: block; width: 100%;"
+                                                alt=""
+                                                title=""
+                                                class="img-center"
+                                              />
+                                            </a>
+                                          </td>
+                                          <td align="left" width="60%" valign="middle" class="flex no-pl" style="padding-left: 25px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" style="font-size: 18px; font-family: 'Roboto', Arial, Helvetica, sans-serif; color: #00a651; font-weight: bold; line-height: 21px; padding-bottom: 5px;" class="text-center">
+                                                    <a href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1499071&" target="_blank" style="text-decoration: none; color: #00a651; font-weight: bold;">
+                                                      Exploring the Risk of Suicide Across Countries on Holidays and Weekdays
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" style="font-size: 14px; font-family: 'Open Sans', Arial, Helvetica, sans-serif; color: #000000; line-height: 19px;" class="text-center">
+                                                    While suicide is a leading global cause of death, most of the studies report only temporal variations in suicide risk in Western countries. To bridge this gap, a research team led by
+                                                    Professor Whanhee Lee​ from the School of Biomedical Convergence Engineering​ investigated variations in suicide risk across different days of the week and national holidays. The study
+                                                    found that Mondays and New Year’s Day are associated with the highest suicide risk. These findings provide valuable insights to help develop more effective and targeted suicide prevention
+                                                    strategies.
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" style="padding-top: 10px;">
+                                                    <table bgcolor="#00A651" border="0" cellpadding="0" cellspacing="0" class="contact-btn" style="border-radius: 6px;">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td
+                                                            align="center"
+                                                            class="fallback-font"
+                                                            data-bgcolor="Button"
+                                                            data-color="Button"
+                                                            data-size="Button"
+                                                            height="30"
+                                                            style="border-radius: 6px; padding-left: 15px; padding-right: 15px; padding-bottom: 2px; box-shadow: 0px 4px 4px 0px #00000029;"
+                                                          >
+                                                            <a
+                                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1499071&"
+                                                              label="button"
+                                                              style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 13px; line-height: 15px; color: #ffffff; font-weight: 500; text-decoration: none !important;"
+                                                              target="_blank"
+                                                            >
+                                                              Read More
+                                                            </a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" valign="top" style="padding: 10px 0px 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="border-top: 1px solid #a7a7a7; margin: 0 !important;" width="100%" class="responsive-table">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" style="line-height: 10px;">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-bottom: 10px;" dir="rtl">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="middle" width="40%" class="flex pb-20" dir="ltr">
+                                            <a href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1499678&" target="_blank" style="text-decoration: none;">
+                                              <img
+                                                src="https://uat.crayoninfotech.com/cactus/PNUEV_65_2_Newsletter_Dec_23_2024/images/image-4.png"
+                                                width="350"
+                                                style="max-width: 350px; display: block; width: 100%;"
+                                                alt=""
+                                                title=""
+                                                class="img-center"
+                                              />
+                                            </a>
+                                          </td>
+                                          <td align="left" width="60%" valign="middle" class="flex no-pr" style="padding-right: 25px;" dir="ltr">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" style="font-size: 18px; font-family: 'Roboto', Arial, Helvetica, sans-serif; color: #005baa; font-weight: bold; line-height: 21px; padding-bottom: 5px;" class="text-center">
+                                                    <a href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1499678&" target="_blank" style="text-decoration: none; color: #005baa; font-weight: bold;">
+                                                      Biomarkers for Peri-Implantitis Diagnosis and Treatment
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" style="font-size: 14px; font-family: 'Open Sans', Arial, Helvetica, sans-serif; color: #000000; line-height: 19px;" class="text-center">
+                                                    Peri-implantitis, a chronic inflammatory disease affecting dental implants, is associated with a high rate of recurrence due to a lack of insights into its pathogenesis. A research team
+                                                    led by Professor Yun Hak Kim from the School of Medicine and Professor Hyun-Joo Kim from the School of Dentistry identified key biomarker genes overexpressed in peri-implantitis,
+                                                    distinguishing it from periodontitis. These biomarkers, including
+                                                    <i>ACTA2</i>, <i>FAP</i>, and <i>PDGFRβ</i>, have the potential to improve diagnosis and help develop targeted treatments. This breakthrough holds potential for better management of
+                                                    peri-implantitis and may reduce recurrence rates by providing more personalized and effective therapies.
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" style="padding-top: 10px;">
+                                                    <table bgcolor="#005BAA" border="0" cellpadding="0" cellspacing="0" class="contact-btn" style="border-radius: 6px;">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td
+                                                            align="center"
+                                                            class="fallback-font"
+                                                            data-bgcolor="Button"
+                                                            data-color="Button"
+                                                            data-size="Button"
+                                                            height="30"
+                                                            style="border-radius: 6px; padding-left: 15px; padding-right: 15px; padding-bottom: 2px; box-shadow: 0px 4px 4px 0px #00000029;"
+                                                          >
+                                                            <a
+                                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN104&&mode=view&board_seq=1499678&"
+                                                              label="button"
+                                                              style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 13px; line-height: 15px; color: #ffffff; font-weight: 500; text-decoration: none !important;"
+                                                              target="_blank"
+                                                            >
+                                                              Read More
+                                                            </a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" valign="top" style="padding: 10px 0px 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="border-top: 1px solid #a7a7a7; margin: 0 !important;" width="100%" class="responsive-table">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" style="line-height: 10px;">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-bottom: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="left" valign="middle" width="40%" class="flex pb-20">
+                                            <a href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1498023" target="_blank" style="text-decoration: none;">
+                                              <img
+                                                src="https://uat.crayoninfotech.com/cactus/PNUEV_65_2_Newsletter_Dec_23_2024/images/image-5.png"
+                                                width="350"
+                                                style="max-width: 350px; display: block; width: 100%;"
+                                                alt=""
+                                                title=""
+                                                class="img-center"
+                                              />
+                                            </a>
+                                          </td>
+                                          <td align="left" width="60%" valign="middle" class="flex no-pl" style="padding-left: 25px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="left" style="font-size: 18px; font-family: 'Roboto', Arial, Helvetica, sans-serif; color: #00a651; font-weight: bold; line-height: 21px; padding-bottom: 5px;" class="text-center">
+                                                    <a
+                                                      href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1498023"
+                                                      target="_blank"
+                                                      style="text-decoration: none; color: #00a651; font-weight: bold;"
+                                                    >
+                                                      Monitoring the Atomic-Scale Transformation in Infinite-Layer Transition Metal Oxides
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" style="font-size: 14px; font-family: 'Open Sans', Arial, Helvetica, sans-serif; color: #000000; line-height: 19px;" class="text-center">
+                                                    Infinite-layer transition metal oxides exhibit intriguing magnetic properties due to strong orbital hybridization. A research team led by Professor Jaekwang Lee from the Department of
+                                                    Physics utilized
+                                                    <i>in situ</i>
+                                                    atomic-resolution electron microscopy to investigate the atomic mechanisms behind the transformation of SrFeO<sub>2.5</sub> to SrFeO<sub>2</sub>. The study revealed anisotropic oxygen
+                                                    release, governed by lattice reorientation, and provided insights into the reconfiguration of oxygen coordination. These findings may enhance the understanding and development of similar
+                                                    materials, including cuprate and nickelate superconductors.
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" style="padding-top: 10px;">
+                                                    <table bgcolor="#00A651" border="0" cellpadding="0" cellspacing="0" class="contact-btn" style="border-radius: 6px;">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td
+                                                            align="center"
+                                                            class="fallback-font"
+                                                            data-bgcolor="Button"
+                                                            data-color="Button"
+                                                            data-size="Button"
+                                                            height="30"
+                                                            style="border-radius: 6px; padding-left: 15px; padding-right: 15px; padding-bottom: 2px; box-shadow: 0px 4px 4px 0px #00000029;"
+                                                          >
+                                                            <a
+                                                              href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do/?mCode=MN064&mode=view&mgr_seq=49&board_seq=1498023"
+                                                              label="button"
+                                                              style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 13px; line-height: 15px; color: #ffffff; font-weight: 500; text-decoration: none !important;"
+                                                              target="_blank"
+                                                            >
+                                                              Read More
+                                                            </a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0" style="border-top: 6px solid #004a9c; margin: 0 !important;" width="100%" class="responsive-table">
+                              <tbody>
+                                <tr>
+                                  <td align="left" style="line-height: 10px;">
+                                    <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/9582a53a-2c80-9919-042d-be351f42dc83.png" width="850" style="max-width: 850px; display: block; width: 100%;" alt="" />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" bgcolor="#005baa" style="padding: 20px 20px;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" width="48%" class="flex2 pb-20">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center">
+                                            <a href="https://www.pusan.ac.kr/eng/CMS/Board/Board.do?mCode=MN104" target="_blank">
+                                              <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/24ae8229-51ec-7b67-a7a1-928e025e9a8b.png" alt="" title="" style="display: block; max-width: 100%;" />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td align="center" width="2%" class="flex3">
+                                    &nbsp;
+                                  </td>
+                                  <td align="center" width="48%" class="flex2">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center">
+                                            <a href="https://www.pusan.ac.kr/eng/CMS/Contents/Contents.do?mCode=MN072" target="_blank">
+                                              <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/a590f881-8787-c1e8-68ce-070a82fe9c81.png" alt="" title="" style="display: block; max-width: 100%;" />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#232425" style="padding: 20px;">
+                            <table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="padding-bottom: 15px;">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center">
+                                            <a href="https://www.pusan.ac.kr/eng/Main.do" target="_blank">
+                                              <img
+                                                src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/344a9f44-e2e9-2172-2ca2-62393d173dd3.png"
+                                                alt="Pusan National University"
+                                                title="Pusan National University"
+                                                width="30"
+                                                height="30"
+                                              />
+                                            </a>
+                                          </td>
+                                          <td align="center" style="padding-left: 10px;">
+                                            <a href="https://www.youtube.com/channel/UC2C8QLSMp3QMFS96xQc7WRA" target="_blank">
+                                              <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/39fcf400-2e4e-c42f-42b6-503bc26e1592.png" alt="Youtube" title="Youtube" width="30" height="30" />
+                                            </a>
+                                          </td>
+                                          <td align="center" style="padding-left: 10px;">
+                                            <a href="https://www.instagram.com/pusan.ac.kr/" target="_blank">
+                                              <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/d9471f56-d70a-7c54-806d-d61162aedfde.png" alt="instagram" title="" width="30" height="30" />
+                                            </a>
+                                          </td>
+                                          <td align="center" style="padding-left: 10px;">
+                                            <a href="https://www.facebook.com/PusanNationalUniv/" target="_blank">
+                                              <img src="https://mcusercontent.com/3eeeec0467a4e447b685431d3/images/7a4b7c77-4526-3c17-4389-1f29ad9397b0.png" alt="Facebook" title="Facebook" width="30" height="30" />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-bottom: 15px; color: #ffffff; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-weight: 400; font-size: 12px; line-height: 16px;">
+                                    If you no longer wish to receive emails from Pusan National University, please send an email to
+                                    <a href="mailto:globalpnu@pusan.ac.kr" style="color: #ffffff; text-decoration: underline;">globalpnu@pusan.ac.kr</a>
+                                    <br class="d-none" />
+                                    with the word
+                                    <a href="#" style="color: #ffffff; font-weight: 600;">Unsubscribe</a>
+                                    in the subject line.
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <![endif]-->
+  </body>
+</html>
