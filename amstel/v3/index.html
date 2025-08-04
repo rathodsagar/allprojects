@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amstel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css?v=1.0.01">
+
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <nav class="navbar main-menu sticky-top">
+        <div class="container justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-text">Menu</span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <a href="#" class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="images/logo.png" alt="" srcset="">
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Terms and Consditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="box-wrapper" id="box-wrapper">
+        <div class="content-wrapper text-center" id="mainBannerWrapper">
+          <p class="slideUp ad-200ms mb-3">Get a chance to win a trip to</p>
+          <h2 class="main-heading slideUp ad-300ms">Amsterdam</h2>
+          <p class="slideUp ad-400ms mt-2 d-flex align-items-center justify-content-center">
+            <span class="text-left">& get assured Swiggy <br>voucher worth Rs. 100</span>
+            <span class="divider mx-1">
+              <img src="images/divider.png" alt="" title="">
+            </span>
+            <span>
+              <img src="images/offer-logo.png" alt="" title="">
+            </span>
+          </p>
+          <div class="border-btn-wrapper centerZoom ad-600ms">
+            <button name="beginBtn" id="beginBtn" class="btn btn-secondary">
+              <span class="btn-text">Get Started</span>
+              <span class="img-wrapper d-inline-block">
+                <img src="images/glass-black.png" alt="" title="" class="ms-2">
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="content-wrapper register-form-wrapper" id="registerFormWrapper">
+          <h5 class="title text-center slideUp ad-100ms mb-2">Enter your details.</h5>
+          <h5 class="title text-center slideUp ad-200ms">We won’t spam you, promise!</h5>
+          <form action="" id="registerForm" class="register-form mt-4">
+            <div class="mb-4 form-row">
+              <input type="text" inputmode="numeric" pattern="[0-9]{12}" class="form-control" id="unique" name="unique" placeholder="12 Digit Unique Code*" minlength="12" maxlength="12" aria-invalid="true" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\.*)\./g, '$1');">
+              <span class="error-text"></span>
+            </div>
+            <div class="mb-4 form-row">
+              <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter Name*">
+              <span class="error-text"></span>
+            </div>
+            <div class="mb-4 form-row">
+              <select class="form-select" name="state" id="state" aria-label="Default select example">
+                <option value="">Select State</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <span class="error-text"></span>
+            </div>
+            <div class="mb-4 form-row">
+              <input type="text" inputmode="numeric" pattern="[0-9]{10}" class="form-control" id="mobile" name="mobile" placeholder="Enter Mobile Number*" minlength="10" maxlength="10" aria-invalid="true" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\.*)\./g, '$1');">
+              <span class="error-text"></span>
+            </div>
+            <div class="mb-4 form-row">
+              <div class="input-group">
+                <span class="input-group-text" id="captcha">
+                  <img src="https://ssw.theofferclub.in/home/captcha" id="captchaImage" alt="Captcha Image">
+                </span>
+                <input type="text" class="form-control" name="captcha" id="captcha">
+                <span class="error-text"></span>
+              </div>
+            </div>
+            <div class="form-row form-check-wrapper d-flex align-items-end justify-content-between">
+              <div class="img-wrapper">
+                <img src="images/glass-golden.png" alt="" title="" class="img-fluid">
+              </div>
+              <div class="custom-checkbox-row">
+                <div class="custom-checkbox mb-3 ">
+                  <input class="form-check-input" type="checkbox" id="confirm" name="confirm">
+                  <label class="form-check-label" for="confirm">Confirm LDA</label>
+                  <span class="error-text"></span>
+                </div>
+                <div class="custom-checkbox mb-3 ">
+                  <input class="form-check-input" type="checkbox" id="tnc" name="tnc">
+                  <label class="form-check-label" for="tnc">T&C & Privacy Policy</label>
+                  <span class="error-text"></span>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="form-check-input" type="checkbox" id="consent" name="consent">
+                  <label class="form-check-label" for="consent">Consent that UB can Call</label>
+                  <span class="error-text"></span>
+                </div>
+              </div>
+              <div class="img-wrapper">
+                <img src="images/glass-golden.png" alt="" title="" class="img-fluid">
+              </div>
+            </div>
+            <div class="form-row text-center centerZoom">
+              <div class="border-btn-wrapper">
+                <button type="submit" name="send" id="send" class="btn btn-secondary">
+                  <span class="btn-text">Click to Send otp</span>
+                  <span class="img-wrapper d-inline-block">
+                    <img src="images/button-right-arrow.png" alt="" title="" class="ms-2">
+                  </span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="content-wrapper otp-form-wrapper" id="otpFormWrapper">
+          <h5 class="title text-center slideUp ad-100ms mb-2">Enter your details.</h5>
+          <h5 class="title text-center slideUp ad-200ms">We won’t spam you, promise!</h5>
+          <form action="" id="otpForm" class="mt-4">
+            <div class="mb-2 slideUp ad-300ms">
+              <input type="text" inputmode="numeric" pattern="[0-9]{6}" class="form-control" id="unique" name="unique" placeholder="Enter OTP Code*" minlength="6" maxlength="6" aria-invalid="true" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\.*)\./g, '$1');">
+              <span class="error-text"></span>
+            </div>
+            <div class="slideUp ad-300ms">
+              <ul class="resend-otp d-flex align-items-center justify-content-between gap-2">
+                <li class="">Didn't receive passcode yet?</li>  
+                <li class="resend">
+                  <a href="#">Resend</a>
+                </li>  
+              </ul>
+            </div>
+            <div class="text-center centerZoom ad-400ms">
+              <div class="border-btn-wrapper">
+                <button type="submit" name="verify" id="verify" class="btn btn-secondary">
+                  <span class="btn-text">Verify</span>
+                  <span class="img-wrapper d-inline-block">
+                    <img src="images/verify.png" alt="" title="" class="ms-2">
+                  </span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="question-wrapper" id="questionWrapper">
+          <form action="" class="ouestForm" id="ouestForm" class="mt-4">
+            <div class="questRow" id="quest-1">
+              <p class="title text-center slideUp ad-200ms">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corrupti dolorum omnis quis?</p>
+              <div class="row align-items-end">
+                <div class="col-8">
+                  <div class="d-flex flex-column gap-3 mt-4">
+                    <div class="opt-1 text-center slideUp ad-300ms">
+                      <input type="radio" name="options" id="quest1-first" class="btn-check">
+                      <label class="btn btn-white w-100" for="quest1-first">First</label>
+                    </div>
+                    <div class="opt-2 text-center slideUp ad-400ms">
+                      <input type="radio" name="options" id="quest1-second" class="btn-check">
+                      <label class="btn w-100" for="quest1-second">Second</label>
+                    </div>
+                    <div class="opt-3 text-center slideUp ad-500ms">
+                      <input type="radio" name="options" id="quest1-third" class="btn-check">
+                      <label class="btn w-100" for="quest1-third">Third</label>
+                    </div>
+                    <div class="opt-1 text-center slideUp ad-600ms">
+                      <input type="radio" name="options" id="quest1-forth" class="btn-check">
+                      <label class="btn w-100" for="quest1-forth">Forth</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="img-wrapper ad-700ms">
+                    <img src="images/beer-bottel.png" alt="" title="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="questRow" id="quest-2">
+              <p class="title text-center slideUp ad-200ms">2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corrupti dolorum omnis quis?</p>
+              <div class="row align-items-end">
+                <div class="col-8">
+                  <div class="d-flex flex-column gap-3 mt-4">
+                    <div class="opt-1 text-center slideUp ad-300ms">
+                      <input type="radio" name="options" id="quest2-first" class="btn-check">
+                      <label class="btn w-100" for="quest2-first">First</label>
+                    </div>
+                    <div class="opt-2 text-center slideUp ad-400ms">
+                      <input type="radio" name="options" id="quest2-second" class="btn-check">
+                      <label class="btn w-100" for="quest2-second">Second</label>
+                    </div>
+                    <div class="opt-3 text-center slideUp ad-500ms">
+                      <input type="radio" name="options" id="quest2-third" class="btn-check">
+                      <label class="btn w-100" for="quest2-third">Third</label>
+                    </div>
+                    <div class="opt-1 text-center slideUp ad-600ms">
+                      <input type="radio" name="options" id="quest2-forth" class="btn-check">
+                      <label class="btn w-100" for="quest2-forth">Forth</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="img-wrapper ad-700ms">
+                    <img src="images/beer-glass.png" alt="" title="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="questRow" id="quest-3">
+              <p class="title text-center slideUp ad-200ms">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corrupti dolorum omnis quis?</p>
+              <div class="row row align-items-end">
+                <div class="col-8">
+                  <div class="d-flex flex-column gap-3 mt-4">
+                    <div class="opt-1 text-center slideUp ad-300ms">
+                      <input type="radio" name="options" id="quest3-first" class="btn-check">
+                      <label class="btn w-100" for="quest3-first">First</label>
+                    </div>
+                    <div class="opt-2 text-center slideUp ad-400ms">
+                      <input type="radio" name="options" id="quest3-second" class="btn-check">
+                      <label class="btn w-100" for="quest3-second">Second</label>
+                    </div>
+                    <div class="opt-3 text-center slideUp ad-500ms">
+                      <input type="radio" name="options" id="quest3-third" class="btn-check">
+                      <label class="btn w-100" for="quest3-third">Third</label>
+                    </div>
+                    <div class="opt-1 text-center slideUp ad-600ms">
+                      <input type="radio" name="options" id="quest3-forth" class="btn-check">
+                      <label class="btn w-100" for="quest3-forth">Forth</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="img-wrapper ad-700ms">
+                    <img src="images/beer-bottel.png" alt="" title="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="questRow" id="quest-4">
+              <p class="title text-center slideUp ad-200ms">4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corrupti dolorum omnis quis?</p>
+              <div class="row align-items-end">
+                <div class="col-4">
+                  <div class="img-wrapper ad-700ms">
+                    <img src="images/beer-glass.png" alt="" title="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="d-flex flex-column gap-3 mt-4">
+                    <div class="opt-1 text-center slideUp ad-300ms">
+                      <input type="radio" name="options" id="quest4-first" class="btn-check">
+                      <label class="btn w-100" for="quest4-first">First</label>
+                    </div>
+                    <div class="opt-2 text-center slideUp ad-400ms">
+                      <input type="radio" name="options" id="quest4-second" class="btn-check">
+                      <label class="btn w-100" for="quest4-second">Second</label>
+                    </div>
+                    <div class="opt-3 text-center slideUp ad-500ms">
+                      <input type="radio" name="options" id="quest4-third" class="btn-check">
+                      <label class="btn w-100" for="quest4-third">Third</label>
+                    </div>
+                    <div class="opt-1 text-center slideUp ad-600ms">
+                      <input type="radio" name="options" id="quest4-forth" class="btn-check">
+                      <label class="btn w-100" for="quest4-forth">Forth</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="content-wrapper congratulation-wrapper" id="congratulationWrapper">
+          <div class="img-wrapper text-center">
+            <img src="images/win-star.png" alt="" title="" class="">
+          </div>
+          <div class="main-heading-wrapper">
+            <h2 class="heading text-center slideUp ad-100ms">Congratulations!</h2>
+            <p class="slideUp ad-200ms mt-2 d-flex align-items-center justify-content-center">
+              <span class="text-end">Rs. 100 off on your next<br>swiggy order</span>
+              <span class="divider mx-1">
+                <img src="images/divider.png" alt="" title="">
+              </span>
+              <span>
+                <img src="images/offer-logo.png" alt="" title="">
+              </span>
+            </p>
+          </div>
+          <div class="text-center centerZoom ad-400ms">
+            <div class="border-btn-wrapper">
+              <button type="submit" name="claim" id="claim" class="btn btn-secondary">
+                <span class="btn-text">Claim</span>
+                <span class="img-wrapper d-inline-block">
+                  <img src="images/verify.png" alt="" title="" class="ms-2">
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="content-wrapper reward-wrapper" id="rewardWrapper">
+          <div class="img-wrapper text-center">
+            <img src="images/win-star.png" alt="" title="" class="">
+          </div>
+          <div class="main-heading-wrapper">
+            <h2 class="heading text-center slideUp ad-100ms">Congratulations!</h2>
+            <p class="mt-2 d-flex align-items-center justify-content-center slideUp ad-200ms">
+              <span class="text-end">Here is your Rs. 100<br>swiggy reward code</span>
+              <span class="divider mx-1">
+                <img src="images/divider.png" alt="" title="">
+              </span>
+              <span>
+                <img src="images/offer-logo.png" alt="" title="">
+              </span>
+            </p>
+            <div class="coupon-code-wrapper text-center slideUp ad-300ms" id="couponcodeWrapper">
+              <div class="coupon-code-details d-inline-flex align-items-center justify-content-center">
+                <span class="code" id="code">9911</span>
+                <span class="icon ms-2">
+                  <img src="images/copy.png" alt="" title="">
+                </span>
+              </div>
+              <div class="success-msg text-center" id="successMsg">Coupon code copied successfully!</div>
+            </div>
+          </div>
+          <div class="text-center centerZoom ad-400ms">
+            <div class="border-btn-wrapper">
+              <button type="submit" name="reward" id="reward" class="btn btn-secondary">
+                <span class="btn-text">Claim</span>
+                <span class="img-wrapper d-inline-block">
+                  <img src="images/verify.png" alt="" title="" class="ms-2">
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="content-wrapper thankyou-wrapper" id="thankyouWrapper">
+          <div class="img-wrapper text-center slideUp ad-100ms">
+            <img src="images/win-star.png" alt="" title="" class="">
+          </div>
+          <div class="main-heading-wrapper text-center">
+            <h2 class="heading slideUp ad-200ms">Thank you!</h2>
+            <p class="slideUp ad-300ms">If you won the trip to</p>
+            <h2 class="sub-heading slideUp ad-400ms">Amsterdam</h2>
+            <p class="slideUp ad-500ms">We shall reach out to you on the registered mobile number</p>
+          </div>
+          <div class="img-wrapper text-center slideUp ad-600ms">
+            <img src="images/win-star.png" alt="" title="" class="rotate-180">
+          </div>
+        </div>
+      </div>
+      <div class="footer-above-banner" id="footer-above-banner">
+        <img src="images/banner.png" alt="" title="" class="img-fluid">
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo text-center my-3">
+          <a href="" class="">
+            <img src="images/logo.png" alt="" title="" class="logo">
+          </a>
+        </div>
+        <div class="contact-info text-center">
+          <div class="email">
+            <a href="mailto:customercare@4mm.co.in">customercare@4mm.co.in</a>
+          </div>
+          <div class="phone">
+            <a href="tel:9511948588">9511948588</a>
+          </div>
+          <div class="working-days">
+            (Monday – Friday 10am to 6:30pm / Saturday 10am to 2pm).
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Agree Modal Start -->
+
+    <div class="modal fade agree-modal" id="agreeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="agreeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h4 class="title mb-4 text-center slideUp ad-100ms">Privacy Notice</h4>
+            <p class="description mb-2 slideUp ad-200ms">Welcome to Amstel- Brewed for Bonding Offer! By participating, you agree to the collection and use of your personal information as described below.</p>
+            <p class="slideUp ad-300ms"><strong>Information We Collect:</strong></p>
+            <ol class="slideUp ad-400ms">
+              <li>Name</li>
+              <li>Phone Number</li>
+            </ol>
+            <p class="slideUp ad-500ms"><strong>Purpose of Collection:</strong></p>
+            <ol class="slideUp ad-600ms">
+              <li>To verify your identity through an OTP-based verification.</li>
+              <li>To contact you if you win the prize.</li>
+            </ol>
+            <p class="mb-2 slideUp ad-700ms">Contact Information: If you have any complaints or inquiries, please reach out to us at <br><a href="mailto:privacyoffice@ubmail.com">privacyoffice@ubmail.com</a></p>
+            <p class="mb-2 slideUp ad-800ms">For more details, please review our <a href="https://www.unitedbreweries.com/privacy-policy" target="_blank">Privacy Policy</a>.</p>
+            <p class="mb-2 slideUp ad-900ms">By participating in this contest, you consent to the collection and use of your personal information as outlined above.</p>
+            <p class="slideUp ad-1s"><strong>Note</strong> - This should be followed by an I agree and I disagree button. No nudging in any form. </p>
+            <p class="slideUp ad-1-1s">This Notice should be preceded by collection of any form of personal data.</p>
+            <div class="text-center centerZoom ad-1-2s">
+              <input type="button" value="Agree" id="agreeBtn" class="btn btn-secondary mt-4">
+              <input type="button" value="Disagree" id="disagreeBtn" class="btn btn-secondary mt-4" data-bs-toggle="modal" data-bs-target="#disagreeModal">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade agree-modal" id="disagreeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="disagreeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p class="text-center slideUp ad-100ms">“Thank you for visiting the Ultra – The Gold Standard Offer website. We respect your data privacy decision. No data has been stored and you can exit the page”.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Agree Modal End -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script>
+      $(window).on('load', function() {
+        $('#agreeModal').modal('show');
+      });
+
+      $(document).ready(function () {
+
+        $('#agreeBtn').click(function(){
+          $('#agreeModal').modal('hide');
+        });
+        $('#disagreeBtn').click(function(){
+          $('#agreeModal').modal('hide');
+          $('#disagreeModal').modal('show');
+        });
+        /* $('#agreeForm').validate({
+          // Validation rules
+          rules: {
+            agree: {
+              required: true // At least one checkbox must be selected
+            }
+          },
+          // Custom error messages
+          messages: {
+            agree: {
+              required: "Please select anyone" // Error message when no checkbox is selected
+            }
+          },
+          // Customize error placement
+          // errorPlacement: function(error, element) {
+          //   error.insertAfter(element.closest('.form-check'));
+          // },
+          errorPlacement: function (error, element) {
+            error.appendTo(element.siblings(".error-text"));
+          },
+          // Submit handler
+          submitHandler: function(form) {
+            // If the user selects "I disagree"
+            if ($('#policyDisAgree').is(':checked')) {
+              // Disable the submit button and show a custom error
+              $('#submitBtn').prop('disabled', true);
+              // alert("Thank you for participating.");
+              return false; // Prevent form submission
+            } else {
+              $('#agreeModal').modal('hide');
+              // Otherwise, allow form submission
+              // form.submit();
+            }
+          }
+        }); */
+
+        // Disable the submit button when "I disagree" is checked
+        $('#policyDisAgree').on('change', function() {
+          if ($(this).is(':checked')) {
+            $('#submitBtn').prop('disabled', true); // Disable submit button
+            $('#agreeForm').validate().element('#policyDisAgree'); // Trigger validation
+            $('#error-disAgree').css("display","block");
+          } else {
+            $('#submitBtn').prop('disabled', false); // Enable submit button
+          }
+        });
+
+        // Enable submit button when "I agree" is checked
+        $('#policyAgree').on('change', function() {
+          if ($(this).is(':checked')) {
+            $('#submitBtn').prop('disabled', false); // Enable submit button
+            $('#error-disAgree').hide();
+          }
+        });
+
+        $("#beginBtn").click(function(){
+          $("#mainBannerWrapper").hide();
+          $("#registerFormWrapper").show();
+          $('html').scrollTop(0);
+          $('#voucher').focus(); 
+        });
+
+        $('#registerForm').validate({
+          rules: {
+            unique: {
+              required: true
+            },
+            fname: {
+              required: true
+            },
+            mobile: {
+              required: true,
+              digits: true, // Ensure it's a number
+              minlength: 10, // Assuming mobile number should be 10 digits
+              maxlength: 10 // Assuming a valid mobile number length
+            },
+            captcha: {
+              required: true
+            },
+            state: {
+              required: true
+            },
+            confirm: {
+              required: true
+            },
+            tnc: {
+              required: true
+            },
+            consent: {
+              required: true
+            },
+          },
+          messages: {
+            unique: {
+              required: "Unique code is required"
+            },
+            fname: {
+              required: "Please enter your name"
+            },
+            mobile: {
+              required: "Please enter your mobile number",
+              digits: "Please enter a valid mobile number",
+              minlength: "Mobile number should be at least 10 digits",
+              maxlength: "Mobile number should not exceed 10 digits"
+            },
+            captcha: {
+              required: "Please enter your captcha"
+            },
+            state: {
+              required: "Please select your state"
+            },
+            confirm: {
+              required: "Please confirm"
+            },
+            tnc: {
+              required: "Please agree to the terms and conditions"
+            },
+            consent: {
+              required: "Please concent"
+            },
+          },
+          errorPlacement: function (error, element) {
+            error.appendTo(element.siblings(".error-text"));
+          },
+          submitHandler: function(form) {
+            // form.submit();
+            $("#registerFormWrapper").hide();
+            $("#otpFormWrapper").show();
+            $('html').scrollTop(0);
+            $('#otp2').focus();
+          }
+        });
+        $('#otpForm').validate({
+          rules: {
+            otp: {
+              required: true,
+              digits: true, // Ensure it's a number
+              minlength: 6, // Assuming mobile number should be 10 digits
+              maxlength: 6 // Assuming a valid mobile number length
+            },
+          },
+          messages: {
+            otp: {
+              required: "Please enter your otp number",
+              digits: "Please enter a valid otp number",
+              minlength: "Mobile number should be at least 6 digits",
+              maxlength: "Mobile number should not exceed 6 digits"
+            },
+          },
+          errorPlacement: function (error, element) {
+            error.appendTo(element.siblings(".error-text"));
+          },
+          submitHandler: function(form) {
+            // form.submit();
+            $("#otpFormWrapper, #footer-above-banner").hide();
+            $("#questionWrapper").show();
+            $("#questionWrapper #quest-1").show();
+            $(".main-wrapper").addClass("quest1");
+            $('html').scrollTop(0);
+          }
+        });
+        $("#quest-1 #quest1-first").click(function(){
+          $(".main-wrapper").removeClass("quest1");
+          $(".main-wrapper").addClass("quest2");
+          $("#quest-1").hide();
+          $("#quest-2").show();
+          $('html').scrollTop(0);
+        });
+        $("#quest-2 #quest2-second").click(function(){
+          $(".main-wrapper").removeClass("quest2");
+          $(".main-wrapper").addClass("quest3");
+          $("#quest-2").hide();
+          $("#quest-3").show();
+          $('html').scrollTop(0);
+        });
+        $("#quest-3 #quest3-third").click(function(){
+          $(".main-wrapper").removeClass("quest3");
+          $(".main-wrapper").addClass("quest4");
+          $("#quest-3").hide();
+          $("#quest-4").show();
+          $('html').scrollTop(0);
+        });
+        $("#quest-4 #quest4-forth").click(function(){
+          $(".main-wrapper").removeClass("quest4");
+          $("#quest-4, #questionWrapper").hide();
+          $(".main-wrapper").addClass("congratulation");
+          $("#congratulationWrapper").show();
+          $('html').scrollTop(0);
+        });
+        $("#claim").click(function(){
+          $("#congratulationWrapper").hide();
+          $("#rewardWrapper").show();
+          $('html').scrollTop(0);
+        });
+        $("#reward").click(function(){
+          $(".main-wrapper").removeClass("congratulation");
+          $(".main-wrapper").addClass("thankyou");
+          $("#rewardWrapper").hide();
+          $("#thankyouWrapper, #footer-above-banner").show();
+          $('html').scrollTop(0);
+        });
+        $("#couponcodeWrapper").click(function(){
+          let couponCode = $(".coupon-code-wrapper #code").text();
+
+          // Create a temporary input field to hold the coupon code
+          var $tempInput = $('<input>');
+          $('body').append($tempInput);
+          
+          // Set the value of the temporary input to the coupon code
+          $tempInput.val(couponCode).select();
+          
+          // Execute the copy command
+          document.execCommand('copy');
+          
+          // Remove the temporary input field
+          $tempInput.remove();
+          
+          // Show the success message
+          $('#successMsg').fadeIn(300).delay(2000).fadeOut(300);
+        });
+      });
+    </script>
+
+  </body>
+</html>

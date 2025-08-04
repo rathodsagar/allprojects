@@ -1,0 +1,47 @@
+@import url("../css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  --primary: #d6001c;
+  --secondary: #c5a057;
+  --white: #ffffff;
+  --black: #000000;
+  --darkGray: #231f20;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+body ul, body ol {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+body p {
+  margin: 0px;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body .h1,
+body .h2,
+body .h3,
+body .h4,
+body .h5,
+body .h6 {
+  margin: 0px;
+}
+body picture {
+  display: block;
+}/*# sourceMappingURL=style-new.css.map */

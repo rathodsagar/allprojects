@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="navbar-wrapper" id="navbar">
+      <div class="container-xl">
+        <div class="navbar-inner-wrapper">
+          <div class="navbar-logo">
+            <img
+              class="lazy"
+              data-src="./assets/images/heineken-logo.svg"
+              alt="Heineken"
+            />
+          </div>
+          <div class="menu-wrapper">
+            <div class="menu-section-wrapper close">
+              <div class="menu-section">
+                <div class="d-block d-xl-none d-flex justify-content-end">
+                  <div class="close-icon">
+                    <i class="fas fa-times"></i>
+                  </div>
+                </div>
+                <ul class="menu-list">
+                  <li>
+                    <a
+                      class="underline-menu"
+                      href="https://www.heineken.com/in/en/our-story"
+                      >Our story</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="underline-menu"
+                      href="https://www.heineken.com/in/en/our-products"
+                      >Our products</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="underline-menu"
+                      href="https://www.heineken.com/in/en/enjoy-responsibly"
+                      >Enjoy responsibly</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="underline-menu"
+                      href="https://www.heineken.com/in/en/sponsorships"
+                      >Sponsorships</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="underline-menu"
+                      href="https://www.heineken.com/in/en/campaigns"
+                      >Campaigns</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        class="lazy"
+                        data-src="./assets/images/india-flag.svg"
+                        alt="India"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="d-block d-xl-none">
+              <div class="navbar bugger-icon">
+                <button class="navbar-toggler " type="button">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-wrapper" id="main-wrapper">
+      <div class="mid-section">
+        <div class="mid-content-wrapper">
+          <div class="icon-wrapper">
+            <div class="left-icon">
+              <img
+                class="lazy"
+                data-src="./assets/images/label-left.svg"
+                alt="Heineken"
+              />
+            </div>
+            <div class="right-icon">
+              <img
+                class="lazy"
+                data-src="./assets/images/heineken-logo.svg"
+                alt="Heineken"
+              />
+            </div>
+          </div>
+          <div class="content-wrapper-anim">
+            <p class="main-text-1">Get a chance to win</p>
+            <p class="main-text-2">a trip to</p>
+            <span class="main-text-3">Amsterdam</span>
+            <p class="main-text-4">and an assured reward.*</p>
+            <img
+              src="./assets/images/plain-BrUbiroI.gif"
+              alt="animation"
+              class="exp-anim"
+            />
+          </div>
+          <button class="btn btn-secondary d-block mx-auto" id="beginButton">
+            Begin
+          </button>
+        </div>
+        <div class="form-wrapper">
+          <div class="icon-wrapper">
+            <div class="left-icon">
+              <img
+                class="lazy"
+                data-src="./assets/images/label-left.svg"
+                alt="Heineken"
+              />
+            </div>
+          </div>
+          <form class="form-wrapper" id="submitForm">
+            <img
+              class="lazy heineken-form-logo"
+              data-src="./assets/images/heineken-logo.svg"
+              alt="Heineken"
+            />
+            <div class="title-wrapper">
+              <p class="form-title reg-text-anim1">Enter your details.</p>
+              <p class="form-title reg-text-anim2">
+                We won’t spam you, promise!
+              </p>
+            </div>
+            <div class="w-100 first">
+              <input
+                name="code"
+                type="text"
+                placeholder="Voucher Code*"
+                maxlength="11"
+                autocomplete="off"
+                value=""
+                class="form-control code"
+              />
+              <p class="error" id="codeError">
+                *Please enter the voucher code
+              </p>
+            </div>
+            <div class="w-100 second">
+              <input
+                name="name"
+                type="text"
+                placeholder="Enter Name*"
+                value=""
+                class="form-control"
+              />
+              <p class="error" id="nameError">
+                *Please enter your name
+              </p>
+            </div>
+            <div class="w-100 third">
+              <input
+                autocomplete="off"
+                type="text"
+                name="mobile"
+                maxlength="10"
+                placeholder="enter mobile number*"
+                value=""
+                class="form-control"
+              />
+              <p class="error" id="mobileError">
+                *Please enter a 10-digit number
+              </p>
+            </div>
+            <div class="w-100 fourth">
+              <input
+                name="email"
+                type="text"
+                placeholder="Email ID (Optional)"
+                value=""
+                class="form-control"
+              />
+              <p class="error" id="emailError">
+                *Please enter a valid email
+              </p>
+            </div>
+            <div class="w-100 fifth">
+              <select class="form-select" name="state">
+                <option
+                  value=""
+                  label="Enter State"
+                  disabled=""
+                  style="color: rgb(0, 0, 0)"
+                  selected
+                ></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <p class="error" id="stateError">
+                *Please select the state
+              </p>
+            </div>
+            <div class="sixth w-100">
+              <div
+                class="d-flex align-items-center justify-content-start gap-2 checkbox check3"
+              >
+                <div class="checkbox-wrapper-15 undefined">
+                  <input
+                    class="inp-cbx"
+                    type="checkbox"
+                    autocomplete="off"
+                    name="agree-p-3"
+                    id="agree-p-3"
+                    value=""
+                    style="display: none"
+                  /><label class="cbx" for="agree-p-3"
+                    ><span
+                      ><svg width="12px" height="9px" viewBox="0 0 12 9">
+                        <polyline points="1 5 4 8 11 1"></polyline></svg></span
+                  ></label>
+                </div>
+                <p class="label">
+                  To proceed further, please confirm if you're above the legal
+                  drinking age in your region.
+                </p>
+              </div>
+              <p class="error" id="ageError">
+                *Please agree to the Consent
+              </p>
+            </div>
+            <div class="seventh w-100">
+              <div
+                class="d-flex gap-2 align-items-center justify-content-start checkbox check4"
+              >
+                <div class="checkbox-wrapper-15 undefined">
+                  <input
+                    class="inp-cbx"
+                    type="checkbox"
+                    autocomplete="off"
+                    name="agree-p-4"
+                    id="agree-p-4"
+                    value=""
+                    style="display: none"
+                  /><label class="cbx" for="agree-p-4"
+                    ><span
+                      ><svg width="12px" height="9px" viewBox="0 0 12 9">
+                        <polyline points="1 5 4 8 11 1"></polyline></svg></span
+                  ></label>
+                </div>
+                <p class="label">
+                  I agree to the Terms and Conditions and Privacy Policy
+                </p>
+              </div>
+              <p class="error" id="termsError">
+                *Please agree to the Consent
+              </p>
+            </div>
+
+            <button class="btn btn-primary reg-btn" type="submit">
+              Continue
+            </button>
+          </form>
+          <div class="form-bottom-img">
+            <img
+              src="./assets/images/bottom-bg.png"
+              alt="star bg"
+              class="star-bg"
+            />
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="container-xl">
+        <div class="footer-wrapper-content">
+          <div class="d-block d-xl-none footer-logo footer-logo-up">
+            <img
+              class="lazy"
+              data-src="./assets/images/heineken-logo.svg"
+              alt="Heineken"
+            />
+          </div>
+          <div class="d-xl-flex flex-xl-row align-items-start w-100">
+            <div class="footer-menu flex-grow-1 text-center text-xl-start">
+              <ul>
+                <li>
+                  <a href="https://www.heineken.com/in/en/our-story"
+                    >Our story</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.heineken.com/in/en/our-products"
+                    >Our products</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.heineken.com/in/en/enjoy-responsibly"
+                    >Enjoy responsibly</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.heineken.com/in/en/sponsorships"
+                    >Sponsorships</a
+                  >
+                </li>
+                <li class="pb-xl-0">
+                  <a href="https://www.heineken.com/in/en/campaigns"
+                    >Campaigns</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu flex-grow-1 text-center text-xl-start">
+              <ul>
+                <li>
+                  <a href="https://www.heineken.com/in/en/cookie-policy"
+                    >Cookie policy</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.heineken.com/in/en/privacy-policy"
+                    >Privacy policy</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.heineken.com/in/en/terms-of-use"
+                    >Terms of use</a
+                  >
+                </li>
+                <li><a href="https://www.heineken.com/in/en/faq">FAQ</a></li>
+                <li class="pb-xl-0">
+                  <a href="https://www.heineken.com/in/en/contact-us"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="footer-social-list flex-grow-1 text-center text-xl-start py-xl-0"
+            >
+              <p class="title">Social</p>
+              <ul
+                class="d-flex justify-content-center justify-content-xl-start"
+              >
+                <li>
+                  <a
+                    href="https://www.facebook.com/heineken"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/heineken"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/heineken/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/user/heineken"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-icon flex-shrink-0 text-center text-xl-start">
+              <img
+                class="lazy"
+                data-src="./assets/images/enjoy-responsibly.svg"
+                alt="Heineken"
+              />
+            </div>
+          </div>
+          <div class="d-none d-xl-block footer-logo">
+            <img
+              class="lazy"
+              data-src="./assets/images/heineken-logo.svg"
+              alt="Heineken"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade agree-modal"
+      id="agreeModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="agreeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="title">Privacy Notice</div>
+            <p class="sub-disc-1">
+              By participating, you agree/consent to the collection and use of
+              your
+              <strong>personal information i.e Name and Phone Number</strong>
+              for Verification of your Identity through OTP-based
+              <strong
+                >verification and contact you if you win the prize (Purpose of
+                Collection)</strong
+              >.
+            </p>
+            <p class="sub-disc-2">
+              Contact Information: If you have any complaints or inquiries,
+              please reach out to us at
+              <a href="mailto:privacyoffice@ubmail.com"
+                >privacyoffice@ubmail.com</a
+              >. For more details, please review our
+              <br class="d-none d-xl-block" /><a href="#" target="_blank"
+                >Privacy Policy</a
+              >.
+            </p>
+            <div class="btn-sec">
+              <div
+                class="input-group d-flex align-items-center gap-2 checkbox check1"
+              >
+                <div class="checkbox-wrapper-15 undefined">
+                  <input
+                    class="inp-cbx"
+                    type="checkbox"
+                    autocomplete="off"
+                    name="agree-p-1"
+                    id="agree-p-1"
+                    value=""
+                    style="display: none"
+                  /><label class="cbx" for="agree-p-1"
+                    ><span
+                      ><svg width="12px" height="9px" viewBox="0 0 12 9">
+                        <polyline points="1 5 4 8 11 1"></polyline></svg></span
+                  ></label>
+                </div>
+                <p>I agree to the privacy policy</p>
+              </div>
+              <div
+                class="input-group d-flex align-items-center gap-2 checkbox check2"
+              >
+                <div class="checkbox-wrapper-15 undefined">
+                  <input
+                    class="inp-cbx"
+                    type="checkbox"
+                    autocomplete="off"
+                    name="agree-p-2"
+                    id="agree-p-2"
+                    value=""
+                    style="display: none"
+                  /><label class="cbx" for="agree-p-2"
+                    ><span
+                      ><svg width="12px" height="9px" viewBox="0 0 12 9">
+                        <polyline points="1 5 4 8 11 1"></polyline></svg></span
+                  ></label>
+                </div>
+                <p>I disagree with the privacy policy</p>
+              </div>
+              <button
+                class="btn btn-secondary d-block mx-auto"
+                id="proceedButton"
+              >
+                Proceed
+              </button>
+              <p class="error" id="errorMessage">
+                Please select an option.
+              </p>
+              <p class="error" id="disagreeMessage">
+                Thank you for your interest. We respect your decision, and no
+                data has been saved. Please click 'Exit' to close the page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
