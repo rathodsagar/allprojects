@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Live 101</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/slick/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="fixed-dark-box"></div>
+    <!-- start top section -->
+    <section class="top-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap flex-md-nowrap">
+            <div class="live-text">Live Entertaining Xperience</div>
+            <div class="topbar-content-wrapper d-flex justify-content-between">
+              <div class="top-cities d-flex align-items-center">
+                <div class="main-icon-wrapper filled-icon">
+                  <span class="material-symbols-outlined"> location_on </span>
+                </div>
+
+                <select name="main-city" id="mainCity">
+                  <option value="all">All Cities</option>
+                  <option value="mumbai">Mumbai</option>
+                  <option value="bengaluru">Bengaluru</option>
+                  <option value="kolkata">Kolkata</option>
+                </select>
+              </div>
+              <div class="top-number-security d-flex">
+                <div class="d-inline-block me-2">
+                  <a
+                    href="mailto:info@live101.in"
+                    class="d-flex align-items-center"
+                  >
+                    <div class="main-icon-wrapper filled-icon circle-icon">
+                      <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <span class="d-none d-md-inline-block"
+                      >info@live101.in</span
+                    >
+                  </a>
+                </div>
+                <div class="d-inline-block me-2">
+                  <a href="tel:+919137134718" class="d-flex align-items-center"
+                    ><div class="main-icon-wrapper filled-icon circle-icon">
+                      <span class="material-symbols-outlined">call</span>
+                    </div>
+                    <span class="d-none d-md-inline-block">91371 34718</span></a
+                  >
+                </div>
+                <div class="d-inline-block">
+                  <div class="d-flex align-items-center">
+                    <div class="main-icon-wrapper filled-icon">
+                      <span class="material-symbols-outlined"
+                        >verified_user</span
+                      >
+                    </div>
+                    <span class="d-none d-md-inline-block"
+                      >Safe | Sound Secure</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end top section -->
+
+    <nav class="main-menu navbar navbar-expand-lg sticky-top py-0">
+      <div class="container">
+        <a class="navbar-brand py-0" href="#"
+          ><img src="images/main-logo.png" width="80" height="80" alt=""
+        /></a>
+        <div class="d-lg-none d-flex align-items-center">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn main-btn me-2" >
+            Instant Booking
+          </a>
+          <a href="#" class="main-icon-wrapper filled-icon search m-0" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <span class="material-symbols-outlined">search</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/main-logo.png" width="60" height="60" alt=""/></h5>
+            <div class="offcanvas-wrapper d-flex align-items-center">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn main-btn d-lg-none me-2">
+                Instant Booking
+              </a>
+              <a href="#" class="main-icon-wrapper filled-icon search m-0" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <span class="material-symbols-outlined">search</span>
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-lg-grow-1 pe-lg-3">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category
+                </a>
+                <div class="mega-menu">
+                  <ul class="dropdown-menu">
+                    <li>
+                      <div class="title">Category</div>
+                      <ul>
+                        <li>
+                          <a class="dropdown-item">Singer</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">DJs</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Music Bands</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Musicians</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Anchor/Emcee</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Dance Group</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Celebrities</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="title">Quick Links</div>
+                      <ul>
+                        <li>
+                          <a class="dropdown-item">Singer In Mumbai</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Artist In Chennai</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Artist In Bangalore </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Musicians In Mumbai</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Musicians In Punjab</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Dance Group For Wedding</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Quick Links</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav d-none d-lg-flex justify-content-end align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn main-btn me-3">
+                Instant Booking
+              </a>
+              <a href="#" class="main-icon-wrapper filled-icon search m-0" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <span class="material-symbols-outlined">search</span>
+              </a>
+            </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Breadcrumb Section -->
+    <section class="comm-section breadcrumb-section py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Music Band</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-artists-section">
+      <div class="container">
+        <div class="row align-items-md-center mb-4 mb-md-5">
+          <div class="col-12 col-md-4">
+            <div class="search-result">
+              <a class="name">Music Band 
+                <div class="main-icon-wrapper filled-icon">
+                  <span class="material-symbols-outlined">edit</span>
+                </div>
+              </a>
+              <div class="total-artists">
+                <span class="number">4000</span>
+                <span class="text">Artists Found</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 offset-md-2 col-md-6 mt-md-0 mt-4">
+            <form action="" class="searchMusicForm">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <div class="main-icon-wrapper filled-icon">
+                    <span class="material-symbols-outlined">search</span>
+                  </div>
+                </span>
+                <input type="text" class="form-control" placeholder="Search for your Music Band">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="city-card-list">
+              <div class="item">
+                <a href="#" class="card">
+                  <div class="img-wrapper">
+                    <img src="images/mumbai.png" alt="" title="">
+                  </div>
+                  <div class="title">Mumbai</div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="card">
+                  <div class="img-wrapper">
+                    <img src="images/delhi.png" alt="" title="">
+                  </div>
+                  <div class="title">Delhi</div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="card">
+                  <div class="img-wrapper">
+                    <img src="images/mumbai.png" alt="" title="">
+                  </div>
+                  <div class="title">Mumbai</div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="card">
+                  <div class="img-wrapper">
+                    <img src="images/mumbai.png" alt="" title="">
+                  </div>
+                  <div class="title">Mumbai</div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="card">
+                  <div class="img-wrapper">
+                    <img src="images/delhi.png" alt="" title="">
+                  </div>
+                  <div class="title">Delhi</div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="card">
+                  <div class="img-wrapper">
+                    <img src="images/mumbai.png" alt="" title="">
+                  </div>
+                  <div class="title">Mumbai</div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="card">
+                  <div class="img-wrapper">
+                    <img src="images/delhi.png" alt="" title="">
+                  </div>
+                  <div class="title">Delhi</div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="card">
+                  <div class="img-wrapper">
+                    <img src="images/mumbai.png" alt="" title="">
+                  </div>
+                  <div class="title">Mumbai</div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="card text-wrapper">
+                  <div class="main-icon-wrapper circle-icon arrow filled-icon">
+                    <span class="material-symbols-outlined">arrow_back_ios_new</span>
+                  </div>
+                  <div class="view-all">View all</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="comm-section filter-section">
+      <div class="container">
+        <div class="d-none d-md-flex align-items-center flex-wrap">
+          <div class="filter-box-wrapper mb-4 mb-md-0 me-3">
+            <div class="dropdown-btn d-inline-flex">
+              <div class="main-icon-wrapper filled-icon me-2">
+                <span class="material-symbols-outlined">tune</span>
+              </div>
+              <span class="">Event Type</span>
+              <div class="main-icon-wrapper circle-icon filled-icon dropdown-arrow ms-3 me-0">
+                <span class="material-symbols-outlined">arrow_back_ios_new</span>
+              </div>
+            </div>
+            <div class="options-wrapper">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="eventType" id="eventType1">
+                <label class="form-check-label" for="eventType1">All Events</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="eventType" id="eventType2">
+                <label class="form-check-label" for="eventType2">Private Event</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="eventType" id="eventType3">
+                <label class="form-check-label" for="eventType3">House Party</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="eventType" id="eventType4">
+                <label class="form-check-label" for="eventType4">Cafe & Lounges</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="eventType" id="eventType5">
+                <label class="form-check-label" for="eventType5">Hotels & Villas</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="eventType" id="eventType6">
+                <label class="form-check-label" for="eventType6">Wedding</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="eventType" id="eventType7">
+                <label class="form-check-label" for="eventType7">Corporate Event</label>
+              </div>
+            </div>
+          </div>
+          <div class="filter-box-wrapper mb-4 mb-md-0 me-3">
+            <div class="dropdown-btn d-inline-flex">
+              <div class="main-icon-wrapper filled-icon me-2">
+                <span class="material-symbols-outlined">category</span>
+              </div>
+              <span class="">Category</span>
+              <div class="main-icon-wrapper circle-icon filled-icon dropdown-arrow ms-3 me-0">
+                <span class="material-symbols-outlined">arrow_back_ios_new</span>
+              </div>
+            </div>
+            <div class="options-wrapper">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="category" id="category1">
+                <label class="form-check-label" for="category1">All Events</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="category" id="category2">
+                <label class="form-check-label" for="category2">Private Event</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="category" id="category3">
+                <label class="form-check-label" for="category3">House Party</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="category" id="category4">
+                <label class="form-check-label" for="category4">Cafe & Lounges</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="category" id="category5">
+                <label class="form-check-label" for="category5">Hotels & Villas</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="category" id="category6">
+                <label class="form-check-label" for="category6">Wedding</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="category" id="category7">
+                <label class="form-check-label" for="category7">Corporate Event</label>
+              </div>
+            </div>
+          </div>
+          <div class="filter-box-wrapper me-3">
+            <div class="dropdown-btn d-inline-flex">
+              <div class="main-icon-wrapper filled-icon me-2">
+                <span class="material-symbols-outlined">recommend</span>
+              </div>
+              <span class="">Experience</span>
+              <div class="main-icon-wrapper circle-icon filled-icon dropdown-arrow ms-3 me-0">
+                <span class="material-symbols-outlined">arrow_back_ios_new</span>
+              </div>
+            </div>
+            <div class="options-wrapper">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="experience" id="experience1">
+                <label class="form-check-label" for="experience1">All Events</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="experience" id="experience2">
+                <label class="form-check-label" for="experience2">Private Event</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="experience" id="experience3">
+                <label class="form-check-label" for="experience3">House Party</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="experience" id="experience4">
+                <label class="form-check-label" for="experience4">Cafe & Lounges</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="experience" id="experience5">
+                <label class="form-check-label" for="experience5">Hotels & Villas</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="experience" id="experience6">
+                <label class="form-check-label" for="experience6">Wedding</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="experience" id="experience7">
+                <label class="form-check-label" for="experience7">Corporate Event</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-box-wrapper d-md-none">
+          <div class="dropdown-btn d-inline-flex">
+            <div class="main-icon-wrapper filled-icon me-2">
+              <span class="material-symbols-outlined">tune</span>
+            </div>
+            <span class="">Filter</span>
+            <div class="main-icon-wrapper circle-icon filled-icon dropdown-arrow ms-3 me-0">
+              <span class="material-symbols-outlined">arrow_back_ios_new</span>
+            </div>
+          </div>
+          <div class="options-wrapper">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="option1" id="option1">
+              <label class="form-check-label" for="option1">All Events</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="option1" id="option2">
+              <label class="form-check-label" for="option2">Private Event</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="option1" id="option3">
+              <label class="form-check-label" for="option3">House Party</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="option1" id="option4">
+              <label class="form-check-label" for="option4">Cafe & Lounges</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="option1" id="option5">
+              <label class="form-check-label" for="option5">Hotels & Villas</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="option1" id="option6">
+              <label class="form-check-label" for="option6">Wedding</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="option1" id="option7">
+              <label class="form-check-label" for="option7">Corporate Event</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Filter Section -->
+    <section class="comm-section artists-list-section pt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="artists-card-list">
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/artist-img.png" alt="" title="">
+                    <div class="recommend d-flex align-items-center">
+                      <div class="main-icon-wrapper filled-icon fs-20">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                      </div>Recommended
+                    </div>
+                    <div class="wishlist">
+                      <div class="main-icon-wrapper filled-icon m-0">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="title">A**** (ID12345)
+                      <div class="main-icon-wrapper filled-icon fs-20 ms-1">
+                        <span class="material-symbols-outlined">verified</span>
+                      </div>
+                    </div>
+                    <div class="location d-flex align-items-center">
+                      <div class="main-icon-wrapper filled-icon fs-20">
+                        <span class="material-symbols-outlined">location_on</span>
+                      </div>Suburban, Mumbai
+                    </div>
+                    <div class="badges-wrapper">
+                      <div class="badges-list lightGrey">
+                        <span class="badge">Music Band</span>
+                        <span class="badge">Bollywood</span>
+                        <span class="badge">
+                          <div class="d-flex align-items-center">
+                            <div class="main-icon-wrapper filled-icon fs-20">
+                              <span class="material-symbols-outlined">workspace_premium</span>
+                            </div>
+                            <span>4+ Yrs</span>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="" class="btn main-btn">Shortlist</a>
+                      <a href="" class="btn main-btn main-btn-brd">Know More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/artist-img.png" alt="" title="">
+                    <div class="recommend d-flex align-items-center">
+                      <div class="main-icon-wrapper filled-icon fs-20">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                      </div>Recommended
+                    </div>
+                    <div class="wishlist">
+                      <div class="main-icon-wrapper filled-icon m-0">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="title">A**** (ID12345)
+                      <div class="main-icon-wrapper filled-icon fs-20 ms-1">
+                        <span class="material-symbols-outlined">verified</span>
+                      </div>
+                    </div>
+                    <div class="location d-flex align-items-center">
+                      <div class="main-icon-wrapper filled-icon fs-20">
+                        <span class="material-symbols-outlined">location_on</span>
+                      </div>Suburban, Mumbai
+                    </div>
+                    <div class="badges-wrapper">
+                      <div class="badges-list lightGrey">
+                        <span class="badge">Music Band</span>
+                        <span class="badge">Bollywood</span>
+                        <span class="badge">
+                          <div class="d-flex align-items-center">
+                            <div class="main-icon-wrapper filled-icon fs-20">
+                              <span class="material-symbols-outlined">workspace_premium</span>
+                            </div>
+                            <span>4+ Yrs</span>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="" class="btn main-btn">Shortlist</a>
+                      <a href="" class="btn main-btn main-btn-brd">Know More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/artist-img.png" alt="" title="">
+                    <div class="recommend d-flex align-items-center">
+                      <div class="main-icon-wrapper filled-icon fs-20">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                      </div>Recommended
+                    </div>
+                    <div class="wishlist">
+                      <div class="main-icon-wrapper filled-icon m-0">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="title">A**** (ID12345)
+                      <div class="main-icon-wrapper filled-icon fs-20 ms-1">
+                        <span class="material-symbols-outlined">verified</span>
+                      </div>
+                    </div>
+                    <div class="location d-flex align-items-center">
+                      <div class="main-icon-wrapper filled-icon fs-20">
+                        <span class="material-symbols-outlined">location_on</span>
+                      </div>Suburban, Mumbai
+                    </div>
+                    <div class="badges-wrapper">
+                      <div class="badges-list lightGrey">
+                        <span class="badge">Music Band</span>
+                        <span class="badge">Bollywood</span>
+                        <span class="badge">
+                          <div class="d-flex align-items-center">
+                            <div class="main-icon-wrapper filled-icon fs-20">
+                              <span class="material-symbols-outlined">workspace_premium</span>
+                            </div>
+                            <span>4+ Yrs</span>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="" class="btn main-btn">Shortlist</a>
+                      <a href="" class="btn main-btn main-btn-brd">Know More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/artist-img.png" alt="" title="">
+                    <div class="recommend d-flex align-items-center">
+                      <div class="main-icon-wrapper filled-icon fs-20">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                      </div>Recommended
+                    </div>
+                    <div class="wishlist">
+                      <div class="main-icon-wrapper filled-icon m-0">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="title">A**** (ID12345)
+                      <div class="main-icon-wrapper filled-icon fs-20 ms-1">
+                        <span class="material-symbols-outlined">verified</span>
+                      </div>
+                    </div>
+                    <div class="location d-flex align-items-center">
+                      <div class="main-icon-wrapper filled-icon fs-20">
+                        <span class="material-symbols-outlined">location_on</span>
+                      </div>Suburban, Mumbai
+                    </div>
+                    <div class="badges-wrapper">
+                      <div class="badges-list lightGrey">
+                        <span class="badge">Music Band</span>
+                        <span class="badge">Bollywood</span>
+                        <span class="badge">
+                          <div class="d-flex align-items-center">
+                            <div class="main-icon-wrapper filled-icon fs-20">
+                              <span class="material-symbols-outlined">workspace_premium</span>
+                            </div>
+                            <span>4+ Yrs</span>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="" class="btn main-btn">Shortlist</a>
+                      <a href="" class="btn main-btn main-btn-brd">Know More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/artist-img.png" alt="" title="">
+                    <div class="recommend d-flex align-items-center">
+                      <div class="main-icon-wrapper filled-icon fs-20">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                      </div>Recommended
+                    </div>
+                    <div class="wishlist">
+                      <div class="main-icon-wrapper filled-icon m-0">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="title">A**** (ID12345)
+                      <div class="main-icon-wrapper filled-icon fs-20 ms-1">
+                        <span class="material-symbols-outlined">verified</span>
+                      </div>
+                    </div>
+                    <div class="location d-flex align-items-center">
+                      <div class="main-icon-wrapper filled-icon fs-20">
+                        <span class="material-symbols-outlined">location_on</span>
+                      </div>Suburban, Mumbai
+                    </div>
+                    <div class="badges-wrapper">
+                      <div class="badges-list lightGrey">
+                        <span class="badge">Music Band</span>
+                        <span class="badge">Bollywood</span>
+                        <span class="badge">
+                          <div class="d-flex align-items-center">
+                            <div class="main-icon-wrapper filled-icon fs-20">
+                              <span class="material-symbols-outlined">workspace_premium</span>
+                            </div>
+                            <span>4+ Yrs</span>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="" class="btn main-btn">Shortlist</a>
+                      <a href="" class="btn main-btn main-btn-brd">Know More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="navigation">
+              <ul class="pagination justify-content-center align-items-center">
+                <li class="page-item prev disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                    <div class="main-icon-wrapper filled-icon">
+                      <span class="material-symbols-outlined">arrow_back_ios_new</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item next">
+                  <a class="page-link" href="#">
+                    <div class="main-icon-wrapper filled-icon">
+                      <span class="material-symbols-outlined">arrow_back_ios_new</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artist Categories -->
+    <section class="comm-section artist-categories-section pt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading-wrapper d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap">
+              <div>
+                <h2 class="section-heading">Artist Categories</h2>
+                <div class="section-sub-text">Bring your events to the next level with the best artists—book top musicians, live singers, DJs, stand up comedians, motivational speakers, emcees and more. Seamless booking for an unforgettable event with Live101.</div>
+              </div>
+              <div>
+                <a href="" class="btn main-btn">Explore  All Categories</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="artist-categories-wrapper">
+              <div class="artist-categories-slider artist-category-card-list">
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_singer.png" alt="Singer" title="Singer" class="">
+                    </div>
+                    <div class="category-name">
+                      Singer
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="Music Band" title="Music Band" class="">
+                    </div>
+                    <div class="category-name">
+                      Music Band
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_singer.png" alt="DJ" title="DJ" class="">
+                    </div>
+                    <div class="category-name">
+                      DJ
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="Stand-up Comedian" title="Stand-up Comedian">
+                    </div>
+                    <div class="category-name">
+                      Stand-up Comedian
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_singer.png" alt="Musician" title="Musician" class="">
+                    </div>
+                    <div class="category-name">
+                      Musician
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="">
+                    </div>
+                    <div class="category-name">
+                      Music Band
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_singer.png" alt="" title="" class="">
+                    </div>
+                    <div class="category-name">
+                      Singer
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="">
+                    </div>
+                    <div class="category-name">
+                      Music Band
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_singer.png" alt="" title="" class="">
+                    </div>
+                    <div class="category-name">
+                      Singer
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="">
+                    </div>
+                    <div class="category-name">
+                      Music Band
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_singer.png" alt="" title="" class="">
+                    </div>
+                    <div class="category-name">
+                      Singer
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="">
+                    </div>
+                    <div class="category-name">
+                      Music Band
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_singer.png" alt="" title="" class="">
+                    </div>
+                    <div class="category-name">
+                      Singer
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="">
+                    </div>
+                    <div class="category-name">
+                      Music Band
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_singer.png" alt="" title="" class="">
+                    </div>
+                    <div class="category-name">
+                      Singer
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="">
+                    </div>
+                    <div class="category-name">
+                      Music Band
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recently Viewed Artist Section -->
+    <section class="comm-section artist-slider-section">
+      <div class="container">   
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading-wrapper">
+              <div>
+                <h2 class="section-heading">Recently Viewed Artist</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="recent-artist-slider">
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/cat_music_band.png" alt="">
+                  </div>
+                  <div class="artist-name">
+                    B**** (ID12345)
+                  </div>
+                  <div class="artist-cat-loc">
+                    Singer, Mumbai
+                  </div>
+                </div>
+              </div>          
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/cat_music_band.png" alt="">
+                  </div>
+                  <div class="artist-name">
+                    B**** (ID12345)
+                  </div>
+                  <div class="artist-cat-loc">
+                    Singer, Mumbai
+                  </div>
+                </div>
+              </div>          
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/cat_music_band.png" alt="">
+                  </div>
+                  <div class="artist-name">
+                    B**** (ID12345)
+                  </div>
+                  <div class="artist-cat-loc">
+                    Singer, Mumbai
+                  </div>
+                </div>
+              </div>          
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/cat_music_band.png" alt="">
+                  </div>
+                  <div class="artist-name">
+                    B**** (ID12345)
+                  </div>
+                  <div class="artist-cat-loc">
+                    Singer, Mumbai
+                  </div>
+                </div>
+              </div>          
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/cat_music_band.png" alt="">
+                  </div>
+                  <div class="artist-name">
+                    B**** (ID12345)
+                  </div>
+                  <div class="artist-cat-loc">
+                    Singer, Mumbai
+                  </div>
+                </div>
+              </div>          
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/cat_music_band.png" alt="">
+                  </div>
+                  <div class="artist-name">
+                    B**** (ID12345)
+                  </div>
+                  <div class="artist-cat-loc">
+                    Singer, Mumbai
+                  </div>
+                </div>
+              </div>          
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/cat_music_band.png" alt="">
+                  </div>
+                  <div class="artist-name">
+                    B**** (ID12345)
+                  </div>
+                  <div class="artist-cat-loc">
+                    Singer, Mumbai
+                  </div>
+                </div>
+              </div>          
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/cat_music_band.png" alt="">
+                  </div>
+                  <div class="artist-name">
+                    B**** (ID12345)
+                  </div>
+                  <div class="artist-cat-loc">
+                    Singer, Mumbai
+                  </div>
+                </div>
+              </div>          
+              <div class="item">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="images/cat_music_band.png" alt="">
+                  </div>
+                  <div class="artist-name">
+                    B**** (ID12345)
+                  </div>
+                  <div class="artist-cat-loc">
+                    Singer, Mumbai
+                  </div>
+                </div>
+              </div>          
+            </div>
+          </div>
+        </div>
+      </div>     
+    </section>
+    
+    <!-- Reviews Section -->
+    <section class="comm-section review-section pt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="section-heading-wrapper d-flex d-md-block flex-nowrap flex-md-wrap">
+              <div>
+                <h2 class="section-heading">Latest Reviews</h2>
+              </div>
+              <div class="mt-0 mt-md-4 google-review-img">
+                <img src="images/google-reviews.png" alt="">
+              </div>
+              <div class="mt-5 d-none d-md-block">
+                <a href="" class="btn main-btn">View All Reviews</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="review-card-wrapper">
+              <div class="review-card-slider">
+                <div class="item">
+                  <div class="review-card">
+                    <div class="reviewer-img-wrapper">
+                      <img src="images/reviewer-1.png" alt="Reviewer" class="reviewer-img">
+                    </div>
+                    <div class="review-content-wrapper">
+                        <div class="reviewer-name">Dikshit</div>
+                        <div class="reviewer-event">Mumbai | Corporate Event</div>
+                        <div class="reviewer-rating">
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                        </div>
+                        <p class="reviewer-comment text-overflow-card tof-5-line">Hello everyone. Hello Live 101. So I have experienced one of the best show ever that I can talk about. Yeah, I'm talking about Rohit Thakur. To be honest, I was not aware that he is so much, you know, he's carrying so much of energy and the way he engaged each one of us is awesome. Everybody I'm talking to, everybody is praising about Rohit. And I have never experienced a comedy show live. This was... very first ever, but then I enjoyed every bit of it. He's a great talent and I am sure he's gonna go on. I mean, he is a star, no doubt about it. And I'm going to follow him. I'm going to see his more videos on YouTube. I'm going to tell everybody that, you know, Rohit Thakur is a great talent and he's a great comedian. He's a great stand-up comedian. Thank you so very much Live101 for the lovely performances. Really enjoyed. You have really been a day. Thanks.</p>
+                        <a href="#" class="read-more-text">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="review-card">
+                    <div class="reviewer-img-wrapper">
+                      <img src="images/reviewer-1.png" alt="Reviewer" class="reviewer-img">
+                    </div>
+                    <div class="review-content-wrapper">
+                        <div class="reviewer-name">Dikshit</div>
+                        <div class="reviewer-event">Mumbai | Corporate Event</div>
+                        <div class="reviewer-rating">
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                        </div>
+                        <p class="reviewer-comment text-overflow-card tof-5-line">Hello everyone. Hello Live 101. So I have experienced one of the best show ever that I can talk about. Yeah, I'm talking about Rohit Thakur. To be honest, I was not aware that he is so much, you know, he's carrying so much of energy and the way he engaged each one of us is awesome. Everybody I'm talking to, everybody is praising about Rohit. And I have never experienced a comedy show live. This was... very first ever, but then I enjoyed every bit of it. He's a great talent and I am sure he's gonna go on. I mean, he is a star, no doubt about it. And I'm going to follow him. I'm going to see his more videos on YouTube. I'm going to tell everybody that, you know, Rohit Thakur is a great talent and he's a great comedian. He's a great stand-up comedian. Thank you so very much Live101 for the lovely performances. Really enjoyed. You have really been a day. Thanks.</p>
+                        <a href="#" class="read-more-text">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="review-card">
+                    <div class="reviewer-img-wrapper">
+                      <img src="images/reviewer-1.png" alt="Reviewer" class="reviewer-img">
+                    </div>
+                    <div class="review-content-wrapper">
+                        <div class="reviewer-name">Dikshit</div>
+                        <div class="reviewer-event">Mumbai | Corporate Event</div>
+                        <div class="reviewer-rating">
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                          <span class="material-symbols-outlined filled"> kid_star </span>
+                        </div>
+                        <p class="reviewer-comment text-overflow-card tof-5-line">Hello everyone. Hello Live 101. So I have experienced one of the best show ever that I can talk about. Yeah, I'm talking about Rohit Thakur. To be honest, I was not aware that he is so much, you know, he's carrying so much of energy and the way he engaged each one of us is awesome. Everybody I'm talking to, everybody is praising about Rohit. And I have never experienced a comedy show live. This was... very first ever, but then I enjoyed every bit of it. He's a great talent and I am sure he's gonna go on. I mean, he is a star, no doubt about it. And I'm going to follow him. I'm going to see his more videos on YouTube. I'm going to tell everybody that, you know, Rohit Thakur is a great talent and he's a great comedian. He's a great stand-up comedian. Thank you so very much Live101 for the lovely performances. Really enjoyed. You have really been a day. Thanks.</p>
+                        <a href="#" class="read-more-text">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-5 d-block d-md-none">
+              <a href="" class="btn main-btn">View All Reviews</a>
+            </div>
+          </div>
+        </div>
+      </div>       
+    </section>
+
+    <!-- Live 101 Section -->
+    <section class="comm-section explore-more-section py-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading-wrapper mb-0">
+              <div>
+                <h2 class="section-heading colorPrime">Live 101</h2>
+                <div class="section-sub-text">Lorem ipsum dolor sit amet consectetur. Aenean at quam imperdiet sed a. Vitae arcu duis elementum nibh consequat. Donec a sem tincidunt sed mauris magna ut. Maecenas semper velit sed ante mollis augue. Malesuada velit aliquam vel aliquam at fringilla libero ullamcorper diam. In proin tortor neque scelerisque ornare adipiscing mauris. Pulvinar nullam morbi at faucibus. Congue pretium leo nisi magna aliquam pellentesque tortor mus vitae. Ac non risus dignissim ut imperdiet mi. Vel varius semper turpis sit libero maecenas mattis. Fusce vestibulum feugiat pretium vel at tortor nibh. Ut magna aenean in integer pellentesque rutrum congue tristique feugiat. Gravida ornare congue vivamus leo in interdum in egestas. Feugiat pellentesque ut ut risus turpis.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="comm-section faq-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading-wrapper">
+              <div>
+                <h2 class="section-heading mb-0">FAQ</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="faq-accordion-wrapper">
+              <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">1. Lorem ipsum dolor sit amet consectetur.</button>
+                  </h2>
+                  <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur. Nisl semper maecenas dictum aliquet. Vitae odio nec congue turpis orci. Amet tortor dolor gravida platea euismod netus. In non vitae aliquam.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">2. Lorem ipsum dolor sit amet consectetur.</button>
+                  </h2>
+                  <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur. Nisl semper maecenas dictum aliquet. Vitae odio nec congue turpis orci. Amet tortor dolor gravida platea euismod netus. In non vitae aliquam.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">3. Lorem ipsum dolor sit amet consectetur.</button>
+                  </h2>
+                  <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur. Nisl semper maecenas dictum aliquet. Vitae odio nec congue turpis orci. Amet tortor dolor gravida platea euismod netus. In non vitae aliquam.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">3. Lorem ipsum dolor sit amet consectetur.</button>
+                  </h2>
+                  <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur. Nisl semper maecenas dictum aliquet. Vitae odio nec congue turpis orci. Amet tortor dolor gravida platea euismod netus. In non vitae aliquam.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore More Section -->
+    <section class="comm-section explore-more-section pt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading-wrapper">
+              <div>
+                <h2 class="section-heading">Explore More</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <form action="" class="searchMoreForm">
+              <div class="input-group mb-3">
+                <span class="input-group-text">
+                  <div class="main-icon-wrapper filled-icon">
+                    <span class="material-symbols-outlined">search</span>
+                  </div>
+                </span>
+                <input type="text" class="form-control" placeholder="Search for your Music Band">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="most-searched-wrapper">
+              <div class="list-group list-group-horizontal-md mb-3 mb-md-4">
+                <a href="#" class="list-group-item">Best Music Band in Mumbai</a>
+                <a href="#" class="list-group-item">Music Band in Mumbai</a>
+                <a href="#" class="list-group-item">Music Band in New Mumbai</a>
+                <a href="#" class="list-group-item">List Music Band in New Mumbai</a>
+              </div>
+              <a href="#" class="read-more-text">View All Popular Searches</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="comm-section pb-0">
+      <div class="container">
+        <div class="row btm-border-lt pb-3 pb-md-4">
+          <!-- Company Info -->
+          <div class="col-12 col-md-6 col-lg-3 right-border-lt footer-info-col">
+            <img
+              src="images/main-logo.png"
+              class="footer-logo mb-2"
+              width="64"
+              height="64"
+              alt="Live101 Logo"
+            />
+            <p>
+              Live101 offers a platform for booking verified artists for any
+              event or occasion, providing affordable options that are
+              budget-friendly without compromising on quality.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-12 col-md-6 col-lg-5 pt-3 pt-sm-0">
+            <div class="row">
+              <div class="col-12">
+                <div class="footer-head foot-extra-padding">Quick Links</div>
+              </div>
+              <div class="col-6">
+                <ul class="list-unstyled foot-extra-padding">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Why Live 101</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Our Client</a></li>
+                  <li><a href="#">Blogs</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="list-unstyled">
+                  <li><a href="#">Singer In Mumbai</a></li>
+                  <li><a href="#">Artist In Chennai</a></li>
+                  <li><a href="#">Artist In Bangalore</a></li>
+                  <li><a href="#">Musicians In Mumbai</a></li>
+                  <li><a href="#">Musicians In Punjab</a></li>
+                  <li><a href="#">Dance Group For Wedding</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-12 col-lg-4 mt-4 mt-lg-0 foot-main-links-col"
+          >
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-7">
+                <div class="footer-head">Entertainment</div>
+                <ul class="list-unstyled">
+                  <li><a href="#">Singer</a></li>
+                  <li><a href="#">DJs</a></li>
+                  <li><a href="#">Music Bands</a></li>
+                  <li><a href="#">Musicians</a></li>
+                  <li><a href="#">Anchor / Emcee</a></li>
+                  <li><a href="#">Dance Group</a></li>
+                  <li><a href="#">Celebrities</a></li>
+                  <li><a href="#">Comedian</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 col-lg-5 foot-mobile-border">
+                <div class="footer-head">Events</div>
+                <ul class="list-unstyled">
+                  <li><a href="#">Private Events</a></li>
+                  <li><a href="#">Wedding</a></li>
+                  <li><a href="#">House Party</a></li>
+                  <li><a href="#">Corporate Events</a></li>
+                  <li><a href="#">Café & Lounges</a></li>
+                  <li><a href="#">Social events</a></li>
+                  <li><a href="#">Hotel & Villas</a></li>
+                  <li><a href="#">Virtual Events</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of row -->
+
+        <!-- Contact Info & Social Links -->
+        <div class="row mt-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="footer-head">Contact</div>
+            <ul class="list-unstyled footer-contact-info">
+              <li>
+                <a href="tel:+91371 34718" class="d-flex align-items-center">
+                  <div class="main-icon-wrapper filled-icon circle-icon">
+                    <span class="material-symbols-outlined"> call </span>
+                  </div>
+                  <span>91371 34718</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@live101.in"
+                  class="d-flex align-items-center"
+                >
+                  <div class="main-icon-wrapper filled-icon circle-icon">
+                    <span class="material-symbols-outlined"> mail </span>
+                  </div>
+                  <span>info@live101.in</span>
+                </a>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="main-icon-wrapper filled-icon circle-icon">
+                  <span class="material-symbols-outlined"> location_on </span>
+                </div>
+                Mumbai, India
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="main-icon-wrapper filled-icon circle-icon">
+                  <span class="material-symbols-outlined"> location_on </span>
+                </div>
+                Delhi, India
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 text-left text-md-center mt-4 mt-md-0"
+          >
+            <div class="footer-head">Follow Us On</div>
+            <ul class="list-inline footer-social-links">
+              <li class="list-inline-item">
+                <a
+                  href="https://instagram.com/live101.in?igshid=YmMyMTA2M2Y="
+                  target="_blank"
+                >
+                  <div class="main-img-icon-wrapper">
+                    <img
+                      src="images/social/insta-icon.png"
+                      alt="Instagram Icon"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100094144990517"
+                  target="_blank"
+                >
+                  <div class="main-img-icon-wrapper">
+                    <img src="images/social/fb-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.linkedin.com/company/14456011/admin/feed/posts/"
+                  target="_blank"
+                >
+                  <div class="main-img-icon-wrapper">
+                    <img src="images/social/linked-in-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://youtube.com/@live101in/" target="_blank">
+                  <div class="main-img-icon-wrapper">
+                    <img src="images/social/yt-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+            <div class="footer-download-apps-wrapper">
+              <div class="footer-head">Get The Live 101 App</div>
+              <a href="#" class="me-2"
+                ><img
+                  src="images/appstore.png"
+                  alt="App Store"
+                  class="mb-2 mb-xl-0"
+              /></a>
+              <a href="#"
+                ><img src="images/playstore.png" alt="Google Play"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="footer-bottom top-border-lt pt-3 flex-wrap flex-md-nowrap"
+            >
+              <p class="mb-0 order-1 order-md-0">
+                &copy; 2024. All Rights Reserved by Live 101
+              </p>
+              <ul class="list-inline order-0 order-md-1 mb-2 mb-md-0">
+                <li class="list-inline-item">
+                  <a href="#">Terms & Condition</a>
+                </li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#">Refund Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Search modal start -->
+    <div class="modal fade enquiry-modal our-team" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="searchMusicForm text-center">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <div class="main-icon-wrapper filled-icon">
+                    <span class="material-symbols-outlined">search</span>
+                  </div>
+                </span>
+                <input type="text" class="form-control" placeholder="Search for your Artist, Music...">
+              </div>
+              <input type="submit" value="Submit" class="btn main-btn mt-4">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search modal end -->
+
+
+    <!-- Enquiry modal start -->
+    <div
+      class="modal fade enquiry-modal"
+      id="enquiryModal"
+      tabindex="-1"
+      aria-labelledby="enquiryModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form id="enquiryForm">
+            <input type="hidden" name="artistCategory" id="artistCategory" />
+            <div class="modal-body pb-0">
+              <h2 class="modal-title mb-4" id="enquiryModalLabel">
+                Select Artist Categories
+              </h2>
+              <div class="selected-category d-flex align-items-center">
+                Selected category <span class="cat-name">Singer</span>
+              </div>
+              <div class="artist-category-card-list d-flex flex-wrap gap-3">
+                <div class="item">
+                  <div class="card" data-value="singer" data-label="SINGER">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt="Singer"
+                        title="Singer"
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Singer</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div
+                    class="card"
+                    data-value="music_band"
+                    data-label="MUSIC BAND"
+                  >
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_music_band.png"
+                        alt="Music Band"
+                        title="Music Band"
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Music Band</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="d_j" data-label="DJ">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt="DJ"
+                        title="DJ"
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">DJ</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="musician" data-label="MUSICIAN">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_music_band.png"
+                        alt="Stand-up Comedian"
+                        title="Stand-up Comedian"
+                      />
+                    </div>
+                    <div class="category-name">Stand-up Comedian</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="comedian" data-label="COMEDIAN">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt="Musician"
+                        title="Musician"
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Musician</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="dancer" data-label="DANCER">
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="" />
+                    </div>
+                    <div class="category-name">Music Band</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="emcee" data-label="EMCEE">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt=""
+                        title=""
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Singer</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div
+                    class="card"
+                    data-value="celebrity"
+                    data-label="CELEBRITY"
+                  >
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="" />
+                    </div>
+                    <div class="category-name">Music Band</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div
+                    class="card"
+                    data-value="variety_artist"
+                    data-label="VARIETY ARTIST"
+                  >
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt=""
+                        title=""
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Singer</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="speaker" data-label="SPEAKER">
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="" />
+                    </div>
+                    <div class="category-name">Music Band</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="magician" data-label="MAGICIAN">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt=""
+                        title=""
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Singer</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div
+                    class="card"
+                    data-value="devotional_singer"
+                    data-label="DEVOTIONAL SINGER"
+                  >
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="" />
+                    </div>
+                    <div class="category-name">Music Band</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div
+                    class="card"
+                    data-value="Illusionist"
+                    data-label="ILLUSIONIST"
+                  >
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt=""
+                        title=""
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Singer</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="enquiry-form-wrapper mt-4">
+                <div class="row g-3">
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Enter Name Here"
+                    />
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="mobile" class="form-label">Mobile Number</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="mobile"
+                      name="mobile"
+                      placeholder="Enter Mobile Number"
+                    />
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Enter Email Here"
+                    />
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="genre" class="form-label">Genre</label>
+                    <select class="form-select" id="genre" name="genre">
+                      <option value="">Select Genre</option>
+                      <option value="Bollywood">Bollywood</option>
+                      <option value="Western">Western</option>
+                      <option value="Bhajan">Bhajan</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="event" class="form-label">Event</label>
+                    <select class="form-select" id="event" name="event">
+                      <option value="">Select Event</option>
+                      <option value="Private Party">Private Party</option>
+                      <option value="House Party">House Party</option>
+                      <option value="Hotels & Villas">Hotels & Villas</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="date" class="form-label">Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date"
+                      name="date"
+                    />
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="locationType" class="form-label"
+                      >Location Type</label
+                    >
+                    <select
+                      class="form-select"
+                      id="locationType"
+                      name="locationType"
+                    >
+                      <option value="">Select Location Type</option>
+                      <option value="Banquet">Banquet</option>
+                      <option value="Outdoor">Outdoor</option>
+                      <option value="Virtual">Virtual</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-4 mb-2 enq-location-col">
+                    <label for="location" class="form-label">Location</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="location"
+                      name="location"
+                      placeholder="Enter Location Here"
+                      autocomplete="off"
+                    />
+                    <div class="location-list-wrapper d-none">
+                      <div class="location-block">
+                        <div class="main-icon-wrapper filled-icon">
+                          <span class="material-symbols-outlined">
+                            location_on
+                          </span>
+                        </div>
+                        <div class="location-name">
+                          <span>Malad West, Mumbai</span>
+                        </div>
+                      </div>
+                      <div class="location-block">
+                        <div class="main-icon-wrapper filled-icon">
+                          <span class="material-symbols-outlined">
+                            location_on
+                          </span>
+                        </div>
+                        <div class="location-name">Andheri West, Mumbai</div>
+                      </div>
+                      <div class="location-block">
+                        <div class="main-icon-wrapper filled-icon">
+                          <span class="material-symbols-outlined">
+                            location_on
+                          </span>
+                        </div>
+                        <div class="location-name">Dahisar West, Mumbai</div>
+                      </div>
+                      <div class="location-block">
+                        <div class="main-icon-wrapper filled-icon">
+                          <span class="material-symbols-outlined">
+                            location_on
+                          </span>
+                        </div>
+                        <div class="location-name">
+                          <span>Malad West, Mumbai</span>
+                        </div>
+                      </div>
+                      <div class="location-block">
+                        <div class="main-icon-wrapper filled-icon">
+                          <span class="material-symbols-outlined">
+                            location_on
+                          </span>
+                        </div>
+                        <div class="location-name">Andheri West, Mumbai</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="budget" class="form-label">Budget</label>
+                    <select class="form-select" id="budget" name="budget">
+                      <option value="">Select Budget</option>
+                      <option value="10000-20000">10000-20000</option>
+                      <option value="20001-30000">20001-30000</option>
+                      <option value="30001-40000">30001-40000</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer justify-content-center pt-4">
+              <button type="button" class="btn main-btn px-5 d-none">
+                Next
+              </button>
+              <button type="button" class="btn main-btn main-btn-brd px-5 me-2">
+                Back
+              </button>
+              <button type="submit" class="btn main-btn px-5">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Enquiry modal end -->
+
+    <!-- Contact Sticky Sidebar start -->
+    <div class="contact-sticky-sidebar" id="contactStickySidebar">
+      <a href="#" class="main-icon-wrapper filled-icon">
+        <span class="material-symbols-outlined">mail</span>
+      </a>
+      <a href="#" class="img-wrapper">
+        <img src="images/whatsapp.png" alt="" title="" >
+      </a>
+    </div>
+    <!-- Contact Sticky Sidebar end -->
+
+    <!-- Top To Bottom start -->
+    <div class="top-to-bottom" id="topToBottom">
+      <div class="main-icon-wrapper circle-icon filled-icon m-0">
+        <span class="material-symbols-outlined">arrow_back_ios_new</span>
+      </div>
+    </div>
+    <!-- Top To Bottom end -->
+
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"
+    ></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

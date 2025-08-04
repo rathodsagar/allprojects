@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "AcuminPro-Regular";
+  src: url("../fonts/AcuminPro-Regular.ttf");
+}
+@font-face {
+  font-family: "AcuminPro-Black";
+  src: url("../fonts/AcuminPro-Black.ttf");
+}
+@font-face {
+  font-family: "AcuminPro-BlackItalic";
+  src: url("../fonts/AcuminPro-BlackItalic.ttf");
+}
+@font-face {
+  font-family: "AcuminPro-Bold";
+  src: url("../fonts/AcuminPro-Bold.ttf");
+}
+@font-face {
+  font-family: "AcuminPro-BoldItalic";
+  src: url("../fonts/AcuminPro-BoldItalic.ttf");
+}
+
+@mixin fontFamily($fontType) {
+  font-family: $fontType, Arial, Helvetica, sans-serif;
+}
+
+@mixin fontSizeLineHeight($fontSize, $lineHeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}

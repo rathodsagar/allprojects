@@ -1,0 +1,590 @@
+@import "fonts";
+@import "colors";
+
+html,
+body {
+  @include fontFamily("AcuminPro-Regular");
+  color: $colorBlack;
+  position: relative;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.transition-all {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+/* --------- */
+
+section {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.comm-padding {
+  padding: 40px 0px;
+}
+
+.comm-bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+/* be inspired section */
+.be-inspired-section {
+  background-image: url("../images/be-inspired-banner.jpg");
+  height: auto !important;
+  position: relative;
+  .pk-top-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 15px;
+    z-index: 9999;
+    background-color: $colorPK;
+    color: $colorWhite;
+    @include fontFamily("AcuminPro-Bold");
+    @include fontSizeLineHeight(22px, 28px);
+    i {
+      margin-right: 8px;
+    }
+  }
+
+  .predict-live-col {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    img {
+      margin: 0 auto;
+    }
+  }
+  .img-wrapper {
+    max-width: 320px;
+    margin: 0 auto 20px;
+  }
+  .section-heading {
+    display: block;
+    width: 100%;
+    text-align: center;
+    @include fontFamily("AcuminPro-BlackItalic");
+    @include fontSizeLineHeight(70px, 80px);
+    color: $colorWhite;
+  }
+  .be-inspired-col {
+    position: relative;
+  }
+  .section-inner-img {
+    width: 90%;
+    margin: 0 auto;
+    img {
+      mix-blend-mode: multiply;
+      opacity: 0.5;
+    }
+  }
+  .player-img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .be-inspired-section {
+    .pk-top-btn {
+      @include fontSizeLineHeight(18px, 24px);
+    }
+    .img-wrapper {
+      max-width: 230px;
+    }
+    .section-heading {
+      @include fontSizeLineHeight(40px, 50px);
+    }
+    .predict-live-col {
+      padding-top: 0px;
+    }
+  }
+}
+
+/* end of be inspired section  */
+
+.main-content-section {
+  .content-wrapper {
+    height: 100vh;
+  }
+  .content-heading {
+    display: block;
+    width: 100%;
+    text-align: center;
+    display: block;
+    @include fontFamily("AcuminPro-BlackItalic");
+    @include fontSizeLineHeight(70px, 80px);
+    color: $colorBlueText;
+  }
+  .content-para {
+    display: block;
+    width: 80%;
+    margin: 30px auto 0;
+    text-align: center;
+    display: block;
+    @include fontFamily("AcuminPro-Bold");
+    @include fontSizeLineHeight(24px, 34px);
+    color: $colorBlueText;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  section {
+    height: auto;
+    padding-top: 80px;
+  }
+  .h-100 {
+    height: auto;
+  }
+  .comm-bg-img {
+    height: auto;
+  }
+  .main-content-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .content-wrapper {
+      height: auto;
+      .content-heading {
+        @include fontSizeLineHeight(40px, 50px);
+      }
+      .content-para {
+        @include fontSizeLineHeight(18px, 26px);
+      }
+    }
+  }
+}
+
+/* tickets section */
+.tickets-section {
+  background-image: url("../images/tickets-banner.jpg");
+  .tickets-col {
+    position: relative;
+  }
+  .section-inner-img {
+    width: 90%;
+    margin: 0 auto;
+    img {
+      mix-blend-mode: multiply;
+      opacity: 0.4;
+    }
+  }
+  .player-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    img {
+      max-height: 90%;
+    }
+  }
+
+  .tickets-col-texts {
+    @include fontFamily("AcuminPro-BlackItalic");
+    div:nth-child(1) {
+      color: $colorBlack;
+      @include fontSizeLineHeight(64px, 74px);
+    }
+    div:nth-child(2) {
+      color: $colorBlueText;
+      @include fontSizeLineHeight(165px, 140px);
+    }
+    div:nth-child(3) {
+      display: inline-block;
+      padding: 2px 20px 0;
+      color: $colorWhite;
+      @include fontFamily("AcuminPro-Bold");
+      @include fontSizeLineHeight(24px, 44px);
+      background-color: $colorBlack;
+      border-radius: 15px;
+      margin-top: 24px;
+      @extend .transition-all;
+      &:hover {
+        background-color: $colorWhite;
+        a {
+          color: $colorBlack;
+        }
+      }
+      a {
+        color: $colorWhite;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tickets-section {
+    .tickets-col-texts {
+      div:nth-child(1) {
+        @include fontSizeLineHeight(40px, 40px);
+      }
+      div:nth-child(2) {
+        @include fontSizeLineHeight(95px, 100px);
+      }
+      div:nth-child(3) {
+        @include fontSizeLineHeight(20px, 34px);
+
+        border-radius: 10px;
+        margin-top: 14px;
+      }
+    }
+  }
+}
+
+/* end of tickets section  */
+
+/* fixtures section */
+.fixtures-section {
+  background-image: url("../images/fixtures-banner.jpg");
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: auto;
+  .fixtures-logo-col {
+    padding-top: 84px;
+  }
+  .img-wrapper {
+    max-width: 320px;
+    margin: 0 auto 20px;
+  }
+  .versus-text {
+    display: inline-block;
+    padding: 2px 10px 0;
+    color: $colorSecondary;
+    @include fontFamily("AcuminPro-Bold");
+    @include fontSizeLineHeight(75px, 75px);
+  }
+  .fixtures-col {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    .fixtures-slider-head-wrapper {
+      width: 100%;
+      .fixtures-slider-head {
+        display: inline-block;
+        text-align: center;
+        @include fontFamily("AcuminPro-BlackItalic");
+        @include fontSizeLineHeight(40px, 40px);
+        color: $colorBlack;
+        padding: 5px 20px 10px;
+        background-color: $colorSecondary;
+        border-radius: 15px;
+      }
+    }
+    .fixtures-slider-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px 10px 0px;
+      .fixture-block {
+        display: block;
+        width: 12%;
+        margin: 0 4% 15px;
+      }
+      .slick-prev,
+      .slick-next {
+        width: 30px;
+        height: 30px;
+      }
+      .slick-prev.slick-arrow {
+        left: 15px;
+      }
+      .slick-next.slick-arrow {
+        right: 15px;
+      }
+      .slick-prev:before,
+      .slick-next:before {
+        content: "\f053";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        color: $colorWhite;
+        font-size: 40px;
+      }
+      .slick-next:before {
+        content: "\f054";
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .fixtures-section {
+    .fixtures-logo-col {
+      padding-top: 10px;
+      .img-wrapper {
+        width: 80%;
+        display: block;
+        margin: 0 auto 20px;
+      }
+      .versus-text {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+    .fixtures-col {
+      display: block;
+      .fixtures-slider-head-wrapper {
+        .fixtures-slider-head {
+          @include fontSizeLineHeight(30px, 30px);
+        }
+      }
+      .fixtures-slider-wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+        flex-wrap: nowrap;
+        .fixture-block {
+          margin: 10px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+/* end of fixtures section  */
+
+.squad-section {
+  background-image: url("../images/squad-bg.jpg");
+  background-size: 80%;
+  background-color: $colorWhite;
+
+  .section-heading {
+    display: block;
+    width: 100%;
+    @include fontFamily("AcuminPro-BlackItalic");
+    @include fontSizeLineHeight(70px, 80px);
+    color: $colorBlueText;
+    padding-left: 40px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+  .squad-slider-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+    .squad-block {
+      padding: 0 10px;
+      .img-wrapper {
+        width: 100%;
+        overflow: hidden;
+        img {
+          width: 80%;
+          margin: 0 auto;
+          object-fit: cover;
+          @extend .transition-all;
+          transform: translateY(10px);
+          &:hover {
+            transform: translateY(0px);
+          }
+        }
+      }
+      .info-wrapper {
+        width: 100%;
+        padding: 20px;
+        background-color: $colorBlueText;
+        border-radius: 0 0 30px 15px;
+
+        span {
+          display: block;
+          color: $colorWhite;
+        }
+        span:nth-child(1) {
+          @include fontFamily("AcuminPro-Regular");
+          @include fontSizeLineHeight(24px, 30px);
+          text-transform: uppercase;
+        }
+        span:nth-child(2) {
+          @include fontFamily("AcuminPro-Bold");
+          @include fontSizeLineHeight(24px, 30px);
+          text-transform: uppercase;
+        }
+        span:nth-child(3) {
+          @include fontFamily("AcuminPro-Regular");
+          @include fontSizeLineHeight(18px, 24px);
+          width: 85%;
+          border-top: 1px solid $colorWhite;
+          padding-top: 5px;
+        }
+      }
+    }
+    .slick-prev,
+    .slick-next {
+      width: 30px;
+      height: 30px;
+    }
+    .slick-prev.slick-arrow {
+      left: 15px;
+    }
+    .slick-next.slick-arrow {
+      right: 15px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      content: "\f053";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      color: $colorPrimary;
+      font-size: 30px;
+    }
+    .slick-next:before {
+      content: "\f054";
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .squad-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 0;
+    .section-heading {
+      padding-left: 0px;
+      padding-top: 0px;
+      text-align: center;
+      margin-bottom: 20px;
+      @include fontSizeLineHeight(40px, 40px);
+    }
+  }
+}
+
+.sponsers-section {
+  background-color: $colorPrimary;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .section-heading {
+    display: block;
+    width: 100%;
+    @include fontFamily("AcuminPro-BlackItalic");
+    @include fontSizeLineHeight(70px, 80px);
+    color: $colorWhite;
+    padding-left: 40px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+  }
+  .main-logo-blk {
+    width: 50%;
+    margin: 0 auto 30px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .sponsor-logo-col {
+    img {
+      display: inline-block;
+      max-height: 90px;
+      margin: 15px 20px;
+    }
+  }
+  .seperator-col {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 100%;
+      background-color: $colorSecondary;
+      top: 0;
+      right: -6px;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .sponsers-section {
+    .sponsor-logo-col {
+      img {
+        margin: 15px 0px;
+      }
+    }
+    .section-heading {
+      @include fontSizeLineHeight(40px, 40px);
+    }
+  }
+}
+
+footer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  background-color: $colorPrimary;
+  .links-row {
+    background-color: $colorSecondary;
+    min-height: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include fontFamily("AcuminPro-Regular");
+    @include fontSizeLineHeight(16px, 20px);
+    color: $colorBlack;
+    .footer-links {
+      line-height: 40px;
+      a {
+        color: $colorBlack;
+      }
+    }
+    .social-links {
+      line-height: 40px;
+      a {
+        color: $colorBlack;
+        @include fontSizeLineHeight(24px, 40px);
+        margin-left: 10px;
+      }
+    }
+  }
+  .copyright-row {
+    min-height: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include fontFamily("AcuminPro-Regular");
+    @include fontSizeLineHeight(16px, 20px);
+    color: $colorWhite;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer {
+    .links-row {
+      .footer-links {
+        width: 100%;
+      }
+      .social-links {
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+  }
+}

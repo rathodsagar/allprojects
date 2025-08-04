@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.min.css" />
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+    <title>RFID Reader</title>
+  </head>
+
+  <body>
+    <section class="container-fluid py-4">
+      <div class="d-flex gap-3">
+        <div class="left-sidebar-menu">
+          <a href="login.php" class="logo d-block">
+            <picture>
+              <img
+                src="assets/images/logo-2x.png"
+                alt=""
+                title=""
+                width="142"
+                height="108"
+              />
+            </picture>
+          </a>
+          <nav class="navbar navbar-expand main-menu">
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button> -->
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="material-symbols-outlined d-block">home</span>
+                    <div class="nav-text">Home</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="manage-region.html"
+                  >
+                    <span class="material-symbols-outlined d-block"
+                      >military_tech</span
+                    >
+                    <div class="nav-text">Home</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="material-symbols-outlined d-block"
+                      >location_on</span
+                    >
+                    <div class="nav-text">Route</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="material-symbols-outlined d-block">hub</span>
+                    <div class="nav-text">Home</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="material-symbols-outlined d-block"
+                      >local_shipping</span
+                    >
+                    <div class="nav-text">Home</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="vehicle_purpose d-block"></span>
+                    <div class="nav-text">Home</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="material-symbols-outlined d-block"
+                      >rv_hookup</span
+                    >
+                    <div class="nav-text">Home</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="material-symbols-outlined d-block">gate</span>
+                    <div class="nav-text">Home</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="material-symbols-outlined d-block"
+                      >person</span
+                    >
+                    <div class="nav-text">Home</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <span class="material-symbols-outlined d-block"
+                      >motion_sensor_active</span
+                    >
+                    <div class="nav-text">
+                      RFID <br />
+                      Reader
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="material-symbols-outlined d-block"
+                      >label_important</span
+                    >
+                    <div class="nav-text">Home</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="material-symbols-outlined d-block"
+                      >description</span
+                    >
+                    <div class="nav-text">Home</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="nav-bottom">
+            <div class="profile">
+              <span class="material-symbols-outlined">account_circle</span>
+            </div>
+            <div class="logout">
+              <span class="material-symbols-outlined">logout</span>
+            </div>
+          </div>
+        </div>
+        <div class="box-wrapper">
+          <div class="top-menu">
+            <div class="navbar-left">
+              <div class="user-details-wrapper">
+                <div class="name-tag">
+                  <span>S</span>
+                </div>
+                <div class="details">
+                  <h5 class="name">XYZ Unit</h5>
+                  <span class="zone">South Zone</span>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar-right">
+              <li class="nav-item search-box">
+                <a href="javascript:void(0)" class="nav-link search-icon">
+                  <span class="material-symbols-outlined">search</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notificationModal"
+                >
+                  <span class="material-symbols-outlined">notifications</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="login.php" class="nav-link">
+                  <span class="material-symbols-outlined">settings</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#chatModal"
+                >
+                  <span class="material-symbols-outlined">help</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <h1 class="main-heading">Manage RFID Reader</h1>
+          </div>
+
+          <div
+            class="d-flex justify-content-between align-items-center page-title-wrapper pt-3"
+          >
+            <div class="input-group serch-box">
+              <span class="input-group-text left-icon">
+                <span class="material-symbols-outlined">search</span>
+              </span>
+              <input
+                type="text"
+                name="empCode"
+                id="empCode"
+                class="form-control"
+                placeholder="Enter your employee code"
+              />
+            </div>
+            <ul class="group-btn d-flex justify-content-between">
+              <li>
+                <a href="javascript:void(0)" class="filter-btn filter-icon">
+                  <span class="material-symbols-outlined">filter_list</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="javascript:void(0)" class="filter-btn-2 add-icon">
+                  <span class="material-symbols-outlined">add</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="">
+            <div class="card comm-card">
+              <div class="card-body p-0">
+                <table class="table table-striped comm-table-striped">
+                  <thead>
+                    <tr>
+                      <th>User ID</th>
+                      <th>RFID Tag ID</th>
+                      <th>Vehicle Number</th>
+                      <th>Assign Date</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="leadListBody">
+                    <tr>
+                      <td class="">01234SZ</td>
+                      <td class="">12334RFID</td>
+                      <td class="">116B 121 376W</td>
+                      <td class="">March 27, 2024</td>
+                      <td class="">
+                        <a href="#" class="edit-link">
+                          <span class="material-symbols-outlined">edit</span>
+                        </a>
+                        <a href="#" class="delete-link">
+                          <span class="material-symbols-outlined">delete</span>
+                        </a>
+                        <a href="#" class="toggle-link">
+                          <span class="material-symbols-outlined"
+                            >toggle_on</span
+                          >
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="table-d-none table-d-lg-block">01234SZ</td>
+                      <td class="user-name">12334RFID</td>
+                      <td class="email">116B 121 376W</td>
+                      <td class="tel">March 27, 2024</td>
+                      <td class="table-d-none table-d-lg-block action-btn">
+                        <a href="#" class="edit-link">
+                          <span class="material-symbols-outlined">edit</span>
+                        </a>
+                        <a href="#" class="delete-link">
+                          <span class="material-symbols-outlined">delete</span>
+                        </a>
+                        <a href="#" class="toggle-link">
+                          <span class="material-symbols-outlined"
+                            >toggle_on</span
+                          >
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="table-d-none table-d-lg-block">01234SZ</td>
+                      <td class="user-name">12334RFID</td>
+                      <td class="email">116B 121 376W</td>
+                      <td class="tel">March 27, 2024</td>
+                      <td class="table-d-none table-d-lg-block action-btn">
+                        <a href="#" class="edit-link">
+                          <span class="material-symbols-outlined">edit</span>
+                        </a>
+                        <a href="#" class="delete-link">
+                          <span class="material-symbols-outlined">delete</span>
+                        </a>
+                        <a href="#" class="toggle-link">
+                          <span class="material-symbols-outlined"
+                            >toggle_on</span
+                          >
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="card comm-card">
+            <div class="card-body">
+              <table class="table table-striped comm-table-striped">
+                <thead>
+                  <tr>
+                    <th>User ID</th>
+                    <th>RFID Tag ID</th>
+                    <th>Vehicle Number</th>
+                    <th>Assign Date</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="leadListBody">
+                  <tr>
+                    <td class="table-d-none table-d-lg-block">314</td>
+                    <td class="user-name">Raj test</td>
+                    <td class="email">rajtest@gmail.com</td>
+                    <td class="tel">3012014520</td>
+
+                    <td class="action-btn">
+                      <a href="#" class="edit-link">
+                        <span class="material-symbols-outlined">edit</span>
+                      </a>
+                      <a href="#" class="delete-link">
+                        <span class="material-symbols-outlined">delete</span>
+                      </a>
+                      <a href="#" class="toggle-link">
+                        <span class="material-symbols-outlined">toggle_on</span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-d-none table-d-lg-block">314</td>
+                    <td class="user-name">Raj test</td>
+                    <td class="email">rajtest@gmail.com</td>
+                    <td class="tel">3012014520</td>
+
+                    <td class="action-btn">
+                      <a href="#" class="edit-link">
+                        <span class="material-symbols-outlined">edit</span>
+                      </a>
+                      <a href="#" class="delete-link">
+                        <span class="material-symbols-outlined">delete</span>
+                      </a>
+                      <a href="#" class="toggle-link">
+                        <span class="material-symbols-outlined">toggle_on</span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-d-none table-d-lg-block">314</td>
+                    <td class="user-name">Raj test</td>
+                    <td class="email">rajtest@gmail.com</td>
+                    <td class="tel">3012014520</td>
+
+                    <td class="action-btn">
+                      <a href="#" class="edit-link">
+                        <span class="material-symbols-outlined">edit</span>
+                      </a>
+                      <a href="#" class="delete-link">
+                        <span class="material-symbols-outlined">delete</span>
+                      </a>
+                      <a href="#" class="toggle-link">
+                        <span class="material-symbols-outlined">toggle_on</span>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="row mt-5 align-items-center">
+            <div class="col-md-6 col-6">
+              <ul class="pagination justify-content-start">
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <span class="material-symbols-outlined arrow"
+                      >arrow_back_ios_new</span
+                    >
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link active" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <span class="material-symbols-outlined arrow"
+                      >arrow_forward_ios</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-6">
+              <div
+                class="d-flex align-items-center justify-content-end page-select-wrapper"
+              >
+                <div class="select-box">
+                  <span>1-6 out of 30</span>
+                </div>
+                <div
+                  class="select-box d-flex align-items-center justify-content-center"
+                >
+                  <span>60 per page</span>
+                  <span class="material-symbols-outlined arrow-down">
+                    expand_more
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-2"></div>
+        <div class="col-12 col-md-10"></div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/style.css?v=1.0.16" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="menu-icon-thumb-bg">
+      <img src="assets/images/phase-3/menu-icon-bg.png" alt="" />
+    </div>
+
+    <section class="phase3-main">
+      <div class="p3-main-banner-section">
+        <nav class="navbar p3-navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="assets/images/phase-3/logo.png"
+                alt="Tictac"
+                title="Tictac"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Registration</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Terms and Conditions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="container-fluid">
+          <div class="row align-items-center p3-main-banner-row">
+            <div class="col-12 col-md-6">
+              <div class="video-box-wrapper">
+                <div class="play-icon" id="bannerPlayIcon">
+                  <img
+                    src="assets/images/phase-3/play_arrow.png"
+                    alt=""
+                    title=""
+                  />
+                </div>
+                <div class="main-video-wrapper">
+                  <video controls poster="">
+                    <source
+                      src="https://www.w3schools.com/html/mov_bbb.mp4"
+                      type="video/mp4"
+                      width="100%"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-12 col-md-6">
+              <img
+                src="assets/images/phase-3/yashraj-mukhate.png"
+                alt=""
+                title=""
+              />
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="p3-registration-form-wrapper">
+        <div class="p3-lightning-wrapper">
+          <img src="assets/images/phase-3/lightning.png" alt="" />
+        </div>
+
+        <div class="container p3-registration-form-container">
+          <div class="row">
+            <div class="col-12">
+              <div class="p3-registration-form-head text-center">
+                Register Here
+              </div>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+              <div class="p3-registration-form">
+                <form
+                  id="tictac-register"
+                  method="post"
+                  enctype="multipart/form-data"
+                  action="phase-3.html"
+                  autocomplete="off"
+                >
+                  <div class="row register-fields-row">
+                    <div class="col-12 mb-3">
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <span class="material-symbols-outlined"
+                            >account_box</span
+                          >
+                        </span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          name="name"
+                          placeholder="Enter Full Name*"
+                          autocomplete="off"
+                          required
+                        />
+                        <span class="error-text"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <span class="material-symbols-outlined">mail</span>
+                        </span>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          class="form-control"
+                          value=""
+                          placeholder="Email Address*"
+                          autocomplete="off"
+                          required
+                        />
+                        <span class="error-text"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <span class="material-symbols-outlined">aod</span>
+                        </span>
+                        <input
+                          type="text"
+                          inputmode="numeric"
+                          name="mobile"
+                          id="mobile"
+                          class="form-control"
+                          aria-describedby="MobileHelp"
+                          autocomplete="off"
+                          placeholder=" Mobile Number*"
+                          pattern="[0-9]+"
+                          value=""
+                          maxlength="10"
+                          oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\.*)\./g, '$1');"
+                          required
+                        />
+                        <span class="error-text"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <span class="material-symbols-outlined"
+                            >metabolism</span
+                          >
+                        </span>
+                        <input
+                          type="text"
+                          inputmode="numeric"
+                          name="age"
+                          id="age"
+                          class="form-control"
+                          aria-describedby="AgeHelp"
+                          autocomplete="off"
+                          placeholder=" Age*"
+                          pattern="[0-9]+"
+                          value=""
+                          maxlength="2"
+                          oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\.*)\./g, '$1');"
+                          required
+                        />
+                        <span class="error-text"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <span class="material-symbols-outlined"
+                            >location_on</span
+                          >
+                        </span>
+                        <select
+                          name="state"
+                          id="state"
+                          class="form-select"
+                          required
+                        >
+                          <option value="">Select State*</option>
+                          <option value="State1">State1</option>
+                          <option value="State2">State2</option>
+                          <option value="State3">State3</option>
+                          <option value="State4">State4</option>
+                        </select>
+                        <span class="error-text"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <span class="material-symbols-outlined"
+                            >location_on</span
+                          >
+                        </span>
+                        <textarea
+                          id="postal"
+                          name="postal"
+                          placeholder="Postal Address*"
+                          class="form-control"
+                          required
+                        ></textarea>
+                        <span class="error-text"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                      <div class="custom-file-upload">
+                        <label for="vfile" class="file-label">
+                          <div class="d-flex align-items-center">
+                            <span class="material-symbols-outlined me-2"
+                              >slideshow</span
+                            >
+                            <span class="file-upload-text" id="fileUploadText"
+                              >Select Video File to Upload*</span
+                            >
+                          </div>
+
+                          <span class="upload-btn">Select File</span>
+                        </label>
+
+                        <input
+                          type="file"
+                          name="vfile"
+                          id="vfile"
+                          class="file-input"
+                          value=""
+                          placeholder=""
+                          autocomplete="off"
+                          required
+                        />
+                        <span class="error-text"></span>
+                      </div>
+                      <p
+                        class="mb-0 mt-2 d-flex align-items-center p3-form-para"
+                      >
+                        <span class="material-symbols-outlined">info</span>The
+                        video should not exceed 10MB and should be in MP4
+                        format.
+                      </p>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <span class="material-symbols-outlined">link</span>
+                        </span>
+                        <input
+                          name="smlink1"
+                          id="smlink1"
+                          type="text"
+                          class="form-control"
+                          value=""
+                          placeholder="Add Facebook Handle Link"
+                          autocomplete="off"
+                        />
+                        <span class="error-text"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <span class="material-symbols-outlined"
+                            >account_box</span
+                          >
+                        </span>
+                        <input
+                          name="smlink2"
+                          id="smlink2"
+                          type="text"
+                          class="form-control input_user"
+                          value=""
+                          placeholder="Add Instagram Handle Link"
+                          autocomplete="off"
+                        />
+                        <span class="error-text"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <span class="material-symbols-outlined"
+                            >account_box</span
+                          >
+                        </span>
+                        <input
+                          name="smlink3"
+                          id="smlink3"
+                          type="text"
+                          class="form-control"
+                          value=""
+                          placeholder="Add Youtube Channel Link"
+                          autocomplete="off"
+                        />
+                        <span class="error-text"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                      <div class="input-group captcha-input-group">
+                        <span class="input-group-text" id="captcha">
+                          <!-- <img
+                  src="https://ssw.theofferclub.in/home/captcha"
+                  id="captchaImage"
+                  alt="Captcha Image"
+                /> -->
+                          12 + 13 =
+                        </span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="captchaAnswer"
+                          maxlength="3"
+                          name="captcha"
+                          value=""
+                          oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\.*)\./g, '$1');"
+                          required
+                          placeholder="Captcha*"
+                        />
+                        <span class="error-text"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                      <div class="form-check">
+                        <input
+                          name="agree"
+                          id="agree"
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          required
+                        />
+                        <label class="form-check-label" for="agree">
+                          I, hereby authorize 4 Minute Mile Marketing Services
+                          Pvt. Ltd. (4MM) to contact me. This authorization will
+                          override my registry on the NCPR. By providing my
+                          contact details I have expressly authorized 4 MIM to
+                          contact me for Jar Pe Car retailer promo in future
+                          through calls /SMS/ E-Mails with regards to their
+                          services.
+                        </label>
+                        <span class="error-text"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 submit-errors-wrapper">
+                      <div class="submit-error">Sample Error Text</div>
+                      <div class="submit-success">Sample Success Text</div>
+                    </div>
+                    <div class="col-12 mb-3">
+                      <div class="p3-register-btn-wrapper text-center">
+                        <button
+                          type="submit"
+                          name="submit"
+                          id="submit"
+                          class="submit-btn"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="prize-volume-wrapper">
+                <div
+                  class="d-flex align-items-center justify-content-between gap-2 gap-md-4"
+                >
+                  <div class="icon">
+                    <img
+                      src="assets/images/phase-3/volume-left-icon.png"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                  <div class="heading-wrapper text-center">
+                    <div class="heading">
+                      We're Turning Up the volume
+                      <br class="d-none d-lg-block" />on prize drop!
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <img
+                      src="assets/images/phase-3/volume-right-icon.png"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p3-prize-section">
+      <div class="p3-prize-gradient-wrapper">
+        <div class="container">
+          <div class="offer-img-wrapper">
+            <div
+              class="d-flex align-items-center justify-content-center gap-3 gap-md-5 flex-wrap flex-sm-nowrap"
+            >
+              <div class="weekly-offer">
+                <img
+                  src="assets/images/phase-3/prize-img1.png"
+                  alt=""
+                  title=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="daily-offer">
+                <img
+                  src="assets/images/phase-3/prize-img2.png"
+                  alt=""
+                  title=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="disclaimer-note-wrapper text-center">
+            <div class="note">
+              <span>*Image for representation purposes only.</span>
+            </div>
+          </div>
+          <div class="stay-tuned-wrapper">
+            <div class="row">
+              <div class="col-12 col-lg-8 offset-lg-2">
+                <fieldset class="box-wrapper">
+                  <legend class="top-badge text-center">
+                    All winners will be announced on our socials!
+                  </legend>
+                  <div class="heading-wrapper">
+                    <div
+                      class="d-flex align-items-center justify-content-center gap-3"
+                    >
+                      <img
+                        src="assets/images/phase-3/stay.png"
+                        alt=""
+                        title=""
+                        class="pt-2"
+                      />
+                      <div class="sub-heading">
+                        <div>tuned.</div>
+                        <div>refreshed.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="social-media-item-list bottom-badge">
+                    <li class="item">
+                      <a href="#" target="_blank">
+                        <img
+                          src="assets/images/phase-3/youtube.png"
+                          alt="Youtube"
+                          title="Youtube"
+                        />
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="#" target="_blank">
+                        <img
+                          src="assets/images/phase-3/instagram.png"
+                          alt="Instagram"
+                          title="Instagram"
+                        />
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="#" target="_blank">
+                        <img
+                          src="assets/images/phase-3/facebook.png"
+                          alt="Facebook"
+                          title="Facebook"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </fieldset>
+                <!-- <div class="card">
+                  <div class="card-body">
+                    <div class="top-badge text-center">
+                      <span>All winners will be announced on our socials!</span>
+                    </div>
+                    <div class="heading-wrapper">
+                      <div class="d-flex align-items-center justify-content-center gap-3">
+                        <img src="assets/images/phase-3/stay.png" alt="" title="">
+                        <div class="sub-heading"><div>tuned.</div><div>refreshed.</div></div>
+                      </div>
+                    </div>
+                    <ul class="social-media-item-list bottom-badge">
+                      <li class="item">
+                        <a href="#" target="_blank">
+                          <img src="assets/images/phase-3/youtube.png" alt="Youtube" title="Youtube">
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" target="_blank">
+                          <img src="assets/images/phase-3/instagram.png" alt="Instagram" title="Instagram">
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" target="_blank">
+                          <img src="assets/images/phase-3/facebook.png" alt="Facebook" title="Facebook">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Indiaspend Contact Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-light border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="Indiaspend" title="Indiaspend" class="logo img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-us py-4 py-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <form action="" class="contact-form" id="contact-form">
+                                <div class="row">
+                                    <div class="col-sm-6 col-12">
+                                        <input type="text" class="form-control mb-3" id="name" name="name" tabindex="1"
+                                            placeholder="Name">
+                                    </div>
+                                    <div class="col-sm-6 col-12">
+                                        <input type="email" class="form-control mb-3" id="email" name="email"
+                                            tabindex="2" placeholder="Email">
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control mb-3" id="mobile" name="mobile" tabindex="3"
+                                    placeholder="Mobile Numer">
+                                <textarea id="message" name="message" class="form-control mb-3" tabindex="4" rows="5"
+                                    placeholder="Message"></textarea>
+                                <input type="submit" tabindex="5" value="Submit" class="btn btn-primary btn-submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="content">
+                                <h1 class="mb-4">Contact Us</h1>
+                                <p class="mb-3"><b>Our team of analysts would love to hear from you.</b></p>
+                                <p class="mb-3">Mail us at <a
+                                        href="mailto:respond@indiaspend.org">respond@indiaspend.org</a> or
+                                    the address
+                                    below if you wish to contribute (knowledge, insights et al) or join our team or just
+                                    tell us
+                                    how we can do better.</p>
+                                <p class="mb-4"><b>Get in Touch</b></p>
+                                <p class="mb-4"><span class="title-badge"><b>General:</b></span> <a
+                                        href="mailto:respond@indiaspend.org">respond@indiaspend.org</a></p>
+                                <p class="mb-4"><span class="title-badge"><b>Careers:</b></span> <a
+                                        href="mailto:jobs@indiaspend.org">jobs@indiaspend.org</a></p>
+                                <p class="mb-4"><span class="title-badge"><b>Letters to the Editor:</b></span> <a
+                                        href="mailto:editor@indiaspend.org">editor@indiaspend.org</a></p>
+                                <p><span class="title-badge"><b>Phone Number:</b></span> <a
+                                        href="tel:+912266505867">+912266505867</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-3 bg-light border-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-4 col-sm-5 col-12">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="Indiaspend" title="Indiaspend" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-8 offset-md-0 offset-sm-1 col-sm-6 col-12">
+                    <p class="copyright-text">Copyright &copy; 2022 Indiaspend. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#contact-form").validate({
+                rules:
+                {
+                    name: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    mobile: {
+                        required: true
+                    },
+                    message: {
+                        required: true
+                    }
+                },
+                messages:
+                {
+                    name: {
+                        required: "Please provide full name"
+                    },
+                    email: {
+                        required: "Please provide email"
+                    },
+                    mobile: {
+                        required: "Please provide your mobile no"
+                    },
+                    message: {
+                        required: "Please provide message"
+                    }
+                }
+
+
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

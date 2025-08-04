@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.min.css" />
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <title>Dashboard</title>
+  </head>
+
+  <body>
+    <section class="container-fluid py-4">
+      <div class="d-flex gap-3 navbar-expand-lg">
+        <div
+          class="left-sidebar-menu navbar-collapse collapse"
+          id="navbarToggler"
+        >
+          <button
+            class="btn navbar-close navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-expanded="true"
+          >
+            <span class="material-symbols-outlined">expand_more</span>
+          </button>
+          <a href="dashboard.html" class="logo d-block">
+            <picture>
+              <img
+                src="assets/images/logo-2x.png"
+                alt=""
+                title=""
+                width="142"
+                height="108"
+              />
+            </picture>
+          </a>
+          <nav class="navbar main-menu">
+            <ul class="navbar-nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <span class="material-symbols-outlined d-block">home</span>
+                  <div class="nav-text">Home</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span class="material-symbols-outlined d-block"
+                    >military_tech</span
+                  >
+                  <div class="nav-text">Home</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span class="material-symbols-outlined d-block"
+                    >location_on</span
+                  >
+                  <div class="nav-text">Home</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span class="material-symbols-outlined d-block">hub</span>
+                  <div class="nav-text">Home</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span class="material-symbols-outlined d-block"
+                    >local_shipping</span
+                  >
+                  <div class="nav-text">Home</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span class="vehicle_purpose d-block"></span>
+                  <div class="nav-text">Home</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span class="material-symbols-outlined d-block"
+                    >rv_hookup</span
+                  >
+                  <div class="nav-text">Home</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span class="material-symbols-outlined d-block">gate</span>
+                  <div class="nav-text">Home</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span class="material-symbols-outlined d-block">person</span>
+                  <div class="nav-text">Home</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span class="material-symbols-outlined d-block"
+                    >motion_sensor_active</span
+                  >
+                  <div class="nav-text">Home</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span class="material-symbols-outlined d-block"
+                    >label_important</span
+                  >
+                  <div class="nav-text">Home</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span class="material-symbols-outlined d-block"
+                    >description</span
+                  >
+                  <div class="nav-text">Home</div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="nav-bottom">
+            <div class="profile">
+              <span class="material-symbols-outlined">account_circle</span>
+            </div>
+            <div class="logout">
+              <span class="material-symbols-outlined">logout</span>
+            </div>
+          </div>
+        </div>
+        <div class="box-wrapper">
+          <div class="top-menu">
+            <div class="navbar-left">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggler"
+                aria-expanded="true"
+              >
+                <span class="navbar-toggler-icon close menu-icon">
+                  <span class="material-symbols-outlined">menu</span>
+                </span>
+              </button>
+              <div class="user-details-wrapper">
+                <div class="name-tag">
+                  <span>S</span>
+                </div>
+                <div class="details">
+                  <h5 class="name">XYZ Unit</h5>
+                  <span class="zone">South Zone</span>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar-right">
+              <li class="nav-item search-box">
+                <a href="javascript:void(0)" class="nav-link search-icon">
+                  <span class="material-symbols-outlined">search</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notificationModal"
+                >
+                  <span class="material-symbols-outlined">notifications</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                  <span class="material-symbols-outlined">settings</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#chatModal"
+                >
+                  <span class="material-symbols-outlined">help</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center page-title-wrapper"
+          >
+            <h1 class="main-heading">Dashboard</h1>
+            <div class="d-flex page-date-details">
+              <input id="startDate" class="form-control" type="date" />
+            </div>
+          </div>
+          <!-- <div class="dashboard-slider">
+            <div id="owl-carousel" class="owl-carousel owl-theme">
+              <div class="status-wrap">
+                <div class="card dashboard-card-type-1">
+                  <div class="card-header">
+                    <h4 class="title">Vehicle Status</h4>
+                  </div>
+                  <div class="row pt-3 px-3 pb-4">
+                    <div class="col-12 col-xl-8">
+                      <div class="card-wrapper">
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">10</h3>
+                          <p class="card-detail-title">Vehicles in Premises</p>
+                        </div>
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">10</h3>
+                          <p class="card-detail-title">
+                            Vehicles out from Premises
+                          </p>
+                        </div>
+                        <div class="card-list-detail card-border">
+                          <h3 class="card-detail-count">25</h3>
+                          <p class="card-detail-title">Total Vehicles</p>
+                        </div>
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">5</h3>
+                          <p class="card-detail-title">Active Vehicles</p>
+                        </div>
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">20</h3>
+                          <p class="card-detail-title">Inactive Vehicles</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-12 col-xl-4 position-relative d-none d-xl-block"
+                    >
+                      <img
+                        src="assets/images/status-image-1.png"
+                        alt=""
+                        class="vehicle-status-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="card dashboard-card-type-1">
+                  <div class="card-header">
+                    <h4 class="title">RFID Tag Status</h4>
+                  </div>
+                  <div class="row pt-3 px-3 pb-4">
+                    <div class="col-12 col-xl-8">
+                      <h5 class="card-title">RFID Tags</h5>
+                      <div class="card-wrapper mb-4">
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">10</h3>
+                          <p class="card-detail-title">Reader Online</p>
+                        </div>
+                        <div class="card-list-detail none-border">
+                          <h3 class="card-detail-count">10</h3>
+                          <p class="card-detail-title">Reader Offline</p>
+                        </div>
+                      </div>
+
+                      <h5 class="card-title">RFID Tags</h5>
+                      <div class="card-wrapper">
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">10</h3>
+                          <p class="card-detail-title">Active Tags</p>
+                        </div>
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">10</h3>
+                          <p class="card-detail-title">Inactive Tags</p>
+                        </div>
+                        <div class="card-list-detail none-border">
+                          <h3 class="card-detail-count">25</h3>
+                          <p class="card-detail-title">Tags</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-12 col-xl-4 position-relative d-none d-xl-block"
+                    >
+                      <img
+                        src="assets/images/status-image-2.png"
+                        alt=""
+                        class="rfid-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="card dashboard-card-type-1">
+                  <div class="card-header">
+                    <h4 class="title">Route Overview</h4>
+                  </div>
+                  <div class="row pt-3 px-3 pb-4">
+                    <div class="col-12 col-xl-8">
+                      <div class="card-wrapper mb-4">
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">50</h3>
+                          <p class="card-detail-title">Active Routes</p>
+                        </div>
+                        <div class="card-list-detail none-border">
+                          <h3 class="card-detail-count">10</h3>
+                          <p class="card-detail-title">Routes Allocated</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-12 col-xl-4 position-relative d-none d-xl-block"
+                    >
+                      <img
+                        src="assets/images/status-image-3.png"
+                        alt=""
+                        class="overview-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="card dashboard-card-type-1">
+                  <div class="card-header">
+                    <h4 class="title">Stats</h4>
+                  </div>
+                  <div class="row pt-3 px-3 pb-4">
+                    <div class="col-12 col-xl-8">
+                      <div class="card-wrapper">
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">6</h3>
+                          <p class="card-detail-title">Entry Gates</p>
+                        </div>
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">10</h3>
+                          <p class="card-detail-title">Exit Gates</p>
+                        </div>
+                        <div class="card-list-detail none-border">
+                          <h3 class="card-detail-count">20</h3>
+                          <p class="card-detail-title">Drivers</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-12 col-xl-4 position-relative d-none d-xl-block"
+                    >
+                      <img
+                        src="assets/images/status-image-4.png"
+                        alt=""
+                        class="status-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="status-wrap">
+                <div class="card dashboard-card-type-1">
+                  <div class="card-header">
+                    <h4 class="title">Convoy Movement</h4>
+                  </div>
+                  <div class="row pt-3 px-3 pb-4">
+                    <div class="col-12 col-xl-8">
+                      <div class="card-wrapper">
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">6</h3>
+                          <p class="card-detail-title">Number Of Movement</p>
+                        </div>
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">10</h3>
+                          <p class="card-detail-title">Movements Started</p>
+                        </div>
+                        <div class="card-list-detail none-border">
+                          <h3 class="card-detail-count">20</h3>
+                          <p class="card-detail-title">Movements Completed</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-12 col-xl-4 position-relative d-none d-xl-block"
+                    >
+                      <img
+                        src="assets/images/status-image-5.png"
+                        alt=""
+                        class="convoy-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="card dashboard-card-type-1">
+                  <div class="card-header">
+                    <h4 class="title">User Data</h4>
+                  </div>
+                  <div class="row pt-3 px-3 pb-4">
+                    <div class="col-12 col-xl-8">
+                      <div class="card-wrapper">
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">6</h3>
+                          <p class="card-detail-title">Number Of Movement</p>
+                        </div>
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">10</h3>
+                          <p class="card-detail-title">Movements Started</p>
+                        </div>
+                        <div class="card-list-detail none-border card-border">
+                          <h3 class="card-detail-count">20</h3>
+                          <p class="card-detail-title">
+                            Movements Completed bc
+                          </p>
+                        </div>
+                        <div class="card-list-detail none-border">
+                          <h3 class="card-detail-count">20</h3>
+                          <p class="card-detail-title">Movements Completed</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-12 col-xl-4 position-relative d-none d-xl-block"
+                    >
+                      <img
+                        src="assets/images/status-image-6.png"
+                        alt=""
+                        class="user-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="card dashboard-card-type-1">
+                  <div class="card-header">
+                    <h4 class="title">MTO TCP</h4>
+                  </div>
+                  <div class="row pt-3 px-3 pb-4">
+                    <div class="col-12 col-xl-8">
+                      <div class="card-wrapper">
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">6</h3>
+                          <p class="card-detail-title">Entry Gates</p>
+                        </div>
+                        <div class="card-list-detail">
+                          <h3 class="card-detail-count">10</h3>
+                          <p class="card-detail-title">Exit Gates</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-12 col-xl-4 position-relative d-none d-xl-block"
+                    >
+                      <img
+                        src="assets/images/status-image-7.png"
+                        alt=""
+                        class="mto-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div class="">
+            <div class="status-wrap">
+              <div class="card dashboard-card-type-1">
+                <div class="card-header">
+                  <h4 class="title">Vehicle Status</h4>
+                </div>
+                <div class="row pt-3 px-3 pb-4">
+                  <div class="col-12 col-xl-8">
+                    <div class="card-wrapper">
+                      <div class="card-list-detail">
+                        <h3 class="card-detail-count">10</h3>
+                        <p class="card-detail-title">Vehicles in Premises</p>
+                      </div>
+                      <div class="card-list-detail">
+                        <h3 class="card-detail-count">10</h3>
+                        <p class="card-detail-title">
+                          Vehicles out from Premises
+                        </p>
+                      </div>
+                      <div class="card-list-detail card-border">
+                        <h3 class="card-detail-count">25</h3>
+                        <p class="card-detail-title">Total Vehicles</p>
+                      </div>
+                      <div class="card-list-detail">
+                        <h3 class="card-detail-count">5</h3>
+                        <p class="card-detail-title">Active Vehicles</p>
+                      </div>
+                      <div class="card-list-detail">
+                        <h3 class="card-detail-count">20</h3>
+                        <p class="card-detail-title">Inactive Vehicles</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 col-xl-4 position-relative d-none d-xl-block"
+                  >
+                    <img
+                      src="assets/images/status-image-1.png"
+                      alt=""
+                      class="vehicle-status-image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card dashboard-card-type-1">
+                <div class="card-header">
+                  <h4 class="title">RFID Tag Status</h4>
+                </div>
+                <div class="row pt-3 px-3 pb-4">
+                  <div class="col-12 col-xl-8">
+                    <h5 class="card-title">RFID Tags</h5>
+                    <div class="card-wrapper mb-4">
+                      <div class="card-list-detail">
+                        <h3 class="card-detail-count">10</h3>
+                        <p class="card-detail-title">Reader Online</p>
+                      </div>
+                      <div class="card-list-detail none-border">
+                        <h3 class="card-detail-count">10</h3>
+                        <p class="card-detail-title">Reader Offline</p>
+                      </div>
+                    </div>
+
+                    <h5 class="card-title">RFID Tags</h5>
+                    <div class="card-wrapper">
+                      <div class="card-list-detail">
+                        <h3 class="card-detail-count">10</h3>
+                        <p class="card-detail-title">Active Tags</p>
+                      </div>
+                      <div class="card-list-detail">
+                        <h3 class="card-detail-count">10</h3>
+                        <p class="card-detail-title">Inactive Tags</p>
+                      </div>
+                      <div class="card-list-detail none-border">
+                        <h3 class="card-detail-count">25</h3>
+                        <p class="card-detail-title">Tags</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 col-xl-4 position-relative d-none d-xl-block"
+                  >
+                    <img
+                      src="assets/images/status-image-2.png"
+                      alt=""
+                      class="rfid-image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card dashboard-card-type-1">
+                <div class="card-header">
+                  <h4 class="title">Route Overview</h4>
+                </div>
+                <div class="row pt-3 px-3 pb-4">
+                  <div class="col-12 col-xl-8">
+                    <div class="card-wrapper mb-4">
+                      <div class="card-list-detail">
+                        <h3 class="card-detail-count">50</h3>
+                        <p class="card-detail-title">Active Routes</p>
+                      </div>
+                      <div class="card-list-detail none-border">
+                        <h3 class="card-detail-count">10</h3>
+                        <p class="card-detail-title">Routes Allocated</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 col-xl-4 position-relative d-none d-xl-block"
+                  >
+                    <img
+                      src="assets/images/status-image-3.png"
+                      alt=""
+                      class="overview-image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card dashboard-card-type-1">
+                <div class="card-header">
+                  <h4 class="title">Stats</h4>
+                </div>
+                <div class="row pt-3 px-3 pb-4">
+                  <div class="col-12 col-xl-8">
+                    <div class="card-wrapper">
+                      <div class="card-list-detail">
+                        <h3 class="card-detail-count">6</h3>
+                        <p class="card-detail-title">Entry Gates</p>
+                      </div>
+                      <div class="card-list-detail">
+                        <h3 class="card-detail-count">10</h3>
+                        <p class="card-detail-title">Exit Gates</p>
+                      </div>
+                      <div class="card-list-detail none-border">
+                        <h3 class="card-detail-count">20</h3>
+                        <p class="card-detail-title">Drivers</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 col-xl-4 position-relative d-none d-xl-block"
+                  >
+                    <img
+                      src="assets/images/status-image-4.png"
+                      alt=""
+                      class="status-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex bd-highlight align-items-center">
+              <div class="line"></div>
+              <div class="flex-shrink-1">
+                <ul class="arrow-wrapper">
+                  <li>
+                    <a
+                      href="dashboard.html"
+                      class="nav-link search-icon active"
+                    >
+                      <span class="material-symbols-outlined active">
+                        arrow_back
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard.html" class="nav-link search-icon">
+                      <span class="material-symbols-outlined">
+                        arrow_forward
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script
+      type="text/javascript"
+      src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+    <script>
+      $("#owl-carousel").owlCarousel({
+        loop: true,
+        // margin: 30,
+        dots: false,
+        nav: true,
+        items: 1,
+      });
+    </script>
+  </body>
+</html>

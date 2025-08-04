@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Live 101</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/slick/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="fixed-dark-box"></div>
+    <!-- start top section -->
+    <section class="top-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap flex-md-nowrap">
+            <div class="live-text">Live Entertaining Xperience</div>
+            <div class="topbar-content-wrapper d-flex justify-content-between">
+              <div class="top-cities d-flex align-items-center">
+                <div class="main-icon-wrapper filled-icon">
+                  <span class="material-symbols-outlined"> location_on </span>
+                </div>
+
+                <select name="main-city" id="mainCity">
+                  <option value="all">All Cities</option>
+                  <option value="mumbai">Mumbai</option>
+                  <option value="bengaluru">Bengaluru</option>
+                  <option value="kolkata">Kolkata</option>
+                </select>
+              </div>
+              <div class="top-number-security d-flex">
+                <div class="d-inline-block me-2">
+                  <a
+                    href="mailto:info@live101.in"
+                    class="d-flex align-items-center"
+                  >
+                    <div class="main-icon-wrapper filled-icon circle-icon">
+                      <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <span class="d-none d-md-inline-block"
+                      >info@live101.in</span
+                    >
+                  </a>
+                </div>
+                <div class="d-inline-block me-2">
+                  <a href="tel:+919137134718" class="d-flex align-items-center"
+                    ><div class="main-icon-wrapper filled-icon circle-icon">
+                      <span class="material-symbols-outlined">call</span>
+                    </div>
+                    <span class="d-none d-md-inline-block">91371 34718</span></a
+                  >
+                </div>
+                <div class="d-inline-block">
+                  <div class="d-flex align-items-center">
+                    <div class="main-icon-wrapper filled-icon">
+                      <span class="material-symbols-outlined"
+                        >verified_user</span
+                      >
+                    </div>
+                    <span class="d-none d-md-inline-block"
+                      >Safe | Sound Secure</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end top section -->
+
+    <nav class="main-menu navbar navbar-expand-lg sticky-top py-0">
+      <div class="container">
+        <a class="navbar-brand py-0" href="#"
+          ><img src="images/main-logo.png" width="80" height="80" alt=""
+        /></a>
+        <div class="d-lg-none d-flex align-items-center">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn main-btn me-2" >
+            Instant Booking
+          </a>
+          <a href="#" class="main-icon-wrapper filled-icon search m-0" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <span class="material-symbols-outlined">search</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/main-logo.png" width="60" height="60" alt=""/></h5>
+            <div class="offcanvas-wrapper d-flex align-items-center">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn main-btn d-lg-none me-2">
+                Instant Booking
+              </a>
+              <a href="#" class="main-icon-wrapper filled-icon search m-0" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <span class="material-symbols-outlined">search</span>
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-lg-grow-1 pe-lg-3">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category
+                </a>
+                <div class="mega-menu">
+                  <ul class="dropdown-menu">
+                    <li>
+                      <div class="title">Category</div>
+                      <ul>
+                        <li>
+                          <a class="dropdown-item">Singer</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">DJs</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Music Bands</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Musicians</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Anchor/Emcee</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Dance Group</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Celebrities</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="title">Quick Links</div>
+                      <ul>
+                        <li>
+                          <a class="dropdown-item">Singer In Mumbai</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Artist In Chennai</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Artist In Bangalore </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Musicians In Mumbai</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Musicians In Punjab</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Dance Group For Wedding</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Quick Links</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav d-none d-lg-flex justify-content-end align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn main-btn me-3">
+                Instant Booking
+              </a>
+              <a href="#" class="main-icon-wrapper filled-icon search m-0" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <span class="material-symbols-outlined">search</span>
+              </a>
+            </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner section -->
+    <section class="comm-section banner-section contact-us pt-0">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-5 p-0">
+            <div class="left-wrapper position-relative">
+              <div class="video-wrapper">
+                <div class="video-overlay"></div>
+                <video autoplay muted preload playsinline loop>
+                  <source src="images/live101-homepage-banner-video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="heading-search-wrapper">
+                <div class="banner-heading px-2">
+                  <h1 class="banner-heading-head">Contact Us</h1>
+                </div>
+                <div class="banner-sub-heading px-2">Lorem ipsum dolor sit amet consectetur. Ac id ipsum lacus semper volutpat mauris augue.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="banner-form-wrapper py-4 pb-0 py-lg-0 px-lg-5">
+              <form action="" class="contactUsForm" id="contactUsForm">
+                <div class="row g-4">
+                  <div class="col-12 col-md-6">
+                    <label for="fname" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="fname" id="fname">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="city" class="form-label">City</label>
+                    <select class="form-select" name="city" id="city">
+                      <option value="">Select City</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="mobile" class="form-label">Mobile Number</label>
+                    <input type="text" class="form-control" name="mobile" id="mobile">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                  </div>
+                  <div class="col-12">
+                    <label for="msg">Message</label>
+                    <textarea class="form-control" placeholder="Your Message" name="msg" id="msg" rows="4"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <input type="submit" name="submit" id="submit" value="Submit" class="btn main-btn">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get In Touch Section -->
+    <section class="comm-section getIntouch-section bgLightGrey">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading-wrapper">
+              <div>
+                <h2 class="section-heading">Get In Touch</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="help-desk-wrapper">
+              <div class="item">
+                <div class="enquiry-help d-flex align-items-center">
+                  <a href="tel:+919821009569" class="main-icon-wrapper filled-icon me-3">
+                    <span class="material-symbols-outlined">call</span>
+                  </a>
+                  <div class="content-wrapper">
+                    <div class="title">Inquiry helpline</div>
+                    <div class="number">
+                      <a href="tel:+919821009569">98210 09569</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="item">
+                <div class="enquiry-help d-flex align-items-center">
+                  <a href="tel:+9319145394" class="main-icon-wrapper filled-icon me-3">
+                    <span class="material-symbols-outlined">support_agent</span>
+                  </a>
+                  <div class="content-wrapper">
+                    <div class="title">Artist helpline</div>
+                    <div class="number">
+                      <a href="tel:+9319145394">93191 45394</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="item">
+                <div class="enquiry-help d-flex align-items-center">
+                  <a href="tel:+info@live101.in" class="main-icon-wrapper filled-icon me-3">
+                    <span class="material-symbols-outlined">mail</span>
+                  </a>
+                  <div class="content-wrapper">
+                    <div class="title">Artist helpline</div>
+                    <div class="number">
+                      <a href="tel:+info@live101.in">info@live101.in</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="item">
+                <div class="follow-us">
+                  <div class="content-wrapper">
+                    <div class="title">Follow Us</div>
+                  </div>
+                  <ul class="list-inline social-media-list mb-0">
+                    <li class="list-inline-item">
+                      <a href="https://instagram.com/live101.in?igshid=YmMyMTA2M2Y=" target="_blank">
+                        <div class="main-img-icon-wrapper">
+                          <img src="images/social/insta-icon-red.png" alt="Instagram Icon">
+                        </div>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://www.facebook.com/profile.php?id=100094144990517" target="_blank">
+                        <div class="main-img-icon-wrapper">
+                          <img src="images/social/fb-icon-red.png" alt="">
+                        </div>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://www.linkedin.com/company/14456011/admin/feed/posts/" target="_blank">
+                        <div class="main-img-icon-wrapper">
+                          <img src="images/social/linked-in-icon-red.png" alt="">
+                        </div>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://youtube.com/@live101in/" target="_blank">
+                        <div class="main-img-icon-wrapper">
+                          <img src="images/social/yt-icon-red.png" alt="">
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Make a Booking List Section -->
+    <section class="comm-section make-booking">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6">
+            <div class="section-heading-wrapper mb-lg-0">
+              <div>
+                <h2 class="section-heading">Do you want to make a booking?</h2>
+                <div class="section-sub-text">Fill out the form, and we'll get back to you as soon as possible. our team will help you to find the best live artist for your event or occasion</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 offset-lg-1 col-lg-5">
+            <div class="contact-card-wrapper">
+              <div class="card-list">
+                <a href="#" class="card d-flex align-items-center flex-row justify-content-between">
+                  <div class="details d-flex align-items-center">
+                    <div class="img-wrpper me-3">
+                      <img src="images/contact-call.png" class="img-fluid rounded-start" alt="Call" title="Call">
+                    </div>
+                    <div class="title">Call</div>
+                  </div>
+                  <div class="arrow me-3">
+                    <div class="main-icon-wrapper filled-icon">
+                      <span class="material-symbols-outlined">
+                        arrow_back_ios_new
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="card d-flex align-items-center flex-row justify-content-between">
+                  <div class="details d-flex align-items-center">
+                    <div class="img-wrpper me-3">
+                      <img src="images/conatct-whatsapp.png" class="img-fluid rounded-start" alt="WhatsApp" title="WhatsApp">
+                    </div>
+                    <div class="title">WhatsApp</div>
+                  </div>
+                  <div class="arrow me-3">
+                    <div class="main-icon-wrapper filled-icon">
+                      <span class="material-symbols-outlined">
+                        arrow_back_ios_new
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="card d-flex align-items-center flex-row justify-content-between">
+                  <div class="details d-flex align-items-center">
+                    <div class="img-wrpper me-3">
+                      <img src="images/conatct-enquiry.png" class="img-fluid rounded-start" alt="Enquiry Form" title="Enquiry Form">
+                    </div>
+                    <div class="title">Enquiry Form</div>
+                  </div>
+                  <div class="arrow me-3">
+                    <div class="main-icon-wrapper filled-icon">
+                      <span class="material-symbols-outlined">
+                        arrow_back_ios_new
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="comm-section pb-0">
+      <div class="container">
+        <div class="row btm-border-lt pb-3 pb-md-4">
+          <!-- Company Info -->
+          <div class="col-12 col-md-6 col-lg-3 right-border-lt footer-info-col">
+            <img
+              src="images/main-logo.png"
+              class="footer-logo mb-2"
+              width="64"
+              height="64"
+              alt="Live101 Logo"
+            />
+            <p>
+              Live101 offers a platform for booking verified artists for any
+              event or occasion, providing affordable options that are
+              budget-friendly without compromising on quality.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-12 col-md-6 col-lg-5 pt-3 pt-sm-0">
+            <div class="row">
+              <div class="col-12">
+                <div class="footer-head foot-extra-padding">Quick Links</div>
+              </div>
+              <div class="col-6">
+                <ul class="list-unstyled foot-extra-padding">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Why Live 101</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Our Client</a></li>
+                  <li><a href="#">Blogs</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="list-unstyled">
+                  <li><a href="#">Singer In Mumbai</a></li>
+                  <li><a href="#">Artist In Chennai</a></li>
+                  <li><a href="#">Artist In Bangalore</a></li>
+                  <li><a href="#">Musicians In Mumbai</a></li>
+                  <li><a href="#">Musicians In Punjab</a></li>
+                  <li><a href="#">Dance Group For Wedding</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-12 col-lg-4 mt-4 mt-lg-0 foot-main-links-col"
+          >
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-7">
+                <div class="footer-head">Entertainment</div>
+                <ul class="list-unstyled">
+                  <li><a href="#">Singer</a></li>
+                  <li><a href="#">DJs</a></li>
+                  <li><a href="#">Music Bands</a></li>
+                  <li><a href="#">Musicians</a></li>
+                  <li><a href="#">Anchor / Emcee</a></li>
+                  <li><a href="#">Dance Group</a></li>
+                  <li><a href="#">Celebrities</a></li>
+                  <li><a href="#">Comedian</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 col-lg-5 foot-mobile-border">
+                <div class="footer-head">Events</div>
+                <ul class="list-unstyled">
+                  <li><a href="#">Private Events</a></li>
+                  <li><a href="#">Wedding</a></li>
+                  <li><a href="#">House Party</a></li>
+                  <li><a href="#">Corporate Events</a></li>
+                  <li><a href="#">Café & Lounges</a></li>
+                  <li><a href="#">Social events</a></li>
+                  <li><a href="#">Hotel & Villas</a></li>
+                  <li><a href="#">Virtual Events</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of row -->
+
+        <!-- Contact Info & Social Links -->
+        <div class="row mt-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="footer-head">Contact</div>
+            <ul class="list-unstyled footer-contact-info">
+              <li>
+                <a href="tel:+91371 34718" class="d-flex align-items-center">
+                  <div class="main-icon-wrapper filled-icon circle-icon">
+                    <span class="material-symbols-outlined"> call </span>
+                  </div>
+                  <span>91371 34718</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@live101.in"
+                  class="d-flex align-items-center"
+                >
+                  <div class="main-icon-wrapper filled-icon circle-icon">
+                    <span class="material-symbols-outlined"> mail </span>
+                  </div>
+                  <span>info@live101.in</span>
+                </a>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="main-icon-wrapper filled-icon circle-icon">
+                  <span class="material-symbols-outlined"> location_on </span>
+                </div>
+                Mumbai, India
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="main-icon-wrapper filled-icon circle-icon">
+                  <span class="material-symbols-outlined"> location_on </span>
+                </div>
+                Delhi, India
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 text-left text-md-center mt-4 mt-md-0"
+          >
+            <div class="footer-head">Follow Us On</div>
+            <ul class="list-inline footer-social-links">
+              <li class="list-inline-item">
+                <a
+                  href="https://instagram.com/live101.in?igshid=YmMyMTA2M2Y="
+                  target="_blank"
+                >
+                  <div class="main-img-icon-wrapper">
+                    <img
+                      src="images/social/insta-icon.png"
+                      alt="Instagram Icon"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100094144990517"
+                  target="_blank"
+                >
+                  <div class="main-img-icon-wrapper">
+                    <img src="images/social/fb-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.linkedin.com/company/14456011/admin/feed/posts/"
+                  target="_blank"
+                >
+                  <div class="main-img-icon-wrapper">
+                    <img src="images/social/linked-in-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://youtube.com/@live101in/" target="_blank">
+                  <div class="main-img-icon-wrapper">
+                    <img src="images/social/yt-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+            <div class="footer-download-apps-wrapper">
+              <div class="footer-head">Get The Live 101 App</div>
+              <a href="#" class="me-2"
+                ><img
+                  src="images/appstore.png"
+                  alt="App Store"
+                  class="mb-2 mb-xl-0"
+              /></a>
+              <a href="#"
+                ><img src="images/playstore.png" alt="Google Play"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="footer-bottom top-border-lt pt-3 flex-wrap flex-md-nowrap"
+            >
+              <p class="mb-0 order-1 order-md-0">
+                &copy; 2024. All Rights Reserved by Live 101
+              </p>
+              <ul class="list-inline order-0 order-md-1 mb-2 mb-md-0">
+                <li class="list-inline-item">
+                  <a href="#">Terms & Condition</a>
+                </li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#">Refund Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Search modal start -->
+    <div class="modal fade enquiry-modal our-team" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="searchMusicForm text-center">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <div class="main-icon-wrapper filled-icon">
+                    <span class="material-symbols-outlined">search</span>
+                  </div>
+                </span>
+                <input type="text" class="form-control" placeholder="Search for your Artist, Music...">
+              </div>
+              <input type="submit" value="Submit" class="btn main-btn mt-4">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search modal end -->
+
+
+    <!-- Enquiry modal start -->
+    <div
+      class="modal fade enquiry-modal"
+      id="enquiryModal"
+      tabindex="-1"
+      aria-labelledby="enquiryModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form id="enquiryForm">
+            <input type="hidden" name="artistCategory" id="artistCategory" />
+            <div class="modal-body pb-0">
+              <h2 class="modal-title mb-4" id="enquiryModalLabel">
+                Select Artist Categories
+              </h2>
+              <div class="selected-category d-flex align-items-center">
+                Selected category <span class="cat-name">Singer</span>
+              </div>
+              <div class="artist-category-card-list d-flex flex-wrap gap-3">
+                <div class="item">
+                  <div class="card" data-value="singer" data-label="SINGER">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt="Singer"
+                        title="Singer"
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Singer</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div
+                    class="card"
+                    data-value="music_band"
+                    data-label="MUSIC BAND"
+                  >
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_music_band.png"
+                        alt="Music Band"
+                        title="Music Band"
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Music Band</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="d_j" data-label="DJ">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt="DJ"
+                        title="DJ"
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">DJ</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="musician" data-label="MUSICIAN">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_music_band.png"
+                        alt="Stand-up Comedian"
+                        title="Stand-up Comedian"
+                      />
+                    </div>
+                    <div class="category-name">Stand-up Comedian</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="comedian" data-label="COMEDIAN">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt="Musician"
+                        title="Musician"
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Musician</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="dancer" data-label="DANCER">
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="" />
+                    </div>
+                    <div class="category-name">Music Band</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="emcee" data-label="EMCEE">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt=""
+                        title=""
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Singer</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div
+                    class="card"
+                    data-value="celebrity"
+                    data-label="CELEBRITY"
+                  >
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="" />
+                    </div>
+                    <div class="category-name">Music Band</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div
+                    class="card"
+                    data-value="variety_artist"
+                    data-label="VARIETY ARTIST"
+                  >
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt=""
+                        title=""
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Singer</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="speaker" data-label="SPEAKER">
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="" />
+                    </div>
+                    <div class="category-name">Music Band</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card" data-value="magician" data-label="MAGICIAN">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt=""
+                        title=""
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Singer</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div
+                    class="card"
+                    data-value="devotional_singer"
+                    data-label="DEVOTIONAL SINGER"
+                  >
+                    <div class="img-wrapper">
+                      <img src="images/cat_music_band.png" alt="" />
+                    </div>
+                    <div class="category-name">Music Band</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div
+                    class="card"
+                    data-value="Illusionist"
+                    data-label="ILLUSIONIST"
+                  >
+                    <div class="img-wrapper">
+                      <img
+                        src="images/cat_singer.png"
+                        alt=""
+                        title=""
+                        class=""
+                      />
+                    </div>
+                    <div class="category-name">Singer</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="enquiry-form-wrapper mt-4">
+                <div class="row g-3">
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Enter Name Here"
+                    />
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="mobile" class="form-label">Mobile Number</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="mobile"
+                      name="mobile"
+                      placeholder="Enter Mobile Number"
+                    />
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Enter Email Here"
+                    />
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="genre" class="form-label">Genre</label>
+                    <select class="form-select" id="genre" name="genre">
+                      <option value="">Select Genre</option>
+                      <option value="Bollywood">Bollywood</option>
+                      <option value="Western">Western</option>
+                      <option value="Bhajan">Bhajan</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="event" class="form-label">Event</label>
+                    <select class="form-select" id="event" name="event">
+                      <option value="">Select Event</option>
+                      <option value="Private Party">Private Party</option>
+                      <option value="House Party">House Party</option>
+                      <option value="Hotels & Villas">Hotels & Villas</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="date" class="form-label">Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date"
+                      name="date"
+                    />
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="locationType" class="form-label"
+                      >Location Type</label
+                    >
+                    <select
+                      class="form-select"
+                      id="locationType"
+                      name="locationType"
+                    >
+                      <option value="">Select Location Type</option>
+                      <option value="Banquet">Banquet</option>
+                      <option value="Outdoor">Outdoor</option>
+                      <option value="Virtual">Virtual</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-4 mb-2 enq-location-col">
+                    <label for="location" class="form-label">Location</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="location"
+                      name="location"
+                      placeholder="Enter Location Here"
+                      autocomplete="off"
+                    />
+                    <div class="location-list-wrapper d-none">
+                      <div class="location-block">
+                        <div class="main-icon-wrapper filled-icon">
+                          <span class="material-symbols-outlined">
+                            location_on
+                          </span>
+                        </div>
+                        <div class="location-name">
+                          <span>Malad West, Mumbai</span>
+                        </div>
+                      </div>
+                      <div class="location-block">
+                        <div class="main-icon-wrapper filled-icon">
+                          <span class="material-symbols-outlined">
+                            location_on
+                          </span>
+                        </div>
+                        <div class="location-name">Andheri West, Mumbai</div>
+                      </div>
+                      <div class="location-block">
+                        <div class="main-icon-wrapper filled-icon">
+                          <span class="material-symbols-outlined">
+                            location_on
+                          </span>
+                        </div>
+                        <div class="location-name">Dahisar West, Mumbai</div>
+                      </div>
+                      <div class="location-block">
+                        <div class="main-icon-wrapper filled-icon">
+                          <span class="material-symbols-outlined">
+                            location_on
+                          </span>
+                        </div>
+                        <div class="location-name">
+                          <span>Malad West, Mumbai</span>
+                        </div>
+                      </div>
+                      <div class="location-block">
+                        <div class="main-icon-wrapper filled-icon">
+                          <span class="material-symbols-outlined">
+                            location_on
+                          </span>
+                        </div>
+                        <div class="location-name">Andheri West, Mumbai</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 mb-2">
+                    <label for="budget" class="form-label">Budget</label>
+                    <select class="form-select" id="budget" name="budget">
+                      <option value="">Select Budget</option>
+                      <option value="10000-20000">10000-20000</option>
+                      <option value="20001-30000">20001-30000</option>
+                      <option value="30001-40000">30001-40000</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer justify-content-center pt-4">
+              <button type="button" class="btn main-btn px-5 d-none">
+                Next
+              </button>
+              <button type="button" class="btn main-btn main-btn-brd px-5 me-2">
+                Back
+              </button>
+              <button type="submit" class="btn main-btn px-5">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Enquiry modal end -->
+
+    <!-- Contact Sticky Sidebar start -->
+    <div class="contact-sticky-sidebar" id="contactStickySidebar">
+      <a href="#" class="main-icon-wrapper filled-icon">
+        <span class="material-symbols-outlined">mail</span>
+      </a>
+      <a href="#" class="img-wrapper">
+        <img src="images/whatsapp.png" alt="" title="" >
+      </a>
+    </div>
+    <!-- Contact Sticky Sidebar end -->
+
+    <!-- Top To Bottom start -->
+    <div class="top-to-bottom" id="topToBottom">
+      <div class="main-icon-wrapper circle-icon filled-icon m-0">
+        <span class="material-symbols-outlined">arrow_back_ios_new</span>
+      </div>
+    </div>
+    <!-- Top To Bottom end -->
+
+
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"
+    ></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#contactUsForm").validate({
+          rules: {
+            fname: {
+              required: true,
+              minlength: 2
+            },
+            city: {
+              required: true
+            },
+            mobile: {
+              required: true,
+              digits: true,
+              minlength: 10,
+              maxlength: 10
+            },
+            email: {
+              required: true,
+              email: true
+            },
+            msg: {
+              required: true,
+              minlength: 5
+            }
+          },
+          messages: {
+            fname: {
+              required: "Please enter your name",
+              minlength: "Your name must be at least 2 characters long"
+            },
+            city: {
+              required: "Please select a city"
+            },
+            mobile: {
+              required: "Please enter your mobile number",
+              digits: "Please enter a valid mobile number",
+              minlength: "Your mobile number must be exactly 10 digits",
+              maxlength: "Your mobile number must be exactly 10 digits"
+            },
+            email: {
+              required: "Please enter your email",
+              email: "Please enter a valid email address"
+            },
+            msg: {
+              required: "Please enter your message",
+              minlength: "Your message must be at least 5 characters long"
+            }
+          },
+          submitHandler: function(form) {
+            // If the form is valid, you can submit it here
+            form.submit();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

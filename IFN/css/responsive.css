@@ -1,0 +1,219 @@
+@media screen and (min-width:992px) and (max-width:1199px) {
+	
+	.nav-upper .navbar-left .input-group .form-control {
+		min-width: 400px;
+	}
+	#MainMenu .col-sm-1 {
+		width: 13%;
+	}
+	#MainMenu .col-sm-11 {
+		width: 87%;
+	}
+	#MainMenu .nav > li > a {
+		padding: 15px 10px;
+	}
+	.nav-upper .navbar-left {
+		margin-left: 13px;
+	}
+	.product-about { width: 71%;padding-right: 120px; }
+
+}
+ @media screen and (min-width:768px) and (max-width:991px) {
+
+ 	/* ------------ Navigation styles -------------- */
+
+	a.nav-expander, a.nav-expander1 { right: 15px;top: 15px; }
+	.nav-expanded a.nav-expander.fixed, .nav-expanded a.nav-expander1.fixed { right: 15px; }
+	#Mobile-menu .form-control { border-radius:0px;border:1px solid #ededed; }
+	#Mobile-menu .btn-gray { border:1px solid #ededed; }
+	#Mobile-menu .btn { border-radius:0px; }
+	#Mobile-menu .navbar-form { margin-top:0px;margin-bottom:0px;padding: 10px 0px; }
+	#Mobile-menu .no-padd { padding-left: 0px !important;padding-right: 0px !important; }
+	ul { margin-bottom: 0px !important; }
+	#Mobile-menu .navbar-nav { margin: 0;float: none !important; }
+	#Mobile-menu .mt { margin-top: 0px;margin-bottom: 10px; }
+	.input-group-btn .btn-gray { min-width: 45px; }
+	.mob-logo img { max-height: 65px; }
+	.visible-xs .form-control { border: 1px solid #e5e5e5;border-radius: 0px; }
+	#Mobile-menu .navbar-form .input-group .input-group-btn {  width: 1%;  }
+	.menu-cont ul li { float: none; }
+	.menu-cont ul li a { padding-top: 10px;padding-bottom: 10px; }
+
+	/* ------------- Mobile form styles -----------------*/
+
+	#Mobile-menu { margin-bottom: 20px;display: inline-block !important;margin-right: -15px;margin-left: -15px; }
+
+	#MainMenu .col-sm-1 {
+		width: 13%;
+	}
+	#MainMenu .col-sm-11 {
+		width: 87%;
+	}
+	.nav-upper .navbar-left .input-group .form-control {
+		min-width: 220px;
+	}
+	#MainMenu .nav > li > a {
+		padding: 15px 10px;
+	}
+	.icons .text-right {
+		text-align: center;
+	}
+	.nav-upper {
+		padding: 15px 0px 0px 0px !important;
+	}
+	.nav-upper .navbar-left {
+		margin-left: 15px;
+	}
+	.icons .pull-right {
+		float: none !important;
+		text-align: center;
+	}
+	#MainMenu .list-mt {
+		margin-top: 0px;
+	}
+
+	.inner-wrapper .container { width: auto; }
+	.button .btn.btn-3 {  }
+	.product { padding: 0px;margin-bottom: 20px; }
+	.product-box { padding: 0px 15px;/*text-align: center;*/ }
+	.product-box .product-details { padding-top: 30px; }
+
+
+	.product-about { width: auto;padding-right: 35px;padding-left: 35px; }
+}
+@media screen and (min-width:768px) and (max-width:849px) {
+	.item-list ul { padding: 0 34px; }
+}
+
+@media screen and (min-width:320px) and (max-width:479px) {
+
+	#Mobile-menu .no-padd-r {
+		padding-right: 0px !important;
+	}
+	.no-padd {
+		/*padding-left: 15px !important;*/
+		/*padding-right: 15px !important;*/
+	}
+	.no-padd-l {
+		padding-left: 15px !important;
+	}
+	.no-padd-r {
+		padding-right: 15px !important;
+	}
+
+}
+@media screen and (max-width:767px) {
+
+	/* ------------ Navigation styles -------------- */
+
+	a.nav-expander, a.nav-expander1 { right: 15px;top: 15px; }
+	.nav-expanded a.nav-expander.fixed, .nav-expanded a.nav-expander1.fixed { right: 15px; }
+	#Mobile-menu .form-control { border-radius:0px;border:1px solid #ededed; }
+	#Mobile-menu .btn-gray { border:1px solid #ededed; }
+	#Mobile-menu .btn { border-radius:0px; }
+	#Mobile-menu .navbar-form { margin-top:0px;margin-bottom:0px; }
+	#Mobile-menu .no-padd { padding-left: 0px !important;padding-right: 0px !important; }
+	ul { margin-bottom: 0px !important; }
+	#Mobile-menu .navbar-nav { margin: 0; }
+	#Mobile-menu .mt { margin-top: 0px;margin-bottom: 10px; }
+	.input-group-btn .btn-gray { min-width: 45px; }
+	.mob-logo img { max-height: 65px; }
+	.visible-xs .form-control { border: 1px solid #e5e5e5;border-radius: 0px; }
+
+	/* ------------- Mobile form styles -----------------*/
+
+	#Mobile-menu { margin-bottom: 20px;margin-right: -15px;margin-left: -15px; }
+
+	/* -------------- List Page -------------- */
+
+	.inner-menu ul li { width: 100%; }
+	.item-list { padding: 0px; }
+	.item-list ul { padding: 0px; }
+	.item-list ul li { float: none;display: inline-block;padding: 0;padding-bottom: 20px; }
+	.item-box .item-details { text-align: center; }
+	.item-box .item-details .button { text-align: center; }
+
+	/* -------------- Product Page -------------- */
+
+	.content-section { padding: 0px; }
+	.thumbnail-list { /*padding: 0px 15px;*/ }
+	.product { padding: 0px;margin-bottom: 20px; }
+	.product-box { padding: 0px;text-align: center; }
+	.product-box .product-details { padding-top: 30px; }
+	.product-about { width: 100%;padding: 0px; }
+	.product-about .heading { padding: 20px 0px; }
+
+	/* -------------- Payment -------------- */
+
+	.box { padding-right: 0px;padding-left: 0px; }
+	.box .box-body { padding: 0px 15px;/*padding: 0px 10px;*/ }
+	.box .heading, .box .heading-2 { padding: 10px 15px; }
+	.login-form { padding: 0px;padding-bottom: 20px; }
+	.register-form { padding: 0px;background-color: transparent; }
+
+	.input-group.qty-valid .form-control { width: 70px; }
+	
+	/* -------------- Thank You -------------- */
+
+	.order-table { border: 1px solid #ddd;margin-bottom: 15px; }
+
+	.order-table .table { margin-bottom: 0; }
+
+	/* Force table to not be like tables anymore */
+	.order-table .table table, 
+	.order-table .table thead, 
+	.order-table .table tbody, 
+	.order-table .table th, 
+	.order-table .table td, 
+	.order-table .table tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.order-table .table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	.order-table .table tr { /*border: 1px solid #ddd;margin-bottom: 20px;*/ }
+ 
+	.order-table .table td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #ddd; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:right;
+	}
+ 
+	.order-table .table td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	.order-table .table td:before { content: attr(data-title); }
+
+	.order-table .table .rm-td { display: none; }
+
+	/* -------------- Footer -------------- */
+
+	.foot-white-bg br { display: block; }
+	.right { text-align: center; }
+
+	/* -------------- scroll to Top --------------*/
+
+	.scroll { right: 20px; }
+}

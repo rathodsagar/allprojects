@@ -1,0 +1,1287 @@
+@import "_fonts.scss";
+@import "_colors.scss";
+
+@mixin transition-200 {
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+@mixin transition-400 {
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+@media only screen and (min-width: 320px) {
+    .main-menu {
+        // max-width: 100%;
+    }
+}
+@media only screen and (min-width: 360px) {
+    
+}
+
+@media only screen and (min-width: 480px) {
+    
+}
+@media only screen and (min-width: 575px) {
+    
+}
+@media only screen and (min-width: 768px) {
+    body {
+        // padding-bottom: 0px;
+    }
+    .h-md-100 {
+        height: 100%;
+    }
+    .w-md-75 {
+        width: 75%;
+    }
+    .w-md-auto {
+        width: auto;
+    }
+    // common button start
+    .btn-fill {
+        @include fontSizeLineHeight(16px, 24px);
+    }
+    .btn-approve {
+        @include fontSizeLineHeight(12px, 18px); 
+    }
+    .btn-reject {
+        @extend.btn-approve;
+    }
+    .btn-pending {
+        @extend.btn-approve;
+    }
+    // common button end
+
+    // common content tab start
+    .comm-tab-content {
+        .tab-pane {
+            .comm-card {
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+            }
+        }
+    }
+    // common content tab end
+    
+    // common heading start
+    .comm-heading {
+        @include fontSizeLineHeight(24px, 32px);
+    }
+    // common heading end
+
+    // pagination start
+    .pagination-text {
+        @include fontSizeLineHeight(14px, 22px);
+
+    }
+    // pagination end
+
+
+    // Sticky bottom button start
+    .sticky-bottom {
+        text-align: right;
+        position: relative;
+        box-shadow: none;
+        background-color: transparent;
+        padding: 0px 12px;
+    }
+    // Sticky bottom button end
+
+    
+    // common tabs start
+    .comm-tabs {
+        margin-bottom: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        
+        .nav-item {
+            .nav-link {
+
+                &:first-child {
+                    border-bottom-left-radius: 0px;
+                }
+                &:last-child {
+                    border-bottom-right-radius: 0px;
+                }
+
+                @include fontSizeLineHeight(20px, 28px);
+            }
+        }
+    }
+    .comm-tab-content {
+        .card, &.card {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+    }
+    // common tabs end
+    
+    // common accordion start
+    .comm-accordion {
+        .accordion-item {
+            .accordion-collapse {
+                .accordion-body {
+                    .badge {
+                        @include fontSizeLineHeight(16px, 22px);
+                    }
+                }
+            }
+        }
+    }
+    // common accordion end
+
+    // common table start
+
+    .comm-table-striped {
+
+        thead {
+            &.table-d-md-block, .table-d-md-block {
+                display: table-header-group;
+            }
+        }
+        tbody {
+            &.table-d-md-block, .table-d-md-block {
+                display: table-row-group;
+            }
+        }
+        tr {
+            &.table-d-md-block, .table-d-md-block {
+                display: table-row;
+            }
+        }
+        td, th {
+            &.table-d-md-block, .table-d-md-block {
+                display: table-cell;
+            }
+        }
+    
+        thead, tbody, tr, th, td {
+            &.table-d-md-none, .table-d-md-none {
+                display: none;
+            }
+        }
+    }
+
+    // common table end
+
+    
+    // breadcrumb start
+    .page-breadcrumb {
+        .breadcrumb {
+            .breadcrumb-item {
+                @include fontSizeLineHeight(16px, 22px);
+                .dashborad-icon {
+                    &::before {
+                        // top: 2px;
+                    }
+                }
+            }
+        }
+    }
+    // breadcrumb end
+
+    // menu start
+    .main-menu {
+        // padding: 0px 12px;
+
+        .navbar {
+            margin: 1rem 0px;
+            z-index: auto;
+            border-radius: 6px;
+            
+            .navbar-left {
+                .navbar-brand {
+                    display: block;
+                }
+            }
+            .navbar-right {
+                .nav-item {
+                    &.search-box {
+                        .search-bar {
+                            position: relative;
+                            left: 0;
+                            background-color: transparent;
+                            border: none;
+                            bottom: unset;
+                            min-width: auto;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            .navbar-collapse {
+                top: 0px;
+                width: auto;
+                padding: 1rem 1.5rem;
+
+                &.show {
+                    // width: auto;
+                }
+
+                .navbar-close {
+                    display: block;
+                    position: absolute;
+                    right: -20px;
+                    top: 28px;
+                    background-color: $sherpa-blue;
+                    transform: rotateZ(90deg);
+                    border-radius: 50px;
+                    border: 3px solid $smoke-white;
+                    @include transition-200;
+                    color: $white;
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .logo{
+                    .inner-logo {
+                        width: auto;
+                    }
+                }
+
+                .navbar-nav {
+                    .nav-item {
+                        &.dropdown {
+                            .dropdown-menu {
+                                // min-height: unset;
+                                // overflow-x: unset;
+                                // overflow-y: unset;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // menu end
+
+    // all leads details start
+
+    .all-leads-details {
+        .card {
+            // margin-bottom: 1.5rem;
+            .total-leads {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+        }
+    }
+
+    // all leads details end
+
+    
+    // campaign health details start
+
+    .campaign-health-details {
+        .card {
+            background-color: $white;
+            border-bottom: 5px solid $aloe-vera-green;
+            box-shadow: 0px 2px 10px 0px rgba(0,0,0,.22);
+
+            .card-body {
+                // padding: 15px 25px 0px;
+                .tab-content {
+                    .tab-pane {
+                        .table {
+                            thead {
+                                display: table-header-group;
+                                tr {
+                                    th {
+                                        font-weight: 600;
+                                        padding-top: 20px;
+                                        padding-bottom: 20px;
+                                    }
+                                }
+                            }
+                            tbody {
+                                display: table-row-group;
+                                
+                                tr {
+                                    display: table-row;
+                                    border-radius: 0px;
+                                    margin-bottom: 0px;
+                                    border-bottom: 1px solid $light-grey;
+
+
+                                    &:nth-of-type(even) {
+                                        border-color: $light-grey;
+                                        
+                                    }
+
+                                    &:nth-of-type(odd){
+                                        td {
+                                            background-color: $smoke-white;
+                                            --bs-table-bg-type: $smoke-white;
+                                        }
+                                    }
+
+                                    td {
+                                        width: auto;
+                                        border: none;
+                                        font-weight: 400;
+                                        padding-top: inherit;
+                                        
+                                        &::before {
+                                            content: none;
+                                        }
+
+                                        &:first-child {
+                                            text-align: center;
+                                            padding-top: inherit;
+                                        }
+
+                                        &:last-child, &:nth-last-child(2), &:nth-last-child(3) {
+                                            margin-top: 0px;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // campaign health details ends
+    
+    // call days status start
+    .call-days-status-wrapper {
+        .vartical-scrollable-card { 
+            max-height: unset;
+            margin-right: 0px;
+        }
+        .card {
+            // margin-bottom: 1.5rem;
+            height: 100%;
+
+            .card-body {
+                padding: 10px 5px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+
+                .list-group {
+                    .list-group-item {
+                        padding-right: 6px;
+                        padding-left: 6px;
+                    }
+                }
+            }
+        }
+    }
+    // call days status end
+
+    // role permission start
+    .role-permission {
+        .card {
+            // margin-bottom: 1.5rem;
+            
+            .card-body {
+                padding: 40px 15px;
+                display: flex;
+                justify-content: center;            
+
+                .card-title {
+                    @include fontSizeLineHeight(18px, 26px);
+                }
+            }
+        }
+    }
+    // role permission end
+
+    // edit role permission start
+
+    .edit-role-permission {
+        .leads-filter-check {
+            .item-list {
+                
+                &:nth-child(1) {
+                    min-width: 150px;
+                }
+                
+                &.radio-check-box-list {
+                    .form-check {
+                        padding-left: 0px;
+            
+                        &+.form-check {
+                            margin-left: 1rem;
+                        }
+
+                        .form-check-label {
+                            @include fontFamily("Montserrat", 500);
+                            @include fontSizeLineHeight(16px, 24px);
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    // edit role permission end
+
+    // Campaign start
+
+    .campaign {
+        .card {
+            .card-body {
+                .table {
+                    tbody {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        tr {
+                            flex-basis: 49%;
+                            margin-bottom: 25px;
+
+                            &:nth-of-type(odd) {
+                                margin-right: 2%;
+                            }
+                            
+                            &+tr {
+                                margin-top: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Campaign end
+    
+    // Add Campaign start
+
+    .addCampaign {
+        .card {
+            .card-body {
+                padding: 30px 30px 10px;
+            }
+        }
+    }
+
+    .campaign-allocation {
+        .card {
+            border-bottom: 5px solid $sweet-garden-green;
+            box-shadow: 0px 2px 10px 0px rgba(0,0,0,.22);
+            border-radius: 10px;
+            background-color: transparent;
+
+            .card-body {
+                .table {
+                    thead {
+                        border-color: $light-grey;
+
+                        tr {
+                            th {
+                                display: table-cell;
+                                
+                                &:last-child {
+                                    background-color: $white;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            display: table-row;
+                            box-shadow: none;
+                            border-radius: unset;
+                            border: none;
+
+
+                            &:nth-of-type(odd){
+                                td {
+                                    background-color: $smoke-white;
+                                    --bs-table-bg-type: $smoke-white;
+                                }
+                            }
+
+                            &:last-child {
+                                td {
+                                    &:first-child {
+                                        border-bottom-left-radius: 6px;
+                                    }
+                                    &:last-child {
+                                        border-bottom-right-radius: 6px;
+                                    }
+                                }
+                            }
+
+                            &+tr {
+                                margin-top: 0px;
+
+                                td {
+                                    border-top: 1px solid $light-grey;
+                                }
+                            }
+
+                            td {
+
+                                &:first-child {
+                                    display: table-cell;
+                                    border-radius: unset;
+                                }
+
+                                .form-group {
+                                    // margin-bottom: 0px;
+                                    &.select {
+                                        &::after {
+                                            // right: 0px;
+                                            // top: 6px;
+                                            // @include fontSizeLineHeight(20px, 20px);
+                                            // width: 20px;
+                                            // height: 20px;
+                                        }
+                                    }
+                                    .form-label {
+                                        display: none;
+                                    }
+                                    .form-select {
+                                        // padding: 6px 18px 6px 8px;
+                                        // @include fontSizeLineHeight(12px, 20px);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Add Campaign end
+
+    // list leads start
+    
+    .list-leads {
+        .card {
+            .card-body {
+                .table {
+                    tbody {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        tr {
+                            flex-basis: 49%;
+                            margin-bottom: 25px;
+
+                            &:nth-of-type(odd) {
+                                margin-right: 2%;
+                            }
+
+                            &+tr {
+                                margin-top: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+            
+    // list leads end
+    
+    
+    // edit list leads start
+
+    .edit-list-leads {
+        // .card {
+            // border-top-left-radius: 0px;
+            // border-top-right-radius: 0px;
+            // background-color: $white;
+            // border-bottom: 5px solid $sherpa-blue;
+
+            // .card-body {
+                // padding: 25px 25px;
+
+                .comm-tab-content {
+                    .tab-pane {
+                        // .card {
+                            // border-radius: 0px;
+                            // border-bottom-left-radius: 10px;
+                            // border-bottom-right-radius: 10px;
+                            // box-shadow: 0px 2px 10px 0px rgba(0,0,0,.22);
+                            // border-bottom: 5px solid $sherpa-blue;
+                            // background-color: $white;
+                            // padding: 25px 15px 0px 15px;
+
+                            // .card-body {
+                                .formInfo {
+                                    // border-radius: 0px;
+                                    // box-shadow: none;
+                                    // border-bottom: 0px;
+                                    // padding: 0px;
+                                    // background-color: transparent;
+
+                                    &+.formInfo {
+                                        // margin-top: 0px;
+                                    }
+                                    &.addressInfoForm {
+                                        .card {
+                                            border-bottom-left-radius: 10px;
+                                            border-bottom-right-radius: 10px;
+                                            background-color: $white;
+                                            border-bottom: 5px solid $sherpa-blue;   
+
+                                            .card-body {
+                                                padding: 25px;
+                                            }
+                                            
+                                            .card-row {
+                                                border-radius: 0px;
+                                                background-color: transparent;
+                                                box-shadow: none;
+                                                border: none; 
+                                                padding: 0px;
+                                            }
+                                        }
+                                    }
+
+                                    .card {
+                                        .card-body {
+                                            .card-row {
+                                                // padding-top: 40px;
+                                                border-top-left-radius: 0px;
+                                                border-top-right-radius: 0px;
+                                                // padding: 0px;
+                                                // border-radius: 0px;
+                                                // background-color: transparent;
+                                                // box-shadow: none;
+                                                // border: none;
+        
+                                                &+.card-row {
+                                                    padding-top: 0px;
+                                                    margin-top: 0px;
+                                                }
+        
+                                                .leads-filter-check {
+                                                    .item-list {
+                                                        
+                                                        &:nth-child(1) {
+                                                            min-width: 150px;
+                                                        }
+                                                        
+                                                        &.radio-check-box-list {
+                                                            .form-check {
+                                                                padding-left: 0px;
+                                                    
+                                                                &+.form-check {
+                                                                    margin-left: 1rem;
+                                                                }
+                            
+                                                                .form-check-label {
+                                                                    @include fontFamily("Montserrat", 500);
+                                                                    @include fontSizeLineHeight(16px, 24px);
+                                                                }
+                                                                
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            // }
+                        // }
+                    }
+                }
+            // }
+        // }
+    }
+
+    // edit list leads end
+
+    // call leads details start
+
+    .call-details {
+
+        .contact-btn {
+            width: auto;
+            justify-content: flex-end;
+
+            .btn {
+                border: 1px solid $sherpa-blue;
+                background-color: $white;
+                color: $sherpa-blue;
+                
+                &:hover, &:active, &:focus, &:focus-within {
+                    background-color: $white;
+                    border: 1px solid $sherpa-blue;
+                    color: $sherpa-blue;
+                }
+
+                &+.btn {
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .dispose-call-card {
+            .card-header {
+                background-color: $sweet-garden-green;
+                color: $sherpa-blue;   
+                font-weight: 500;
+
+                .icon {
+                    padding-right: 8px;
+                }
+            }
+            .card-body {
+
+            }
+        }
+
+        .comm-tab-content {
+            .card-body {
+                padding-top: 40px;
+                padding-bottom: 40px;
+
+                .personalInfo {
+                    text-align: center;
+
+                    .name {
+                        @include fontSizeLineHeight(24px, 32px);
+                    }
+                    .dob {
+                        @include fontFamily("Montserrat", 500);
+                        @include fontSizeLineHeight(20px, 28px);
+                    }
+                    .contact-info {
+                        display: block;
+                        
+                        .number {
+                            padding-top: 5px;
+                            @include fontFamily("Montserrat", 500);
+                            @include fontSizeLineHeight(22px, 32px);
+                        }
+                    }
+                    .talk-attempt-info { 
+                        display: block;
+        
+                        .title {
+                            padding-right: 0px;
+                            @include fontSizeLineHeight(18px, 24px);
+        
+                            &::after {
+                                content: none;
+                            }
+                        }
+        
+                        .time-duration {
+                            @include fontFamily("Montserrat", 600);
+                            @include fontSizeLineHeight(22px, 32px);
+                            padding-left: 0px;
+                            border-bottom: 1px solid $sherpa-blue;
+                        }
+                    }
+                    .action-btn {
+                        .btn {
+                            border-radius: 10px;
+                            padding: 8px 16px;
+
+                            .btn-text {
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                }
+                
+                .activityInfo {
+                    .title {
+                        @include fontSizeLineHeight(14px, 20px);
+                    }
+                    .sub-title {
+                        @include fontSizeLineHeight(18px, 30px);
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .call-record {
+        .comm-tabs {
+            margin-bottom: 1rem;
+
+            .nav-item {
+                &:first-child {
+                    .nav-link {
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                    }
+                }
+                &:last-child {
+                    .nav-link {
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            }
+        }
+        .card {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            .card-body {
+                .tab-content {
+                    .tab-pane {
+                        .table {
+                            tbody {
+                                tr {
+                                    flex-basis: 49%;
+                                    
+                                    &:nth-of-type(odd) {
+                                        margin-right: 2%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // call leads details ends
+
+}
+@media only screen and (min-width: 992px) {
+
+    // common form start
+
+    .form-group, .input-group {
+        &.group-lg-text {
+            &::after {
+                left: unset;
+                bottom: unset;
+                height: 100%;
+                right: -24px;
+                top: 50%;
+                transform: translateY(-50%);
+
+            }
+        }
+    }
+
+    // common form end
+
+    // performance start
+    .performance {
+        .card {
+            .card-body {
+                padding: 30px 20px;
+                margin: 0px;
+
+                .item-col {
+                    border: none;
+                    border-left: 1px solid $light-grey;
+                    flex: 1 0 0%;
+                    
+                    &:nth-child(odd), &:nth-child(even), &:nth-child(1), &:nth-child(2) {
+                        border-top: none;
+                        border-right: none;
+                    }
+
+                    &:nth-child(1) {
+                        flex: 0 0 auto;
+                    }
+                    &:nth-child(1), &:nth-child(2) {
+                        border-left: 0px;
+                    }
+                }
+
+                .icon {
+                    font-size: 70px;
+                    line-height: 70px;
+                    color: $sherpa-blue;
+                }
+                .title {
+                    @include fontFamily("Montserrat", 600);
+                    @include fontSizeLineHeight(22px, 28px);
+                }
+                .sub-title {
+                    @include fontFamily("Montserrat", 500);
+                    @include fontSizeLineHeight(18px, 24px);
+                }
+            }
+        }
+    }
+    // performance end
+
+    // common table start
+
+    .comm-table-striped {
+
+        thead {
+            &.table-d-lg-block, .table-d-lg-block {
+                display: table-header-group;
+            }
+        }
+        tbody {
+            &.table-d-lg-block, .table-d-lg-block {
+                display: table-row-group;
+            }
+        }
+        tr {
+            &.table-d-lg-block, .table-d-lg-block {
+                display: table-row;
+            }
+        }
+        td, th {
+            &.table-d-lg-block, .table-d-lg-block {
+                display: table-cell;
+            }
+        }
+    
+        thead, tbody, tr, th, td {
+            &.table-d-lg-none, .table-d-lg-none {
+                display: none;
+            }
+        }
+    }
+
+    // common table end
+
+    // Campaign start
+    .campaign {
+        .card {
+            border-bottom: 5px solid $sweet-garden-green;
+            box-shadow: 0px 2px 10px 0px rgba(0,0,0,.22);
+            border-radius: 13px;
+            background-color: transparent;
+    
+            .card-body {
+                padding-top: 25px;
+                border-radius: 10px;
+                background-color: $white;
+                
+                .table {
+                    tbody {
+                        display: table-row-group;
+
+                        tr {
+                            display: table-row;
+                            box-shadow: none;
+                            border-radius: unset;
+                            border: none;
+                            margin-bottom: 0px;
+                            border-bottom: 1px solid $light-grey;
+
+                            
+                            &:nth-of-type(odd){
+                                margin-right: 0px;
+                                td {
+                                    background-color: $smoke-white;
+                                    --bs-table-bg-type: $smoke-white;
+                                }
+                            }
+    
+                            td {
+                                --bs-table-bg-type: $white;
+                                padding: .5rem .5rem;
+                                font-weight: 400;
+                                position: relative;
+    
+                                &:first-child {
+                                    display: table-cell;
+                                    border-radius: 0px;
+                                }
+    
+                                &:last-child {
+                                    border-radius: 0px;
+                                }
+                                
+                                &.data-left {
+                                    text-align: center;
+                                    padding-left: .5rem;
+                                    border: none;
+    
+                                    &::before {
+                                        content: none;
+                                        left: unset;
+                                    }
+    
+                                    &+.data-left {
+                                        padding-top: .5rem;
+                                        margin-bottom: 0px;
+                                        border: none;
+                                    }
+                                }
+    
+                                &.data-top {
+                                    padding-top: .5rem;
+    
+                                    &::before {
+                                        content: none;
+                                        top: unset;
+                                        left: unset;
+                                    }
+                                }
+    
+                                &.w33 {
+                                    @include fontSizeLineHeight(14px, 20px);
+                                }
+    
+                                &.action-btn {
+                                    padding-top: .5rem;
+    
+                                    .link {
+                                        border: none;
+                                        padding: 3px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Campaign end
+
+    // list leads start
+    
+    .list-leads {
+        .card {
+            background-color: $white;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px 0px rgba(0,0,0,.22);
+            border-bottom: 5px solid $sherpa-blue;
+
+            .card-body {
+                padding-top: 25px;
+                border-radius: 10px;
+                background-color: #fff;
+
+                .table {
+                    margin-bottom: 20px;
+
+                    thead {
+                        tr {
+                            th {
+                                display: table-cell;
+                                padding: .5rem;
+
+                                &.action-check-all {
+                                    display: table-cell;
+                                    box-shadow: none;
+                                    border: none;
+                                    border-radius: 0px;
+                                    margin-bottom: 0px;
+                                    padding: .5rem;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        display: table-row-group;
+
+                        tr {
+                            display: table-row;
+                            border: none;
+                            border-radius: 0px;
+                            background-color: transparent;
+                            box-shadow: none;
+                            margin-bottom: 0px;
+                            border-top: 1px solid $light-grey;
+
+                            &:nth-of-type(odd) {
+                                margin-right: 0px;
+                                
+                                td {
+                                    background-color: $smoke-white;
+                                    --bs-table-bg-type: $smoke-white;
+                                }
+                            }
+
+                            td {
+                                text-align: center;
+                                font-weight: 400;
+                                padding: .5rem;
+
+                                &::before {
+                                    content: none;
+                                }
+
+                                &.action-check-row {
+                                    margin-bottom: 0px;
+                                    display: table-cell;
+                                    border-radius: 0px;
+                                    border: none;
+
+                                    .check-id {
+                                        display: block;
+                                    }
+                                }
+
+                                &.name, &.email, &.tel, &.data-left, &.data-top {
+                                    padding: .5rem;
+                                    text-align: center;
+                                    border: none;
+
+                                    &::before {
+                                        content: none;
+                                    }
+                                }
+
+                                &.w33 {
+                                    @include fontSizeLineHeight(14px, 20px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+            
+    // list leads end
+
+    // call leads details start
+    
+    .call-record {
+        .comm-tabs {
+            margin-bottom: 0px;
+
+            .nav-item {
+                &:first-child {
+                    .nav-link {
+                        border-bottom-left-radius: 0px;
+                    }
+                }
+                &:last-child {
+                    .nav-link {
+                        border-bottom-right-radius: 0px;
+                    }
+                }
+            }
+        }
+        .card {
+            background-color: $white;
+            border-bottom: 5px solid $sherpa-blue;
+            box-shadow: 0px 2px 10px 0px rgba(0,0,0,.22);
+            // border-radius: 10px;
+
+            .card-body {
+                .tab-content {
+                    .tab-pane {
+                        .table {
+                            text-align: center;
+
+                            thead {
+                                display: table-header-group;
+                                tr {
+                                    th {
+                                        font-weight: 500;
+                                        padding-top: 20px;
+                                        padding-bottom: 20px;
+
+                                        &:first-child {
+                                            border-top-left-radius: 0px;
+                                        }
+                                        &:last-child {
+                                            border-top-right-radius: 0px;
+                                        }
+                                    }
+                                }
+                            }
+                            tbody {
+                                display: table-row-group;
+                                
+                                tr {
+                                    display: table-row;
+                                    margin-bottom: 0px;
+                                    background-color: transparent;
+                                    border: none;
+                                    box-shadow: none;
+                                    border-top-left-radius: 0px;
+                                    border-top-right-radius: 0px;
+                                    border-top: 1px solid $light-grey;
+
+                                    &:nth-of-type(odd) {
+                                        margin-right: 0px;
+                                        
+                                        td {
+                                            background-color: $smoke-white;
+                                            --bs-table-bg-type: $smoke-white;
+                                        }
+                                    }
+
+                                    td {
+                                        border: none;
+                                        font-weight: 400;
+                                        padding: 0.5rem;
+                                        @include fontFamily("Montserrat", 400);
+                                        @include fontSizeLineHeight(14px, 20px);
+
+                                        &:first-child {
+                                            border-radius: 0px;
+                                        }
+
+
+                                        &.data-left, &.data-top {
+                                            padding: 0.5rem;
+                                            @include fontFamily("Montserrat", 400);
+                                            @include fontSizeLineHeight(14px, 20px);
+
+                                            &::before {
+                                                content: none;
+                                            }
+                                        }
+
+                                        &.date, &.called-by, &.status, &.call-back {
+                                            border: none ;
+                                            padding: 0.5rem;
+                                            @include fontFamily("Montserrat", 400);
+                                            @include fontSizeLineHeight(14px, 20px);
+                                            border-radius: 0px;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // call leads details end
+
+    
+}
+@media only screen and (min-width: 1024px) {
+    
+}
+@media only screen and (min-width: 1200px) {
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .main-menu {
+        .container, .container-fluid {
+            padding: 0px;
+            max-width: 100%;
+        }
+        // max-width: 100%;
+    }
+}

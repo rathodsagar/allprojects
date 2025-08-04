@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IFN-Cart</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="inner-wrapper clearfix">
+			<div class="container">
+
+				<div class="header hidden-sm hidden-xs clearfix">
+	                <div class="col-lg-12 col-md-12 col-sm-12 no-padd" id="MainMenu"><!-- container -->
+	                    <div class="row">         
+	                        <div class="col-sm-1"> 
+	                            <a class="navbar-logo" href="#">
+	                                <img src="images/logo.png" class="responsive">
+	                            </a>
+	                        </div>  
+	                        <div class="col-sm-11 no-padd-l">
+	                            <div class="row nav-upper">
+	                                <div class="col-lg-10 col-md-8 col-sm-7">
+	                                    <form id="" class="navbar-form navbar-left">
+	                                        <div class="form-group">
+	                                            <div class="input-group"> 
+	                                                <span class="input-group-addon" id="basic-addon1">
+	                                                    <i class="fa fa-search" style="font-size:20px;"></i>
+	                                                </span>
+	                                                <input type="text" name="s" id="s" class="form-control" placeholder="Search recipes, shows, chefs, festivals, cuisines" value="">
+	                                                <span class="input-group-btn">
+	                                                    <button class="btn search-btn" type="submit" id="searchsubmit">Search</button>
+	                                                </span> 
+	                                            </div>
+	                                        <!-- /input-group --> 
+	                                        </div>
+	                                    </form>
+	                                </div>
+	                                <div class="col-lg-2 col-md-3 col-sm-3 icons">
+	                                    <ul class="list-inline text-right list-mt">
+	                                        <li>
+	                                            <a target="_blank" href="#">
+	                                                <img src="images/fb-icon.png">
+	                                            </a> 
+	                                        </li>
+	                                        <li>
+	                                            <a target="_blank" href="#">
+	                                                <img src="images/tw-icon.png">
+	                                            </a> 
+	                                        </li>
+	                                        <li>
+	                                            <a target="_blank" href="#">
+	                                                <img src="images/youtube-icon.png">
+	                                            </a> 
+	                                        </li>
+	                                        <li>
+	                                            <a target="_blank" href="#">
+	                                                <img src="images/insta-icon.png">
+	                                            </a> 
+	                                        </li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                            <div class="row">
+	                                <div class="col-lg-12 col-md-12 col-sm-12">
+	                                    <nav class="navbar navbar-default navbar-static-top navbar-lower">
+	                                        <div class="container-fluid">
+	                                            <div class="navbar-header">
+	                                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> 
+	                                                    <span class="sr-only">Toggle navigation</span> 
+	                                                    <span class="icon-bar"></span> 
+	                                                    <span class="icon-bar"></span> 
+	                                                    <span class="icon-bar"></span> 
+	                                                </button>
+	                                            </div>
+	                                            <div class="collapse navbar-collapse" id="navbar">
+	                                                <ul class="nav navbar-nav navbar-left">
+	                                                    <li class="active">
+	                                                        <a href="#">IFN COLLECTIVE</a>
+	                                                    </li>
+	                                                    <li class="">
+	                                                        <a href="#">RECIPES</a>
+	                                                    </li>
+	                                                    <li class="">
+	                                                        <a href="#">SHOWS</a>
+	                                                    </li>
+	                                                    <li class="">
+	                                                        <a href="#">STORIES</a>
+	                                                    </li>
+	                                                    <li class="">
+	                                                        <a href="#">SUBMIT A RECIPE</a>
+	                                                    </li>
+	                                                    <li class="">
+	                                                        <a href="#">KISSAN TIFFIN TIMETABLE</a>
+	                                                    </li>
+	                                                    <li class="">
+	                                                        <a href="#">MASTER CLASSES</a>
+	                                                    </li>
+	                                                    <li class="">
+	                                                        <a href="#">MANCHEDISE</a>
+	                                                    </li>
+	                                                </ul>
+	                                            </div>
+	                                        </div>
+	                                    </nav>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-sm-12 border-b"> </div>     
+	                </div><!-- container div close -->
+	            </div><!-- header/hidden-xs div close -->
+
+	            <header class="visible-sm visible-xs  border-b" id="Mobile-menu">
+	                <div class="col-sm-12">
+	                    <div class="row ">
+	                        <div class="col-xs-3 no-padd-r">
+	                            <div class="mob-logo">
+	                                <a class="" href="#">
+	                                    <img src="images/logo.png" class="responsive">
+	                                </a>
+	                            </div>
+	                        </div>
+	                        <div class="col-xs-7 mob-mtb no-padd text-center">
+	                            <ul class="list-inline">
+	                                <li>
+	                                    <a target="_blank" href="#">
+	                                        <img src="images/fb-icon.png">
+	                                    </a> 
+	                                </li>
+	                                <li>
+	                                    <a target="_blank" href="#">
+	                                        <img src="images/tw-icon.png">
+	                                    </a> 
+	                                </li>
+	                                <li>
+	                                    <a target="_blank" href="#">
+	                                        <img src="images/youtube-icon.png">
+	                                    </a> 
+	                                </li>
+	                                <li>
+	                                    <a target="_blank" href="#">
+	                                        <img src="images/insta-icon.png">
+	                                    </a> 
+	                                </li>
+	                            </ul>
+	                        </div>
+	                        
+	                        <a id="nav-expander" class="nav-expander fixed">
+	                            <i class="fa fa-bars"></i>
+	                        </a>
+	                        
+	                        <div class="menu-cont">             
+	                            <ul class="nav navbar-nav navbar-left">
+	                                <li class="active">
+	                                    <a href="#">HOME</a>
+	                                </li>
+	                                <li class="">
+	                                    <a href="#">IFN COLLECTIVE</a>
+	                                </li>
+	                                <li class="">
+	                                    <a href="#">RECIPES</a>
+	                                </li>
+	                                <li class="">
+	                                    <a href="#">SHOWS</a>
+	                                </li>
+	                                <li class="">
+	                                    <a href="#">STORIES</a>
+	                                </li>
+	                                <li class="">
+	                                    <a href="#">SUBMIT A RECIPE</a>
+	                                </li>
+	                                <li class="">
+	                                    <a href="#">KISSAN TIFFIN TIMETABLE</a>
+	                                </li>
+	                                <li class="">
+	                                    <a href="#">MASTER CLASSES</a>
+	                                </li>
+	                                <li class="">
+	                                    <a href="#">MANCHEDISE</a>
+	                                </li>
+	                            </ul>                               
+	                        </div>
+	                    </div>
+	                    <div class="clearfix"></div>
+	                    <div class="col-sm-12">
+	                        <div class="row">
+	                            <form id="" class="navbar-form">
+	                                <div class="form-group">
+	                                    <div class="input-group">
+	                                        <input type="text" class="form-control" placeholder="Search recipes, shows, chefs, festivals, cuisines">
+	                                        <span class="input-group-btn">
+	                                            <button class="btn btn-gray" type="submit">
+	                                                <i class="fa fa-search"></i>
+	                                            </button>
+	                                        </span> 
+	                                    </div>
+	                                    <!-- /input-group --> 
+	                                </div>
+	                            </form>
+	                        </div>
+	                    </div>
+	                </div>
+	            </header><!-- header/visible-xs div close -->
+			
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content-section">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 box">
+							<div class="heading">Order Summary</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 box-body">
+								<div id="order-success-alert" class="alert alert-success">
+									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+									<strong>Your Order is Successfully Placed !</strong> 
+								</div>
+								<div class="success-message">
+									<div class="card">
+				                    	<div class="card-block">
+				                    		<div class="icon">
+				                    			<span class="glyphicon glyphicon-ok-circle"></span>
+				                    		</div>
+											<!-- <div class="message"> -->
+												<h1 align="center" class="title text-uppercase" style="">Thank You !</h1>
+												<h2 align="center" class="head text-uppercase">your order id is <strong>#123456789</strong></h2>
+												<h4 align="center" class="sub-head">Please check your email for further instructions on how to complete your account setup.</h4>
+											<!-- </div> -->
+										</div>
+									</div>
+								</div>
+								<div class="row">
+				                	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					                	<div class="bill-ads">
+						                	<div class="panel panel-default">
+							            		<div class="panel-heading">
+							            			<big>
+							            				<strong>Billing Address</strong>
+							            			</big>
+							            		</div>
+							            		<div class="panel-body">
+							            			<div class="customer-details">
+								            			<div class="name">
+								            				<strong>Crayon Infotech Private Limited</strong>
+								            			</div>
+								            			<div class="address">Office No. 66, Third Floor, Aditya Industrial Estate, Off, Chincholi Bunder Rd, Mindspace, Malad West, Mumbai, Maharashtra 400064</div>
+								            			<div class="email-id">abc@gmail.com</div>
+								            			<div class="contact-num">+91 99206 46569</div>
+								            		</div>
+							            		</div>
+							            	</div>
+							            </div>
+							        </div>
+							        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							            <div class="ship-ads">
+							            	<div class="panel panel-default">
+							            		<div class="panel-heading">
+							            			<big>
+							            				<strong>Shipping Address</strong>
+							            			</big>
+							            		</div>
+							            		<div class="panel-body">
+							            			<div class="name">
+							            				<strong>Crayon Infotech Private Limited</strong>
+							            			</div>
+							            			<div class="address">Office No. 66, Third Floor, Aditya Industrial Estate, Off, Chincholi Bunder Rd, Mindspace, Malad West, Mumbai, Maharashtra 400064</div>
+							            			<div class="email-id">abc@gmail.com</div>
+							            			<div class="contact-num">+91 99206 46569</div>
+							            		</div>
+							            	</div>
+							            </div>
+							        </div>
+					            </div>
+					            <div class="table-responsive">
+					                <table class="table">
+					                    <thead>
+					                        <tr>
+					                        	<th>&nbsp;</th>
+					                            <th align="left">Product</th>
+					                            <th align="center" class="text-center">Quantity</th>
+					                            <th align="right" class="text-right">Rate</th>
+					                            <th align="right" class="text-right">Total</th>
+					                        </tr>
+					                    </thead>
+					                    <tbody>
+					                        <tr>
+					                            <td align="left">
+					                            	<img src="https://dummyimage.com/50x50/55595c/fff" /> 
+					                            </td>
+					                            <td align="left">Title Lorem Ipsum1</td>
+					                            <td align="center" class="qty-num">1</td>
+					                            <td align="right">100</td>
+					                            <td align="right">
+					                            	<i class="fa fa-rupee"></i> 200
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td align="left">
+					                            	<img src="https://dummyimage.com/50x50/55595c/fff" /> 
+					                            </td>
+					                            <td align="left">Title Lorem Ipsum1</td>
+					                            <td align="center" class="qty-num">1</td>
+					                            <td align="right">100</td>
+					                            <td align="right">
+					                            	<i class="fa fa-rupee"></i> 200
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td align="left">
+					                            	<img src="https://dummyimage.com/50x50/55595c/fff" /> 
+					                            </td>
+					                            <td align="left">Title Lorem Ipsum1</td>
+					                            <td align="center" class="qty-num">1</td>
+					                            <td align="right">100</td>
+					                            <td align="right">
+					                            	<i class="fa fa-rupee"></i> 200
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td colspan="4" align="right">Shipping</td>
+					                            <td colspan="4" align="right">
+					                            	<i class="fa fa-rupee"></i> 5
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td colspan="4" align="right">+ GST 5%</td>
+					                            <td colspan="4" align="right">
+					                            	<i class="fa fa-rupee"></i> 5
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td colspan="4" align="right">Sub-Total</td>
+					                            <td colspan="4" align="right">
+					                            	<i class="fa fa-rupee"></i> 5
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td colspan="4" align="right">
+					                            	<big>
+					                            		<strong>Total Payable</strong>
+					                            	</big>
+					                            </td>
+					                            <td colspan="4" align="right">
+					                            	<big>
+					                            		<strong>
+					                            			<i class="fa fa-rupee"></i> 5
+					                            		</strong>
+					                            	</big>
+					                            </td>
+					                        </tr>
+					                    </tbody>
+					                </table>
+					            </div>
+					            <div class="order-table">
+					                <table class="table">
+					                    <thead>
+					                        <tr>
+					                        	<th>&nbsp;</th>
+					                            <th align="left">Product</th>
+					                            <th align="center" class="text-center">Quantity</th>
+					                            <th align="right" class="text-right">Rate</th>
+					                            <th align="right" class="text-right">Total</th>
+					                        </tr>
+					                    </thead>
+					                    <tbody>
+					                        <tr>
+					                            <td align="left"  data-title="Product Image">
+					                            	<img src="https://dummyimage.com/50x50/55595c/fff" /> 
+					                            </td>
+					                            <td align="left" data-title="Product">Title Lorem Ipsum1</td>
+					                            <td align="center" data-title="Quantity">1</td>
+					                            <td align="right" data-title="Rate">100</td>
+					                            <td align="right" data-title="Total">
+					                            	<i class="fa fa-rupee"></i> 200
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td colspan="4" align="right" class="rm-td">Shipping</td>
+					                            <td colspan="4" align="right" data-title="Shipping">
+					                            	<i class="fa fa-rupee"></i> 5
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td colspan="4" align="right" class="rm-td">+ GST 5%</td>
+					                            <td colspan="4" align="right" data-title="+ GST 5%">
+					                            	<i class="fa fa-rupee"></i> 5
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td colspan="4" align="right" class="rm-td">Sub-Total</td>
+					                            <td colspan="4" align="right" data-title="Sub-Total">
+					                            	<i class="fa fa-rupee"></i> 5
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td colspan="4" align="right" class="rm-td">
+					                            	<big>
+					                            		<strong>Total Payable</strong>
+					                            	</big>
+					                            </td>
+					                            <td colspan="4" align="right" data-title="Total Payable">
+					                            	<big>
+					                            		<strong>
+					                            			<i class="fa fa-rupee"></i> 5
+					                            		</strong>
+					                            	</big>
+					                            </td>
+					                        </tr>
+					                    </tbody>
+					                </table>
+					            </div>
+					        </div>
+						</div><!-- box div close -->
+					</div><!-- row div close -->
+				</div><!-- content-section div close -->
+
+			</div><!-- container div close -->
+
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+							<table>
+								<tbody>
+									<tr>
+										<td>
+											<p>India Food Network is your one-stop destination for everything food. We've got delicious recipes, hungry travellers and tons of culinary fun, created and curated for foodies by foodies.</p>
+											<p>IFN is a part of PING, an entertainment platform that knows exactly what you want to watch. Producing content that's innovative, interesting, out-there and awesome. </p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+							<ul class="list-inline clearfix">
+								<li class="col-lg-4 col-md-4 col-sm-4 col-xs-3">
+									<ul class="list-unstyled">
+										<li>
+											<a href="#">Home</a>
+										</li>
+										<li>
+											<a href="#">IFN Collective</a>
+										</li>
+										<li>
+											<a href="#">Recipes</a>
+										</li>
+									</ul>
+								</li>
+								<li class="col-lg-4 col-md-4 col-sm-4 col-xs-3">
+									<ul class="list-unstyled">
+										<li>
+											<a href="#">Stories</a>
+										</li>
+										<li>
+											<a href="#">Shows</a>
+										</li>
+										<li>
+											<a href="#">Submit a recipe </a>
+										</li>
+									</ul>
+								</li>
+								<li class="col-lg-4 col-md-4 col-sm-4 col-xs-3">
+									<ul class="list-unstyled">
+										<li>
+											<a href="#">TOS</a>
+										</li>
+										<li>
+											<a href="#">Privacy Policy</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="list-inline clearfix">
+								<li class="col-lg-4 col-md-4 col-sm-4 col-xs-3 mt">
+									<a class="foot-logo">
+										<img src="http://indiafoodnetwork.in/wp-content/themes/html5blank-stable/images/footer-logo-ping-white.png" class="img-responsive">
+									</a>
+								</li> 
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="foot-white-bg">
+					<div class="container">
+						<p class="right">All Rights reserved <br>Copyright India Food Network ©2018 </p>
+					</div>
+				</div>
+			</div><!-- footer div close -->
+
+			<div class="scroll"> 
+				<img src="http://indiafoodnetwork.in/wp-content/themes/html5blank-stable/images/up-arrow.jpg" id="top">
+			</div><!-- scroll div close -->
+			
+		</div><!-- inner-wrapper div close -->
+	</div><!-- wrapper div close -->
+</body>
+</html>

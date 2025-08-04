@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/style.css?v=1.0.8" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="scroll-container">
+      <section class="section-1" id="section1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="pink-psstt-block">
+                <div>PSSSSTTT...</div>
+              </div>
+              <div class="yellow-pill-main-wrapper">
+                <div class="yellow-pill-content-wrapper">
+                  <div class="yellow-pill-content">
+                    BUT WE HAVE A SNEAK PEEK FOR YOU!
+                  </div>
+                  <a href="#section2" class="scroll-link scroll-link-green"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-2" id="section2">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 p-0">
+              <div class="section-2-main-wrapper">
+                <picture class="hand-bg-main d-none d-sm-block">
+                  <img src="assets/images/hand-bg.jpg" alt="" />
+                </picture>
+                <picture class="hand-bg-main d-block d-sm-none">
+                  <img src="assets/images/hand-bg-mob.jpg" alt="" />
+                </picture>
+
+                <img
+                  src="assets/images/hand-img.png?v=1.0.02"
+                  class="overlay-hand-img d-none d-sm-block"
+                  alt=""
+                />
+                <!-- <img
+                  src="assets/images/hand-img-mob.png"
+                  class="overlay-hand-img d-block d-sm-none"
+                  alt=""
+                /> -->
+
+                <div class="dropping-content">
+                  <div class="top-text">
+                    <span>WE'RE</span> DROPPING THE BEAT
+                    <span>WITH</span> SOMEONE SPECIAL.
+                  </div>
+
+                  <div class="bottom-text">
+                    AND <span>YOU</span> COULD BE THE ONE <br class="d-none d-sm-block">TO MAKE IT A
+                    <span>HIT!</span>
+                  </div>
+                  <div class="dropping-content-link d-none d-sm-block">
+                    <a
+                      href="#section3"
+                      class="scroll-link scroll-link-purple"
+                    ></a>
+                  </div>
+                </div>
+                <div class="dropping-content-link d-sm-none">
+                  <a
+                    href="#section3"
+                    class="scroll-link scroll-link-purple"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-3" id="section3">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 p-0">
+              <div class="section-3-main-wrapper">
+                <img
+                  src="assets/images/tic-tac-section.png"
+                  class="section-3-img d-none d-sm-block"
+                  alt=""
+                />
+                <img
+                  src="assets/images/tic-tac-section-mob.jpg"
+                  class="section-3-img d-block d-sm-none"
+                  alt=""
+                />
+                <div class="coming-soon-content">
+                  IT'S A CHANCE TO SHOW OFF <br class="d-none d-sm-block">YOUR MUSICAL VIBE <br class="d-none d-sm-block">AND TAKE THE SPOTLIGHT!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function setRealVh() {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+      }
+
+      // Call it on load and resize
+      $(document).ready(function () {
+        setRealVh();
+        window.addEventListener("resize", setRealVh);
+      });
+
+      //   $(document).ready(function () {
+      //     document
+      //       .querySelectorAll('.scroll-container a[href^="#"]')
+      //       .forEach((anchor) => {
+      //         anchor.addEventListener("click", function (e) {
+      //           e.preventDefault();
+
+      //           const targetId = this.getAttribute("href");
+      //           const targetSection = document.querySelector(targetId);
+      //           const scrollContainer =
+      //             document.querySelector(".scroll-container");
+
+      //           if (targetSection && scrollContainer) {
+      //             scrollContainer.scrollTo({
+      //               top: targetSection.offsetTop,
+      //               behavior: "smooth",
+      //             });
+      //           }
+      //         });
+      //       });
+      //   });
+    </script>
+  </body>
+</html>

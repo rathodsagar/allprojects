@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+@font-face {
+  font-family: "Brevia-Black";
+  src: url("../fonts/Brevia-Black.otf");
+}
+@font-face {
+  font-family: "Brevia-Bold";
+  src: url("../fonts/Brevia-Bold.otf");
+}
+@font-face {
+  font-family: "Brevia-Semibold";
+  src: url("../fonts/Brevia-Semibold.otf");
+}
+@font-face {
+  font-family: "Brevia-Medium";
+  src: url("../fonts/Brevia-Medium.otf");
+}
+@font-face {
+  font-family: "Choripan";
+  src: url("../fonts/Choripan.otf");
+}
+@font-face {
+  font-family: "Din-Condensed-Bold";
+  src: url("../fonts/Din-Condensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "FrankfurterStd";
+  src: url("../fonts/FrankfurterStd.otf");
+}
+
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url("../fonts/MyriadPro-Regular.otf");
+}
+
+@mixin fontFamily($fontType) {
+  font-family: $fontType, Arial, Helvetica, sans-serif;
+}
+
+@mixin fontSizeLineHeight($fontSize, $lineHeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
